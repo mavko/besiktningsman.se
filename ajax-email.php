@@ -1,8 +1,8 @@
 <?php
 
 /* SETTINGS */
-$yourEmail = "your.email@gmail.com";
-$emailSubject = "Contact Form";
+$yourEmail = "sebastian.selling@outlook.com";
+$emailSubject = "Besiktningsman.se formulär";
 
 if($_POST){
 
@@ -11,10 +11,10 @@ if($_POST){
   $email = $_POST['email'];
   $message = $_POST['message'];
   $headers = "From: $name <$email>\r\n" .
-             "Reply-To: $name <$email>\r\n" . 
+             "Reply-To: $name <$email>\r\n" .
              "Subject: $emailSubject\r\n" .
              "Content-type: text/plain; charset=UTF-8\r\n" .
-             "MIME-Version: 1.0\r\n" . 
+             "MIME-Version: 1.0\r\n" .
              "X-Mailer: PHP/" . phpversion() . "\r\n";
 
   /* SEND EMAIL */
