@@ -2037,7 +2037,7 @@ html.mobile .showForMobile {
   padding: 4px 10px 5px;
 }
 .panel .sections .menu.small li {
-  font-size: 18px;
+  font-size: 16px;
   margin: 0 4px;
 }
 .panel .sections .menu.uppercase {
@@ -5229,7 +5229,7 @@ body {
 }
 
 .text-blue {
-  color: #2196F3 !important;
+  color: #1072BB !important;
 }
 .text-blue.button svg {
   fill: #2196F3 !important;
@@ -6076,7 +6076,7 @@ body {
   font-size: 17px;
   line-height: 1.3;
   background: #fff;
-  margin: 20px;
+  margin: 7% 20px 20px 20px;
   overflow: hidden;
   text-align: left;
   -webkit-transform: translate3d(0, 0, 0);
