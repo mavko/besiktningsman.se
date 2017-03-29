@@ -117,10 +117,10 @@ img.rounded {
 }
 
 .slides {
-  color: #fff;
+  color: #2F2D2E;
   fill: #fff;
   font-family: "Source Sans Pro", sans-serif;
-  background: #111;
+  background: #fff;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeSpeed;
 }
