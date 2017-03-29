@@ -1234,7 +1234,7 @@ form.center input, form.center textarea {
 
 /* Background Fade */
 .fade .content {
-  background: rgba(17, 19, 20, 0.6);
+  background: rgba(16,113,187,0.80);
 }
 
 /*default*/
@@ -1907,7 +1907,29 @@ html.mobile .showForMobile {
  *
  *
  */
-.panel {
+ .panel {
+   position: fixed;
+   left: 0;
+   width: 100%;
+   padding: 0.5% 0.8%;
+   z-index: 200;
+   text-align: center;
+   font-size: 22px;
+   pointer-events: none;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+   -webkit-user-select: none;
+      -moz-user-select: none;
+       -ms-user-select: none;
+           user-select: none;
+   -webkit-transform: translate3d(0, 0, 0);
+           transform: translate3d(0, 0, 0);
+ }
+.soft-shadow {
+      background: rgba(255,255,255,.98);
+    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07), inset 0 -2px 0 0 #f6f9fc;
+}
+.nav {
     font-weight: 900;
     color: #2F2D2E !important;
     left: 0;
@@ -4632,10 +4654,10 @@ html:not(.page-loaded) .slides.animated.scroll .slide {
   transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s !important;
 }
 
-.scroll .panel,
+/*.scroll .panel,
 .mobile .simplifiedMobile .panel {
   position: absolute;
-}
+}*/
 
 .mobile .simplifiedMobile .navigation {
   display: none;
