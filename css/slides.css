@@ -1896,7 +1896,47 @@ html.mobile .showForMobile {
 .helpBubble:hover:after {
   opacity: 1;
 }
-
+/* custom css not framework related*/
+.container-lg {
+      text-align: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1080px;
+    margin-top: 15%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#intro {
+  height: 660px;
+}
+.common-Button {
+    white-space: nowrap;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+    box-shadow: 0px 6px 12px 0px rgba(53,64,82,0.43);
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    -webkit-transition: all .15s ease;
+    transition: all .15s ease;
+}
+button:hover {
+    color: inherit;
+    text-decoration: none;
+		-webkit-transition: all .15s ease;
+		transition: all .15s ease;
+		background-color: rgba(99,65,177,0.80);
+	  color: white;
+		cursor: pointer;
+}
 /***
  *      _____                 _
  *     |  __ \               | |
