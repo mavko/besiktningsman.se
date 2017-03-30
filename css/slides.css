@@ -2844,11 +2844,10 @@ html:not(.page-loaded) .slides.animated.scroll .slide {
   padding: 0;
   font-size: 0;
   margin-bottom: 35px;
+  width: 80%;
 }
 .sidebar a {
   display: inline-block;
-  color: #fff;
-  fill: #fff;
 }
 .sidebar a:hover {
   opacity: 0.8;
@@ -2871,7 +2870,7 @@ html:not(.page-loaded) .slides.animated.scroll .slide {
 .sidebar .close svg {
   width: 30px;
   height: 30px;
-  fill: #fff;
+  fill: #FB5845;
 }
 .sidebar .close:active svg {
   -webkit-transform: scale(0.92);
