@@ -2,13 +2,14 @@
 
 /* SETTINGS */
 $yourEmail = "sebastian.selling@outlook.com";
-$emailSubject = "Besiktningsman.se formulär";
+$emailSubject = "Besiktningsman.se Formulär";
 
 if($_POST){
 
   /* DATA FROM HTML FORM */
   $name = $_POST['name'];
   $email = $_POST['email'];
+  $telephone = $_POST['telephone'];
   $message = $_POST['message'];
   $headers = "From: $name <$email>\r\n" .
              "Reply-To: $name <$email>\r\n" .

@@ -25,23 +25,23 @@
     <meta property="og:title" content="Besiktningsman.se | Vi utvecklar och förnyar">
     <meta property="og:description" content="#yourdescription">
     <meta property="og:url" content="#yourlink">
-    <meta property="og:site_name" content="icontrol app">
+    <meta property="og:site_name" content="besiktningsman.se">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<!-- Fonts and Material Icons -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Material+Icons" rel="stylesheet" type="text/css" />
 
 
 	<!-- Styles -->
-	<link href="css/slides.css" rel="stylesheet" type="text/css">
+	<link href="/css/slides.css" rel="stylesheet" type="text/css">
 
 	<!-- Custom Styles -->
 	<!--link href="css/custom.css" rel="stylesheet" type="text/css"-->
 
 	<!-- Scripts -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script src="js/plugins.js" type="text/javascript" name="plugins"></script>
-	<script src="js/slides.js" type="text/javascript" name="main-scripts"></script>
-
+	<script src="/js/plugins.js" type="text/javascript" name="plugins"></script>
+	<script src="/js/slides.js" type="text/javascript" name="main-scripts"></script>
+	<script src="/ajax-email.php" type="text/javascript" name="plugins"></script>
 	<!-- Custom Scripts -->
 	<!--script src="js/custom.js" type="text/javascript" name="custom-scripts"></script-->
 
@@ -132,7 +132,7 @@
         <li><a href="#">Karriär</a></li>
       </ul>
     </div>
-    <div class="center"><a href="#home"> <img src="assets/svg/bm_logo.svg" alt="Besiktningsman.se" style="width:200px;">  </a></div>
+    <div class="center"><a href="#home"> <img src="/assets/svg/bm_logo.svg" alt="Besiktningsman.se" style="width:200px;">  </a></div>
     <div class="right">
       <ul class="menu crop small bold">
         <li><a href="#">Om oss</a></li>
@@ -143,7 +143,7 @@
     </div>
   </div>
   <div class="sections compact hidden">
-    <div class="left"><a href="#home"><img src="assets/svg/bm_logo.svg" alt="Besiktningsman.se" style="width:200px;"></a></div>
+    <div class="left"><a href="#home"><img src="/assets/svg/bm_logo.svg" alt="Besiktningsman.se" style="width:200px;"></a></div>
     <div class="right"><span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
   </div>
 </nav>
@@ -152,7 +152,7 @@
 <nav class="sidebar white" data-sidebar-id="1">
   <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
   <div class="content">
-    <a href="#home" class="logo"><img src="assets/svg/bm_logo.svg" alt=""></a>
+    <a href="#home" class="logo"><img src="/assets/svg/bm_logo.svg" alt=""></a>
     <ul class="mainMenu text-blue">
       <li><a href="#">Vårt erbjudande</a></li>
 			<br>
@@ -181,78 +181,36 @@
 </nav>
 
 	<!-- INTRO SLIDE -->
-	<section class="slide fade kenBurns zoomout" data-name="home" id="intro">
-		<div class="content">
-			<div class="container">
-				<div class="container-lg center margin-top-2">
-
-					<div class="fix-10-12">
-						<h1 class="hero-title">Välkommen till Besiktningsman.se</h1>
-						<p class="hero">Digital besiktning för lönsammare byggprojekt</p>
-						<a href="" class="common-Button white text-blue ae-5 fromCenter" style="margin-right: 20px;">FÖRETAG</a><a href="" class="common-Button white ae-6 fromCenter">BRF / PRIVAT</a>
+	<!-- Slide #55 -->
+<section class="slide fade kenBurns">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+					<h1 class="">Hör gärna av dig!</h1>
+					<div class=""><p>För snabbast assistens så får du gärna fylla i formuläret</p></div>
+					<div class="fix-5-12">
+						<div class="pad shadow selected ">
+							<form action="ajax-email.php" id="contact-form" method="post" class="wide center" data-ajax-form="true">
+								<div class="label cropTop"><label class="cropTop left small bold" for="name55">För och efternamn</label></div>
+								<input class="stroke left wide" id="name55" type="name" name="name" placeholder="Ert namn..." required/>
+								<div class="label"><label class="left small bold" for="email55">E-post adress</label></div>
+								<input class="stroke left wide" id="email55" type="email" name="email" placeholder="E-post adress..." required/>
+								<div class="label cropTop"><label class="cropTop left small bold" for="name55">Telefon</label></div>
+								<input class="stroke left wide" id="telephone55" type="text" name="telephone number" placeholder="Telefon nr..." required/>
+								<div class="label"><label class="left small bold" for="message55">Ditt meddelande...</label></div>
+								<textarea class="left " id="message55" type="text" name="message" placeholder="Ditt meddelande..." required></textarea>
+								<input class="common-Button wide blue cropBottom" type="submit" name="submit" value="Skicka meddelandet" data-success-text="Skickat!" data-success-class="green"/>
+							</form>
+						</div>
 					</div>
 
-				</div>
-			</div>
-		</div>
-		<div class="background" style="background-image:url(assets/img/backgrounds/ispect_close.jpg)"></div>
-	</section>
-<!-- E-besiktning SLIDE -->
+
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background-image:url(/assets/img/backgrounds/ispect_close.jpg)"></div>
 </section>
-		<section class="slide whiteSlide kenBurns fromLeft">
-		  <div class="content">
-		    <div class="container" style="height: 100% !important;">
-		      <div class="wrap" style="display: block;">
 
-		        <div class="fix-12-12">
-		          <ul class="flex reverse">
-		            <li class="col-6-12 left cell-32">
-		              <h1 class="ae-2">Entreprenadbesiktning som ökar lönsamheten.</h1>
-									<div class="ae-3"><p>Besiktningsman.se erbjuder för entreprenadbesiktning som ger ett aktivt stöd för sänkt kostnad och ökad lönsamhet i projekt.
-									<br> Ger möjlighet att överlämna ett färdigt projekt med noll byggfel på avtalad dag.</p></div>
-		            </li>
-		            <li class="col-6-12 left ae-1 fromRight">
-		              <img class="ipad-32" data-action="zoom" style="width: 1000px;" src="assets/img/ispect/stats.png" alt="iPad Image"/>
-		            </li>
-		          </ul>
-		        </div>
-
-		      </div>
-		    </div>
-		  </div>
-		</section>
-		<!-- iSpect pros slide -->
-		<section class="slide whiteSlide kenBurns fromLeft">
-		  <div class="content">
-		    <div class="container" style="height: 100% !important;">
-		      <div class="wrap" style="display: block;">
-
-		        <div class="fix-12-12">
-		          <ul class="flex reverse">
-		            <li class="col-6-12 left cell-32">
-		              <h1 class="ae-2">iSpect ger snabb leverans av besiktningsutlåtandet.</h1>
-									<div class="ae-3"><p>Direkt felavhjälpning, lättillgänglig och säker dokumentation samt noll byggfel.</p></div>
-		              <ul class="items-32">
-		                <li class="fix-4-12 toLeft text-32">
-		                  <h3 class="ae-4">Exempel 1</h3>
-		                  <div class="ae-5"><p class="small">Tillåter underentreprenörer att avhjälpa fel samma dag</p></div>
-		                </li>
-		                <li class="fix-4-12 toLeft text-32">
-		                  <h3 class="ae-6">Exempel 2</h3>
-		                  <div class="ae-7"><p class="small">Skapar transparens i kommunikationen</p></div>
-		                </li>
-		              </ul>
-		            </li>
-		            <li class="col-6-12 left ae-1 fromRight">
-		              <img class="ipad-32" data-action="zoom" style="width: 500px;" src="assets/img/ispect/ipadfront.png" alt="iPad Image"/>
-		            </li>
-		          </ul>
-		        </div>
-
-		      </div>
-		    </div>
-		  </div>
-		</section>
 	<!-- Slide 2 (#56) -->
 	<section class="slide whiteSlide" style="background: rgba(246, 247, 249, 0.64);">
 		<div class="content">
@@ -260,13 +218,13 @@
 				<div class="container-lg">
 					<div class="fix-12-12">
 						<ul class="grid fixedSpaces">
-							<li class="col-4-12 ae-3">
+							<li class="col-4-12 3">
 								<h3 class="margin-bottom-1 text-blue">Stockholm</h3>
 								<p><a href="#">Heleneborgsgatan 54, 117 32 Stockholm</a></p>
 								<h3 class="margin-bottom-1 text-blue">Helsingborg</h3>
 								<p><a href="#">Filialkontor i Helsingborg:</a></p>
 							</li>
-							<li class="col-4-12 ae-3">
+							<li class="col-4-12 3">
 								<h3 class="margin-bottom-1 text-blue">Göteborg</h3>
 								<p><a href="#">Filialkontor i Göteborg:</a></p>
 								<h3 class="margin-bottom-1 text-blue">Norrköping</h3>
@@ -274,7 +232,7 @@
 								<h3 class="margin-bottom-1 text-blue">Uppsala</h3>
 								<p><a href="#">Filialkontor i Uppsala:</a></p>
 							</li>
-							<li class="col-4-12 ae-5">
+							<li class="col-4-12 5">
 								<h3 class="margin-bottom-1 text-blue">Besiktningsbloggen</h3>
 								<p><a href="https://medium.com/besiktningsbloggen">Läs vår spännande resa i att utveckla och förnya byggbranschen</a></p>
 								<h3 class="margin-bottom-1 text-blue">Följ gärna oss</h3>
