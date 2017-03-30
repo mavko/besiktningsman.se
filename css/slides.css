@@ -1898,15 +1898,14 @@ html.mobile .showForMobile {
 }
 /* custom css not framework related*/
 .container-lg {
-      text-align: center;
     margin: 0 auto;
     padding: 0 20px;
     width: 100%;
     max-width: 1080px;
-    margin-top: 15%;
     padding-top: 0;
     padding-bottom: 0;
 }
+
 #intro {
   height: 660px;
 }
@@ -1936,6 +1935,27 @@ button:hover {
 		background-color: rgba(99,65,177,0.80);
 	  color: white;
 		cursor: pointer;
+}
+/*iphone4+*/
+@media only screen
+  and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    h1{font-size: 36px;}
+    .hero p {font-size: 22px;}
+    .common-Button{font-size: 14px;margin: 8px;}
+
+  }
+/* iphone6+ Portrait and Landscape */
+@media only screen
+  and (min-device-width: 300px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+}
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1023px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    #intro {height: 460px;}
 }
 /***
  *      _____                 _
@@ -8851,47 +8871,47 @@ form input[type="email"].input-96 {
 }
 
 .margin-top-0 {
-  margin-top: 0px !important;
+  margin-top: 0% !important;
 }
 
 .margin-top-1 {
-  margin-top: 10px !important;
+  margin-top: 10% !important;
 }
 
 .margin-top-2 {
-  margin-top: 20px !important;
+  margin-top: 20% !important;
 }
 
 .margin-top-3 {
-  margin-top: 30px !important;
+  margin-top: 30% !important;
 }
 
 .margin-top-4 {
-  margin-top: 40px !important;
+  margin-top: 40% !important;
 }
 
 .margin-top-5 {
-  margin-top: 50px !important;
+  margin-top: 50% !important;
 }
 
 .margin-top-6 {
-  margin-top: 60px !important;
+  margin-top: 60% !important;
 }
 
 .margin-top-7 {
-  margin-top: 70px !important;
+  margin-top: 70% !important;
 }
 
 .margin-top-8 {
-  margin-top: 80px !important;
+  margin-top: 80% !important;
 }
 
 .margin-top-9 {
-  margin-top: 90px !important;
+  margin-top: 90% !important;
 }
 
 .margin-top-10 {
-  margin-top: 100px !important;
+  margin-top: 100% !important;
 }
 
 .margin-top-11 {
