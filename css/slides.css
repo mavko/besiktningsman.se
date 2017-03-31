@@ -7266,7 +7266,7 @@ p.text-43 {
   color: #303030;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.06), 0 2px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07), inset 0 -2px 0 0 #f6f9fc;
   display: block;
   outline: none;
   margin-bottom: 25px;
