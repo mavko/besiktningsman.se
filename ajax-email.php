@@ -1,8 +1,8 @@
 <?php
 
 /* SETTINGS */
-$yourEmail = "sebastian.selling@outlook.com";
-$emailSubject = "Besiktningsman.se Formulär";
+$yourEmail = "sebastian.selling1@gmail.com";
+$emailSubject = "Besiktningsman.se nytt kontaktmeddelande";
 
 if($_POST){
 
@@ -19,6 +19,6 @@ if($_POST){
              "X-Mailer: PHP/" . phpversion() . "\r\n";
 
   /* SEND EMAIL */
-  mail($yourEmail, $emailSubject, $message, $headers);
+  $send = mail($yourEmail, $emailSubject, $message, $headers);
 }
 ?>
