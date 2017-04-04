@@ -1936,6 +1936,25 @@ button:hover {
 	  color: white;
 		cursor: pointer;
 }
+  .customFooter p {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .col-5-10 {
+    max-width: 20%;
+  }
+
+  .wide-col {
+    padding-bottom: 20px;
+  }
+
+  @media screen and (max-width: 1024px) and (min-width: 546px){
+    .grid .col-5-10:not(.wide-col) {
+      max-width: 50% !important;
+      width: 50% !important;
+    }
+  }
 /*iphone4+*/
 @media only screen
   and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
