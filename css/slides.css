@@ -1905,7 +1905,42 @@ html.mobile .showForMobile {
     padding-top: 0;
     padding-bottom: 0;
 }
+@media (min-width: 880px){
+a.globalFooterCard, div.globalFooterCard {
+    padding-left: 120px;}  
+}
 
+
+@media (min-width: 670px) {
+a.globalFooterCard, div.globalFooterCard {
+    -ms-flex-preferred-size: 1%;
+    flex-basis: 1%;
+    padding-left: 100px;}
+}
+.globalFooterCards {
+    pointer-events: auto;
+    position: relative;
+}
+.globalFooterCard {
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    margin: 15px;
+    z-index: 499;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 40px 40px 40px 120px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+    transition-property: color,background-color,box-shadow,transform;
+    transition-duration: .15s;
+}
 #intro {
   height: 660px;
 }
