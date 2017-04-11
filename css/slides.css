@@ -1929,14 +1929,6 @@ html.mobile .showForMobile {
     top: calc(50% - 75px);
 }
 
-@media (min-width: 880px){
-  a.globalFooterCard img, a.globalFooterCard svg, div.globalFooterCard img, div.globalFooterCard svg {
-      left: -35px;
-  }
-}
-@media (min-width: 670px) {a.globalFooterCard img, a.globalFooterCard svg, div.globalFooterCard img, div.globalFooterCard svg {
-    left: -50px;}}
-
 a.globalFooterCard img, a.globalFooterCard svg, div.globalFooterCard img, div.globalFooterCard svg {
     position: absolute;
     width: 130px;
@@ -1945,17 +1937,13 @@ a.globalFooterCard img, a.globalFooterCard svg, div.globalFooterCard img, div.gl
     top: calc(50% - 65px);
 }
 @media (min-width: 880px) {
-    a.globalFooterCard {
-        padding-left: 120px;
-    }
+  a.globalFooterCard {padding-left: 120px;}
+  a.globalFooterCard img, a.globalFooterCard svg, div.globalFooterCard img, div.globalFooterCard svg {left: -35px;}
 }
 
 @media (min-width: 670px){
-    a.globalFooterCard {
-    -webkit-flex-basis: 1% !important;
-    -ms-flex-preferred-size: 1% !important;
-    flex-basis: 1% !important;
-    padding-left: 100px;}
+  a.globalFooterCard img, a.globalFooterCard svg, div.globalFooterCard img, div.globalFooterCard svg {left: -50px;}
+  a.globalFooterCard {flex-basis: 1% !important;padding-left: 100px;}
 }
 
 a.globalFooterCard {
