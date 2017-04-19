@@ -14,24 +14,20 @@ of your Slides Project. It also requires plugins.js and jquery-2.2.4 to run this
 https://designmodo.com/slides/
 
 */
-
 window.inAction = 1;
-window.allowSlide = 1;
-window.blockScroll = 1;
-window.effectOffset = 200;
-window.effectSpeed = 1000;
+window.allowSlide = 0;
+window.blockScroll = 0;
+window.mouseDown = 0;
+window.direction = "";
 window.slideSpeed = 1000;
-window.cleanupDelay = 1400;
+window.cleanupDelay = 1450;
+window.effectSpeed = 800;
 window.horizontalMode = 0;
 window.sidebarShown = 0;
 window.loadingProgress = 0;
-window.smoothScroll = 0;
+window.customScroll = 0;
 window.scrollSpeed = 1000;
-window.preload = 1;
-window.setHashLink = 1;
-window.hideSidebarOnBodyClick = 1;
-window.collectScrolls = 0;
-window.sliderStatus = 0;
+window.preload = 0;
 
 var $html = $('html');
 
@@ -115,7 +111,7 @@ $(document).ready(function() { "use strict";
 
   //Preload
   if ($body.hasClass('noPreload')){
-    window.preload = 1; 
+    window.preload = 1;
   }
 
   //Is it animated?
