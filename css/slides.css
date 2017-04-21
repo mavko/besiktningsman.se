@@ -440,7 +440,7 @@ small .small {
   padding: 14px;
   border-radius: 25px;
   z-index: 999;
-  background: rgba(40, 40, 40, 0.6);
+  background: none;
   line-height: 1;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
   cursor: pointer;
@@ -2047,6 +2047,9 @@ button:hover {
     .col-6-12 a {margin-bottom: 24px;}
     .col-tablet-1-2 {width: 100% !important;}
     .img-91 {display: none;}
+    a.globalFooterCard h2 {font-size: 20px;margin: -20px 15px 5px;font-weight: bold;}
+    a.globalFooterCard p {font-size: 14px;font-weight: bold;}
+    .img-fade{background: rgba(16,114,187,0.80);}
     #partners img {margin-bottom: 30px;}
 }
 /* iphone6+ Portrait and Landscape */
