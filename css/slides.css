@@ -1896,7 +1896,15 @@ html.mobile .showForMobile {
 .helpBubble:hover:after {
   opacity: 1;
 }
-/* custom css not framework related*/
+/*
+  custom css not framework related
+*/
+.img-fade {
+  background: rgba(16,114,187,0.60);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
 .container-lg {
     margin: 0 auto;
     padding: 0 20px;
@@ -1904,12 +1912,6 @@ html.mobile .showForMobile {
     max-width: 1080px;
     padding-top: 0;
     padding-bottom: 0;
-}
-.img-fade {
-  background: rgba(16,114,187,0.60);
-  width: 100%;
-  height: 100%;
-  position: absolute;
 }
 .globalFooterCards .container-xl, a.globalFooterCard {
     display: -webkit-box;
@@ -1927,9 +1929,10 @@ html.mobile .showForMobile {
 .container-wide, .container-xl {
     max-width: 1040px;
 }
-.container-xl img {
 
-}
+/*
+  global footer cards
+*/
 @media (min-width: 880px) {
   a.globalFooterCard {padding-left: 120px;}
 }
@@ -1937,7 +1940,77 @@ html.mobile .showForMobile {
 @media (min-width: 670px){
   a.globalFooterCard {flex-basis: 1% !important;padding-left: 100px;}
 }
-
+.globalFooter.withCards>* {
+    pointer-events: auto;
+    position: relative;
+}
+.globalFooterCTA {
+    padding: 50px 0;
+}
+.container-lg {
+    margin: 0 auto;
+    padding: 0 22px;
+    width: 93%;
+    max-width: 1040px;
+}
+.globalFooterCTA .buttons, .globalFooterCTA .content {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 50%;
+    -ms-flex: 1 0 50%;
+    flex: 1 0 50%;
+}
+.globalFooterCTA .title {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 30px;
+    margin: .75em 0;
+}
+.globalFooterCTA .subtitle {
+    font-weight: bold;
+    display: block;
+    font-size: 18px;
+}
+.globalFooterCTA .buttons, .globalFooterCTA .content {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 50%;
+    -ms-flex: 1 0 50%;
+    flex: 1 0 50%;
+}
+@media (min-width: 670px) {
+    .globalFooterCTA .container-lg {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;}
+.globalFooterCTA .common-ButtonGroup {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;}
+}
+.common-ButtonGroup {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+.common-ButtonGroup .common-Button {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin: 5px;
+}
+/*
+landing page footer cards
+*/
 a.globalFooterCard {
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 100%;
@@ -1983,13 +2056,16 @@ a.globalFooterCard h2 {
     z-index: 5;
     position: absolute;
 }
+/*
+contact page
+*/
 .map {
     width: 90%;
     background-size: cover;
     z-index: -1;
     position: absolute;
     right: 0;
-    margin: -66% -40% 0%;
+    margin: -70% -40% 0%;
     max-width: none;
 }
 .headquarters {
