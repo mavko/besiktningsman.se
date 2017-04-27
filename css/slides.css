@@ -1899,6 +1899,11 @@ html.mobile .showForMobile {
 /*
   custom css not framework related
 */
+.border-bottom {
+  border-bottom: 2px solid #fff;
+  width: 50%;
+  padding-bottom: 20px;
+}
 .img-fade {
   background: rgba(16,114,187,0.60);
   width: 100%;
