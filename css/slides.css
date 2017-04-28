@@ -2137,12 +2137,12 @@ a.globalFooterCard h2 {
 contact page
 */
 .map {
-    width: 90%;
+    width: 50%;
     background-size: cover;
     z-index: -1;
     position: absolute;
     right: 0;
-    margin: -70% -40% 0%;
+    margin: -18% 0% 0%;
     max-width: none;
 }
 .headquarters {
