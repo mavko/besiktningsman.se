@@ -1236,7 +1236,9 @@ form.center input, form.center textarea {
 .fade .content {
   background: rgba(16,113,187,0.80);
 }
-
+.fade-orange .content {
+  background: rgba(251,117,40,0.80);
+}
 /*default*/
 .fade-1 .content {
   background: rgba(17, 19, 20, 0.1);
