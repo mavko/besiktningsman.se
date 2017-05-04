@@ -1901,6 +1901,12 @@ html.mobile .showForMobile {
 /*
   custom css not framework related
 */
+.border-bottom-grey {
+  border-bottom: 2px solid #6D92A3;
+  width: 50%;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
 .border-bottom {
   border-bottom: 2px solid #fff;
   width: 50%;

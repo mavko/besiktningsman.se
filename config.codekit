@@ -231,6 +231,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/logos\/byggvesta.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7361,
+		"inputAbbreviatedPath": "\/assets\/img\/logos\/byggvesta.png",
+		"outputAbbreviatedPath": "\/assets\/img\/logos\/byggvesta.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/logos\/ebab-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
