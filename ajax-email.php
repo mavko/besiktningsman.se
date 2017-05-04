@@ -1,8 +1,8 @@
 <?php
 
 /* SETTINGS */
-$yourEmail = "sebastian.selling1@gmail.com";
-$emailSubject = "Besiktningsman.se nytt kontaktmeddelande";
+$yourEmail = "sebastian.selling@outlook.com";
+$emailSubject = "www.besiktningsman.se: nytt meddelande";
 
 if($_POST){
 
@@ -10,7 +10,9 @@ if($_POST){
   $name = $_POST['yourName'];
   $email = $_POST['yourEmail'];
   $phone = $_POST['yourPhone'];
-  $message = $_POST['yourMessage'];
+  $message = $_POST['yourMessage'].$phone;
+  $emailSubject = $emailSubject . " från " . $name;
+
   $headers = "From: $name <$email>\r\n" .
              "Reply-To: $name <$email>\r\n" .
              "Subject: $emailSubject\r\n" .
@@ -18,7 +20,13 @@ if($_POST){
              "MIME-Version: 1.0\r\n" .
              "X-Mailer: PHP/" . phpversion() . "\r\n";
 
+  /* PREVENT EMAIL INJECTION */
+  if ( preg_match("/[\r\n]/", $name) || preg_match("/[\r\n]/", $email) ) {
+    header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error', true, 500);
+    die("500 Internal Server Error");
+  }
+
   /* SEND EMAIL */
-  $send = mail($yourEmail, $emailSubject, $message, $headers);
+  mail($yourEmail, $emailSubject, $message, $headers);
 }
 ?>
