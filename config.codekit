@@ -154,6 +154,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/backgrounds\/village_houses.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 294252,
+		"inputAbbreviatedPath": "\/assets\/img\/backgrounds\/village_houses.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/backgrounds\/village_houses.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/ispect\/bm_ipad.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
