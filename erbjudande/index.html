@@ -11,7 +11,7 @@
 						lean production, lean startup, startup, construction, industri, besiktning, besiktiga, besikta, entreprenadbesiktning, besiktningsman,
 						ritningsapp, kontroll, arbetsledare, platschef, entreprenadingenjör, bygg app, lean bygg, projekthantering, kommunikation,">
 	<!-- favicons -->
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="../favicon.ico">
 	<!-- Making the website social media friendly-->
 	<meta name="description" content="Vi erbjuder certifierade &amp; oberoende besiktningsmän för  både fastighet &amp; utemiljö. Du hittar oss bland annat i Stockholm, Malmö &amp; Göteborg. Kontakta oss" />
 	<meta name="robots" content="noodp" />
@@ -34,6 +34,7 @@
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script src="../js/plugins.js" type="text/javascript" name="plugins"></script>
 	<script src="../js/slides.js" type="text/javascript" name="main-scripts"></script>
+	<script src="../js/custom.js" type="text/javascript" name="main-scripts"></script>
 </head>
 
 <body class="slides scroll simplifiedMobile">
@@ -281,8 +282,8 @@
 	</section>
 
 <!-- SERVICES Popup Text -->
-<div class="popup animated" data-popup-id="services">
-	<div class="close button closeButton white left opaque"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#back"></use></svg>Tillbaka</div>
+<div class="popup animated white" data-popup-id="services">
+	<div class="close button closeButton white text-blue left opaque"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#back"></use></svg>Tillbaka</div>
 	<div class="content popupContent">
 		<div class="container">
 			<div class="wrap spaces">
@@ -326,31 +327,25 @@
 								</li>
 							</ul>
 						</div>
-						<!-- tabs for exaplanatory texts -->
+						<!-- accordion for exaplanatory texts -->
 						<div class="fix-10-12">
-							<h1>Våra tjänster</h1>
-							<ul class="cd-accordion-menu">
+							<h1>Entreprenadtjänster</h1>
+							<ul class="cd-accordion-menu animated">
+
 								<li class="has-children">
 									<input type="checkbox" name="group-1" id="group-1" checked>
 									<label for="group-1">Förbesiktning</label>
 									<ul>
 										<li>
-											<p class="micro bold col-5-12">
-												Enligt AB04 och ABT06 Kap 7 §1 har part rätt att påkalla förbesiktning om
-												<br>
-												<br>
-												”1 arbete efter färdigställandet av entreprenaden inte är eller inte utan väsentligt ingrepp blir åtkomligt för besiktning.
-												<br>
-												2 avhjälpande av fel i arbete efter färdigställande skulle vara till väsentlig olägenhet för parten
-												<br>
-												3 arbete före färdigställande tas i bruk av beställaren eller
-												<br>
-												4 i övrigt särskilda skäl föreligger”
-												<br>
-												<br>
-												”Kommentar till kap 7 §1 i AB04 och ABT06, Ett särskilt skäl för förbesiktning kan vara att parterna i förväg vill få besiktningsmannens bedömning av kontraktsenhetligheten av visst arbete som antingen återkommer i ett stort antal eller
-												gäller principer eller kvalitetskrav för utförandet, sk normerande besiktning.”
-											</p>
+													<p class="small bold col-5-12 margin-bottom-3" style="margin-top:15px;">Enligt AB04 och ABT06 Kap 7 §1 har part rätt att påkalla förbesiktning om</p>
+													<p class="micro bold col-5-12 margin-bottom-3">
+														”1 arbete efter färdigställandet av entreprenaden inte är eller inte utan väsentligt ingrepp blir åtkomligt för besiktning.
+													</p>
+													<p class="micro bold col-5-12 margin-bottom-3">2 avhjälpande av fel i arbete efter färdigställande skulle vara till väsentlig olägenhet för parten</p>
+													<p class="micro bold col-5-12 margin-bottom-3">3 arbete före färdigställande tas i bruk av beställaren eller</p>
+													<p class="micro bold col-5-12 margin-bottom-3">4 i övrigt särskilda skäl föreligger”</p>
+													<p class="micro bold col-5-12 margin-bottom-3">”Kommentar till kap 7 §1 i AB04 och ABT06, Ett särskilt skäl för förbesiktning kan vara att parterna i förväg vill få besiktningsmannens bedömning av kontraktsenhetligheten av visst arbete som antingen återkommer i ett stort antal eller
+													gäller principer eller kvalitetskrav för utförandet, sk normerande besiktning.”</p>
 										</li>
 									</ul>
 								</li>
@@ -361,15 +356,17 @@
 
 									<ul>
 										<li>
-											<p class="micro bold col-5-12">
-												Enligt AB04 och ABT06 Kap 7 §1 har part rätt att påkalla förbesiktning om
-												<br> ”1 arbete efter färdigställandet av entreprenaden inte är eller inte utan väsentligt ingrepp blir åtkomligt för besiktning.
-												<br> 2 avhjälpande av fel i arbete efter färdigställande skulle vara till väsentlig olägenhet för parten
-												<br> 3 arbete före färdigställande tas i bruk av beställaren eller
-												<br> 4 i övrigt särskilda skäl föreligger”
-												<br> ”Kommentar till kap 7 §1 i AB04 och ABT06, Ett särskilt skäl för förbesiktning kan vara att parterna i förväg vill få besiktningsmannens bedömning av kontraktsenhetligheten av visst arbete som antingen återkommer i ett stort antal eller
-												gäller principer eller kvalitetskrav för utförandet, sk normerande besiktning.”
-											</p>
+													<p class="small bold col-5-12 margin-bottom-3" style="margin-top:15px;">Enligt AB04 och ABT 06 kap 7</p>
+													<p class="micro bold col-5-12 margin-bottom-3">
+														”Besiktning enligt §§1-5 i detta kapitel 7 verkställs av en därtill lämpad person som beställaren utser. Om parterna kommer överens om det kan besiktningen i stället verkställas av en person som de gemensamt utser.
+														Om part underlåter att medverka till att besiktningsman utses för besiktning enligt §1 eller §4 i detta kapitel 7 får motparten utse besiktningsman.”
+													</p>
+													<p class="micro bold col-5-12 margin-bottom-3">”Slutbesiktning skall, om inte parterna avtalat om annat, verkställas vid kontraktstidens utgång eller, om entreprenaden färdigställs senare, utan dröjsmål efter det att entreprenaden anmälts vara färdigställd.
+													Entreprenören skall i god tid underrätta beställaren när entreprenaden beräknas vara färdigställd och tillgänglig för slutbesiktning, om inte parterna genom besiktningsplan har träffat särskild överenskommelse.”</p>
+													<p class="micro bold col-5-12 margin-bottom-3">”En del av entreprenaden kan efter parternas överenskommelse göras till föremål för kompletterande slutbesiktning. Kompletterande slutbesiktning utgör inte hinder för entreprenadens godkännande, om inte annat avtalats.”
+													Handledning enligt BKKs handledning för entreprenadbesiktning</p>
+													<p class="micro bold col-5-12 margin-bottom-3">”Slutbesiktningen är den för båda parter viktigaste besiktningen. Det gäller nämligen här att pröva och avgöra frågan om godkännande av entreprenaden, vilket i sin tur har många betydelsefulla konsekvenser för parterna.
+													Det bör betonas, att – om inte parterna kommer överens om annat – slutbesiktning ska ske först vid kontraktstidens utgång eller om entreprenaden färdigställas senare, utan dröjsmål efter det att entreprenören anmält entreprenaden färdigställd.”</p>
 										</li>
 									</ul>
 								</li>
@@ -379,15 +376,14 @@
 									<label for="group-3">Ny slutbesiktning</label>
 									<ul>
 										<li>
-											<p class="micro bold col-5-12">
-												Enligt AB04 och ABT06 Kap 7 §1 har part rätt att påkalla förbesiktning om
-												<br> ”1 arbete efter färdigställandet av entreprenaden inte är eller inte utan väsentligt ingrepp blir åtkomligt för besiktning.
-												<br> 2 avhjälpande av fel i arbete efter färdigställande skulle vara till väsentlig olägenhet för parten
-												<br> 3 arbete före färdigställande tas i bruk av beställaren eller
-												<br> 4 i övrigt särskilda skäl föreligger”
-												<br> ”Kommentar till kap 7 §1 i AB04 och ABT06, Ett särskilt skäl för förbesiktning kan vara att parterna i förväg vill få besiktningsmannens bedömning av kontraktsenhetligheten av visst arbete som antingen återkommer i ett stort antal eller
-												gäller principer eller kvalitetskrav för utförandet, sk normerande besiktning.”
-											</p>
+													<p class="small bold col-5-12 margin-bottom-3" style="margin-top:15px;">Enligt AB04 och ABT06 kap 7§12</p>
+													<p class="micro bold col-5-12 margin-bottom-3">
+														”Om entreprenaden vid slutbesiktningen uppenbarligen inte är så färdigställd att den kan godkännas får besiktningsmannen avbryta besiktningen och föreskriva ny slutbesiktning.”
+													</p>
+													<p class="micro bold col-5-12 margin-bottom-3">Handledning till kap 7§12 enligt BKKs handledning till entreprenadbesiktning
+													<br>”Förutsättningen för besiktningsmannens beslut att avbryta besiktningen är hans bedömning av möjligheten av att entreprenaden kommer att godkännas.</p>
+													<p class="micro bold col-5-12 margin-bottom-3">Som angivits ovan kan man inte närmare ange någon nivå för när en entreprenad inte kan godkännas. Bedömningen får ske från fall till fall med hänsyn taget bla till objektets art och omfattning.</p>
+													<p class="micro bold col-5-12 margin-bottom-3">Begreppet ”uppenbarligen” innebär att det enligt besiktningsmannens bedömning ska framstå som fullständigt klart att entreprenaden i det skick den är inte kan komma att godkännas.”</p>
 										</li>
 									</ul>
 								</li>
@@ -397,15 +393,18 @@
 									<label for="group-4">Fortsatt slutbesiktning</label>
 									<ul>
 										<li>
-											<p class="micro bold col-5-12">
-												Enligt AB04 och ABT06 Kap 7 §1 har part rätt att påkalla förbesiktning om
-												<br> ”1 arbete efter färdigställandet av entreprenaden inte är eller inte utan väsentligt ingrepp blir åtkomligt för besiktning.
-												<br> 2 avhjälpande av fel i arbete efter färdigställande skulle vara till väsentlig olägenhet för parten
-												<br> 3 arbete före färdigställande tas i bruk av beställaren eller
-												<br> 4 i övrigt särskilda skäl föreligger”
-												<br> ”Kommentar till kap 7 §1 i AB04 och ABT06, Ett särskilt skäl för förbesiktning kan vara att parterna i förväg vill få besiktningsmannens bedömning av kontraktsenhetligheten av visst arbete som antingen återkommer i ett stort antal eller
-												gäller principer eller kvalitetskrav för utförandet, sk normerande besiktning.”
-											</p>
+													<p class="small bold col-5-12 margin-bottom-3" style="margin-top:15px;">Enligt AB04 och ABT06 kap 7 §12</p>
+													<p class="micro bold col-5-12 margin-bottom-3">
+														”Om entreprenaden inte godkänns skall besiktningsmannen föreskriva fortsatt slutbesiktning.
+														<br>Om entreprenaden inte godkänns eller avbryts skall besiktningsmannen i sitt utlåtande ange skälen för beslutet.”
+													</p>
+													<p class="micro bold col-5-12 margin-bottom-3">”Den fortsatta slutbesiktningen ska principiellt omfatta hela entreprenaden, men kan i praktiken begränsas till sådana arbeten och funktioner som föranlett icke-godkännandet.”</p>
+													<p class="micro bold col-5-12 margin-bottom-3">Handledning enligt BKKs handledning för entreprenadbesiktning
+														<br>”Förutsättningarna för att godkänna entreprenaden är inte uppfyllda om felen medför att användbarheten inskränks eller att säkerheten ifrågasätts om entreprenaden avlämnas.”</p>
+													<p class="micro bold col-5-12 margin-bottom-3">
+														- Kommentar,
+														<br>Entreprenören avgör vilken tid som behövs för avhjälpande och avropar i god tid när entreprenaden är färdig för fortsatt slutbesiktning.
+													</p>
 										</li>
 									</ul>
 								</li>
@@ -414,15 +413,27 @@
 									<label for="group-5">Efterbesiktning</label>
 									<ul>
 										<li>
-											<p class="micro bold col-5-12">
-												Enligt AB04 och ABT06 Kap 7 §1 har part rätt att påkalla förbesiktning om
-												<br> ”1 arbete efter färdigställandet av entreprenaden inte är eller inte utan väsentligt ingrepp blir åtkomligt för besiktning.
-												<br> 2 avhjälpande av fel i arbete efter färdigställande skulle vara till väsentlig olägenhet för parten
-												<br> 3 arbete före färdigställande tas i bruk av beställaren eller
-												<br> 4 i övrigt särskilda skäl föreligger”
-												<br> ”Kommentar till kap 7 §1 i AB04 och ABT06, Ett särskilt skäl för förbesiktning kan vara att parterna i förväg vill få besiktningsmannens bedömning av kontraktsenhetligheten av visst arbete som antingen återkommer i ett stort antal eller
-												gäller principer eller kvalitetskrav för utförandet, sk normerande besiktning.”
-											</p>
+													<p class="small bold col-5-12 margin-bottom-3" style="margin-top:15px;">Enligt AB04 och ABT06 Kap 7 §5</p>
+													<p class="micro bold col-5-12 margin-bottom-3">
+														”Part har rätt att påkalla efterbesiktning för konstaterande av om ett fel avhjälpts.
+														<br>Efterbesiktning verkställs utan dröjsmål efter avhjälpandet. Beställaren får också påkalla
+														<br>efterbesiktning om entreprenören underlåter att avhjälpa felet i rätt tid.”
+													</p>
+													<p class="micro bold col-5-12 margin-bottom-3">”Om entreprenören har påkallat efterbesiktning men någon sådan inte kommer till stånd
+													på grund av beställarens underlåtenhet, skall de fel som efterbesiktningen avsågs omfatta anses vara avhjälpta.”</p>
+													<p class="micro bold col-5-12 margin-bottom-3">
+													Handledning till kap 7 §5 i BKKs handledning till entreprenadbesiktning
+													<br>
+													<br>
+													”Vid efterbesiktning ska konstateras om fel avhjälpts. I utlåtande över efterbesiktning noteras
+													de kvarvarande fel som inte avhjälpts och eventuella följdfel som uppkommit vid avhjälpandet.
+													Fel som inte noterats tidigare ska inte tas upp vid efterbesiktning.
+													<br>
+													<br>
+													Av beställaren skriftligt påtalat fel enligt kap7§12 ska inte heller tas upp, utan dessa ska
+													behandlas som särskild besiktning om part påkallar sådan.
+													Inget hindrar dock att en förrättning omfattar både efterbesiktning och särskild besiktning, om
+													detta angivits i kallelsen.”</p>
 										</li>
 									</ul>
 								</li>
@@ -431,119 +442,183 @@
 									<label for="group-6">Särskild besiktning</label>
 									<ul>
 										<li>
-											<p class="micro bold col-5-12">
-												Enligt AB04 och ABT06 Kap 7 §1 har part rätt att påkalla förbesiktning om
-												<br> ”1 arbete efter färdigställandet av entreprenaden inte är eller inte utan väsentligt ingrepp blir åtkomligt för besiktning.
-												<br> 2 avhjälpande av fel i arbete efter färdigställande skulle vara till väsentlig olägenhet för parten
-												<br> 3 arbete före färdigställande tas i bruk av beställaren eller
-												<br> 4 i övrigt särskilda skäl föreligger”
-												<br> ”Kommentar till kap 7 §1 i AB04 och ABT06, Ett särskilt skäl för förbesiktning kan vara att parterna i förväg vill få besiktningsmannens bedömning av kontraktsenhetligheten av visst arbete som antingen återkommer i ett stort antal eller
-												gäller principer eller kvalitetskrav för utförandet, sk normerande besiktning.”
-											</p>
+													<p class="small bold col-5-12 margin-bottom-3" style="margin-top:15px;">Enligt AB04 och ABT06 kap 7 §4</p>
+													<p class="micro bold col-5-12 margin-bottom-3">
+														”Part har rätt att efter entreprenadtidens utgång påkalla särskild besiktning avseende
+														<br>1 sådant fel som beställaren har påtalat
+														<br>2 entreprenadens status i visst avseende
+														Särskild besiktning verkställs utan dröjsmål efter påkallandet.”
+													</p>
+													<p class="micro bold col-5-12 margin-bottom-3">
+														Handledning enligt BKKs handledning för entreprenadbesiktningar
+														<br>
+														<br>
+														”Särskild besiktning enligt punkt 1 ovan avser sådana av beställaren påtalade fel efter förhållanden som förelegat vid slutbesiktning men som då inte tagits upp på grund av att de inte märkts, eller att besiktningsmannen förbisett felet. Särskild besiktning enligt punkt 2 ovan avser dels fel som framträtt under garantitiden och där garantiansvar eventuellt föreligger, och dels sådana fel som framträtt efter garantitidens utgång men inom den 10-åriga ansvarstiden.”
+													</p>
 										</li>
 									</ul>
 								</li>
 								<li class="has-children">
 									<input type="checkbox" name="group-7" id="group-7">
-									<label for="group-7">
-										Garantibesiktning
-										<p class="micro">2-årsbesiktning</p>
-									</label>
+									<label for="group-7">Statusbesiktning</label>
 									<ul>
 										<li>
-											<p class="micro bold col-5-12">
-												Enligt AB04 och ABT06 Kap 7 §1 har part rätt att påkalla förbesiktning om
-												<br> ”1 arbete efter färdigställandet av entreprenaden inte är eller inte utan väsentligt ingrepp blir åtkomligt för besiktning.
-												<br> 2 avhjälpande av fel i arbete efter färdigställande skulle vara till väsentlig olägenhet för parten
-												<br> 3 arbete före färdigställande tas i bruk av beställaren eller
-												<br> 4 i övrigt särskilda skäl föreligger”
-												<br> ”Kommentar till kap 7 §1 i AB04 och ABT06, Ett särskilt skäl för förbesiktning kan vara att parterna i förväg vill få besiktningsmannens bedömning av kontraktsenhetligheten av visst arbete som antingen återkommer i ett stort antal eller
-												gäller principer eller kvalitetskrav för utförandet, sk normerande besiktning.”
-											</p>
+													<p class="small bold col-5-12 margin-bottom-3" style="margin-top:15px;">Handledning till ABT06 kap 7§4 i BKKs handledning till entreprenadbesiktning</p>
+													<p class="micro bold col-5-12 margin-bottom-3">
+															”Statusbesiktning: Sådan särskild besiktning som enligt ABT06 kan påkallas av part avseende entreprenadens status i visst avseende, även om det saknas indikationer om fel.”
+													</p>
 										</li>
 									</ul>
 								</li>
 								<li class="has-children">
 									<input type="checkbox" name="group-8" id="group-8">
-									<label for="group-8">Överbesiktning</label>
+									<label for="group-8">
+										Garantibesiktning
+										<p class="micro">2-årsbesiktning</p>
+									</label>
 									<ul>
 										<li>
-											<p class="micro bold col-5-12">
-												Enligt AB04 och ABT06 Kap 7 §1 har part rätt att påkalla förbesiktning om
-												<br> ”1 arbete efter färdigställandet av entreprenaden inte är eller inte utan väsentligt ingrepp blir åtkomligt för besiktning.
-												<br> 2 avhjälpande av fel i arbete efter färdigställande skulle vara till väsentlig olägenhet för parten
-												<br> 3 arbete före färdigställande tas i bruk av beställaren eller
-												<br> 4 i övrigt särskilda skäl föreligger”
-												<br> ”Kommentar till kap 7 §1 i AB04 och ABT06, Ett särskilt skäl för förbesiktning kan vara att parterna i förväg vill få besiktningsmannens bedömning av kontraktsenhetligheten av visst arbete som antingen återkommer i ett stort antal eller
-												gäller principer eller kvalitetskrav för utförandet, sk normerande besiktning.”
-											</p>
+													<p class="small bold col-5-12 margin-bottom-3" style="margin-top:15px;">Enligt AB04 och ABT06 kap 7 §3</p>
+													<p class="micro bold col-5-12 margin-bottom-3">
+														”Före utgången av den kortaste garantitiden verkställs garantibesiktning, om parterna inte kommer överens om annat. Garantibesiktningen påkallas av beställaren.”
+													</p>
+													<p class="micro bold col-5-12 margin-bottom-3">
+														Handledning enligt BKKs handledning för besiktning
+														<br>
+														Besiktningsmannen ska vid garantibesiktning inte notera förhållanden som lämnats utan anmärkning vid slutbesiktning.
+														<br>
+														Garantibesiktningen ska normalt inte omfatta ej avhjälpta fel från slutbesiktningen.”
+													</p>
+													<p class="micro bold col-5-12 margin-bottom-3">
+														Kommentar,
+														<br>Vid bokning av garantibesiktning kan ni tilläggsbeställa att även efterbesiktning av tidigare besiktning ska utföras.
+													</p>
 										</li>
 									</ul>
 								</li>
 								<li class="has-children">
 									<input type="checkbox" name="group-9" id="group-9">
-									<label for="group-9">OVK</label>
+									<label for="group-9">Överbesiktning</label>
 									<ul>
 										<li>
-											<p class="micro bold col-5-12">
-												Enligt AB04 och ABT06 Kap 7 §1 har part rätt att påkalla förbesiktning om
-												<br> ”1 arbete efter färdigställandet av entreprenaden inte är eller inte utan väsentligt ingrepp blir åtkomligt för besiktning.
-												<br> 2 avhjälpande av fel i arbete efter färdigställande skulle vara till väsentlig olägenhet för parten
-												<br> 3 arbete före färdigställande tas i bruk av beställaren eller
-												<br> 4 i övrigt särskilda skäl föreligger”
-												<br> ”Kommentar till kap 7 §1 i AB04 och ABT06, Ett särskilt skäl för förbesiktning kan vara att parterna i förväg vill få besiktningsmannens bedömning av kontraktsenhetligheten av visst arbete som antingen återkommer i ett stort antal eller
-												gäller principer eller kvalitetskrav för utförandet, sk normerande besiktning.”
-											</p>
+													<p class="small bold col-5-12 margin-bottom-3" style="margin-top:15px;">Enligt AB04 och ABT06 kap 7§6</p>
+													<p class="micro bold col-5-12 margin-bottom-3">
+														”Part har rätt att påkalla överbesiktning av varje form besiktning. Genom överbesiktning prövas de frågor som har föranlett denna, tex frågan om entreprenadens godkännande, förekomsten av fel eller ansvar för fel.
+														<br>Överbesiktning ersätter den besiktning eller del av besiktning som har föranlett påkallandet av överbesiktning.
+														<br>Överbesiktning skall skriftligen påkallas inom tre veckor efter det att part fått del av besiktningsutlåtandet.”
+													</p>
+													<p class="small bold col-5-12 margin-bottom-3">Enligt AB04 och ABT06 kap7§8</p>
+													<p class="micro bold col-5-12 margin-bottom-3">”Överbesiktning verkställs av en person som parterna gemensamt utser eller av en överbesiktningsnämnd. En sådan nämnd skall bestå av tre personer, av vilka parterna vardera utser en och dessa två personer den tredje, som ska vara ordförande. Ledamot får inte tidigare ha verkställt besiktning i entreprenaden. ”</p>
 										</li>
 									</ul>
 								</li>
 								<li class="has-children">
 									<input type="checkbox" name="group-10" id="group-10">
-									<label for="group-10">Kontrollansvarig</label>
+									<label for="group-10">OVK</label>
 									<ul>
 										<li>
-											<p class="micro bold col-5-12">
-												Enligt AB04 och ABT06 Kap 7 §1 har part rätt att påkalla förbesiktning om
-												<br> ”1 arbete efter färdigställandet av entreprenaden inte är eller inte utan väsentligt ingrepp blir åtkomligt för besiktning.
-												<br> 2 avhjälpande av fel i arbete efter färdigställande skulle vara till väsentlig olägenhet för parten
-												<br> 3 arbete före färdigställande tas i bruk av beställaren eller
-												<br> 4 i övrigt särskilda skäl föreligger”
-												<br> ”Kommentar till kap 7 §1 i AB04 och ABT06, Ett särskilt skäl för förbesiktning kan vara att parterna i förväg vill få besiktningsmannens bedömning av kontraktsenhetligheten av visst arbete som antingen återkommer i ett stort antal eller
-												gäller principer eller kvalitetskrav för utförandet, sk normerande besiktning.”
-											</p>
+													<p class="small bold col-5-12 margin-bottom-3" style="margin-top:15px;">Obligatorisk ventilationskontroll</p>
+													<p class="micro bold col-5-12 margin-bottom-3">
+														OVK ska göras innan ett ventilationssystem tas i bruk för första gången (första besiktning). För de flesta byggnader ska OVK sedan göras regelbundet, var 3 eller 6 år.
+														Kontrollen utförs i en följd och förutsätter full åtkomst till samtliga lägenheter och utrymmen enligt upprättadbesiktningstidplan.
+													</p>
 										</li>
 									</ul>
 								</li>
 								<li class="has-children">
 									<input type="checkbox" name="group-11" id="group-11">
-									<label for="group-11">Fuktbesiktning</label>
+									<label for="group-11">Kontrollansvarig</label>
 									<ul>
 										<li>
-											<p class="micro bold col-5-12">
-												Enligt AB04 och ABT06 Kap 7 §1 har part rätt att påkalla förbesiktning om
-												<br> ”1 arbete efter färdigställandet av entreprenaden inte är eller inte utan väsentligt ingrepp blir åtkomligt för besiktning.
-												<br> 2 avhjälpande av fel i arbete efter färdigställande skulle vara till väsentlig olägenhet för parten
-												<br> 3 arbete före färdigställande tas i bruk av beställaren eller
-												<br> 4 i övrigt särskilda skäl föreligger”
-												<br> ”Kommentar till kap 7 §1 i AB04 och ABT06, Ett särskilt skäl för förbesiktning kan vara att parterna i förväg vill få besiktningsmannens bedömning av kontraktsenhetligheten av visst arbete som antingen återkommer i ett stort antal eller
-												gäller principer eller kvalitetskrav för utförandet, sk normerande besiktning.”
-											</p>
+													<p class="small bold col-5-12 margin-bottom-3" style="margin-top:15px;">Vi erbjuder gärna kontrollansvarig i kombination med besiktningsman eller besiktningsgrupp.</p>
+													<p class="micro bold col-5-12 margin-bottom-3">
+														Vid nyproduktion, om och tillbyggnad krävs det en Kontrollansvarig (KA) – tidigare benämnd som kvalitetsansvarig – för att genomföra entreprenaden. Kontrollansvarig ser till att nödvändiga inspektioner utförs för att entreprenaden skall leva upp till myndighetskrav och gällande bygg- och branschregler.
+													</p>
+													<p class="micro bold col-5-12 margin-bottom-3">Exempel på krav, god ventilation, energianvändning, fuktsäkerhet, tillgänglighet.</p>
+													<p class="micro bold col-5-12 margin-bottom-3">Vår kontrollansvarige hjälper er med upprättande av en kontrollplan med nödvändiga kontroller på plats av kontrollansvarig och entreprenörens redovisning av verifierade provningar samt egenkontroller.</p>
+													<p class="micro bold col-5-12 margin-bottom-3">Hela processen börjar med ett tekniskt samråd hos byggnadsnämnden. Därefter erhålles startbesked.</p>
+													<p class="micro bold col-5-12 margin-bottom-3">Efter att samtliga kontroller och provningar enligt kontrollplanen genomförts samlas parterna för slutsamråd. Därefter erhålls slutbesked från byggnadsnämnden, förutsatt att slutbesiktningen är godkänd.</p>
 										</li>
 									</ul>
 								</li>
 								<li class="has-children">
 									<input type="checkbox" name="group-12" id="group-12">
-									<label for="group-12">Överlåtelsebesiktning</label>
+									<label for="group-12">Fuktbesiktning</label>
 									<ul>
 										<li>
-											<p class="micro bold col-5-12">
-												Enligt AB04 och ABT06 Kap 7 §1 har part rätt att påkalla förbesiktning om
-												<br> ”1 arbete efter färdigställandet av entreprenaden inte är eller inte utan väsentligt ingrepp blir åtkomligt för besiktning.
-												<br> 2 avhjälpande av fel i arbete efter färdigställande skulle vara till väsentlig olägenhet för parten
-												<br> 3 arbete före färdigställande tas i bruk av beställaren eller
-												<br> 4 i övrigt särskilda skäl föreligger”
-												<br> ”Kommentar till kap 7 §1 i AB04 och ABT06, Ett särskilt skäl för förbesiktning kan vara att parterna i förväg vill få besiktningsmannens bedömning av kontraktsenhetligheten av visst arbete som antingen återkommer i ett stort antal eller
-												gäller principer eller kvalitetskrav för utförandet, sk normerande besiktning.”
+													<p class="small bold col-5-12 margin-bottom-3" style="margin-top:15px;">Vid nyproduktion utför vi löpande fuktbesiktningar.</p>
+													<p class="micro bold col-5-12 margin-bottom-3">
+														Äldre fastigheter,
+														<br>
+														Har du tänkt på att de vanligaste fuktskadorna inte behöver beror på läckande vattenledningar?
+													</p>
+													<p class="micro bold col-5-12 margin-bottom-3">
+														Vind,
+														<br>
+														Fukt och mögel skador beror vanligen på bristfällig ventilation i boendedelen.Tex på grund av att den varma fuktiga luften transporteras upp till den kalla vinden där den kondenserar mot yttertaket. Framförallt vintertid är det störst risk för fuktskador på vind. Har du tittat på insidan av yttertaket?
+													</p>
+													<p class="micro bold col-5-12 margin-bottom-3">
+														Krypgrund,
+														<br>
+														Tvärtemot vinden så är den största risken på vår-sommar för fukt och mögel skador. Har du lukt i huset?
+													</p>
+													<p class="micro bold col-5-12 margin-bottom-3">
+														Betongplatta på mark,
+														<br>
+														Om den är utförd 1985 eller tidigare är det vanligt förekommande att fukt från underliggande mark transportas upp i betongplattan och vidare upp i uppreglat golv. Har du lukt i huset?
+													</p>
+													<p class="micro bold col-5-12 margin-bottom-3">
+														Kan det finnas en fuktskada i din fastighet?
+														<br>
+														<br>
+														Eller vill du försäkra dig om att allt är som det ska?
+														<br>
+														<br>
+														Idag är det möjligt att undersöka eventuella fukt och mögelskador utan att behöva göra större ingrepp i huset. Med hjälp av avancerade mätinstrument och provtagningar kan våra experter snabbt och exakt kontrollera om det finns fukt-, mögelproblem och vad de i så fall beror på.
+														<br>
+														<br>
+														En fuktbesiktning är en bra investering även om du inte direkt misstänker ett fel. Ibland kan det ta lång tid innan läckage, fukttransporter, bristande ventilation, andra fel, ger sig tillkänna. Om indikation på skador upptäcks tidigare desto mindre omfattande hinner skadorna och därmed kostnaderna för att åtgärda dem bli.
+														<br>
+														<br>
+														En fuktbesiktning ger också ökad trygghet för dig som säljare eller köpare av en fastighet.
+														Det gäller såväl äldre som nyare fastigheter.Våra fuktbesiktningar utförs enbart av besiktningsmän med mångårig erfarenhet av hur fuktskador uppkommer, hur de kan upptäckas och hur de kan åtgärdas. Självklart kan de också hjälpa dig med råd om förebyggande åtgärder.
+														<br>
+														<br>
+														Efter fuktbesiktningen e-postas ett utlåtande.
+														<br>
+														<br>
+														Utlåtandet innebär att du får ett oberoende och tillförlitligt underlag att visa upp för försäkringsbolag eller om det uppstår en tvist mellan dig och en motpart i samband med exempelvis byggnadsarbeten eller en försäljning.
+														<br>
+														<br>
+														Du kan även beställa en bedömning av åtgärds- och kostnads-förslag samt labtest.
+													</p>
+										</li>
+									</ul>
+								</li>
+								<li class="has-children">
+									<input type="checkbox" name="group-13" id="group-13">
+									<label for="group-13">Överlåtelsebesiktning</label>
+									<ul>
+										<li>
+											<p class="small bold col-5-12 margin-bottom-3" style="margin-top:15px;">Överlåtelsebesiktning enligt SBR-modellen.</p>
+											<p class="micro bold col-5-12 margin-bottom-3">
+												Startsammanträde
+												<br>
+												Vi börjar alltid våra överlåtelsebesiktningar med att gå igenom uppdragsbekräftelsen med information för både köpare och säljare om hur besiktningen går till.
+												<br>Besiktningsman förklarar olika typer av så kallade kända riskkonstruktioner och vad det innebär.
+												<br>Säljaren informerar besiktningsförrättaren och köparen om vad de känner till om huset, både positivt och negativt.
+											</p>
+											<p class="micro bold col-5-12 margin-bottom-3">
+												Därefter påbörjas besiktningen
+												<br>
+												Därefter påbörjas en okulär fastighetsbesiktning av huvudbyggnaden, där vi tillsammans, besiktigar alla utrymmen som är tillgängliga via öppningar, luckor och liknande, samt de som i övrigt är krypbara.
+												<br>Vi informerar om eventuella fel och risker med vissa konstruktioner löpande under överlåtelsebesiktningen.
+												<br>Besiktningsförrättaren informerar även om löpande fastighetsskötsel och vad man som fastighetsägare skall tänka på. Vi anser att det är av stor vikt att både säljare och köpare deltar och följer med i överlåtelsebesiktningen.
+											</p>
+											<p class="micro bold col-5-12 margin-bottom-3">
+												Slutsammanträde
+												<br>
+												Efter besiktningen går vi sammanfattningsvis igenom vad som noterats och vilken påverkan eventuella fel och risker kan ha på huset. Besiktningsutlåtandet e-postas därefter till er, varvid ni noga läser igenom utlåtandet och kontaktar besiktningsförrättaren med eventuella frågor.
 											</p>
 										</li>
 									</ul>
