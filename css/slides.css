@@ -1923,6 +1923,9 @@ html.mobile .showForMobile {
   bottom: 0;
   z-index: 1;
 }
+.img-size {
+  max-width: 900px;
+}
 .container-lg {
     margin: 0 auto;
     padding: 0 20px;
@@ -2014,6 +2017,13 @@ html.mobile .showForMobile {
   .Quote--lyft:before {opacity: .9216;}
   .Quote {padding: 40px;}
   .col-sm-6 {flex-basis: 50%;max-width: 50%;}
+  .img-size{width: 600px;}
+  a.globalFooterCard {flex-basis: 1% !important;padding-left: 100px;}
+  .globalFooterCTA .container-lg {
+  display: flex;
+  align-items: center;}
+  .globalFooterCTA .common-ButtonGroup {
+  justify-content: flex-end;}
 }
 /*
   global footer cards
@@ -2022,9 +2032,6 @@ html.mobile .showForMobile {
   a.globalFooterCard {padding-left: 120px;}
 }
 
-@media (min-width: 670px){
-  a.globalFooterCard {flex-basis: 1% !important;padding-left: 100px;}
-}
 .globalFooter.withCards>* {
     pointer-events: auto;
     position: relative;
@@ -2061,22 +2068,7 @@ html.mobile .showForMobile {
     -ms-flex: 1 0 50%;
     flex: 1 0 50%;
 }
-@media (min-width: 670px) {
-    .globalFooterCTA .container-lg {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;}
-.globalFooterCTA .common-ButtonGroup {
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;}
-}
+
 .common-ButtonGroup {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2247,6 +2239,13 @@ button:hover {
     a.globalFooterCard p {font-size: 14px;font-weight: bold;}
     .img-fade{background: rgba(16,114,187,0.80);}
     #partners img {margin-bottom: 30px;}
+    .img-size{width: 280px !important;}
+    .phones .reverse {flex-wrap: wrap !important;}
+    #intro{height: 360px;}
+    #intro .fix-10-12 {margin-top: -288px;left: -4px;position: absolute;}
+    .Section-quotePhoto--lyft {height: 150px;min-height: 150px !important;}
+    .Section-quote {margin:0;}
+    .border-bottom{width: 70%;}
 }
 /* iphone6+ Portrait and Landscape */
 @media only screen
@@ -2261,12 +2260,6 @@ button:hover {
   and (max-device-width: 803px)
   and (-webkit-min-device-pixel-ratio: 3) {
 
-}
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1023px)
-  and (-webkit-min-device-pixel-ratio: 1) {
 }
 /* Portrait and Landscape */
 @media only screen
@@ -2422,6 +2415,8 @@ accordion menu
 .panel .sections {
   display: table;
   width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
   font-size: 0;
 }
 .panel .sections > div {
@@ -5024,11 +5019,11 @@ html:not(.page-loaded) .slides.animated.scroll .slide {
   opacity: 1;
 }
 
-.mobile .simplifiedMobile .popup .content,
+/*.mobile .simplifiedMobile .popup .content,
 .mobile .simplifiedMobile .popup .container {
   position: absolute !important;
   height: 100%;
-}
+}*/
 
 .scroll .container,
 .mobile .simplifiedMobile .container {
