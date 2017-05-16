@@ -118,7 +118,7 @@
 	<!-- INTRO SLIDE -->
 	<section class="slide fade" data-name="home" id="intro">
 		<div class="content">
-			<div class="container">
+			<div class="container" style="height: 760px;">
 				<div class="wrap">
 
 					<div class="fix-10-12">
@@ -132,10 +132,10 @@
 		</div>
 		<div class="background" style="background-image:url(assets/img/backgrounds/goldengate.jpg)"></div>
 	</section>
-	<!-- E-besiktning SLIDE -->
-	</section>
+
+
 	<!-- Slide #36 -->
-<section class="slide whiteSlide">
+	<!-- <section class="slide whiteSlide">
   <div class="content">
     <div class="container">
       <div class="wrap top">
@@ -160,8 +160,8 @@
       </div>
     </div>
   </div>
-</section>
-	<!-- <section class="slide whiteSlide kenBurns fromLeft">
+</section> -->
+	<section class="slide whiteSlide kenBurns fromLeft">
 		<div class="content">
 			<div class="container" style="height: 100% !important;">
 				<div class="wrap" style="display: block;">
@@ -169,54 +169,51 @@
 					<div class="fix-12-12">
 						<ul class="flex reverse">
 							<li class="col-6-12 left cell-32">
-								<h1 class="ae-2">Entreprenadbesiktning som ökar lönsamheten.</h1>
-								<div class="ae-3">
-									<p>Besiktningsman.se erbjuder för entreprenadbesiktning som ger ett aktivt stöd för sänkt kostnad och ökad lönsamhet i projekt.
-										<br> Ger möjlighet att överlämna ett färdigt projekt med noll byggfel på avtalad dag.</p>
-								</div>
+								<h1>Entreprenadbesiktning som ökar lönsamheten.</h1>
+								<p class="small">
+									Besiktningsman.se erbjuder entreprenadbesiktning som ger sänkt kostnad och ökad lönsamhet i projekt, samt möjlighet att överlämna ett färdigt projekt med noll byggfel på avtalad dag.
+								</p>
 								<a href="kontakt/" class="common-Button blue text-white">kontakta oss</a>
 							</li>
-	            <li class="col-6-12 left ae-1 fromRight">
-	              <img class="macbook-62 soft-shadow" data-action="zoom" width="1000" style="border-radius: 8px;" src="assets/img/ispect/graph2.png" alt="Graf av entreprenadkostnader"/>
-	            </li>
+							<div class="col-6-12 left fromRight">
+									<p class="small text-blueGrey margin-bottom-2" style="">Kvar av projektets avkastning fram till garantiperiodens utgång efter 10 år. Ett exempel.</p>
+									<img class="macbook-62 soft-shadow margin-0" data-action="zoom" width="800" style="border-radius: 8px;margin: 0px !important;" src="assets/img/ispect/graph2.png" alt="Graf av entreprenadkostnader" />
+							</div>
 						</ul>
 					</div>
 
 				</div>
 			</div>
 		</div>
-	</section> -->
-	<section class="slide whiteSlide light-blue" id="aktivaProjekt">
-		<div class="container-wide Gallery-container">
-		      <div class="row center-xs">
-
-		        <div class="col-xs-12">
-							<h1 class="center" style="margin-top:30px;">Här entreprenadbesiktar vi just nu <br> med iSpect</h1>
-		          <div class="Section-quote Section-quote--horizontal">
-									<div class="img-fade"></div>
-		              <div class="Section-quotePhoto Section-quotePhoto--lyft"></div>
-
-		              <div class="">
-		                <div class="row start-xs">
-		                  <div class="col-xs-12 col-sm-6">
-		                    <blockquote class="Quote Quote--lyft">
-		                      <h2><a href="https://ncc.se"><img src="assets/img/logos/ncc_white.png" width="116"></a></h2>
-		                      <p class="small">
-														Besiktningsman.se finns ute på Tingsnotarien, Djurgården just nu och ser att bygget följer branschens alla regler och standarder tillsammans med NCC.
-													</p>
-		                    </blockquote>
-		                  </div>
-		                </div>
-		              </div>
-
-		          </div>
-		        </div>
-
-		      </div>
-		</div>
 	</section>
+	<section class="slide whiteSlide light-blue" id="aktivaProjekt">
+	<div class="container-wide Gallery-container">
+		<div class="row center-xs">
 
-	<!-- Slide #29 -->
+			<div class="col-xs-12">
+				<h1 class="center" style="margin-top:30px;">Här entreprenadbesiktar vi just nu <br> med iSpect</h1>
+				<div class="Section-quote Section-quote--horizontal">
+					<div class="img-fade"></div>
+					<div class="Section-quotePhoto Section-quotePhoto--lyft"></div>
+
+					<div class="row start-xs">
+						<div class="col-xs-12 col-sm-6">
+							<blockquote class="Quote Quote--lyft">
+								<h2><a href="https://ncc.se"><img src="assets/img/logos/ncc_white.png" width="116"></a></h2>
+								<p class="small">
+									Besiktningsman.se finns ute på Tingsnotarien, Djurgården just nu och ser att bygget följer branschens alla regler och standarder tillsammans med NCC.
+								</p>
+							</blockquote>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
 	<section class="slide whiteSlide kenBurns">
 		<div class="content">
 			<div class="container">
@@ -232,7 +229,7 @@
 								<div class="ae-2 fromLeft">
 									<p>iSpect ger direkt felavhjälpning, lättillgänglig och säker dokumentation samt noll byggfel.</p>
 								</div>
-								<a href="erbjudande/#foretag" class="common-Button blue text-white">Läs mer om vårt erbjudande</a>
+								<p class="popupTrigger blue text-white common-Button" data-popup-id="ispect-details">Vårt helhetskoncept med iSpect</p>
 							</li>
 						</ul>
 					</div>
@@ -384,7 +381,79 @@
 			</div>
 		</div>
 	</div>
+	<!-- ispect details Popup Text -->
+	<div class="popup white" data-popup-id="ispect-details">
+		<div class="close button closeButton white text-blue left opaque"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#back"></use></svg>Tillbaka</div>
+		<div class="content popupContent">
+			<div class="wrap spaces">
+				<!-- Slide #30 -->
+				<section class="slide white">
+					<div class="content">
+						<div class="container">
+							<div class="container-lg">
+								<h1 class="center fromCenter margin-top-1">Vårt helhetskoncept med iSpect </h1>
+								<h2 class="center small">- För ökad lönsamhet och leveranssäkerhet i byggprojekt.</h2>
+								<div class="margin-bottom-4 border-bottom-grey"></div>
+								<div class="fix-12-12">
+									<ul class="grid">
+										<li class="col-4-12 left">
+											<h3 class="text-blue">Skillnader</h3>
+											<p class="small">
+												Vid traditionell besiktning görs normalt bara för- och slutbesiktning, sedan sänds utlåtandet och felavhjälpning kan börja. Ofta sedan byggnaden tagits i bruk.
+												<br>
+												<br> Vår lösning med iSpect omfattar hela byggprocessen. Vi ser till att fel kan förebyggas och att uppkomna fel kan åtgärdas direkt.
+											</p>
+										</li>
+										<li class="col-4-12 left ">
+											<h3 class="text-blue">Fördelar</h3>
+											<p class="small">
+												• Inga dolda fel
+												<br> • Inga onödiga produktionsstopp
+												<br> • Ökad kvalitetssträvan främjas
+												<br> • Säker och lättillgänglig dokumentation
+												<br> • Ökad möjlighet till direkt erfarenhetsåterföring
+												<br> • Möjlighet till noll fel vid överlämnandet
+												<br> • Tillgång till ”Byggfelsbank” med tidigare erfarenheter och 300 000 byggfel
+											</p>
+										</li>
+										<li class="col-4-12 left">
+											<h3 class="text-blue">Effekter</h3>
+											<p class="small">
+												Ökad lönsamhet i byggprojekt genom kraftigt reducerade kostader för felavhjälpning, från byggstart fram till att den 10-åriga garantiperioden passerats.
+												<br>
+												<br> Ökad leveranssäkerhet och kundnöjdhet genom ingen eller kraftigt minskad felavhjälpning efter överlämnandet
+											</p>
+										</li>
+									</ul>
+								</div>
 
+							</div>
+						</div>
+					</div>
+			</div>
+			</section>
+			<section class="slide white">
+				<div class="content">
+					<div class="container">
+						<div class="container-lg">
+
+							<ul class="flex reverse">
+								<li class="col-6-12 left cell-32">
+									<h1>Med iSpect</h1>
+									<p>Kan besiktningsmannen under sitt arbete kontrollera, dokumentera, lagra och sända alla noteringar och projektdata direkt via sin läsplatta.</p>
+								</li>
+								<li class="col-6-12 left">
+									<img class="" src="../assets/img/ispect/ipad_front_sv.png" width="600" alt="iPad Image" />
+								</li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</div>
 	<!-- Preloader -->
 	<div class="loadingIcon"><svg class="loading-icon" id="loading-circle" viewBox="0 0 18 18"><circle class="circle" opacity=".1" stroke="#fff" stroke-width="2" stroke-miterlimit="10" cx="9" cy="9" r="8" fill="none"></circle><circle class="dash" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="1,100" cx="9" cy="9" r="8" fill="none"></circle></svg></div>
 	<!-- Panel Bottom #22 -->
