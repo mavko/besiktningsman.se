@@ -269,10 +269,11 @@ p,
 }
 p.hero,
 .p.hero {
-  font-size: 36px;
+  font-size: 26px;
   line-height: 1.25;
-  letter-spacing: -1px;
-  font-weight: 300;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+  margin-top: 10px;
   margin-bottom: 25px;
 }
 p.large,
@@ -1909,7 +1910,7 @@ html.mobile .showForMobile {
 }
 .border-bottom {
   border-bottom: 2px solid #fff;
-  width: 50%;
+  width: 65%;
   padding-bottom: 20px;
 }
 .img-fade {
@@ -2226,7 +2227,7 @@ button:hover {
   and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
     h1{font-size: 33px !important;}
     p {font-size: 20px;}
-    p.hero {font-size: 26px;}
+    p.hero {font-size: 20px;}
     .small {font-size: 20px !important;}
     .common-Button{font-size: 14px;}
     .container .wrap {padding: calc(5.56% + 50px) calc(5% + 0px) !important;}
@@ -2245,7 +2246,7 @@ button:hover {
     #intro .fix-10-12 {margin-top: -288px;left: -4px;position: absolute;}
     .Section-quotePhoto--lyft {height: 150px;min-height: 150px !important;}
     .Section-quote {margin:0;}
-    .border-bottom{width: 70%;}
+    .border-bottom{width: 80%;}
 }
 /* iphone6+ Portrait and Landscape */
 @media only screen
