@@ -2237,7 +2237,7 @@ button:hover {
     .col-tablet-1-2 {width: 100% !important;}
     .img-91 {display: none;}
     a.globalFooterCard h2 {font-size: 20px;margin: -20px 15px 5px;font-weight: bold;}
-    a.globalFooterCard p {font-size: 14px;font-weight: bold;}
+    a.globalFooterCard p {font-size: 16px;font-weight: bold;}
     .img-fade{background: rgba(16,114,187,0.80);}
     #partners img {margin-bottom: 30px;}
     .img-size{width: 280px !important;}
@@ -2257,10 +2257,10 @@ button:hover {
 
 }
 @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 803px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-
+  and (min-width: 375px)
+  and (max-width: 768px) {
+    a.globalFooterCard h2 {font-size: 26px;}
+    a.globalFooterCard p {font-size: 18px;}
 }
 /* Portrait and Landscape */
 @media only screen
