@@ -2129,10 +2129,17 @@ a.globalFooterCard p {
 }
 
 a.globalFooterCard h2 {
-    margin: -30px 15px 5px;
+   margin: -35px 0px 0px 15px;
     white-space: normal;
     z-index: 5;
     position: absolute;
+}
+/* Safari 7.1+ */
+
+_::-webkit-full-page-media, _:future, :root .safari_only h2 {
+
+  margin: 15px !important;
+
 }
 /*
 contact page
