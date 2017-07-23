@@ -1902,6 +1902,11 @@ html.mobile .showForMobile {
 /*
   custom css not framework related
 */
+.center-m-down {
+      margin: 0 auto;
+    text-align: center;
+    margin-bottom: 25px;
+}
 .border-bottom-grey {
   border-bottom: 2px solid #6D92A3;
   width: 50%;
@@ -2129,10 +2134,17 @@ a.globalFooterCard p {
 }
 
 a.globalFooterCard h2 {
-    margin: -30px 15px 5px;
+   margin: -35px 0px 0px 15px;
     white-space: normal;
     z-index: 5;
     position: absolute;
+}
+/* Safari 7.1+ */
+
+_::-webkit-full-page-media, _:future, :root .safari_only h2 {
+
+  margin: 15px !important;
+
 }
 /*
 contact page
@@ -7234,19 +7246,19 @@ p.text-43 {
 
 .box-67 {
   color: #303030;
-  border-radius: 20px;
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
   display: block;
   outline: none;
   margin-bottom: 35px;
   -webkit-backface-visibility: hidden;
 }
 
-.box-67:hover {
+/*.box-67:hover {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15), 0 0px 14px rgba(0, 0, 0, 0.02), 0 0px 1px rgba(0, 0, 0, 0.1);
   opacity: 0.95;
-}
+}*/
 
 .box-67 .thumbnail-67 {
   font-size: 0;
@@ -7254,15 +7266,12 @@ p.text-43 {
 }
 
 .box-67 .thumbnail-67 img {
-  border-radius: 20px 20px 0 0;
+  height: 230px;
+  max-height: 230px;
+  border-radius: 8px 8px 0 0;
   -webkit-backface-visibility: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-.box-67:hover .thumbnail-67 img {
-  -webkit-transform: scale(1.0225);
-          transform: scale(1.0225);
 }
 
 .name-67 {

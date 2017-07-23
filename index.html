@@ -29,30 +29,24 @@
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Material+Icons" rel="stylesheet" type="text/css" />
 	<!-- Styles -->
 	<link href="css/slides.css" rel="stylesheet" type="text/css">
-	<!-- Start of Async Drift Code -->
+
+	<!-- Intercom chat and user identification -->
 	<script>
-	!function() {
-	  var t;
-	  if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
-	  t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
-	  t.factory = function(e) {
-	    return function() {
-	      var n;
-	      return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-	    };
-	  }, t.methods.forEach(function(e) {
-	    t[e] = t.factory(e);
-	  }), t.load = function(t) {
-	    var e, n, o, i;
-	    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
-	    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
-	    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-	  });
-	}();
-	drift.SNIPPET_VERSION = '0.3.1';
-	drift.load('ihcgw4msh8zf');
+	  window.intercomSettings = {
+	    app_id: "ybt1le09"
+	  };
 	</script>
-	<!-- End of Async Drift Code -->
+	<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/ybt1le09';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+	<script>
+	  window.intercomSettings = {
+	    app_id: "ybt1le09",
+	    name: <%= current_user.name %>, // Full name
+	    email: <%= current_user.email %>, // Email address
+	    created_at: <%= current_user.created_at.to_i %> // Signup date as a Unix timestamp
+	  };
+	  </script>
+	<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/ybt1le09';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+	<!-- Intercom chat and user identification -->
 
 </head>
 
@@ -180,11 +174,10 @@
 			<div class="row center-xs">
 
 				<div class="col-xs-12">
-					<h1 class="center" style="margin-top:30px;">Här entreprenadbesiktar vi just nu med iSpect</h1>
+					<h1 class="center" style="margin-top:30px;">Här entreprenadbesiktar vi just nu med iSpect </h1>
 					<div class="Section-quote Section-quote--horizontal">
 						<div class="img-fade"></div>
 						<div class="Section-quotePhoto Section-quotePhoto--lyft"></div>
-
 						<div class="row start-xs">
 							<div class="col-xs-12 col-sm-6">
 								<blockquote class="Quote Quote--lyft">
@@ -197,6 +190,10 @@
 						</div>
 
 					</div>
+					<div class="center-m-down">
+						<a class="common-Button blue text-white center popupTrigger" data-popup-id="ispect-projects">Se fler iSpect-projekt</a>
+					</div>
+
 				</div>
 
 			</div>
@@ -230,7 +227,7 @@
 
 	<section class="globalFooterCards margin-bottom-8">
 		<div style="max-width: 1040px;" class="container-xl">
-			<a href="http://www.nordbygg.se/" target="_blank" class="common-Link globalFooterCard soft-shadow white">
+			<a href="http://www.nordbygg.se/" target="_blank" class="common-Link globalFooterCard soft-shadow white safari_only">
 				<h2 class="text-white">
 				Möt oss på nordbygg!
 				<p class="text-white opacity-10">Besiktningsman.se har monter på Nordbygg 2017</p>
@@ -439,6 +436,113 @@
 				</div>
 			</section>
 
+		</div>
+	</div>
+	<!-- ispect details Popup Text -->
+	<div class="popup white" data-popup-id="ispect-projects">
+		<div class="close button closeButton white text-blue left opaque"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#back"></use></svg>Tillbaka</div>
+		<div class="content popupContent">
+			<!-- Slide #67 -->
+			<section class="slide white kenBurns">
+			  <div class="content">
+			    <div class="container">
+			      <div class="container-lg">
+
+			        <div class="fix-10-12 center toCenter margin-top-1">
+			          <h1 class="ae-1">Våra projekt</h1>
+			          <div class="ae-2"><p>Här byggs framtiden med noll fel</p></div>
+			        </div>
+			        <div class="fix-12-12">
+			          <ul class="grid later fixedSpaces equal left">
+			            <li class="col-4-12 ae-3 fromCenter">
+			              <div class="box-67">
+			                <div class="thumbnail-67">
+			                  <img src="assets/img/projects/testproject1.jpeg" class="wide"/>
+			                </div>
+			                <div class="name-67 equalElement table wide">
+			                  <div class="cell">
+			                    <div class="category-67">Baking</div>
+			                    <div class="title-67">Artisan Rye Bread</div>
+			                  </div>
+			                </div>
+			              </div>
+			            </li>
+			            <li class="col-4-12 ae-4 fromCenter">
+			              <div class="box-67">
+			                <div class="thumbnail-67">
+			                  <img src="assets/img/projects/testproject2.jpeg" class="wide"/>
+			                </div>
+			                <div class="name-67 equalElement table wide">
+			                  <div class="cell">
+			                    <div class="category-67">Cooking</div>
+			                    <div class="title-67">Blueberry Muffin</div>
+			                  </div>
+			                </div>
+			              </div>
+			            </li>
+			            <li class="col-4-12 ae-5 fromCenter">
+			              <div class="box-67">
+			                <div class="thumbnail-67">
+			                  <img src="assets/img/projects/testproject3.jpeg" class="wide"/>
+			                </div>
+			                <div class="name-67 equalElement table wide">
+			                  <div class="cell">
+			                    <div class="category-67">Preparing</div>
+			                    <div class="title-67">Chopped Parsley</div>
+			                  </div>
+			                </div>
+			              </div>
+			            </li>
+			          </ul>
+								<!-- LIST TWO -->
+								<ul class="grid later fixedSpaces equal left">
+			            <li class="col-4-12 ae-3 fromCenter">
+			              <div class="box-67">
+			                <div class="thumbnail-67">
+			                  <img src="assets/img/projects/testproject1.jpeg" class="wide"/>
+			                </div>
+			                <div class="name-67 equalElement table wide">
+			                  <div class="cell">
+			                    <div class="category-67">Baking</div>
+			                    <div class="title-67">Artisan Rye Bread</div>
+			                  </div>
+			                </div>
+			              </div>
+			            </li>
+			            <li class="col-4-12 ae-4 fromCenter">
+			              <div class="box-67">
+			                <div class="thumbnail-67">
+			                  <img src="assets/img/projects/testproject2.jpeg" class="wide"/>
+			                </div>
+			                <div class="name-67 equalElement table wide">
+			                  <div class="cell">
+			                    <div class="category-67">Cooking</div>
+			                    <div class="title-67">Blueberry Muffin</div>
+			                  </div>
+			                </div>
+			              </div>
+			            </li>
+			            <li class="col-4-12 ae-5 fromCenter">
+			              <div class="box-67">
+			                <div class="thumbnail-67">
+			                  <img src="assets/img/projects/testproject3.jpeg" class="wide"/>
+			                </div>
+			                <div class="name-67 equalElement table wide">
+			                  <div class="cell">
+			                    <div class="category-67">Preparing</div>
+			                    <div class="title-67">Chopped Parsley</div>
+			                  </div>
+			                </div>
+			              </div>
+			            </li>
+			          </ul>
+			        </div>
+
+			      </div>
+			    </div>
+			  </div>
+			  <div class="background" style="background-image:url(assets/img/img-67.jpg)"></div>
+			</section>
 		</div>
 	</div>
 	<!-- Scripts -->
