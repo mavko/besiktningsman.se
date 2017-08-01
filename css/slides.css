@@ -5516,9 +5516,6 @@ body {
 .white svg {
   fill: #202020 !important;
 }
-.slide.whiteSlide .white {
-  box-shadow: 0 0 0 1px rgba(41, 41, 41, 0.2) inset, inset 0 -100px 0 rgba(41, 41, 41, 0);
-}
 
 .text-white {
   color: #fff !important;
@@ -5542,7 +5539,10 @@ body {
 .black svg {
   fill: #fff !important;
 }
-
+.lighter-black {
+  background: #373937 !important;
+  color: #fff !important;
+}
 .text-black {
   color: #202020 !important;
 }
