@@ -273,7 +273,11 @@ p:not(.hero) + p {
   padding-right: 18px;
 }
 /* stuff */
-
+.sidebarShown .sidebar.visible {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
 /* forms */
 /***
  *       _____ _       _
