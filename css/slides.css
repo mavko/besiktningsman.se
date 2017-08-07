@@ -497,14 +497,6 @@ p.small {
 .img-size {
   max-width: 900px;
 }
-.container-lg {
-    margin: 0 auto;
-    padding: 0 20px;
-    width: 100%;
-    max-width: 1080px;
-    padding-top: 0;
-    padding-bottom: 0;
-}
 .globalFooterCards .container-xl, a.globalFooterCard {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1252,20 +1244,7 @@ p.micro, .p.micro {
 .margin-top-1 {
     margin-top: 10% !important;
 }
-.container-lg {
-    margin: 0 auto;
-    padding: 0 22px;
-    width: 93%;
-    max-width: 1040px;
-}
-.container-lg {
-    margin: 0 auto;
-    padding: 0 20px;
-    width: 100%;
-    max-width: 1080px;
-    padding-top: 0;
-    padding-bottom: 0;
-}
+
 .container .wrap * {
     -webkit-user-select: text;
     -moz-user-select: text;
