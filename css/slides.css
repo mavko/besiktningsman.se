@@ -691,13 +691,6 @@ a.globalFooterCard h2 {
     z-index: 5;
     position: absolute;
 }
-/* Safari 7.1+ */
-
-_:future, :root .safari_only h2 {
-
-  margin: 15px !important;
-
-}
 /*
 contact page
 */
