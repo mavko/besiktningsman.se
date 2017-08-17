@@ -427,23 +427,45 @@ p.small {
   custom css not framework related
 */
 #accordion .ui-state-active {
-    border: 1px solid #003eff !important;
+    border: 0px !important;
     background: #2367A4 !important;
     color: #ffffff !important;
     outline: none !important;
     padding: .8em .8em 0.8em 0.8em !important;
 }
+
 #accordion .ui-accordion-content {
   padding: 0 !important;
 }
 #accordion .ui-state-default {
   background: #fff;
+  border: 0px !important;
   padding: .8em .8em 0.8em 0.8em !important;
+  box-shadow: 0 7px 14px 0 rgba(50,50,93,.1), 0 3px 6px 0 rgba(0,0,0,.07);
+  border: none;
+}
+
+#accordion .ui-widget-content {
+    border: 1px solid #1072bb;
+    background: #ffffff;
+    color: #2f2d2e;
+    box-shadow: 0 7px 14px 0 rgba(50,50,93,.1), 0 3px 6px 0 rgba(0,0,0,.07);
+    margin-bottom: 5px !important;
 }
 #accordion .ui-state-default:hover {
   background: #2367A4;
   color: #fff;
-  border: 1px solid transparent;
+  border: 0px solid transparent;
+}
+#accordion .ui-state-default:active {
+  border: 0px solid transparent;
+  outline: none;
+  outline-color: none;
+}
+#accordion .ui-state-default:focus {
+  border: 0px solid transparent;
+  outline: none;
+  outline-color: none;
 }
 #accordion p {
   font-size: 14px;
