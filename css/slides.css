@@ -1294,11 +1294,15 @@ p.micro, .p.micro {
     box-shadow: 0 35px 54px rgba(0, 0, 0, 0.3), 0 5px 20px rgba(0, 0, 0, 0.07), 0 0px 1px rgba(0, 0, 0, 0.12);
 }
 .pad {
-    border-radius: 6px;
-    padding: 3%;
+    border-radius: 8px;
     color: #303030;
     background: #fff;
     overflow: hidden;
+}
+.pad-header {
+  background-color: #F6F9FC;
+  width: 100%;
+      padding: 15px 0px 15px 0px;
 }
 .map {
     width: 50%;
