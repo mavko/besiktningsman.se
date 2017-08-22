@@ -1164,13 +1164,15 @@ $(document).ready(function() { "use strict";
   }
 
   //In-page #Navigation
-  $("a[href^='#'][target!='_blank']").click(function(e){ e.preventDefault();
+  $("a[href^='#'][target!='_blank']").click(function(e){
 
     var url = $(this).attr('href'),
         hashLink = url.split('#')[1],
-        requestedElement = $('.slide[name="' +hashLink+ '"], .slide[data-name="' +hashLink+ '"]')
+        requestedElement = $('.slide[name="' +hashLink+ '"], .slide[data-name="' +hashLink+ '"]');
 
     if( hashLink && requestedElement.length > 0 ){
+
+      e.preventDefault();
 
       if ( window.isMobile && window.isSimplifiedMobile || window.isScroll ){
         var target = requestedElement;
@@ -1184,9 +1186,7 @@ $(document).ready(function() { "use strict";
         window.stage = $('.slide').index(requestedElement) + 1;
         showSlide(window.stage);
       }
-      if (window.isMobile){
-        hideSidebar();
-      }
+      hideSidebar();
     }
 
   });
