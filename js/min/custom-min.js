@@ -1,1 +1,0 @@
-jQuery(document).ready(function(){var e=$(".cd-accordion-menu");e.length>0&&e.each(function(){var e=$(this);e.on("change",'input[type="checkbox"]',function(){var e=$(this);console.log(e.prop("checked")),e.prop("checked")?e.siblings("ul").attr("style","display:none;").slideDown(300):e.siblings("ul").attr("style","display:block;").slideUp(300)})})});
