@@ -5,3 +5,5 @@
       heightStyle: "content"
     });
   } );
+// force hashlinks
+window.setHashLink = 1;

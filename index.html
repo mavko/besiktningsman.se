@@ -6,7 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="keywords" content="besiktningsman, besiktningsmän, fastighetsbesiktning Göteborg, fastighetsbesiktning Malmö, fastighetsbesiktning Norrköping, fastighetsbesiktning Stockholm, Besiktningsman utemiljö, oberoende besiktningsman, certifierad besiktningsman">
+	<meta name="keywords" content="besiktningsman, besiktningsmän, fastighetsbesiktning Göteborg, fastighetsbesiktning Malmö, fastighetsbesiktning Norrköping, fastighetsbesiktning Stockholm, Besiktningsman utemiljö, oberoende besiktningsman, certifierad besiktningsman, besiktning av lägenhet, besiktningsman bostadsrätt, brf besiktning, Lägenhetsbesiktning, Besiktning bostadsrätt, besiktning lägenhet, besikta hus, besikta villa, besiktiga hus, besiktning av hus, besiktning villa, besiktningsman hus, besiktning av fastighet, Entreprenadbesiktning, entreprenadbesiktningar, hus besiktning, husbesiktning, besiktning fastighet, fastighetsbesiktning, överbesiktning, Obligatorisk Ventilationskontroll, OVK, ovk behörighet, ovk besiktning, ovk besiktning stockholm, ovk kontroll, ovk protokoll, ventilationskontroll, ventilationskontroll ovk, ovk regler, fuktutredning, avfuktare krypgrund, Avfuktare vind, sorptionsavfuktare, Fuktbesiktning, slutbesiktning hus, slutbesiktning, kvalitetsansvarig, Kontrollansvarig bygglov, certifierad kontrollansvarig, kontrollansvarig pbl Göteborg, kontrollansvarig pbl Malmö, kontrollansvarig pbl Norrköping, kontrollansvarig pbl Stockholm, Kontrollansvarig, kvalitetsansvarig pbl, plan och bygglagen, kontrollansvarig pbl, plan- och bygglagen, statusbesiktning, efterbesiktning, särskild besiktning, överlåtelsebesiktning pris, överlåtelsebesiktning, överlåtelsebesiktningar, Boka överlåtelsebesiktning, garantibesiktning">
 	<!-- favicons -->
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- Making the website social media friendly-->
@@ -29,27 +29,101 @@
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Material+Icons" rel="stylesheet" type="text/css" />
 	<!-- Styles -->
 	<link href="css/slides.css" rel="stylesheet" type="text/css">
+	<!-- accordion styling -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
 	<!-- Intercom chat and user identification -->
 	<script>
-	  window.intercomSettings = {
-	    app_id: "ybt1le09"
-	  };
+		window.intercomSettings = {
+			app_id: "ybt1le09"
+		};
 	</script>
-	<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/ybt1le09';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
 	<script>
-	  window.intercomSettings = {
-	    app_id: "ybt1le09",
-	    name: <%= current_user.name %>, // Full name
-	    email: <%= current_user.email %>, // Email address
-	    created_at: <%= current_user.created_at.to_i %> // Signup date as a Unix timestamp
-	  };
-	  </script>
-	<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/ybt1le09';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+		(function() {
+			var w = window;
+			var ic = w.Intercom;
+			if (typeof ic === "function") {
+				ic('reattach_activator');
+				ic('update', intercomSettings);
+			} else {
+				var d = document;
+				var i = function() {
+					i.c(arguments)
+				};
+				i.q = [];
+				i.c = function(args) {
+					i.q.push(args)
+				};
+				w.Intercom = i;
+
+				function l() {
+					var s = d.createElement('script');
+					s.type = 'text/javascript';
+					s.async = true;
+					s.src = 'https://widget.intercom.io/widget/ybt1le09';
+					var x = d.getElementsByTagName('script')[0];
+					x.parentNode.insertBefore(s, x);
+				}
+				if (w.attachEvent) {
+					w.attachEvent('onload', l);
+				} else {
+					w.addEventListener('load', l, false);
+				}
+			}
+		})()
+	</script>
+	<script>
+		window.intercomSettings = {
+			app_id: "ybt1le09",
+			name: <%= current_user.name %>, // Full name
+			email: <%= current_user.email %>, // Email address
+			created_at: <%= current_user.created_at.to_i %> // Signup date as a Unix timestamp
+		};
+	</script>
+	<script>
+		(function() {
+			var w = window;
+			var ic = w.Intercom;
+			if (typeof ic === "function") {
+				ic('reattach_activator');
+				ic('update', intercomSettings);
+			} else {
+				var d = document;
+				var i = function() {
+					i.c(arguments)
+				};
+				i.q = [];
+				i.c = function(args) {
+					i.q.push(args)
+				};
+				w.Intercom = i;
+
+				function l() {
+					var s = d.createElement('script');
+					s.type = 'text/javascript';
+					s.async = true;
+					s.src = 'https://widget.intercom.io/widget/ybt1le09';
+					var x = d.getElementsByTagName('script')[0];
+					x.parentNode.insertBefore(s, x);
+				}
+				if (w.attachEvent) {
+					w.attachEvent('onload', l);
+				} else {
+					w.addEventListener('load', l, false);
+				}
+			}
+		})()
+	</script>
 	<!-- Intercom chat and user identification -->
 	<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
 	<script type="text/javascript">
-	    window.cookieconsent_options = {"message":"Besiktningsman.se använder 'cookies' för att kunna leverera en bra upplevelse.","dismiss":"Okej","learnMore":"Läs mer","link":null,"theme":"light-floating"};
+		window.cookieconsent_options = {
+			"message": "Besiktningsman.se använder 'cookies' för att kunna leverera en bra upplevelse.",
+			"dismiss": "Okej",
+			"learnMore": "Läs mer",
+			"link": null,
+			"theme": "light-floating"
+		};
 	</script>
 
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
@@ -73,6 +147,8 @@
 	  <symbol id="arrow-top" viewBox="0 0 24 24"><path d="M20.7 10.3l-8-8c-.4-.4-1-.4-1.4 0l-8 8c-.4.4-.4 1 0 1.4s1 .4 1.4 0l6.3-6.3v15.6c0 .6.4 1 1 1s1-.4 1-1v-15.6l6.3 6.3c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4z"/></symbol>
 	  <symbol id="drop-down" viewBox="0 0 16 16"><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="1,5 8,12 15,5" fill="none"></polyline></symbol>
 	  <symbol id="play" viewBox="0 0 30 30"><path d="M7 30v-30l22 15z"/></symbol>
+		<symbol id="arrow-left" viewBox="0 0 31 72"><path d="M30 72c-.3 0-.6-.1-.8-.4l-29-34c-.3-.4-.3-.9 0-1.3l29-36c.3-.4 1-.5 1.4-.2.4.3.5 1 .2 1.4l-28.5 35.5 28.5 33.4c.4.4.3 1.1-.1 1.4-.2.1-.5.2-.7.2z"/></symbol>
+		<symbol id="arrow-right" viewBox="0 0 31 72"><path d="M1 0c.3 0 .6.1.8.4l29 34c.3.4.3.9 0 1.3l-29 36c-.3.4-1 .5-1.4.2-.4-.3-.5-1-.2-1.4l28.5-35.5-28.5-33.4c-.4-.4-.3-1.1.1-1.4.2-.1.5-.2.7-.2z"/></symbol>
 	</svg>
 
 	<!-- Panel Top #10 -->
@@ -80,8 +156,7 @@
 		<div class="sections desktop">
 			<div class="left">
 				<ul class="menu crop small bold">
-					<li><a href="http://medium.com/besiktningsbloggen">Blogg</a></li>
-					<li><a href="nyheter/">Nyheter</a></li>
+					<li><a href="nyheter/">Nyheter & Publicerat</a></li>
 					<li><a href="om_oss/">Om oss</a></li>
 				</ul>
 			</div>
@@ -90,7 +165,7 @@
 			</div>
 			<div class="right">
 				<ul class="menu crop small bold">
-					<li><a href="erbjudande/">Vårt erbjudande</a></li>
+					<li><a href="#erbjudande">Vårt erbjudande</a></li>
 					<li><a href="karriar/">Karriär</a></li>
 					<li><a href="kontakt/" class="text-blue">Kontakt</a></li>
 				</ul>
@@ -110,7 +185,7 @@
 		<div class="content">
 			<a href="/" class="logo"><img src="assets/svg/bm_logo.svg" alt=""></a>
 			<ul class="mainMenu text-blue">
-				<li><a href="erbjudande/">Vårt erbjudande</a></li>
+				<li><a href="#erbjudande">Vårt erbjudande</a></li>
 				<br>
 				<br>
 				<li><a href="kontakt/">Kontakt</a></li>
@@ -126,7 +201,7 @@
 			<ul class="subMenu">
 				<br>
 				<br>
-				<li><a href="http://medium.com/besiktningsbloggen">Blogg</a></li>
+				<li><a href="http://medium.com/besiktningsbloggen">Nyheter & Publicerat</a></li>
 				<br>
 				<br>
 				<li><a href="nyheter/">Nyheter</a></li>
@@ -135,7 +210,7 @@
 		</div>
 	</nav>
 
-	<!-- INTRO SLIDE -->
+	<!-- HEADER -->
 	<section class="slide fade" data-name="home" id="">
 		<div class="content">
 			<div class="container" style="height: 560px;">
@@ -144,7 +219,7 @@
 					<div class="fix-10-12" style="padding-top: 5%;">
 						<img src="assets/svg/bm_logo_white_top.svg" alt="Besiktningsman.se" class="border-bottom" style="border-bottom: none;">
 						<p class="hero" style="font-weight: 400;">Sveriges ledande entreprenadbesiktningsföretag</p>
-						<a href="erbjudande/#foretag" class="common-Button white text-blue fromCenter" style="margin-right: 20px;">FÖRETAG</a><a href="erbjudande/#brf" class="common-Button white text-blue fromCenter">BRF / PRIVAT</a>
+						<a href="#foretag" class="common-Button white text-blue fromCenter" style="margin-right: 20px;">FÖRETAG</a><a href="#brf" class="common-Button white text-blue fromCenter">BRF / PRIVAT</a>
 					</div>
 
 				</div>
@@ -152,7 +227,8 @@
 		</div>
 		<div class="background" style="background-image:url(assets/img/backgrounds/goldengate.jpg)"></div>
 	</section>
-	<section class="slide whiteSlide kenBurns fromLeft phones">
+	<!-- ENTERPRISE START -->
+	<section class="slide whiteSlide kenBurns fromLeft phones selected active animate">
 		<div class="content">
 			<div class="container" style="height: 100% !important;">
 				<div class="wrap" style="display: block;">
@@ -167,8 +243,49 @@
 								<a href="kontakt/" class="common-Button blue text-white">Vill du veta mer? Hör av dig</a>
 							</li>
 							<div class="col-6-12 left fromRight">
-								<p class="small text-blueGrey margin-bottom-2" style="">Kvar av projektets avkastning fram till garantiperiodens utgång efter 10 år. Ett exempel.</p>
-								<img class="soft-shadow margin-0 img-size" style="border-radius: 8px;margin: 0px !important;" src="assets/img/ispect/graph_blue.jpg" alt="Graf av entreprenadkostnader" />
+								<!-- EXAMPLE: Slider Autoplay -->
+								<div class="fix-7-12 noSelect">
+									<div class="sliderBox-83">
+										<!-- <div class="leftControl-83 ae-5 fromLeft" data-slider-id="83" data-slider-action="prev"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg></div>
+										<div class="rightControl-83 ae-5 fromRight" data-slider-id="83" data-slider-action="next"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></div> -->
+										<p class="center margin-0 text-blueGrey small">Här entreprenadbesiktar vi just nu</p>
+										<ul class="slider clickable autoplay ae-1 fromAbove Quote" data-slider-interval="5000" data-slider-stoponclick="false" data-slider-id="83">
+											<li class="selected">
+												<h3>IKANO</h3>
+												<p>BRF Skogsstjärnan</p>
+												<div class="img-fade img-border-radius"></div>
+												<img src="assets/img/projects/brf_skogsstjernan.jpg" class="wide soft-shadow" style="border-radius:8px;" alt="title"/>
+											</li>
+											<li>
+												<h3>SKANSKA</h3>
+												<p>BRF The View</p>
+												<div class="img-fade img-border-radius"></div>
+												<img src="assets/img/projects/brf_theview.jpg" class="wide soft-shadow" style="border-radius:8px;" alt="title"/>
+											</li>
+											<li>
+												<h3>EINAR MATSSON</h3>
+												<p>BRF Haganova</p>
+												<div class="img-fade img-border-radius"></div>
+												<img src="assets/img/projects/brf_haganova.jpg" class="wide soft-shadow" style="border-radius:8px;" alt="title"/>
+											</li>
+											<li>
+												<h3>BYGGVESTA</h3>
+												<p>BRF Terrassen</p>
+												<div class="img-fade img-border-radius"></div>
+												<img src="assets/img/projects/brf_terrassen.jpg" class="wide soft-shadow" style="border-radius:8px;" alt="title"/>
+											</li>
+										</ul>
+										<ul class="controller center dots ae-3 fromBottom margin-bottom-2" data-slider-id="83">
+											<li class="dot selected"></li>
+											<li class="dot"></li>
+											<li class="dot"></li>
+											<li class="dot"></li>
+										</ul>
+										<div class="center-m-down">
+											<a class="fromCenter popupTrigger" data-popup-id="ispect-projects"><p class="small bold text-blue" style="font-size: 16px;">Se fler projekt</p></a>
+										</div>
+									</div>
+								</div>
 							</div>
 						</ul>
 					</div>
@@ -177,53 +294,82 @@
 			</div>
 		</div>
 	</section>
-	<section class="slide whiteSlide light-blue" id="aktivaProjekt">
-		<div class="container-wide Gallery-container">
-			<div class="row center-xs">
 
-				<div class="col-xs-12">
-					<h1 class="center" style="margin-top:30px;">Här entreprenadbesiktar vi just nu med iSpect </h1>
-					<div class="Section-quote Section-quote--horizontal">
-						<div class="img-fade"></div>
-						<div class="Section-quotePhoto Section-quotePhoto--lyft"></div>
-						<div class="row start-xs">
-							<div class="col-xs-12 col-sm-6">
-								<blockquote class="Quote Quote--lyft">
-									<h2><a href="https://ikano.se"><img src="assets/img/logos/em_white.png" width="116"></a></h2>
-									<p>
-										Besiktningsman.se finns ute på BRF Haganova, Torsplan just nu och ser till att bygget följer branschens alla regler och standarder.
-									</p>
-								</blockquote>
-							</div>
-						</div>
 
+	<!-- OUR SERVICES -->
+	<section class="slide fade kenBurns" id="erbjudande">
+		<div class="content">
+			<div class="container" style="height: 360px;">
+				<div class="wrap">
+					<div class="fix-10-12" style="padding-top: 5%;">
+						<h1 class="">Vårt erbjudande</h1>
+						<a href="#foretag" class="menu inlineBlock margin-right-2 underline"><h3>Företag</h3></a>
+						<a href="#brf" class="menu inlineBlock underline"><h3>BRF</h3></a>
+						<a href="#privat" class="menu inlineBlock margin-left-2 underline"><h3>Privat</h3></a>
 					</div>
-					<div class="center-m-down">
-						<a class="common-Button white text-blue fromCenter popupTrigger" data-popup-id="ispect-projects">Se fler iSpect-projekt</a>
-					</div>
-
 				</div>
-
 			</div>
 		</div>
+		<div class="background" style="background-image:url(assets/img/backgrounds/skeppsbron_1901.jpg)" alt="Bakgrundsbild av Skeppsbron"></div>
 	</section>
 
-	<section class="slide whiteSlide kenBurns">
+	<!-- ENTERPRISE -->
+	<section class="slide whiteSlide kenBurns fromRight" data-name="foretag" data-title="foretag" id="foretag">
 		<div class="content">
 			<div class="container">
 				<div class="wrap">
 
 					<div class="fix-12-12">
-						<ul class="flex verticalCenter">
-							<li class="col-5-12 ae-1 cell-29">
-								<img src="assets/img/ispect/ipad_screenTilted.png" class="iphone-29" alt="Skärmdump av iSpect" />
-							</li>
-							<li class="col-7-12 left">
-								<h1 class="ae-1 fromLeft">iSpect ger snabb leverans av besiktningsutlåtandet.</h1>
-								<div class="ae-2 fromLeft">
-									<p>iSpect ger direkt felavhjälpning, lättillgänglig och säker dokumentation samt noll byggfel.</p>
+						<ul class="flex reverse">
+							<li class="col-6-12 left cell-32">
+								<h1 class="">Entreprenadbesiktning för nyproduktion och ROT</h1>
+								<div class="">
+									<p>
+										Vi erbjuder ett komplett utbud av entreprenadbesiktningstjänster för nyproduktion och ROT.
+									</p>
+									<p>
+										Vi erbjuder också ett samlat helhetskoncept med iSpect för ökad lönsamhet och leveranssäkerhet i byggprojekt.
+									</p>
+									<p>
+										Det ger bland annat möjlighet till noll byggfel vid slutbesiktning.
+									</p>
+									<p class="popupTrigger text-blue bold small margin-bottom-3" data-popup-id="services">Våra tjänster för entreprenadbesiktning</p>
+									<p class="popupTrigger text-blue bold small" data-popup-id="ispect-details">Vårt helhetskoncept med iSpect</p>
 								</div>
-								<a class="common-Button blue text-white popupTrigger" data-popup-id="ispect-details">Vårt helhetskoncept med iSpect</a>
+								<ul class="items-32">
+									<li class="fix-4-12 toLeft text-32">
+										<a class="typeform-share blue common-Button" href="https://sebastian209.typeform.com/to/oZw406" data-mode="1" target="_blank">Redo att sätta igång? Tryck här</a>
+										<script>
+											(function() {
+												var qs, js, q, s, d = document,
+													gi = d.getElementById,
+													ce = d.createElement,
+													gt = d.getElementsByTagName,
+													id = 'typef_orm_share',
+													b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+												if (!gi.call(d, id)) {
+													js = ce.call(d, 'script');
+													js.id = id;
+													js.src = b + 'share.js';
+													q = gt.call(d, 'script')[0];
+													q.parentNode.insertBefore(js, q)
+												}
+												id = id + '_';
+												if (!gi.call(d, id)) {
+													qs = ce.call(d, 'link');
+													qs.rel = 'stylesheet';
+													qs.id = id;
+													qs.href = b + 'share-button.css';
+													s = gt.call(d, 'head')[0];
+													s.appendChild(qs, s)
+												}
+											})()
+										</script>
+									</li>
+								</ul>
+							</li>
+							<li class="col-6-12 left ae-1 fromRight">
+								<img class="macbook-62 margin-bottom-3 soft-shadow" width="1200" style="border-radius: 8px;" src="assets/img/backgrounds/goldengate.jpg" alt="Foto av byggare på Golden Gate Bridge" />
 							</li>
 						</ul>
 					</div>
@@ -233,6 +379,192 @@
 		</div>
 	</section>
 
+	<!-- ESTATES -->
+	<section class="slide whiteSlide kenBurns fromRight" data-name="brf" data-title="brf" id="brf">
+		<div class="content">
+			<div class="container">
+				<div class="wrap">
+
+					<div class="fix-12-12">
+						<ul class="flex reverse flex-phone">
+							<li class="col-6-12 left ae-1 fromLeft">
+								<img class="macbook-61 margin-bottom-3 soft-shadow" width="1000" style="border-radius:8px;" src="assets/img/backgrounds/brf.jpg" alt="Foto av BRF i Belfast" />
+							</li>
+							<li class="col-6-12 left cell-32">
+								<h1 class="">Besiktningstjänster för bostadsrättsföreningar</h1>
+								<div class="">
+									<p>
+										Besiktningsman.se erbjuder tjänster och besiktningsmän för samtliga fack för besiktning av nyproduktion och ROT-arbeten i bostadrättsfastigheter, samt KA-ansvariga.
+									</p>
+									<p class="popupTrigger text-blue bold small margin-bottom-3" data-popup-id="services">Våra tjänster för Bostadsrättsföreningar</p>
+									<p class="popupTrigger text-blue bold small" data-popup-id="brf-services">Mer om vårt erbjudande</p>
+								</div>
+								<ul class="items-32">
+									<li class="fix-4-12 toLeft text-32">
+										<a class="typeform-share blue common-Button" href="https://sebastian209.typeform.com/to/oZw406" data-mode="1" target="_blank">Redo att sätta igång? Tryck här</a>
+										<script>
+											(function() {
+												var qs, js, q, s, d = document,
+													gi = d.getElementById,
+													ce = d.createElement,
+													gt = d.getElementsByTagName,
+													id = 'typef_orm_share',
+													b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+												if (!gi.call(d, id)) {
+													js = ce.call(d, 'script');
+													js.id = id;
+													js.src = b + 'share.js';
+													q = gt.call(d, 'script')[0];
+													q.parentNode.insertBefore(js, q)
+												}
+												id = id + '_';
+												if (!gi.call(d, id)) {
+													qs = ce.call(d, 'link');
+													qs.rel = 'stylesheet';
+													qs.id = id;
+													qs.href = b + 'share-button.css';
+													s = gt.call(d, 'head')[0];
+													s.appendChild(qs, s)
+												}
+											})()
+										</script>
+									</li>
+								</ul>
+							</li>
+
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- PRIVATE -->
+	<section class="slide whiteSlide kenBurns fromLeft" data-name="privat" data-title="privat" id="privat">
+		<div class="content">
+			<div class="container">
+				<div class="container-lg">
+
+					<div class="fix-12-12">
+						<ul class="flex reverse">
+							<li class="col-6-12 left cell-32">
+								<h1 class="">Besiktningstjänster för privatpersoner</h1>
+								<h3>Småhus, lägenheter, fritidshus</h3>
+								<div class="ae-3">
+									<p>Besiktningsman.se erbjuder tjänster och besiktningsmän för samtliga fack för besiktning av småhus, fritidshus och lägenheter, samt KA-ansvariga.</p>
+									<p class="popupTrigger text-blue bold small margin-bottom-3" data-popup-id="services">Våra tjänster för privatpersoner</p>
+									<p class="popupTrigger text-blue bold small" data-popup-id="privat-services">Mer om besiktning för småhus mm</p>
+								</div>
+								<ul class="items-32">
+									<li class="fix-4-12 toLeft text-32">
+										<a class="typeform-share blue common-Button" href="https://sebastian209.typeform.com/to/oZw406" data-mode="1" target="_blank">Redo att sätta igång? Tryck här</a>
+										<script>
+											(function() {
+												var qs, js, q, s, d = document,
+													gi = d.getElementById,
+													ce = d.createElement,
+													gt = d.getElementsByTagName,
+													id = 'typef_orm_share',
+													b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+												if (!gi.call(d, id)) {
+													js = ce.call(d, 'script');
+													js.id = id;
+													js.src = b + 'share.js';
+													q = gt.call(d, 'script')[0];
+													q.parentNode.insertBefore(js, q)
+												}
+												id = id + '_';
+												if (!gi.call(d, id)) {
+													qs = ce.call(d, 'link');
+													qs.rel = 'stylesheet';
+													qs.id = id;
+													qs.href = b + 'share-button.css';
+													s = gt.call(d, 'head')[0];
+													s.appendChild(qs, s)
+												}
+											})()
+										</script>
+									</li>
+								</ul>
+							</li>
+							<li class="col-6-12 left ae-1 fromRight">
+								<img class="macbook-62 margin-bottom-3 soft-shadow" width="800" style="border-radius: 8px;" src="assets/img/backgrounds/village_houses.jpg" alt="Fritidshus på svenska västkusten" />
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- ISPECT -->
+	<section class="slide whiteSlide kenBurns fromRight" data-name="ispect" data-title="ispect" id="ispect">
+		<div class="content">
+			<div class="container">
+				<div class="wrap">
+
+					<div class="fix-12-12">
+						<ul class="flex reverse flex-phone">
+							<li class="col-6-12 left fromLeft">
+								<img class="macbook-61 margin-bottom-3 soft-shadow" width="1000" style="border-radius:8px;" src="assets/img/ispect/bm_ipad_overlay.jpg" alt="Besiktningsman med iSpect öppen i sin iPad" />
+							</li>
+							<li class="col-6-12 left cell-32">
+								<h1 class="">iSpect ger snabb leverans av besiktningsutlåtandet.</h1>
+								<div class="">
+									<p>
+										iSpect ger direkt felavhjälpning, lättillgänglig och säker dokumentation samt noll byggfel.
+									</p>
+									<a class="margin-bottom-2 text-blue popupTrigger" data-popup-id="ispect-details">
+										<p>Vårt helhetskoncept med iSpect</p>
+									</a>
+								</div>
+								<ul class="items-32">
+									<li class="fix-4-12 toLeft text-32">
+										<a class="typeform-share blue common-Button" href="https://sebastian209.typeform.com/to/oZw406" data-mode="1" target="_blank">Redo att sätta igång? Tryck här</a>
+										<script>
+											(function() {
+												var qs, js, q, s, d = document,
+													gi = d.getElementById,
+													ce = d.createElement,
+													gt = d.getElementsByTagName,
+													id = 'typef_orm_share',
+													b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+												if (!gi.call(d, id)) {
+													js = ce.call(d, 'script');
+													js.id = id;
+													js.src = b + 'share.js';
+													q = gt.call(d, 'script')[0];
+													q.parentNode.insertBefore(js, q)
+												}
+												id = id + '_';
+												if (!gi.call(d, id)) {
+													qs = ce.call(d, 'link');
+													qs.rel = 'stylesheet';
+													qs.id = id;
+													qs.href = b + 'share-button.css';
+													s = gt.call(d, 'head')[0];
+													s.appendChild(qs, s)
+												}
+											})()
+										</script>
+									</li>
+								</ul>
+							</li>
+
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- BIG CTAS-->
 	<section class="globalFooterCards margin-bottom-8">
 		<div style="max-width: 1040px;" class="container-xl">
 			<a href="http://www.nordbygg.se/" target="_blank" class="common-Link globalFooterCard soft-shadow white safari_only">
@@ -267,6 +599,8 @@
 			</div>
 		</div>
 	</article>
+
+	<!-- FOOTER -->
 	<section class="slide lighter-black autoHeight customFooter">
 		<div class="content">
 			<div class="container">
@@ -446,74 +780,550 @@
 
 		</div>
 	</div>
+	<!-- brf services Popup Text -->
+	<div class="popup white" data-popup-id="brf-services">
+		<div class="close button closeButton white text-blue left opaque"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#back"></use></svg>Tillbaka</div>
+		<div class="content popupContent">
+			<div class="wrap spaces">
+				<!-- contents -->
+				<section class="slide white">
+					<div class="content">
+						<div class="container">
+							<div class="container-lg">
+								<h1 class="center fromCenter margin-top-1">Besiktningsman för bostadsrättsföreningar</h1>
+								<h2 class="center small">Digital besiktningsprocess</h2>
+								<div class="margin-bottom-4 border-bottom-grey"></div>
+								<!-- Slide #24 -->
+
+								<div class="fix-10-12">
+									<div class="left ae-5 cropBottom">
+										<p>
+											I en bostadsrättsförening pågår ständigt förbättringar dels i lägenheterna och dels i fastigheten som helhet. Styrelsen har ett stort ansvar för fastigheten gällande myndighets- och försäkringskrav samt att hålla fastigheten i ett bra skick med underhålls-
+											och åtgärdsplaner för att bibehålla fastighetens värde.
+										</p>
+										<p>
+											Som specialist på besiktningar med stor erfarenhet av renoveringar och nyproduktion erbjuder vi fasta priser på besiktningar gällande de flesta åtgärder i en fastighet. I vissa fall är det svårt att sätta ett fast pris och då gäller vår löpande timdebitering.
+										</p>
+										<p>
+											Vi har besiktningsmän för samtliga fack och vi utför besiktning med besiktningsappen iSpect vilket ger i princip omedelbar digital leverans av besiktningsutlåtandet till iSpectportal där ni får tillgång till statistik och erfarenhetsåterföring.
+										</p>
+										<p>
+											Vi har även KA-kontrollansvarig.
+										</p>
+										<ul>
+											<li>
+												<h2 class="bold">I våra priser ingår:</h2>
+											</li>
+											<li>
+												<p>Vår projektansvarige för all kontakt och samordning med besiktningsman eller besiktningsgrupp kallelser, restid, besiktning på plats, digitalt utskick av utlåtande.</p>
+											</li>
+											<li>
+												<p>Upprättande av besiktningstidplan med eventuella justeringar, beroende på typ av besiktning,</p>
+											</li>
+											<li>
+												<p>Ett informationsmöte med brf-styrelsen om hur besiktningen går till, beroende på typ av besiktning,</p>
+											</li>
+										</ul>
+										<ul>
+											<li>
+												<p>Vid längre samarbeten har ni alltid er ”egen” huvudbesiktningsman och projektansvarige.</p>
+											</li>
+											<li>
+												<p>I vårt nätverk kan vi även erbjuda projektledning/upphandling.</p>
+											</li>
+											<li>
+												<p>Om ni har en nyproducerad brf och söker besiktningsgrupp för 2-års besiktning/garantibesiktning offererar vi ett fast pris till er.</p>
+											</li>
+										</ul>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<!-- privat services Popup Text -->
+	<div class="popup white" data-popup-id="privat-services">
+		<div class="close button closeButton white text-blue left opaque"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#back"></use></svg>Tillbaka</div>
+		<div class="content popupContent">
+			<div class="wrap spaces">
+				<!-- contents -->
+				<section class="slide white">
+					<div class="content">
+						<div class="container">
+							<div class="container-lg">
+								<h1 class="center fromCenter margin-top-1">Besiktningsman.se för privatpersoner</h1>
+								<h2 class="center small">Digital besiktningsprocess</h2>
+								<div class="margin-bottom-4 border-bottom-grey"></div>
+								<!-- Slide #24 -->
+
+								<div class="fix-10-12">
+									<div class="left ae-5 cropBottom">
+										<p class="bold">Vad är en husbesiktning?</p>
+										<p>
+											Husbesiktning, eller entreprenadbesiktning som den rätta termen lyder, görs i samband med alla former av byggnation där du anlitat en byggentreprenör.
+										</p>
+										<p>
+											Det kan handla om att du bygger nytt, bygger till, renoverar eller bygger om. Det kan vara en villa, lägenhet, sommarstuga eller annan byggnad.
+										</p>
+										<p>
+											När du gör en sådan pass stor investering är det naturligt att känna oro för alla myndighetskrav och byggregler.<br> Därför är det viktigt att du själv väljer både Kontrollansvarig och Besiktningsman enligt din lagliga rätt.<br> Kontrollansvarig
+											är din förlängda arm gällande myndighetskrav och Besiktningsman är den person som opartiskt, objektivt samt självständigt utför besiktning mellan dig och din/a entreprenör/er gällande de arbeten som entreprenören har utfört i förhållande till
+											myndighetskrav, bygg- och branschregler.
+										</p>
+										<p>
+											Syftet med besiktningen är att få en opartisk fackmässig kontroll av att byggentreprenören utfört sitt arbete på ett korrekt sätt och på det sätt ni kommit överens om. <br> Det finns flera olika former av besiktningar, och en god regel är att
+											göra en s k slutbesiktning innan du betalar slutfakturan för arbetet.
+										</p>
+										<p>
+											Besiktningen är viktig eftersom den ger ett opartiskt underlag som kan vara mycket betydelsefull om något blir fel eller om det uppstår tvister mellan dig och entreprenören eller berörda försäkringsbolag.
+										</p>
+										<p>
+											De fel som besiktningsman noterar vid besiktning har entreprenören både rätt och skyldighet att avhjälpa och avhjälpande ska ske snarast eller senast inom två månader.
+										</p>
+										<p>
+											Vi rekommenderar Besiktningsmannaboken som hjälper er att få en klarare bild av vilka krav som ställs vid besiktning samt hur besiktningen går till.
+										</p>
+										<p>
+											För småhusentreprenader med konsument som beställare bör standardavtalet ABS09 tillämpas gällande nybyggnad eller tillbyggnad.
+											<br>För ombyggnation, installationsarbeten och andra arbeten/entreprenader gäller Hantverkarformuläret.
+											<br>För rörinstallationer finns även RK.
+										</p>
+										<p>
+											Konsumenttjänstlagen, ABS, Hantverkarformuläret samt Besiktningsmannaboken kan laddas ned hos <a href="www.konsumentverket.se" class="text-blue">www.konsumentverket.se</a>
+										</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<!-- SERVICES Popup Text -->
+	<div class="popup animated white" data-popup-id="services">
+		<div class="close button closeButton white text-blue left opaque"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#back"></use></svg>Tillbaka</div>
+		<div class="content popupContent">
+			<div class="container">
+				<div class="wrap spaces">
+					<div class="fix-10-12 left">
+						<h1>Besiktningsman.se erbjuder:</h1>
+						<ul class="grid">
+							<div class="fix-10-12">
+								<ul class="flex grid-47 later">
+									<li class="col-5-12">
+										<p class="micro bold">• en modern besiktningsprocess</p>
+									</li>
+									<li class="col-5-12">
+										<p class="micro bold">• besiktningsappen iSpect</p>
+									</li>
+									<li class="col-5-12">
+										<p class="micro bold">• kompletta besiktningsgrupper samt KA för er produktion.</p>
+									</li>
+									<li class="col-5-12">
+										<p class="micro bold">• granskning av handlingar</p>
+									</li>
+									<li class="col-5-12">
+										<p class="micro bold">• fortlöpande besiktning från start till mål</p>
+									</li>
+									<li class="col-5-12">
+										<p class="micro bold">• iSpectPortal</p>
+									</li>
+									<li class="col-5-12">
+										<p class="micro bold">• utlåtande direkt</p>
+									</li>
+									<li class="col-5-12">
+										<p class="micro bold">• sorterade felbilagor med ansvar för respektive UE/E</p>
+									</li>
+									<li class="col-5-12">
+										<p class="micro bold">• statistik på fel, antal fel per UE/E och utrymme</p>
+									</li>
+									<li class="col-5-12">
+										<p class="micro bold">• erfarenhetsåterföring</p>
+									</li>
+									<li class="col-5-12">
+										<p class="micro bold">• översikt gällande utförda besiktningar, felnoteringar, besiktningsstatus och omfattning</p>
+									</li>
+								</ul>
+							</div>
+							<div class="fix-10-12 left">
+								<h1>Besiktningstjänster</h1>
+								<div id="accordion">
+									<h3>Förbesiktning</h3>
+									<div>
+										<ul>
+											<li class="col-5-12">
+												<h3 class="margin-bottom-1" style="margin-top:15px;"><b>Enligt AB04 och ABT06 Kap 7 §1 har part rätt att påkalla förbesiktning om</b></h3>
+												<p class="margin-bottom-2">
+													<b>1</b> arbete efter färdigställandet av entreprenaden inte är eller inte utan väsentligt ingrepp blir åtkomligt för besiktning.
+												</p>
+												<p class="margin-bottom-2">
+													<b>2</b> avhjälpande av fel i arbete efter färdigställande skulle vara till väsentlig olägenhet för parten</p>
+												<p class="margin-bottom-2">
+													<b>3</b> arbete före färdigställande tas i bruk av beställaren eller</p>
+												<p class="margin-bottom-2">
+													<b>4</b> i övrigt särskilda skäl föreligger</p>
+												<p class="quotes margin-bottom-2">”Kommentar till kap 7 §1 i AB04 och ABT06, Ett särskilt skäl för förbesiktning kan vara att parterna i förväg vill få besiktningsmannens bedömning av kontraktsenhetligheten av visst arbete som antingen återkommer i ett stort antal eller gäller
+													principer eller kvalitetskrav för utförandet, sk normerande besiktning.”</p>
+											</li>
+										</ul>
+									</div>
+									<h3>Slutbesiktning</h3>
+									<div>
+										<ul>
+											<li class="col-5-12">
+												<h3 class="margin-bottom-1" style="margin-top:15px;">Enligt AB04 och ABT 06 kap 7</h3>
+												<p class="margin-bottom-2">
+													• ”Besiktning enligt §§1-5 i detta kapitel 7 verkställs av en därtill lämpad person som beställaren utser. Om parterna kommer överens om det kan besiktningen i stället verkställas av en person som de gemensamt utser. Om part underlåter att medverka till
+													att besiktningsman utses för besiktning enligt §1 eller §4 i detta kapitel 7 får motparten utse besiktningsman.”
+												</p>
+												<p class="margin-bottom-2">• ”Slutbesiktning skall, om inte parterna avtalat om annat, verkställas vid kontraktstidens utgång eller, om entreprenaden färdigställs senare, utan dröjsmål efter det att entreprenaden anmälts vara färdigställd. Entreprenören skall i god
+													tid underrätta beställaren när entreprenaden beräknas vara färdigställd och tillgänglig för slutbesiktning, om inte parterna genom besiktningsplan har träffat särskild överenskommelse.”</p>
+												<p class="margin-bottom-2">• ”En del av entreprenaden kan efter parternas överenskommelse göras till föremål för kompletterande slutbesiktning. Kompletterande slutbesiktning utgör inte hinder för entreprenadens godkännande, om inte annat avtalats.” Handledning enligt
+													BKKs handledning för entreprenadbesiktning</p>
+												<p class="margin-bottom-2">• ”Slutbesiktningen är den för båda parter viktigaste besiktningen. Det gäller nämligen här att pröva och avgöra frågan om godkännande av entreprenaden, vilket i sin tur har många betydelsefulla konsekvenser för parterna. Det bör betonas,
+													att – om inte parterna kommer överens om annat – slutbesiktning ska ske först vid kontraktstidens utgång eller om entreprenaden färdigställas senare, utan dröjsmål efter det att entreprenören anmält entreprenaden färdigställd.”</p>
+											</li>
+										</ul>
+									</div>
+									<h3>Ny slutbesiktning</h3>
+									<div>
+										<ul>
+											<li class="col-5-12">
+												<h3 class="margin-bottom-1" style="margin-top:15px;">Enligt AB04 och ABT06 kap 7§12</h3>
+												<p class="margin-bottom-2">
+													”Om entreprenaden vid slutbesiktningen uppenbarligen inte är så färdigställd att den kan godkännas får besiktningsmannen avbryta besiktningen och föreskriva ny slutbesiktning.”
+												</p>
+												<p class="margin-bottom-2"><b>Handledning till kap 7§12 enligt BKKs handledning till entreprenadbesiktning</b>
+													<br>”Förutsättningen för besiktningsmannens beslut att avbryta besiktningen är hans bedömning av möjligheten av att entreprenaden kommer att godkännas.</p>
+												<p class="margin-bottom-2">Som angivits ovan kan man inte närmare ange någon nivå för när en entreprenad inte kan godkännas. Bedömningen får ske från fall till fall med hänsyn taget bla till objektets art och omfattning.</p>
+												<p class="margin-bottom-2">Begreppet ”uppenbarligen” innebär att det enligt besiktningsmannens bedömning ska framstå som fullständigt klart att entreprenaden i det skick den är inte kan komma att godkännas.”</p>
+											</li>
+										</ul>
+									</div>
+									<h3>Fortsatt slutbesiktning</h3>
+									<div>
+										<ul>
+											<li class="col-5-12">
+												<h3 class="margin-bottom-1" style="margin-top:15px;">Enligt AB04 och ABT06 kap 7 §12</h3>
+												<p class="margin-bottom-2">
+													”Om entreprenaden inte godkänns skall besiktningsmannen föreskriva fortsatt slutbesiktning.
+													<br>Om entreprenaden inte godkänns eller avbryts skall besiktningsmannen i sitt utlåtande ange skälen för beslutet.”
+												</p>
+												<p class="margin-bottom-2">”Den fortsatta slutbesiktningen ska principiellt omfatta hela entreprenaden, men kan i praktiken begränsas till sådana arbeten och funktioner som föranlett icke-godkännandet.”</p>
+												<p class="margin-bottom-2">Handledning enligt BKKs handledning för entreprenadbesiktning
+													<br>”Förutsättningarna för att godkänna entreprenaden är inte uppfyllda om felen medför att användbarheten inskränks eller att säkerheten ifrågasätts om entreprenaden avlämnas.”</p>
+												<p class="margin-bottom-2">
+													<b>- Kommentar,</b>
+													<br>Entreprenören avgör vilken tid som behövs för avhjälpande och avropar i god tid när entreprenaden är färdig för fortsatt slutbesiktning.
+												</p>
+											</li>
+										</ul>
+									</div>
+									<h3>Efterbesiktning</h3>
+									<div>
+										<ul>
+											<li class="col-5-12">
+												<h3 class="margin-bottom-1" style="margin-top:15px;">Enligt AB04 och ABT06 Kap 7 §5</h3>
+												<p class="margin-bottom-2">
+													”Part har rätt att påkalla efterbesiktning för konstaterande av om ett fel avhjälpts.
+													<br>Efterbesiktning verkställs utan dröjsmål efter avhjälpandet. Beställaren får också påkalla
+													<br>efterbesiktning om entreprenören underlåter att avhjälpa felet i rätt tid.”
+												</p>
+												<p class="margin-bottom-2">
+													”Om entreprenören har påkallat efterbesiktning men någon sådan inte kommer till stånd på grund av beställarens underlåtenhet, skall de fel som efterbesiktningen avsågs omfatta anses vara avhjälpta.”
+												</p>
+												<p class="margin-bottom-2">
+													<b>Handledning till kap 7 §5 i BKKs handledning till entreprenadbesiktning</b>
+													<br> ”Vid efterbesiktning ska konstateras om fel avhjälpts. I utlåtande över efterbesiktning noteras de kvarvarande fel som inte avhjälpts och eventuella följdfel som uppkommit vid avhjälpandet. Fel som inte noterats tidigare ska inte tas
+													upp vid efterbesiktning.
+													<br>
+													<br> Av beställaren skriftligt påtalat fel enligt kap7§12 ska inte heller tas upp, utan dessa ska behandlas som särskild besiktning om part påkallar sådan. Inget hindrar dock att en förrättning omfattar både efterbesiktning och särskild besiktning,
+													om detta angivits i kallelsen.”</p>
+											</li>
+										</ul>
+									</div>
+									<h3>Särskild besiktning</h3>
+									<div>
+										<ul>
+											<li class="col-5-12">
+												<h3 class="margin-bottom-2" style="margin-top:15px;">Enligt AB04 och ABT06 kap 7 §4</h3>
+												<p class="margin-bottom-2">
+													”Part har rätt att efter entreprenadtidens utgång påkalla särskild besiktning avseende
+													<br>1 sådant fel som beställaren har påtalat
+													<br>2 entreprenadens status i visst avseende Särskild besiktning verkställs utan dröjsmål efter påkallandet.”
+												</p>
+												<p class="margin-bottom-2">
+													<b>Handledning enligt BKKs handledning för entreprenadbesiktningar</b>
+													<br> ”Särskild besiktning enligt punkt 1 ovan avser sådana av beställaren påtalade fel efter förhållanden som förelegat vid slutbesiktning men som då inte tagits upp på grund av att de inte märkts, eller att besiktningsmannen förbisett felet.
+													<br> Särskild besiktning enligt punkt 2 ovan avser dels fel som framträtt under garantitiden och där garantiansvar eventuellt föreligger, och dels sådana fel som framträtt efter garantitidens utgång men inom den 10-åriga ansvarstiden.”
+												</p>
+											</li>
+										</ul>
+									</div>
+									<h3>Statusbesiktning</h3>
+									<div>
+										<ul>
+											<li class="col-5-12">
+												<h3 class="margin-bottom-1" style="margin-top:15px;">Handledning till ABT06 kap 7§4 i BKKs handledning till entreprenadbesiktning</h3>
+												<p class="margin-bottom-2">
+													”Statusbesiktning: Sådan särskild besiktning som enligt ABT06 kan påkallas av part avseende entreprenadens status i visst avseende, även om det saknas indikationer om fel.”
+												</p>
+											</li>
+										</ul>
+									</div>
+									<h3>Garantibesiktning - 2-årsbesiktning</h3>
+									<div>
+										<ul>
+											<li class="col-5-12">
+												<h3 class="margin-bottom-1" style="margin-top:15px;">Enligt AB04 och ABT06 kap 7 §3</h3>
+												<p class="margin-bottom-2">
+													”Före utgången av den kortaste garantitiden verkställs garantibesiktning, om parterna inte kommer överens om annat. Garantibesiktningen påkallas av beställaren.”
+												</p>
+												<p class="margin-bottom-2">
+													Handledning enligt BKKs handledning för besiktning
+													<br> Besiktningsmannen ska vid garantibesiktning inte notera förhållanden som lämnats utan anmärkning vid slutbesiktning.
+													<br> Garantibesiktningen ska normalt inte omfatta ej avhjälpta fel från slutbesiktningen.”
+												</p>
+												<p class="margin-bottom-2">
+													<b>- Kommentar,</b>
+													<br>Vid bokning av garantibesiktning kan ni tilläggsbeställa att även efterbesiktning av tidigare besiktning ska utföras.
+												</p>
+											</li>
+										</ul>
+									</div>
+									<h3>Överbesiktning</h3>
+									<div>
+										<ul>
+											<li class="col-5-12">
+												<h3 class="margin-bottom-1" style="margin-top:15px;">Enligt AB04 och ABT06 kap 7§6</h3>
+												<p class="margin-bottom-2">
+													”Part har rätt att påkalla överbesiktning av varje form besiktning. Genom överbesiktning prövas de frågor som har föranlett denna, tex frågan om entreprenadens godkännande, förekomsten av fel eller ansvar för fel.
+													<br>Överbesiktning ersätter den besiktning eller del av besiktning som har föranlett påkallandet av överbesiktning.
+													<br>Överbesiktning skall skriftligen påkallas inom tre veckor efter det att part fått del av besiktningsutlåtandet.”
+												</p>
+												<h3 class="margin-bottom-1">Enligt AB04 och ABT06 kap7§8</h3>
+												<p class="margin-bottom-2">”Överbesiktning verkställs av en person som parterna gemensamt utser eller av en överbesiktningsnämnd. En sådan nämnd skall bestå av tre personer, av vilka parterna vardera utser en och dessa två personer den tredje, som ska vara ordförande.
+													Ledamot får inte tidigare ha verkställt besiktning i entreprenaden. ”</p>
+											</li>
+										</ul>
+									</div>
+									<h3>OVK</h3>
+									<div>
+										<ul>
+											<li class="col-5-12">
+												<h3 class="margin-bottom-1" style="margin-top:15px;">Obligatorisk ventilationskontroll</h3>
+												<p class="margin-bottom-2">
+													OVK ska göras innan ett ventilationssystem tas i bruk för första gången (första besiktning). För de flesta byggnader ska OVK sedan göras regelbundet, var 3 eller 6 år. Kontrollen utförs i en följd och förutsätter full åtkomst till samtliga lägenheter
+													och utrymmen enligt upprättadbesiktningstidplan.
+												</p>
+											</li>
+										</ul>
+									</div>
+									<h3>Kontrollansvarig</h3>
+									<div>
+										<ul>
+											<li class="col-5-12">
+												<h3 class="margin-bottom-1" style="margin-top:15px;">Vi erbjuder gärna kontrollansvarig i kombination med besiktningsman eller besiktningsgrupp.</h3>
+												<p class="margin-bottom-2">
+													Vid nyproduktion, om och tillbyggnad krävs det en Kontrollansvarig (KA) – tidigare benämnd som kvalitetsansvarig – för att genomföra entreprenaden. Kontrollansvarig ser till att nödvändiga inspektioner utförs för att entreprenaden skall leva upp till
+													myndighetskrav och gällande bygg- och branschregler.
+												</p>
+												<p class="margin-bottom-1"><b>Exempel på krav, god ventilation, energianvändning, fuktsäkerhet, tillgänglighet.</b></p>
+												<p class="margin-bottom-2">Vår kontrollansvarige hjälper er med upprättande av en kontrollplan med nödvändiga kontroller på plats av kontrollansvarig och entreprenörens redovisning av verifierade provningar samt egenkontroller.</p>
+												<p class="margin-bottom-1"><b>Hela processen börjar med ett tekniskt samråd hos byggnadsnämnden. Därefter erhålles startbesked.</b></p>
+												<p class="margin-bottom-2">Efter att samtliga kontroller och provningar enligt kontrollplanen genomförts samlas parterna för slutsamråd. Därefter erhålls slutbesked från byggnadsnämnden, förutsatt att slutbesiktningen är godkänd.</p>
+											</li>
+										</ul>
+									</div>
+									<h3>Fuktbesiktning</h3>
+									<div>
+										<ul>
+											<li class="col-5-12">
+												<h3 class="margin-bottom-1" style="margin-top:15px;">Vid nyproduktion utför vi löpande fuktbesiktningar.</h3>
+												<p class="margin-bottom-2">
+													<b>Äldre fastigheter,</b>
+													<br> Har du tänkt på att de vanligaste fuktskadorna inte behöver beror på läckande vattenledningar?
+												</p>
+												<p class="margin-bottom-2">
+													<b>Vind,</b>
+													<br> Fukt och mögel skador beror vanligen på bristfällig ventilation i boendedelen.Tex på grund av att den varma fuktiga luften transporteras upp till den kalla vinden där den kondenserar mot yttertaket. Framförallt vintertid är det störst
+													risk för fuktskador på vind. Har du tittat på insidan av yttertaket?
+												</p>
+												<p class="margin-bottom-2">
+													<b>Krypgrund,</b>
+													<br> Tvärtemot vinden så är den största risken på vår-sommar för fukt och mögel skador. Har du lukt i huset?
+												</p>
+												<p class="margin-bottom-2">
+													<b>Betongplatta på mark,</b>
+													<br> Om den är utförd 1985 eller tidigare är det vanligt förekommande att fukt från underliggande mark transportas upp i betongplattan och vidare upp i uppreglat golv. Har du lukt i huset?
+												</p>
+												<p class="margin-bottom-2">
+													<b>Kan det finnas en fuktskada i din fastighet?</b> Eller vill du försäkra dig om att allt är som det ska?
+													<br>
+													<br> Idag är det möjligt att undersöka eventuella fukt och mögelskador utan att behöva göra större ingrepp i huset. Med hjälp av avancerade mätinstrument och provtagningar kan våra experter snabbt och exakt kontrollera om det finns fukt-,
+													mögelproblem och vad de i så fall beror på.
+													<br>
+													<br> En fuktbesiktning är en bra investering även om du inte direkt misstänker ett fel. Ibland kan det ta lång tid innan läckage, fukttransporter, bristande ventilation, andra fel, ger sig tillkänna. Om indikation på skador upptäcks tidigare
+													desto mindre omfattande hinner skadorna och därmed kostnaderna för att åtgärda dem bli.
+													<br>
+													<br> En fuktbesiktning ger också ökad trygghet för dig som säljare eller köpare av en fastighet. Det gäller såväl äldre som nyare fastigheter.Våra fuktbesiktningar utförs enbart av besiktningsmän med mångårig erfarenhet av hur fuktskador
+													uppkommer, hur de kan upptäckas och hur de kan åtgärdas. Självklart kan de också hjälpa dig med råd om förebyggande åtgärder.
+													<br>
+													<br> Efter fuktbesiktningen e-postas ett utlåtande.
+													<br>
+													<br> Utlåtandet innebär att du får ett oberoende och tillförlitligt underlag att visa upp för försäkringsbolag eller om det uppstår en tvist mellan dig och en motpart i samband med exempelvis byggnadsarbeten eller en försäljning.
+													<br>
+													<br> Du kan även beställa en bedömning av åtgärds- och kostnads-förslag samt labtest.
+												</p>
+											</li>
+										</ul>
+									</div>
+									<h3>Överlåtelsebesiktning</h3>
+									<div>
+										<ul>
+											<li class="col-5-12">
+												<h3 class="margin-bottom-1" style="margin-top:15px;">Överlåtelsebesiktning enligt SBR-modellen.</h3>
+												<p class="margin-bottom-2">
+													<b>Startsammanträde</b>
+													<br> Vi börjar alltid våra överlåtelsebesiktningar med att gå igenom uppdragsbekräftelsen med information för både köpare och säljare om hur besiktningen går till.
+													<br>Besiktningsman förklarar olika typer av så kallade kända riskkonstruktioner och vad det innebär.
+													<br>Säljaren informerar besiktningsförrättaren och köparen om vad de känner till om huset, både positivt och negativt.
+												</p>
+												<p class="margin-bottom-2">
+													<b>Därefter påbörjas besiktningen</b>
+													<br> Därefter påbörjas en okulär fastighetsbesiktning av huvudbyggnaden, där vi tillsammans, besiktigar alla utrymmen som är tillgängliga via öppningar, luckor och liknande, samt de som i övrigt är krypbara.
+													<br>Vi informerar om eventuella fel och risker med vissa konstruktioner löpande under överlåtelsebesiktningen.
+													<br>Besiktningsförrättaren informerar även om löpande fastighetsskötsel och vad man som fastighetsägare skall tänka på. Vi anser att det är av stor vikt att både säljare och köpare deltar och följer med i överlåtelsebesiktningen.
+												</p>
+												<p class="margin-bottom-2">
+													<b>Slutsammanträde</b>
+													<br> Efter besiktningen går vi sammanfattningsvis igenom vad som noterats och vilken påverkan eventuella fel och risker kan ha på huset. Besiktningsutlåtandet e-postas därefter till er, varvid ni noga läser igenom utlåtandet och kontaktar
+													besiktningsförrättaren med eventuella frågor.
+												</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<br>
+							<br>
+							<div class="fix-10-12 left">
+								<a class="typeform-share blue common-Button" href="https://sebastian209.typeform.com/to/oZw406" data-mode="1" target="_blank">Redo att sätta igång?</a>
+								<script>
+									(function() {
+										var qs, js, q, s, d = document,
+											gi = d.getElementById,
+											ce = d.createElement,
+											gt = d.getElementsByTagName,
+											id = 'typef_orm_share',
+											b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+										if (!gi.call(d, id)) {
+											js = ce.call(d, 'script');
+											js.id = id;
+											js.src = b + 'share.js';
+											q = gt.call(d, 'script')[0];
+											q.parentNode.insertBefore(js, q)
+										}
+										id = id + '_';
+										if (!gi.call(d, id)) {
+											qs = ce.call(d, 'link');
+											qs.rel = 'stylesheet';
+											qs.id = id;
+											qs.href = b + 'share-button.css';
+											s = gt.call(d, 'head')[0];
+											s.appendChild(qs, s)
+										}
+									})()
+								</script>
+								<a href="tel:0101654000" class="bold text-blue margin-left-3">Alternativt ring oss på: 010-165 40 00</a>
+							</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- bm projects details Popup Text -->
 	<div class="popup white" data-popup-id="ispect-projects">
 		<div class="close button closeButton white text-blue left opaque"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#back"></use></svg>Tillbaka</div>
 		<div class="content popupContent">
 			<!-- Slide #67 -->
 			<section class="slide white kenBurns">
-			  <div class="content">
-			    <div class="container">
-			      <div class="container-lg">
+				<div class="content">
+					<div class="container">
+						<div class="container-lg">
 
-			        <div class="fix-10-12 center toCenter margin-top-1">
-			          <h1 class="ae-1">Våra projekt</h1>
-			          <div class="ae-2"><p>Här byggs framtiden med noll fel</p></div>
-			        </div>
-			        <div class="fix-12-12">
-			          <ul class="grid later fixedSpaces equal left">
-			            <li class="col-4-12 fromCenter">
-			              <div class="box-67">
-			                <div class="thumbnail-67">
-			                  <img src="assets/img/projects/brf_theview.jpg" class="wide"/>
-			                </div>
-			                <div class="name-67 equalElement table wide">
-			                  <div class="cell">
-			                    <div class="category-67">SKANSKA</div>
-			                    <div class="title-67">BRF The View</div>
-			                  </div>
-			                </div>
-			              </div>
-			            </li>
-			            <li class="col-4-12 fromCenter">
-			              <div class="box-67">
-			                <div class="thumbnail-67">
-			                  <img src="assets/img/projects/brf_terrassen.jpg" class="wide"/>
-			                </div>
-			                <div class="name-67 equalElement table wide">
-			                  <div class="cell">
-			                    <div class="category-67">BYGGVESTA</div>
-			                    <div class="title-67">BRF Terrassen</div>
-			                  </div>
-			                </div>
-			              </div>
-			            </li>
-			            <li class="col-4-12 fromCenter">
-			              <div class="box-67">
-			                <div class="thumbnail-67">
-			                  <img src="assets/img/projects/brf_skogsstjernan.jpg" class="wide"/>
-			                </div>
-			                <div class="name-67 equalElement table wide">
-			                  <div class="cell">
-			                    <div class="category-67">IKANO</div>
-			                    <div class="title-67">BRF Skogsstjärnan</div>
-			                  </div>
-			                </div>
-			              </div>
-			            </li>
-			          </ul>
-			        </div>
+							<div class="fix-10-12 center toCenter margin-top-1">
+								<h1 class="ae-1">Våra projekt</h1>
+								<div class="ae-2">
+									<p>Här byggs framtiden med noll fel</p>
+								</div>
+							</div>
+							<div class="fix-12-12">
+								<ul class="grid later fixedSpaces equal left">
+									<li class="col-4-12 fromCenter">
+										<div class="box-67">
+											<div class="thumbnail-67">
+												<img src="assets/img/projects/brf_theview.jpg" class="wide" />
+											</div>
+											<div class="name-67 equalElement table wide">
+												<div class="cell">
+													<div class="category-67">SKANSKA</div>
+													<div class="title-67">BRF The View</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="col-4-12 fromCenter">
+										<div class="box-67">
+											<div class="thumbnail-67">
+												<img src="assets/img/projects/brf_terrassen.jpg" class="wide" />
+											</div>
+											<div class="name-67 equalElement table wide">
+												<div class="cell">
+													<div class="category-67">BYGGVESTA</div>
+													<div class="title-67">BRF Terrassen</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="col-4-12 fromCenter">
+										<div class="box-67">
+											<div class="thumbnail-67">
+												<img src="assets/img/projects/brf_skogsstjernan.jpg" class="wide" />
+											</div>
+											<div class="name-67 equalElement table wide">
+												<div class="cell">
+													<div class="category-67">IKANO</div>
+													<div class="title-67">BRF Skogsstjärnan</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
 
-			      </div>
-			    </div>
-			  </div>
+						</div>
+					</div>
+				</div>
 			</section>
 		</div>
 	</div>
 	<!-- Scripts -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script src="js/plugins.js" type="text/javascript" name="plugins"></script>
-	<script src="js/slides.js" type="text/javascript" name="main-scripts"></script>
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="../js/plugins.js" type="text/javascript" name="plugins"></script>
+	<script src="../js/slides.js" type="text/javascript" name="main-scripts"></script>
+	<script src="../js/custom.js" type="text/javascript" name="main-scripts"></script>
+
 </body>
 
 </html>

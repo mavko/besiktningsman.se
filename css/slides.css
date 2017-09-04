@@ -582,19 +582,26 @@ p.small {
 }
 .Quote {
     margin: 0;
-    padding: 40px;
     position: relative;
     z-index: 5;
     color: #fff;
+    margin-top: 15px;
 }
-.Quote h2 {
-    margin: 0 0 10px -2px;
+.Quote h3 {
+  position: absolute;
+  font-size: 24px;
+  z-index: 20;
+  color: #fff;
+  padding: 20px 0px 0px 20px;
 }
 .Quote p {
-    position: relative;
-    font-size: 20px;
-    line-height: 1.6em;
-    margin-bottom: 0;
+  position: absolute;
+  font-size: 20px;
+  z-index: 20;
+  color: #fff;
+  line-height: 1.6em;
+  margin-bottom: 0;
+  padding: 50px 0px 0px 20px;
 }
 .Quote--lyft:before {
     content: '';
@@ -607,11 +614,13 @@ p.small {
     z-index: -1;
     transform: translate(0);
 }
+.img-border-radius {
+  border-radius: 8px;
+}
 @media (min-width: 670px) {
   .Section-quote--horizontal .Section-quotePhoto {position: absolute;top: 0;left: 0;right: 0;bottom: 0;min-height: auto;}
   .Quote--lyft {padding-top: 66px;}
   .Quote--lyft:before {opacity: .9216;}
-  .Quote {padding: 40px;}
   .col-sm-6 {flex-basis: 50%;max-width: 50%;}
   .img-size{width: 600px;}
   a.globalFooterCard {flex-basis: 1% !important;padding-left: 100px;}
@@ -922,28 +931,144 @@ contact page
  *
  *
  */
+.slider {
+  position: relative;
+}
+.slider.clickable {
+  cursor: pointer;
+}
+.slider > li {
+  display: none;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+.slider > li.selected {
+  display: block;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  pointer-events: all;
+}
+.slider.autoHeight {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.slider.autoHeight > li {
+  display: block;
+  position: absolute;
+}
 
-/* End of Side */
-/***
- *       _____ _
- *      / ___/| |
- *     | (___ | |__   __ _ _ __ ___
- *      \___ \| '_ \ / _` | '__/ _ \
- *      ____) | | | | (_| | | |  __/
- *     /_____/|_| |_|\__,_|_|  \___/
- *
- *
- */
+.controller li {
+  cursor: pointer;
+}
+.controller li.selected {
+  cursor: default;
+  pointer-events: none;
+}
+.sliderBox-83 {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.leftControl-83,
+.rightControl-83 {
+  position: absolute;
+  top: 50%;
+  margin-top: -91px;
+  margin-left: -60px;
+  cursor: pointer;
+}
+
+.leftControl-83:active,
+.rightControl-83:active {
+  opacity: 0.5;
+}
+
+.leftControl-83:hover,
+.rightControl-83:hover {
+  opacity: 0.5;
+}
+
+.rightControl-83 {
+  right: 0;
+  margin-right: -60px;
+}
+
+.leftControl-83 svg,
+.rightControl-83 svg {
+  width: 16px;
+}
+.slide.whiteSlide svg {
+    fill: #303030;
+}
+.dots {
+  font-size: 0;
+}
+
+.dot {
+  padding: 8px;
+  display: inline-block;
+}
+
+.dot:after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.5;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.dots.big .dot:after {
+  width: 14px;
+  height: 14px;
+}
+
+.slide.whiteSlide .dot:after {
+  background: #2367A4;
+}
+
+.dot:hover:after {
+  -webkit-transform: scale(1.33333);
+          transform: scale(1.33333);
+  opacity: 1;
+}
+
+.dot:active:after,
+.dot.selected:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.noSelect, .noSelect *, .disableSelect, .disableSelect * {
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+@media (max-width: 768px) {
+  .leftControl-83,
+  .rightControl-83 {
+    display: none;
+  }
+}
 @media (min-width: 1024px) {
   img.macbook-61 {
-    margin: -10% -100% -10% -135% !important;
-    width: 225%;
+    margin: 0% -100% -10% -100% !important;
     max-width: none;
   }
 }
 @media (min-width: 1024px) {
   img.macbook-62 {
-    margin: -10% -100% -10% 10% !important;
+    margin: 0% -100% -10% 10% !important;
     max-width: none;
   }
 }
