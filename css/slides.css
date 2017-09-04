@@ -765,7 +765,9 @@ contact page
 .col-5-10 {
   max-width: 20%;
 }
-
+.grid > .col-6-12 {
+  max-width: 40%;
+}
 .wide-col {
   padding-bottom: 20px;
 }
