@@ -771,7 +771,7 @@ contact page
 .wide-col {
   padding-bottom: 20px;
 }
-
+#ispect img {     margin: 0% -100% -10% -60% !important; }
 @media screen and (max-width: 1024px) and (min-width: 546px){
   .grid .col-5-10:not(.wide-col) {
     max-width: 50% !important;
@@ -1358,10 +1358,7 @@ a.underline {
     text-align: left !important;
 }
 .flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-left: -2%;
     margin-right: -2%;
@@ -1403,9 +1400,6 @@ p.micro, .p.micro {
 }
 
 .container .wrap * {
-    -webkit-user-select: text;
-    -moz-user-select: text;
-    -ms-user-select: text;
     user-select: text;
 }
 [class*='fix-'] {
@@ -1908,10 +1902,6 @@ body {
 
 .center {
   text-align: center !important;
-}
-
-.wide {
-  width: 100% !important;
 }
 
 .opacity-10,
