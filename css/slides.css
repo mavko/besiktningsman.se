@@ -296,7 +296,7 @@ p.small {
   overflow: hidden;
 }
 .slide.whiteSlide {
-  color: #303030;
+  color: #3D3F40;
   background: #fff;
 }
 
@@ -439,6 +439,12 @@ p.small {
     border: solid #1f8ceb;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
+}
+#entreprenad .sliderBox-83 {
+  margin-top: 20%;
+}
+#entreprenad .sliderBox-83 .img-fade {
+  max-height: 275px;
 }
 #accordion .ui-state-active {
     border: 0px !important;
@@ -1019,7 +1025,7 @@ contact page
   width: 16px;
 }
 .slide.whiteSlide svg {
-    fill: #303030;
+    fill: #3D3F40;
 }
 .dots {
   font-size: 0;
@@ -1403,7 +1409,7 @@ p.micro, .p.micro {
     font-weight: 600 !important;
 }
 .slide.whiteSlide {
-    color: #303030;
+    color: #3D3F40;
     background: #fff;
 }
 .margin-bottom-10 {
