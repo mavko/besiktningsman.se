@@ -426,6 +426,20 @@ p.small {
 /*
   custom css not framework related
 */
+.checkmark {
+    float: left;
+    padding: 2px;
+    margin-right: 12px;
+}
+.checkmark:after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 20px;
+    border: solid #1f8ceb;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
 #accordion .ui-state-active {
     border: 0px !important;
     background: #2367A4 !important;
