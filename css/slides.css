@@ -446,6 +446,9 @@ p.small {
 #entreprenad .sliderBox-83 .img-fade {
   max-height: 275px;
 }
+#entreprenad .small {
+  font-size: 20px;
+}
 #accordion .ui-state-active {
     border: 0px !important;
     background: #2367A4 !important;
