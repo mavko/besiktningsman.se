@@ -426,6 +426,12 @@ p.small {
 /*
   custom css not framework related
 */
+#bm-location .fix-12-12 {
+  margin: 50px;
+}
+#bm-location .cell-32 {
+  margin: 0 auto;
+}
 .checkmark {
     float: left;
     padding: 2px;
