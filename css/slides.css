@@ -559,21 +559,13 @@ p.small {
 .img-size {
   max-width: 900px;
 }
-.globalFooterCards .container-xl, a.globalFooterCard {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+.globalFooterCard img {
+  max-width: 600px;
+  margin: -5px;
+  border-radius: 4px;
 }
-.globalFooterCards .container-xl {
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: -15px auto;
-    padding: 0 5px;
-}
-.container-wide, .container-xl {
-    max-width: 1040px;
+#newsletter .center-m-down {
+  margin-bottom: 50px;
 }
 /*
   project card
@@ -587,72 +579,13 @@ p.small {
     position: relative;
     z-index: 10;
 }
-.Section-quote {
-    background: #f4f4f4;
-    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
-    border-radius: 8px;
-    overflow: hidden;
-    position: relative;
-    margin: 30px;
-}
-.Section-quotePhoto--lyft {
-    background-color: #a19273;
-    background-image: url(../assets/img/projects/brf_haganova.jpg);
-}
-.Section-quotePhoto {
-    width: 100%;
-    min-height: 370px;
-    background-size: cover;
-    background-position: 50% 50%;
-}
 
-.Quote--lyft {
-    padding-top: 40px;
-}
-.Quote {
-    margin: 0;
-    position: relative;
-    z-index: 5;
-    color: #fff;
-    margin-top: 15px;
-}
-.Quote h3 {
-  position: absolute;
-  font-size: 24px;
-  z-index: 20;
-  color: #fff;
-  padding: 20px 0px 0px 20px;
-}
-.Quote p {
-  position: absolute;
-  font-size: 20px;
-  z-index: 20;
-  color: #fff;
-  line-height: 1.6em;
-  margin-bottom: 0;
-  padding: 50px 0px 0px 20px;
-}
-.Quote--lyft:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    transform: translate(0);
-}
 .img-border-radius {
   border-radius: 8px;
 }
 @media (min-width: 670px) {
-  .Section-quote--horizontal .Section-quotePhoto {position: absolute;top: 0;left: 0;right: 0;bottom: 0;min-height: auto;}
-  .Quote--lyft {padding-top: 66px;}
-  .Quote--lyft:before {opacity: .9216;}
   .col-sm-6 {flex-basis: 50%;max-width: 50%;}
   .img-size{width: 600px;}
-  a.globalFooterCard {flex-basis: 1% !important;padding-left: 100px;}
   .globalFooterCTA .container-lg {
   display: flex;
   align-items: center;}
@@ -662,55 +595,20 @@ p.small {
 /*
   global footer cards
 */
-@media (min-width: 880px) {
-  a.globalFooterCard {padding-left: 120px;}
-}
-.globalFooterCTA {
-    padding: 50px 0;
-}
+
+
 .container-lg {
     margin: 0 auto;
     padding: 0 22px;
     width: 100%;
     max-width: 1040px;
 }
-.globalFooterCTA .buttons {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 0 50%;
-    -ms-flex: 1 0 50%;
-    flex: 1 0 50%;
-}
-.globalFooterCTA .title {
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 30px;
-    margin: .75em 0;
-}
-.globalFooterCTA .subtitle {
-    font-weight: bold;
-    display: block;
-    font-size: 18px;
-}
-.globalFooterCTA .buttons {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 0 50%;
-    -ms-flex: 1 0 50%;
-    flex: 1 0 50%;
-}
-
 .common-ButtonGroup {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: -10px;
 }
 .common-ButtonGroup .common-Button {
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
     flex-shrink: 0;
     margin: 5px;
 }
@@ -718,49 +616,13 @@ p.small {
 landing page footer cards
 */
 a.globalFooterCard {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 100%;
-    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
     margin: 15px;
     position: relative;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
     overflow: hidden;
-    padding: 0px;
-    background-color: #fff;
     border-radius: 4px;
-    -webkit-transition-property: color,background-color,box-shadow,-webkit-transform;
-    transition-property: color,background-color,box-shadow,-webkit-transform;
-    transition-property: color,background-color,box-shadow,transform;
-    transition-property: color,background-color,box-shadow,transform,-webkit-transform;
-    -webkit-transition-duration: .15s;
-    transition-duration: .15s;
-}
-.globalFooterCards .container-xl, a.globalFooterCard {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-}
-
-a.globalFooterCard p {
-    z-index: 5;
-    position: absolute;
-}
-
-a.globalFooterCard h2 {
-   margin: -35px 0px 0px 15px;
-    white-space: normal;
-    z-index: 5;
-    position: absolute;
 }
 /*
 contact page
@@ -806,7 +668,7 @@ contact page
 #team .col-3-12 {
       width: 33%;
 }
-#ispect img {    margin: 0% -100% -10% -120% !important; }
+
 @media screen and (max-width: 1024px) and (min-width: 546px){
   .grid .col-5-10:not(.wide-col) {
     max-width: 50% !important;
@@ -823,13 +685,9 @@ contact page
     .common-Button{font-size: 14px;}
     .container .wrap {padding: calc(5.56% + 50px) calc(5% + 0px) !important;}
     .col-6-12 a {margin-bottom: 24px;}
-    a.globalFooterCard h2 {font-size: 20px;margin: -20px 15px 5px;font-weight: bold;}
-    a.globalFooterCard p {font-size: 16px;font-weight: bold;}
     .img-fade{background: rgba(16,114,187,0.80);}
     .img-size{width: 280px !important;}
     .phones .reverse {flex-wrap: wrap !important;}
-    .Section-quotePhoto--lyft {height: 150px;min-height: 150px !important;}
-    .Section-quote {margin:0;}
     .border-bottom{width: 80%;}
     .contact h1 {margin-top: 20px;}
 }
@@ -837,8 +695,7 @@ contact page
 @media only screen
   and (min-width: 375px)
   and (max-width: 768px) {
-    a.globalFooterCard h2 {font-size: 26px;}
-    a.globalFooterCard p {font-size: 18px;}
+
 }
 /***
  *      _____                 _
@@ -1514,135 +1371,12 @@ h3.small, .h3.small {
     padding-right: 2%;
 }
 
-/* embed video container for slides and popups */
-
-/***
- *      ______                       _____
- *     |___  /                      |_   _|
- *        / / ___   ___  _ __ ___     | |  _ __ ___   __ _  __ _  ___
- *       / / / _ \ / _ \| '_ ` _ \    | | | '_ ` _ \ / _` |/ _` |/ _ \
- *      / /_| (_) | (_) | | | | | |  _| |_| | | | | | (_| | (_| |  __/
- *     /_____\___/ \___/|_| |_| |_| |_____|_| |_| |_|\__,_|\__, |\___/
- *                                                          __/ |
- *                                                         |___/
- */
-[data-action="zoom"] {
-  cursor: pointer;
-  cursor: -webkit-zoom-in;
-}
-
-/***
- *       _____ _ _     _
- *      / ___/| (_)   | |
- *     | (___ | |_  __| | ___ _ __
- *      \___ \| | |/ _` |/ _ \ '__/
- *      ____) | | | (_| |  __/ |
- *     /_____/|_|_|\__,_|\___/_|
- *
- *
- */
-
-/*                   \                           /
-		.           ,                              o
-		 *                 ¤     ~            .·
-				______  __  __          _       *
-			 |  ___/ / _// _|   *    | |
-			 | |___ | |_| |_ ___  ___| |_ ____
-		.  |  __/ |  _|  _/ _ \/ __| __/ __/
-	 ¯   | |____| | | ||  __| (__| |_\__ \    ¨
-	´    |_____/|_| |_| \___|\___/\__/___/   '
-																 ¸         §
-	 ¸.*         ¤        *         .           .
-											.            °            /
-.*/
-/* DEFAULT */
-
 .slide {
   -webkit-transform: translate3d(0, 50%, 0);
           transform: translate3d(0, 50%, 0);
   will-change: transform;
 }
 
-/* horizontal */
-
-/* FILM */
-
-/* Horizontal */
-
-/* ZEN */
-
-/* Horizontal */
-
-/* STACK */
-
-/* Horizontal */
-
-/* CARDS */
-
-/* Horizontal */
-
-/* ZOOM CHANGE */
-
-/* PLAIN CHANGE */
-
-/* SPEED */
-
-/* panels */
-
-/* EASING */
-
-/***
- *                                       _           _   ______ _                           _
- *         /\         ( )               | |         | | |  ___/| |                         | |
- *        /  \   _ __  _ _ __ ___   __ _| |_ ___  __| | | |___ | | ___ _ __ ___   ___ _ __ | |_ ___
- *       / /\ \ | '_ \| | '_ ` _ \ / _` | __/ _ \/ _` | |  __/ | |/ _ \ '_ ` _ \ / _ \ '_ \| __/ __/
- *      / ____ \| | | | | | | | | | (_| | ||  __/ (_| | | |____| |  __/ | | | | |  __/ | | | |_\__ \
- *     /_/    \_\_| |_|_|_| |_| |_|\__,_|\__\___/\__,_| |_____/|_|\___/_| |_| |_|\___/_| |_|\__|___/
- *
- *
- */
-
-/* Speed */
-
-/* Delays */
-
-/* Directions */
-
-/* Final Step */
-
-/* Animated on scroll */
-
-/* hide elements */
-
-/* Speed */
-
-/* Directions */
-
-/* generate directions */
-/* Delays */
-
-/***
- *      ____             _                                   _    ______  __  __          _
- *     |  _ \           | |                                 | |  |  ____|/ _|/ _|        | |
- *     | |_) | __ _  ___| | ____ _ _ __ ___  _   _ _ __   __| |  | |__  | |_| |_ ___  ___| |_ ___
- *     |  _ < / _` |/ __| |/ / _` | '__/ _ \| | | | '_ \ / _` |  |  __| |  _|  _/ _ \/ __| __/ __|
- *     | |_) | (_| | (__|   < (_| | | | (_) | |_| | | | | (_| |  | |____| | | ||  __/ (__| |_\__ \
- *     |____/ \__,_|\___|_|\_\__, |_|  \___/ \__,_|_| |_|\__,_|  |______|_| |_| \___|\___|\__|___/
- *                            __/ |
- *                           |___/
- */
-/* KEN BURNS */
-
-/* PARALLAX */
-
-/* horizontal */
-
-/* zoom */
-
-/* plain */
-
-/* SCENIC */
-/* SCROLL EFFECT */
 .scroll {
 
   -webkit-overflow-scrolling: touch;
@@ -1685,33 +1419,6 @@ h3.small, .h3.small {
           transform: none !important;
 }
 
-/*.scroll .panel,
-.mobile .simplifiedMobile .panel {
-  position: absolute;
-}*/
-/* Parallax Motion */
-/* End Effects */
-/*
-$header-font: ('Source Sans Pro', sans-serif);
-$header-baseline: 0.144500;
-
-$body-font: ('Source Sans Pro', sans-serif);
-$body-baseline: 0.144500;
-
-$gh: 1rem;
-
-// COLOURS
-$color-medium: #303030;
-
-// FONT WEIGHTS
-$ultraLight:	200;
-$light:			300;
-$normal:		400;
-$semiBold:		500;
-$bold:			600;
-$ultraBold: 	900;
-
-*/
 html {
   font-size: 6px;
   font-family: "Source Sans Pro", sans-serif;
@@ -1826,23 +1533,7 @@ body {
     width: 100%;
   }
 }
-/*
-	_____          _
- |  __ \( )     | |
- | |  | |_  __ _| | ___   __ _
- | |  | | |/ _` | |/ _ \ / _` |
- | |__| | | (_| | | (_) | (_| |
- |_____/|_|\__,_|_|\___/ \__, |
-													__/ |
- Dialog Window           /__*/
 
-/*
-.dialogContainer > .dialog:nth-child(1){ -webkit-transition-delay: 0.1s; transition-delay: 0.1s; }
-.dialogContainer > .dialog:nth-child(2){ -webkit-transition-delay: 0.2s; transition-delay: 0.2s; }
-.dialogContainer > .dialog:nth-child(3){ -webkit-transition-delay: 0.3s; transition-delay: 0.3s; }
-.dialogContainer > .dialog:nth-child(4){ -webkit-transition-delay: 0.4s; transition-delay: 0.4s; }
-.dialogContainer > .dialog:nth-child(5){ -webkit-transition-delay: 0.5s; transition-delay: 0.5s; }
-*/
 /* Slides Custom Styles */
 @media (min-width: 1024px) {
   .iphone-29 {
@@ -1871,11 +1562,6 @@ body {
   margin-bottom: 35px;
   -webkit-backface-visibility: hidden;
 }
-
-/*.box-67:hover {
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15), 0 0px 14px rgba(0, 0, 0, 0.02), 0 0px 1px rgba(0, 0, 0, 0.1);
-  opacity: 0.95;
-}*/
 
 .box-67 .thumbnail-67 {
   font-size: 0;
