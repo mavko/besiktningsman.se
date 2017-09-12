@@ -803,6 +803,9 @@ contact page
 #ispect-details .col-6-12 {
     max-width: 50%;
 }
+#team .col-3-12 {
+      width: 33%;
+}
 #ispect img {    margin: 0% -100% -10% -120% !important; }
 @media screen and (max-width: 1024px) and (min-width: 546px){
   .grid .col-5-10:not(.wide-col) {
