@@ -567,6 +567,29 @@ p.small {
 #newsletter .center-m-down {
   margin-bottom: 50px;
 }
+.Quote {
+    margin: 0;
+    position: relative;
+    z-index: 5;
+    color: #fff;
+    margin-top: 15px;
+}
+.Quote h3 {
+  position: absolute;
+  font-size: 24px;
+  z-index: 20;
+  color: #fff;
+  padding: 20px 0px 0px 20px;
+}
+.Quote p {
+  position: absolute;
+  font-size: 20px;
+  z-index: 20;
+  color: #fff;
+  line-height: 1.6em;
+  margin-bottom: 0;
+  padding: 50px 0px 0px 20px;
+}
 /*
   project card
 */
