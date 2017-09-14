@@ -70,7 +70,10 @@
 		<div class="sections desktop">
 			<div class="left">
 				<ul class="menu crop small bold">
-					<li><a href="../nyheter/">Nyheter & Publicerat</a></li>
+					<li tabindex="1" class="dropdownTrigger" data-dropdown-hover="true" data-dropdown-id="dropdown-menu">
+						Dokument
+					</li>
+					<li><a href="../nyheter/">Publicerat & Press</a></li>
 					<li><a href="../om_oss/">Om oss</a></li>
 				</ul>
 			</div>
@@ -92,7 +95,15 @@
 			<div class="right"><span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
 		</div>
 	</nav>
-
+<!-- Docs Menu dropdown -->
+<div class="dropdown top left center customDropdown" data-dropdown-id="dropdown-menu">
+  <ul>
+    <li class="toSlide-1 text-blue micro bold"><a href="#"></a>Besiktningsboken</li>
+    <li class="toSlide-2 text-blue micro bold"><a href="#"></a>Lagbok 1</li>
+    <li class="toSlide-3 text-blue micro bold"><a href="#"></a>Lagbok 2</li>
+    <li class="link text-blue micro bold"><a href="http://google.com" target="_blank">Exernal Link</a></li>
+  </ul>
+</div>
 	<!-- Sidebar -->
 	<nav class="sidebar white" data-sidebar-id="1">
 		<div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
@@ -111,7 +122,7 @@
 				<li><a href="../om_oss/">Om oss</a></li>
 				<br>
 				<br>
-				<li><a href="../nyheter/">Nyheter & Publicerat</a></li>
+				<li><a href="../nyheter/">Publicerat & Press</a></li>
 			</ul>
 
 		</div>
@@ -147,38 +158,6 @@
 		</div>
 		<div class="background" style="background-image:url(../assets/img/backgrounds/coms.jpg)"></div>
 	</section>
-	<!-- Slide #32 -->
-	<section class="slide whiteSlide fromLeft" id="bm-location">
-		<div class="content">
-			<div class="container-lg">
-				<div class="wrap">
-
-					<div class="fix-12-12">
-						<ul class="flex reverse">
-							<li class="col-6-12 left cell-32">
-
-								<div class="soft-shadow border-radius padding-2" style="box-shadow: none;width: 100%">
-									<h3 class="center">Besiktningsman.se <br>har rikstäckande verksamhet</h3>
-								</div>
-								<ul class="items-32">
-									<li class="fix-4-12 toLeft text-32">
-
-										<aside class="headquarters white">
-											<h3 class="text-blue small bold">Huvudkontor</h3>
-											<p class="small bold margin-0" style="font-size:16px;">Heleneborgsgatan 54, Södermalm</p>
-											<p class="small bold margin-0" style="font-size: 16px;">11732 Stockholm</p>
-										</aside>
-									</li>
-								</ul>
-							</li>
-
-						</ul>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
 <!-- Footer -->
 <section class="slide customFooter" style="background: #f2f9ff;color: #333;">
   <div class="content">
@@ -187,7 +166,7 @@
 
         <div class="fix-10-12 center">
 					<img src="../assets/svg/bm_logo_top.svg" alt="Besiktningsman.se" style="max-width: 400px;">
-          <p class="hero">Besiktning och KA-tjänster över hela landet</p>
+          <p class="hero">Sveriges ledande entreprenadbesiktningsföretag</p>
           <ul class="later center">
             <li class="col-6-12 ae-3">
               <h3 class="margin-bottom-1">Kontor</h3>

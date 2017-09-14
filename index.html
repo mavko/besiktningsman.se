@@ -149,6 +149,7 @@
 	  <symbol id="play" viewBox="0 0 30 30"><path d="M7 30v-30l22 15z"/></symbol>
 		<symbol id="arrow-left" viewBox="0 0 31 72"><path d="M30 72c-.3 0-.6-.1-.8-.4l-29-34c-.3-.4-.3-.9 0-1.3l29-36c.3-.4 1-.5 1.4-.2.4.3.5 1 .2 1.4l-28.5 35.5 28.5 33.4c.4.4.3 1.1-.1 1.4-.2.1-.5.2-.7.2z"/></symbol>
 		<symbol id="arrow-right" viewBox="0 0 31 72"><path d="M1 0c.3 0 .6.1.8.4l29 34c.3.4.3.9 0 1.3l-29 36c-.3.4-1 .5-1.4.2-.4-.3-.5-1-.2-1.4l28.5-35.5-28.5-33.4c-.4-.4-.3-1.1.1-1.4.2-.1.5-.2.7-.2z"/></symbol>
+		<symbol id="drop-down" viewBox="0 0 16 16"><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="1,5 8,12 15,5" fill="none"></polyline></symbol>
 	</svg>
 
 	<!-- Panel Top #10 -->
@@ -156,7 +157,10 @@
 		<div class="sections desktop">
 			<div class="left">
 				<ul class="menu crop small bold">
-					<li><a href="nyheter/">Nyheter & Publicerat</a></li>
+					<li tabindex="1" class="dropdownTrigger" data-dropdown-hover="true" data-dropdown-id="dropdown-menu">
+						Dokument
+					</li>
+					<li><a href="nyheter/">Publicerat & Press</a></li>
 					<li><a href="om_oss/">Om oss</a></li>
 				</ul>
 			</div>
@@ -178,26 +182,45 @@
 			<div class="right"><span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
 		</div>
 	</nav>
-
+	<!-- Docs Menu dropdown -->
+	<div class="dropdown top left center customDropdown" data-dropdown-id="dropdown-menu">
+	  <ul>
+	    <li class="toSlide-1 text-blue micro bold"><a href="#"></a>Besiktningsboken</li>
+	    <li class="toSlide-2 text-blue micro bold"><a href="#"></a>Lagbok 1</li>
+	    <li class="toSlide-3 text-blue micro bold"><a href="#"></a>Lagbok 2</li>
+	    <li class="link text-blue micro bold"><a href="http://google.com" target="_blank">Exernal Link</a></li>
+	  </ul>
+	</div>
 	<!-- Sidebar -->
 	<nav class="sidebar white" data-sidebar-id="1">
 		<div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
 		<div class="content">
 			<a href="/" class="logo"><img src="assets/svg/bm_logo.svg" alt=""></a>
 			<ul class="mainMenu text-blue">
-				<li><a href="#erbjudande">Vårt erbjudande</a></li>
+				<h2 class="bold small text-blueGrey">Navigation</h2>
+				<li><a href="#erbjudande"><p>Vårt erbjudande</p></a></li>
 				<br>
 				<br>
-				<li><a href="kontakt/">Kontakt</a></li>
+				<li><a href="kontakt/"><p>Kontakt</p></a></li>
 				<br>
 				<br>
-				<li><a href="karriar/">Karriär</a></li>
+				<li><a href="karriar/"><p>Karriär</p></a></li>
 				<br>
 				<br>
-				<li><a href="om_oss/">Om oss</a></li>
+				<li><a href="om_oss/"><p>Om oss</p></a></li>
 				<br>
 				<br>
-				<li><a href="nyheter/">Nyheter & Publicerat</a></li>
+				<li><a href="nyheter/"><p>Publicerat & Press</p></a></li>
+				<br>
+				<br>
+				<h2 class="bold small text-blueGrey">Dokument</h2>
+				<li><a href="#"><p class="small bold">Besiktningsboken</p></a></li>
+				<br>
+				<br>
+				<li><a href="#"><p class="small bold">Lagbok 1</p></a></li>
+				<br>
+				<br>
+				<li><a href="#"><p class="small bold">Lagbok 2</p></a></li>
 			</ul>
 
 		</div>
@@ -563,7 +586,7 @@
 
         <div class="fix-10-12 center">
 					<img src="assets/svg/bm_logo_top.svg" alt="Besiktningsman.se" style="max-width: 400px;">
-          <p class="hero">Besiktning och KA-tjänster över hela landet</p>
+          <p class="hero">Sveriges ledande entreprenadbesiktningsföretag</p>
           <ul class="later center">
             <li class="col-6-12 ae-3">
               <h3 class="margin-bottom-1">Kontor</h3>
