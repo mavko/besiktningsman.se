@@ -426,6 +426,186 @@ p.small {
 /*
   custom css not framework related
 */
+.panel .menu { cursor:pointer;}
+.dropdown.customDropdown {
+  padding:10px 0;
+}
+.dropdown.customDropdown li:not(.link),
+.dropdown.customDropdown li.link a {
+  font-size: 18px;
+  padding: 8px 10px 8px 20px;
+  cursor: pointer;
+  display: block;
+  text-align: left;
+}
+.dropdown.customDropdown li:hover, li:active, li:focus {
+  outline: none;
+}
+.dropdown-icon {
+  stroke: #fff;
+  width: 10px !important;
+  height: 10px !important;
+  margin-left: 4px;
+}
+ .dropdown {
+   position: fixed;
+   z-index: 300;
+   width: 12%;
+   background: #fff;
+   box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.15), 0 14px 28px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
+   margin-bottom: 50px;
+   border-radius: 4px;
+   text-align: center;
+   cursor: default;
+   transform: translateY(0) scale(0.9);
+   transform-origin: top;
+   transition: opacity 0.35s, box-shadow 0.35s, -webkit-transform 0.35s;
+   transition: transform 0.35s, opacity 0.35s, box-shadow 0.35s;
+   transition: transform 0.35s, opacity 0.35s, box-shadow 0.35s, -webkit-transform 0.35s;
+   /* share */
+ }
+ .dropdown:not(.show) {
+   pointer-events: none;
+   opacity: 0;
+ }
+ .slides .dropdown h3,
+ .dropdown .title {
+   font-size: 17px;
+   padding: 15px 0;
+   font-weight: 500;
+   margin: 0;
+   text-align: center;
+   opacity: 0.65;
+ }
+ .dropdown:after, .dropdown:before {
+   content: "";
+   bottom: 100%;
+   left: 25px;
+   border: solid transparent;
+   height: 0;
+   width: 0;
+   position: absolute;
+   pointer-events: none;
+   border-color: rgba(255, 255, 255, 0);
+   border-bottom-color: #fff;
+   border-width: 7px;
+   margin-left: -7px;
+ }
+ .dropdown:before {
+   border-bottom-color: rgba(0, 0, 0, 0.1);
+   border-width: 8px;
+   margin-left: -8px;
+ }
+ .dropdown.show {
+   visibility: visible;
+   opacity: 1;
+   -webkit-transform: translateY(20px);
+           transform: translateY(20px);
+ }
+ .dropdown.show.hide {
+   opacity: 0;
+   -webkit-transform: translateY(40px);
+           transform: translateY(40px);
+   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15), 0 0 0 rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
+   pointer-events: none;
+ }
+ .dropdown .hideDropdown {
+   opacity: 0;
+   pointer-events: none;
+ }
+ .dropdown.bottom {
+   -webkit-transform-origin: bottom;
+           transform-origin: bottom;
+ }
+ .dropdown.bottom.show {
+   -webkit-transform: translateY(-20px);
+           transform: translateY(-20px);
+ }
+ .dropdown.bottom.show.hide {
+   -webkit-transform: translateY(-40px);
+           transform: translateY(-40px);
+ }
+ .dropdown.bottom:after, .dropdown.bottom:before {
+   top: 100%;
+   bottom: initial;
+   border-bottom-color: rgba(255, 255, 255, 0);
+   border-top-color: #fff;
+ }
+ .dropdown.bottom:before {
+   border-top-color: rgba(0, 0, 0, 0.06);
+ }
+ .dropdown.right:after, .dropdown.right:before {
+   right: 18px;
+   left: auto;
+ }
+ .dropdown.right:before {
+   right: 17px;
+ }
+ .dropdown.center:after, .dropdown.center:before {
+   left: 50%;
+ }
+ .dropdown.noArrow:after, .dropdown.noArrow:before {
+   display: none;
+ }
+ .dropdown.share li {
+   float: left;
+   text-align: center;
+   display: block;
+   width: 80px;
+   height: 50px;
+   padding: 14px 0;
+   color: #fff;
+   position: relative;
+   cursor: pointer;
+   opacity: 0.9;
+   -webkit-transition: 0.15s;
+   transition: 0.15s;
+ }
+ .dropdown.share li:hover {
+   opacity: 1;
+ }
+ .dropdown.share li:after {
+   content: " ";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   opacity: 0;
+   background: rgba(0, 0, 0, 0.1);
+   -webkit-transition: 0.25s;
+   transition: 0.25s;
+ }
+ .dropdown.share li:active:after {
+   opacity: 1;
+   -webkit-transition: 0.1s;
+   transition: 0.1s;
+ }
+ .dropdown.share li svg {
+   width: 20px;
+   height: 20px;
+   fill: #fff;
+ }
+ .dropdown.share li.mail {
+   width: 100%;
+   height: 50px;
+   color: #7E7E7E;
+   font-size: 15px;
+   padding: 15px 0;
+   border-bottom-left-radius: 6px;
+   border-bottom-right-radius: 6px;
+ }
+ .dropdown.share li.mail:after {
+   border-radius: 0 0 7px 7px;
+   background: rgba(0, 0, 0, 0.05);
+ }
+ .dropdown.share li.mail:hover {
+   text-decoration: underline;
+ }
+ .scroll .dropdown {
+   position: absolute;
+   top: 0;
+ }
 #bm-location .fix-12-12 {
   margin: 50px;
 }
