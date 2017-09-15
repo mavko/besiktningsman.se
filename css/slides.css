@@ -426,6 +426,12 @@ p.small {
 /*
   custom css not framework related
 */
+.fromRight {
+  float: right !important;
+}
+.fromLeft {
+  float: left !important;
+}
 .panel .menu { cursor:pointer;}
 .dropdown.customDropdown {
   padding:10px 0;
