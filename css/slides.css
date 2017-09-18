@@ -426,6 +426,7 @@ p.small {
 /*
   custom css not framework related
 */
+#news img {border-radius: 8px;}
 .fromRight {
   float: right !important;
 }
@@ -1670,7 +1671,7 @@ body {
   background: #373937 !important;
   color: #fff !important;
 }
-
+.lightgrey-border {border: 2px solid #f6f9fc;}
 /* Colors by Google Meterial Design (C) */
 .light-blue {
   background-color: #f2f9ff !important;
