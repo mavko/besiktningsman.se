@@ -855,6 +855,10 @@ contact page
     -webkit-transition: all .15s ease;
     transition: all .15s ease;
 }
+.customFooter {
+  background: #f2f9ff;
+  color: #3D3F40;
+}
 .customFooter p {
   font-size: 16px;
   line-height: 15px;
