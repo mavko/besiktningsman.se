@@ -748,6 +748,7 @@ p.small {
 }
 .globalFooterCard img {
   max-width: 600px;
+  width: 100%;
   margin: -5px;
   border-radius: 4px;
 }
@@ -904,6 +905,11 @@ contact page
     .phones .reverse {flex-wrap: wrap !important;}
     .border-bottom{width: 80%;}
     .contact h1 {margin-top: 20px;}
+    #team .col-3-12 {width: 100%;}
+    .cell img {padding-bottom: 25px;}
+    #partners .margin-bottom-8 {margin-bottom: 30px !important;}
+    .popup #team .wrap {padding: 0;}
+    .popup #team .fix-10-12 {padding-top: 15%;}
 }
 /* iphone6+ Portrait and Landscape */
 @media only screen
