@@ -910,6 +910,8 @@ contact page
     #partners .margin-bottom-8 {margin-bottom: 30px !important;}
     .popup #team .wrap {padding: 0;}
     .popup #team .fix-10-12 {padding-top: 15%;}
+    #ispect-details .margin-top-1 {margin-top: 30% !important;}
+    #ispect-details .col-6-12 {max-width: 100%;}
 }
 /* iphone6+ Portrait and Landscape */
 @media only screen
@@ -1831,10 +1833,6 @@ body {
 
 .top {
   vertical-align: top !important;
-}
-
-.left {
-  text-align: left !important;
 }
 
 .right {
