@@ -145,7 +145,7 @@ h3 {
 }
 
 p {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.5;
   margin-bottom: 30px;
   opacity: 0.9;
@@ -159,7 +159,7 @@ p.hero {
   margin-bottom: 25px;
 }
 p.small {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.36;
   margin-bottom: 20px;
 }
