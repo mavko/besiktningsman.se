@@ -426,6 +426,10 @@ p.small {
 /*
   custom css not framework related
 */
+#news {
+  overflow-y: scroll;
+  max-height: 70vh;
+}
 .fromRight {
   float: right !important;
 }
