@@ -923,6 +923,9 @@ contact page
   and (max-width: 768px) {
 
 }
+.items-container li.hidden {
+	display: none;
+}
 /***
  *      _____                 _
  *     |  __ \               | |
