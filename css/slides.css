@@ -916,6 +916,7 @@ contact page
     #ispect-details .margin-top-1 {margin-top: 30% !important;}
     #ispect-details .col-6-12 {max-width: 100%;}
     #news-title {margin-top: 25px;}
+    #ispect-projects .wrap {padding: 0 !important;}
 }
 /* iphone6+ Portrait and Landscape */
 @media only screen
