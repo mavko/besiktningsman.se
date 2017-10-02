@@ -76,7 +76,6 @@ html {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -98,11 +97,10 @@ img {
 }
 
 .slides {
-  color: #2F2D2E;
+  color: #47525D;
   fill: #fff;
   font-family: "Source Sans Pro", sans-serif;
   background: #fff;
-  -webkit-font-smoothing: antialiased;
   text-rendering: optimizeSpeed;
 }
 
@@ -296,7 +294,7 @@ p.small {
   overflow: hidden;
 }
 .slide.whiteSlide {
-  color: #3D3F40;
+  color: #47525D;
   background: #fff;
 }
 
@@ -1510,10 +1508,6 @@ p.micro, .p.micro {
 .bold {
     font-weight: 600 !important;
 }
-.slide.whiteSlide {
-    color: #3D3F40;
-    background: #fff;
-}
 .margin-bottom-10 {
     margin-bottom: 100px !important;
 }
@@ -1555,10 +1549,6 @@ p.micro, .p.micro {
     right: 0;
     margin: -18% 0% 0%;
     max-width: none;
-}
-.white {
-    background: #fff !important;
-    color: #2F2D2E !important;
 }
 .container-md {
     height: 460px !important;
@@ -1678,7 +1668,7 @@ body {
 /* Colors */
 .white {
   background: #fff !important;
-  color: #2F2D2E !important;
+  color: #47525D !important;
 }
 .white svg {
   fill: #202020 !important;
