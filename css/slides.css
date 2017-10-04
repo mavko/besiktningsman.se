@@ -440,7 +440,7 @@ p.small {
 }
 .dropdown.customDropdown li:not(.link),
 .dropdown.customDropdown li.link a {
-  font-size: 18px;
+  font-size: 16px;
   padding: 8px 10px 8px 20px;
   cursor: pointer;
   display: block;
@@ -458,7 +458,7 @@ p.small {
  .dropdown {
    position: fixed;
    z-index: 300;
-   width: 12%;
+   width: 15%;
    background: #fff;
    box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.15), 0 14px 28px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
    margin-bottom: 50px;
@@ -472,6 +472,7 @@ p.small {
    transition: transform 0.35s, opacity 0.35s, box-shadow 0.35s, -webkit-transform 0.35s;
    /* share */
  }
+
  .dropdown:not(.show) {
    pointer-events: none;
    opacity: 0;
@@ -554,61 +555,6 @@ p.small {
  }
  .dropdown.noArrow:after, .dropdown.noArrow:before {
    display: none;
- }
- .dropdown.share li {
-   float: left;
-   text-align: center;
-   display: block;
-   width: 80px;
-   height: 50px;
-   padding: 14px 0;
-   color: #fff;
-   position: relative;
-   cursor: pointer;
-   opacity: 0.9;
-   -webkit-transition: 0.15s;
-   transition: 0.15s;
- }
- .dropdown.share li:hover {
-   opacity: 1;
- }
- .dropdown.share li:after {
-   content: " ";
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   opacity: 0;
-   background: rgba(0, 0, 0, 0.1);
-   -webkit-transition: 0.25s;
-   transition: 0.25s;
- }
- .dropdown.share li:active:after {
-   opacity: 1;
-   -webkit-transition: 0.1s;
-   transition: 0.1s;
- }
- .dropdown.share li svg {
-   width: 20px;
-   height: 20px;
-   fill: #fff;
- }
- .dropdown.share li.mail {
-   width: 100%;
-   height: 50px;
-   color: #7E7E7E;
-   font-size: 15px;
-   padding: 15px 0;
-   border-bottom-left-radius: 6px;
-   border-bottom-right-radius: 6px;
- }
- .dropdown.share li.mail:after {
-   border-radius: 0 0 7px 7px;
-   background: rgba(0, 0, 0, 0.05);
- }
- .dropdown.share li.mail:hover {
-   text-decoration: underline;
  }
  .scroll .dropdown {
    position: absolute;
@@ -884,11 +830,343 @@ contact page
 #team .col-3-12 {
       width: 33%;
 }
-
+#services h1 {
+  font-size: 44px;
+  margin: 15px 0px 20px -4px;
+}
+#services .closeButton {
+  font-size: 16px;
+}
 @media screen and (max-width: 1024px) and (min-width: 546px){
   .grid .col-5-10:not(.wide-col) {
     max-width: 50% !important;
     width: 50% !important;
+  }
+}
+/*Slide in popover*/
+.cd-main-content {
+  text-align: center;
+}
+.cd-main-content h1 {
+  padding: 4em 0;
+}
+.cd-main-content .cd-btn {
+  position: relative;
+  display: inline-block;
+  padding: 1em 2em;
+  background-color: #89ba2c;
+  color: #ffffff;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-radius: 50em;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 0 5px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.no-touch .cd-main-content .cd-btn:hover {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.cd-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  -webkit-transition: visibility 0s 0.6s;
+  -moz-transition: visibility 0s 0.6s;
+  transition: visibility 0s 0.6s;
+}
+.cd-panel::after {
+  /* overlay layer */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: background 0.3s 0.3s;
+  -moz-transition: background 0.3s 0.3s;
+  transition: background 0.3s 0.3s;
+}
+.cd-panel.is-visible {
+  z-index: 5000;
+  visibility: visible;
+  -webkit-transition: visibility 0s 0s;
+  -moz-transition: visibility 0s 0s;
+  transition: visibility 0s 0s;
+}
+.cd-panel.is-visible::after {
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transition: background 0.3s 0s;
+  -moz-transition: background 0.3s 0s;
+  transition: background 0.3s 0s;
+}
+.cd-panel.is-visible .cd-panel-close::before {
+  -webkit-animation: cd-close-1 0.6s 0.3s;
+  -moz-animation: cd-close-1 0.6s 0.3s;
+  animation: cd-close-1 0.6s 0.3s;
+}
+.cd-panel.is-visible .cd-panel-close::after {
+  -webkit-animation: cd-close-2 0.6s 0.3s;
+  -moz-animation: cd-close-2 0.6s 0.3s;
+  animation: cd-close-2 0.6s 0.3s;
+}
+
+@-webkit-keyframes cd-close-1 {
+  0%, 50% {
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
+@-moz-keyframes cd-close-1 {
+  0%, 50% {
+    -moz-transform: rotate(0);
+  }
+  100% {
+    -moz-transform: rotate(45deg);
+  }
+}
+@keyframes cd-close-1 {
+  0%, 50% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+@-webkit-keyframes cd-close-2 {
+  0%, 50% {
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-45deg);
+  }
+}
+@-moz-keyframes cd-close-2 {
+  0%, 50% {
+    -moz-transform: rotate(0);
+  }
+  100% {
+    -moz-transform: rotate(-45deg);
+  }
+}
+@keyframes cd-close-2 {
+  0%, 50% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+.cd-panel-header {
+  position: fixed;
+  width: 90%;
+  height: 50px;
+  line-height: 50px;
+  background: rgba(255, 255, 255, 0.96);
+  z-index: 2;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  -webkit-transition: top 0.3s 0s;
+  -moz-transition: top 0.3s 0s;
+  transition: top 0.3s 0s;
+}
+.cd-panel-header h1 {
+    margin: 14px 0px 0px 38px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.from-right .cd-panel-header, .from-left .cd-panel-header {
+  top: -50px;
+}
+.from-right .cd-panel-header {
+  right: 0;
+}
+.from-left .cd-panel-header {
+  left: 0;
+}
+.is-visible .cd-panel-header {
+  top: 0;
+  transition: top 0.3s 0.3s;
+}
+@media only screen and (min-width: 768px) {
+  .cd-panel-header {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-panel-header {
+    width: 50%;
+  }
+}
+
+.cd-panel-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 60px;
+  /* image replacement */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+.cd-panel-close::before, .cd-panel-close::after {
+  /* close icon created in CSS */
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  height: 3px;
+  width: 20px;
+  background-color: #424f5c;
+  /* this fixes a bug where pseudo elements are slighty off position */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.cd-panel-close::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.cd-panel-close::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.no-touch .cd-panel-close:hover {
+  background-color: #424f5c;
+}
+.no-touch .cd-panel-close:hover::before, .no-touch .cd-panel-close:hover::after {
+  background-color: #ffffff;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.no-touch .cd-panel-close:hover::before {
+  -webkit-transform: rotate(220deg);
+  -moz-transform: rotate(220deg);
+  -ms-transform: rotate(220deg);
+  -o-transform: rotate(220deg);
+  transform: rotate(220deg);
+}
+.no-touch .cd-panel-close:hover::after {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.cd-panel-container {
+  position: fixed;
+  width: 90%;
+  height: 100%;
+  top: 0;
+  background: #F6F9FC;
+  z-index: 1;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.from-right .cd-panel-container {
+  right: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  -ms-transform: translate3d(100%, 0, 0);
+  -o-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+.from-left .cd-panel-container {
+  left: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+.is-visible .cd-panel-container {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+}
+@media only screen and (min-width: 768px) {
+  .cd-panel-container {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-panel-container {
+    width: 50%;
+  }
+}
+
+.cd-panel-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 70px 5%;
+  overflow: auto;
+  /* smooth scrolling on touch devices */
+  -webkit-overflow-scrolling: touch;
+}
+.cd-panel-content p {
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #424f5c;
+  line-height: 1.4;
+  margin: 2em 0;
+}
+.cd-panel-content p:first-of-type {
+  margin-top: 0;
+}
+@media only screen and (min-width: 768px) {
+  .cd-panel-content p {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.6;
   }
 }
 /*iphone4+*/
@@ -1773,7 +2051,6 @@ body {
 }
 
 .box-67 {
-  color: #303030;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
