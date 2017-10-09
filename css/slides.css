@@ -586,10 +586,10 @@ p.small {
 #entreprenad .sliderBox-83 .img-fade {
   max-height: 275px;
 }
-#entreprenad .small {
-  font-size: 20px;
+.accordion ul li {
+  padding: 2%;
 }
-#accordion .ui-state-active {
+.accordion .ui-state-active {
     border: 0px !important;
     background: #2367A4 !important;
     color: #ffffff !important;
@@ -597,44 +597,45 @@ p.small {
     padding: .8em .8em 0.8em 0.8em !important;
 }
 
-#accordion .ui-accordion-content {
+.accordion .ui-accordion-content {
   padding: 0 !important;
 }
-#accordion .ui-state-default {
+.accordion .ui-state-default {
   background: #fff;
+  color: #1072bb;
   border: 0px !important;
   padding: .8em .8em 0.8em 0.8em !important;
   box-shadow: 0 7px 14px 0 rgba(50,50,93,.1), 0 3px 6px 0 rgba(0,0,0,.07);
   border: none;
 }
 
-#accordion .ui-widget-content {
+.accordion .ui-widget-content {
     border: 1px solid #1072bb;
     background: #ffffff;
     color: #5C646D;
     box-shadow: 0 7px 14px 0 rgba(50,50,93,.1), 0 3px 6px 0 rgba(0,0,0,.07);
     margin-bottom: 5px !important;
 }
-#accordion .ui-state-default:hover {
+.accordion .ui-state-default:hover {
   background: #2367A4;
   color: #fff;
   border: 0px solid transparent;
 }
-#accordion .ui-state-default:active {
+.accordion .ui-state-default:active {
   border: 0px solid transparent;
   outline: none;
   outline-color: none;
 }
-#accordion .ui-state-default:focus {
+.accordion .ui-state-default:focus {
   border: 0px solid transparent;
   outline: none;
   outline-color: none;
 }
-#accordion p {
+.accordion p {
   font-size: 14px;
   font-weight: normal;
 }
-#accordion h3 {
+.accordion h3 {
   font-size: 16px;
 }
 .cc_container {
@@ -1515,7 +1516,7 @@ a.underline {
     padding-right: 2%;
 }
 p.small, .p.small {
-    font-size: 22px;
+    font-size: 20;
     line-height: 1.36;
     margin-bottom: 20px;
 }
