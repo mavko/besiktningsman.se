@@ -16,24 +16,24 @@ https://designmodo.com/slides/
 */
 
 window.inAction = 1;
-window.allowSlide = 1;
-window.blockScroll = 1;
-window.effectOffset = 200;
-window.effectSpeed = 1000;
-window.slideSpeed = 1000;
-window.cleanupDelay = 1400;
+window.allowSlide = 0;
+window.blockScroll = 0;
+window.effectOffset = 0;
+window.effectSpeed = 0;
+window.slideSpeed = 0;
+window.cleanupDelay = 0;
 window.horizontalMode = 0;
 window.sidebarShown = 0;
 window.loadingProgress = 0;
 window.smoothScroll = 0;
-window.scrollSpeed = 1000;
+window.scrollSpeed = 0;
 window.preload = 1;
 window.setHashLink = 1;
-window.hideSidebarOnBodyClick = 1;
+window.hideSidebarOnBodyClick = 0;
 window.collectScrolls = 0;
 window.sliderStatus = 0;
-window.minScrollToSlide = 500;
-window.minSwipeToSlide = 35;
+window.minScrollToSlide = 0;
+window.minSwipeToSlide = 0;
 window.enableMobileZoom = 0; //new
 
 var $html = $('html');
@@ -420,7 +420,7 @@ $(document).ready(function() { "use strict";
 		  var requestedElement = $('.slide:eq('+ (window.stage - 1) +')'),
           finalPosition = $(requestedElement).offset().top;
 
-		  $('html,body').stop().clearQueue().animate({scrollTop:finalPosition},1000);
+		  $('html,body').stop().clearQueue().animate({scrollTop:finalPosition},500);
 		} else {
 		  if ((n !== window.stage)&&( n <= window.stages)){
 		    if (window.inAction !== 1){
