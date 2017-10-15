@@ -578,7 +578,6 @@ p.small {
    display: none;
  }
  .scroll .dropdown {
-   position: absolute;
    top: 0;
  }
  .illustration-icon {
@@ -1043,6 +1042,8 @@ section.network .logos .row>div:nth-child(odd) {
 
 	.cd-morph-dropdown #logo {
 		margin-left: -20px;
+		font-family: sans-serif;
+		font-weight: bold;
 	}
 }
 
