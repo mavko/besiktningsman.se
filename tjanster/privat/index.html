@@ -11,7 +11,7 @@
 						lean production, lean startup, startup, construction, industri, besiktning, besiktiga, besikta, entreprenadbesiktning, besiktningsman,
 						ritningsapp, kontroll, arbetsledare, platschef, entreprenadingenjör, bygg app, lean bygg, projekthantering, kommunikation,">
 	<!-- favicons -->
-	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="shortcut icon" href="../../favicon.ico">
 	<!-- Making the website social media friendly-->
 	<meta name="description" content="Vi erbjuder certifierade &amp; oberoende besiktningsmän för  både fastighet &amp; utemiljö. Du hittar oss bland annat i Stockholm, Malmö &amp; Göteborg. Kontakta oss" />
 	<meta name="robots" content="noodp" />
@@ -30,149 +30,874 @@
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Material+Icons" rel="stylesheet" type="text/css" />
 	<!-- Styles -->
 	<link href="../../css/slides.css" rel="stylesheet" type="text/css">
+	<!-- accordion styling -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 	<!-- Intercom chat and user identification -->
 	<script>
-	  window.intercomSettings = {
-	    app_id: "ybt1le09"
-	  };
+		window.intercomSettings = {
+			app_id: "ybt1le09"
+		};
 	</script>
-	<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/ybt1le09';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
 	<script>
-	  window.intercomSettings = {
-	    app_id: "ybt1le09",
-	    name: <%= current_user.name %>, // Full name
-	    email: <%= current_user.email %>, // Email address
-	    created_at: <%= current_user.created_at.to_i %>, // Signup date as a Unix timestamp
+		(function() {
+			var w = window;
+			var ic = w.Intercom;
+			if (typeof ic === "function") {
+				ic('reattach_activator');
+				ic('update', intercomSettings);
+			} else {
+				var d = document;
+				var i = function() {
+					i.c(arguments)
+				};
+				i.q = [];
+				i.c = function(args) {
+					i.q.push(args)
+				};
+				w.Intercom = i;
+
+				function l() {
+					var s = d.createElement('script');
+					s.type = 'text/javascript';
+					s.async = true;
+					s.src = 'https://widget.intercom.io/widget/ybt1le09';
+					var x = d.getElementsByTagName('script')[0];
+					x.parentNode.insertBefore(s, x);
+				}
+				if (w.attachEvent) {
+					w.attachEvent('onload', l);
+				} else {
+					w.addEventListener('load', l, false);
+				}
+			}
+		})()
+	</script>
+	<script>
+		window.intercomSettings = {
+			app_id: "ybt1le09",
+			name: <%= current_user.name %>, // Full name
+			email: <%= current_user.email %>, // Email address
+			created_at: <%= current_user.created_at.to_i %>, // Signup date as a Unix timestamp
 			hide_default_launcher: true
-	  };
-	  </script>
-	<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/ybt1le09';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+		};
+	</script>
+	<script>
+		(function() {
+			var w = window;
+			var ic = w.Intercom;
+			if (typeof ic === "function") {
+				ic('reattach_activator');
+				ic('update', intercomSettings);
+			} else {
+				var d = document;
+				var i = function() {
+					i.c(arguments)
+				};
+				i.q = [];
+				i.c = function(args) {
+					i.q.push(args)
+				};
+				w.Intercom = i;
+
+				function l() {
+					var s = d.createElement('script');
+					s.type = 'text/javascript';
+					s.async = true;
+					s.src = 'https://widget.intercom.io/widget/ybt1le09';
+					var x = d.getElementsByTagName('script')[0];
+					x.parentNode.insertBefore(s, x);
+				}
+				if (w.attachEvent) {
+					w.attachEvent('onload', l);
+				} else {
+					w.addEventListener('load', l, false);
+				}
+			}
+		})()
+	</script>
 	<!-- Intercom chat and user identification -->
 
 </head>
-<body>
-	<header class="cd-morph-dropdown">
-		<a href="#0" class="nav-trigger">Open Nav<span aria-hidden="true"></span></a>
 
-		<nav class="main-nav">
-			<ul>
-				<li class="has-dropdown gallery" data-content="about">
-					<a href="#0">About</a>
+<body class="slides scroll animated simplifiedMobile defaultScroll">
+	<!-- Panel Top #10 -->
+	<nav class="panel top forceMobileView white soft-shadow">
+		<div class="sections desktop">
+			<div class="left">
+				<ul class="menu crop small bold">
+					<li tabindex="1" class="dropdownTrigger" data-dropdown-hover="true" data-dropdown-id="dropdown-menu">
+						Dokument
+					</li>
+					<li><a href="nyheter/">Publicerat & Press</a></li>
+					<li><a href="om_oss/">Om oss</a></li>
+				</ul>
+			</div>
+			<div class="center">
+				<a href="../../"> <img src="../../assets/svg/bm_logo_top.svg" alt="Besiktningsman.se" style="width:200px;"> </a>
+			</div>
+			<div class="right">
+				<ul class="menu crop small bold">
+					<li tabindex="1" class="dropdownTrigger" data-dropdown-hover="true" data-dropdown-id="dropdown-menu-services">Vårt erbjudande</li>
+					<li><a href="karriar/">Karriär</a></li>
+					<li><a href="kontakt/" class="text-blue">Kundkontakt</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="sections compact hidden">
+			<div class="left">
+				<a href="https://mavko.github.io/bm_se/"><img src="../../assets/svg/bm_logo.svg" alt="Besiktningsman.se" style="width:200px;"></a>
+			</div>
+			<div class="right"><span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
+		</div>
+	</nav>
+
+	<!-- Sidebar -->
+	<nav class="sidebar white" data-sidebar-id="1">
+		<div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
+		<div class="content">
+			<a href="/" class="logo"><img src="../../assets/svg/bm_logo.svg" alt=""></a>
+			<ul class="mainMenu text-blue">
+				<h2 class="bold small text-blueGrey">Navigation</h2>
+				<li>
+					<a href="#erbjudande">
+						<p>Vårt erbjudande</p>
+					</a>
 				</li>
-
-				<li class="has-dropdown links" data-content="pricing">
-					<a href="#0">Pricing</a>
+				<br>
+				<br>
+				<li>
+					<a href="kontakt/">
+						<p>Kundkontakt</p>
+					</a>
 				</li>
-
-				<li class="has-dropdown button" data-content="contact">
-					<a href="#0">Contact</a>
+				<br>
+				<br>
+				<li>
+					<a href="karriar/">
+						<p>Karriär</p>
+					</a>
+				</li>
+				<br>
+				<br>
+				<li>
+					<a href="om_oss/">
+						<p>Om oss</p>
+					</a>
+				</li>
+				<br>
+				<br>
+				<li>
+					<a href="nyheter/">
+						<p>Publicerat & Press</p>
+					</a>
+				</li>
+				<br>
+				<br>
+				<h2 class="bold small text-blueGrey">Dokument</h2>
+				<li>
+					<a href="#">
+						<p class="small bold">Besiktningsboken</p>
+					</a>
+				</li>
+				<br>
+				<br>
+				<li>
+					<a href="#">
+						<p class="small bold">Lagbok 1</p>
+					</a>
+				</li>
+				<br>
+				<br>
+				<li>
+					<a href="#">
+						<p class="small bold">Lagbok 2</p>
+					</a>
 				</li>
 			</ul>
-		</nav>
 
-		<div class="morph-dropdown-wrapper">
-			<div class="dropdown-list">
-				<ul>
-					<li id="about" class="dropdown gallery">
-						<a href="#0" class="label">About</a>
+		</div>
+	</nav>
 
-						<div class="content">
-							<ul>
-								<li>
-									<a href="#0">
-										<em>Title here</em>
-										<span>A brief description here</span>
-									</a>
-								</li>
 
-								<li>
-									<a href="#0">
-										<em>Title here</em>
-										<span>A brief description here</span>
-									</a>
-								</li>
+	<!-- Menu dropdown -->
+	<div class="dropdown top left center customDropdown" data-dropdown-id="dropdown-menu-services">
+		<ul>
+			<li>
+				<a href="../../#entreprenad">
+					<div class="">
+						<img src="../../assets/svg/entreprenad.svg" alt="" class="illustration-icon">
+						<p>Entreprenad</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="../../#brf">
+					<div class="">
+						<img src="../../assets/svg/brf.svg" alt="" class="illustration-icon">
+						<p>Bostadsrättsförening</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="../../#privat">
+					<div class="">
+						<img src="../../assets/svg/house.svg" alt="" class="illustration-icon">
+						<p>Privat</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- HEADER -->
+	<section class="slide fade autoHeight" data-name="home" id="">
+		<div class="content">
+			<div class="container" style="height: 560px;">
+				<div class="wrap">
 
-								<li>
-									<a href="#0">
-										<em>Title here</em>
-										<span>A brief description here</span>
-									</a>
-								</li>
+					<div class="fix-10-12" style="padding-top: 5%;">
+						<h1 class="hero" style="font-weight: 400;">Privatbesiktning</h1>
+						<p class="hero small">
+							Besiktningsman.se erbjuder ett komplett och rikstäckande utbud av tjänster<br> för entreprenadbesiktning för nyproduktion och ROT samt KA.
+						</p>
+					</div>
 
-								<li>
-									<a href="#0">
-										<em>Title here</em>
-										<span>A brief description here</span>
-									</a>
-								</li>
-							</ul>
+				</div>
+			</div>
+		</div>
+		<div class="background" style="background-image:url(../../assets/img/backgrounds/goldengate.jpg)" alt="Foto av Golden Gate under sin konstruktion"></div>
+	</section>
+	<section class="slide whiteSlide autoHeight" id="privat-offer">
+		<div class="container-lg">
+
+			<div class="fix-10-12 margin-top-1">
+				<div class="left cropBottom">
+					<h1>Besiktningsman.se för privatpersoner</h1>
+					<h3>Vad är en husbesiktning?</h3>
+					<p>
+						Husbesiktning, eller entreprenadbesiktning som den rätta termen lyder, görs i samband med alla former av byggnation där du anlitat en byggentreprenör.
+					</p>
+					<p>
+						Det kan handla om att du bygger nytt, bygger till, renoverar eller bygger om. Det kan vara en villa, lägenhet, sommarstuga eller annan byggnad.
+					</p>
+					<p>
+						När du gör en sådan pass stor investering är det naturligt att känna oro för alla myndighetskrav och byggregler.
+						<br>
+						<br>
+						Därför är det viktigt att du själv väljer både Kontrollansvarig och Besiktningsman enligt din lagliga rätt.
+						<br>
+						<br>
+						Kontrollansvarig är din förlängda arm gällande myndighetskrav och Besiktningsman är den person som opartiskt, objektivt samt självständigt utför besiktning mellan dig och
+						<br>din/a entreprenör/er gällande de arbeten som entreprenören har utfört i förhållande till myndighetskrav, bygg- och branschregler.
+					</p>
+					<p>
+						Syftet med besiktningen är att få en opartisk fackmässig kontroll av att byggentreprenören utfört sitt arbete på ett korrekt sätt och på det sätt ni kommit överens om.
+						<br>
+						<br>
+						Det finns flera olika former av besiktningar, och en god regel är attgöra en s k slutbesiktning innan du betalar slutfakturan för arbetet.
+					</p>
+					<p>
+						Besiktningen är viktig eftersom den ger ett opartiskt underlag som kan vara mycket betydelsefull om något blir fel eller om det uppstår tvister mellan dig och entreprenören eller berörda försäkringsbolag.
+					</p>
+					<p>
+						De fel som besiktningsman noterar vid besiktning har entreprenören både rätt och skyldighet att avhjälpa och avhjälpande ska ske snarast eller senast inom två månader.
+					</p>
+					<p>
+						Vi rekommenderar Besiktningsmannaboken som hjälper er att få en klarare bild av vilka krav som ställs vid besiktning samt hur besiktningen går till.
+					</p>
+					<p>
+						För småhusentreprenader med konsument som beställare bör standardavtalet ABS09 tillämpas gällande nybyggnad eller tillbyggnad.
+						<br>
+						<br>
+						För ombyggnation, installationsarbeten och andra arbeten/entreprenader gäller Hantverkarformuläret.
+						<br>
+						<br>
+						För rörinstallationer finns även RK.
+					</p>
+					<p>
+						Konsumenttjänstlagen, ABS, Hantverkarformuläret samt Besiktningsmannaboken kan laddas ned hos <a href="www.konsumentverket.se" class="text-blue">www.konsumentverket.se</a>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section class="slide whiteSlide autoHeight"  id="privat-services">
+		<div class="container">
+			<div class="wrap spaces">
+						<div class="fix-10-12 left">
+							<h1>Privatpersoner</h1>
+							<h3>
+								Besiktning för privatpersoner som vill köpa, sälja, bygga, ändra eller kolla.
+							</h3>
+							<p>
+								För dig som ska köpa eller sälja ett hus, lägenhet eller annan byggnad, eller som ska bygga nytt, bygga till eller bygga om erbjuder vi alla typer av opartiska besiktningstjänster och KA.
+								Vi erbjuder också besiktning om du vill kontrollera husets skick eller om du misstänker fuktskador eller andra problem.
+							</p>
+							<p>
+								Besiktningen är viktig eftersom den ger ett opartiskt underlag som kan vara mycket betydelsefull om något blir fel eller om det uppstår tvister mellan köpare och säljare, försäkringsbolag eller byggentreprenörer eller andra berörda parter.
+							</p>
+							<p>
+								<b>Vid nybyggnation och ROT-arbeten</b>
+								<br>
+								Om du bygger nytt eller gör andra förändringar som kräver bygglov eller bygganmälan finns vissa besiktningar som måste göras. Du kan också behöva anlita en Kontrollansvarig (KA). Kommunen kommer att ge dig information om vad som krävs i samband med att bygglovet behandlas.
+								De besiktningar och KA-tjänster du behöver finns under sidan<a href="#">Entreprenadbesiktning</a>.Glöm inte heller att göra en s k §59-besiktning innan garantitiden går ut.
+							</p>
+							<p>
+								<b>Vid köp och försäljning </b>
+								<br>
+								Ska du köpa eller sälja bör du låta utföra en överlåtelsebesiktning.
+								Vi erbjuder överlåtelsebesiktning till fast pris enligt SBR-modellen (framtagen av Svenska Byggingenjörers Riksförbund).
+							</p>
+							<p>
+								<b>För att kolla byggnadens skick</b>
+								<br>
+								Vi erbjuder olika typer av besiktning, exempelvis för att kontrollera om det finns fukt, mögel eller andra skador,
+								eller statusbesiktningar för att få en sakkunnig bedömning av hur huset mår.
+							</p>
 						</div>
-					</li>
-
-					<li id="pricing" class="dropdown links">
-						<a href="#0" class="label">Pricing</a>
-
-						<div class="content">
-							<ul>
-								<li>
-									<h2>Services</h2>
-
-									<ul class="links-list">
-										<li><a href="#0">Logo Design</a></li>
-										<li><a href="#0">Branding</a></li>
-										<li><a href="#0">Web Design</a></li>
-										<li><a href="#0">iOS</a></li>
-										<li><a href="#0">Android</a></li>
-										<li><a href="#0">HTML/CSS/JS</a></li>
-										<li><a href="#0">Packaging</a></li>
-										<li><a href="#0">Mobile</a></li>
-										<li><a href="#0">UI/UX</a></li>
-										<li><a href="#0">Prototyping</a></li>
+						<div class="fix-10-12 left">
+							<h2 class="small bold">Besiktningstjänster</h2>
+							<div class="accordion">
+								<h3>Förbesiktning</h3>
+								<div>
+									<ul>
+										<li class="col-5-12">
+											<h3 class="margin-bottom-1">
+												Förbesiktning kan ske när som helst under byggprocessen om någon part önskar det.
+												Skälet kan exempelvis vara att någon del av entreprenaden kan bli svår att besikta eller felavhjälpa, om man väntar till efter färdigställandet.
+											</h3>
+											<p>
+												Besiktningsman.se erbjuder förbesiktning för nyproduktion och ROT enligt regelverken AB04 och ABT 06 kap 7 (se nedan).
+												Besiktningen utförs av opartiska besiktningsmän godkända av SBR med särskild fackkompetens för aktuellt besiktningsobjekt.
+												Vi erbjuder även komplett besiktningsgrupp.
+											</p>
+											<p>
+												Besiktningen utförs okulärt och dokumenteras digitalt av besiktningsmannen på plats.
+												Felbilaga finns tillgänglig omgående efter besiktningen och komplett utlåtande levereras inom 3 arbetsdagar.
+											</p>
+											<p>
+												Förbesiktning kan beställas som en enstaka tjänst eller ingå i en paketlösning med flera besiktningstjänster.
+												<br>
+												<br>
+												Pris offereras separat.
+											</p>
+											<h3 class="margin-bottom-1"><b>Enligt AB04 och ABT06 Kap 7 §1 har part rätt att påkalla förbesiktning om</b></h3>
+											<p>
+												<b>1</b> arbete efter färdigställandet av entreprenaden inte är eller inte utan väsentligt ingrepp blir åtkomligt för besiktning.
+											</p>
+											<p>
+												<b>2</b> avhjälpande av fel i arbete efter färdigställande skulle vara till väsentlig olägenhet för parten</p>
+											<p>
+												<b>3</b> arbete före färdigställande tas i bruk av beställaren eller</p>
+											<p>
+												<b>4</b> i övrigt särskilda skäl föreligger</p>
+											<p class="quotes margin-bottom-2">”Kommentar till kap 7 §1 i AB04 och ABT06, Ett särskilt skäl för förbesiktning kan vara att parterna i förväg vill få besiktningsmannens bedömning av kontraktsenhetligheten av visst arbete som antingen återkommer i ett stort antal eller gäller
+												principer eller kvalitetskrav för utförandet, sk normerande besiktning.”</p>
+										</li>
 									</ul>
-								</li>
+								</div>
+								<h3>Slutbesiktning</h3>
+								<div>
+									<ul>
+										<li class="col-5-12">
+											<h3 class="margin-bottom-1">
+												Slutbesiktning är den besiktning som normalt sker vid kontraktstidens utgång eller när projektet färdigställts.
+												Den ger ett objektivt underlag för att avgöra om entreprenadarbetet ska anses vara slutfört med godkännande.
+											</h3>
+											<p>
+												Besiktningsman.se erbjuder slutbesiktning för nyproduktion och ROT enligt regelverken AB04 och ABT 06 kap 7 (se nedan).
+												Besiktningen utförs av opartiska besiktningsmän godkända av SBR med särskild fackkompetens för aktuellt besiktningsobjekt.
+												Vi erbjuder även komplett besiktningsgrupp.
+											</p>
+											<p>
+												Besiktningen utförs okulärt och dokumenteras digitalt av besiktningsmannen på plats.
+												Felbilaga finns tillgänglig omgående efter besiktningen och komplett utlåtande levereras inom 3 arbetsdagar.
+											</p>
+											<p>
+												Slutbesiktning kan beställas som en enstaka tjänst eller ingå i en paketlösning med flera besiktningstjänster.
+												<br>
+												<br>
+												Pris offereras separat.
+											</p>
 
-								<li>
-									<h2>Projects</h2>
-
-									<ul class="links-list">
-										<li><a href="#0">Logo Design</a></li>
-										<li><a href="#0">Branding</a></li>
-										<li><a href="#0">Web Design</a></li>
-										<li><a href="#0">iOS</a></li>
-										<li><a href="#0">Android</a></li>
-										<li><a href="#0">HTML/CSS/JS</a></li>
+											<h3 class="margin-bottom-1">Enligt AB04 och ABT 06 kap 7</h3>
+											<p>
+												• ”Besiktning enligt §§1-5 i detta kapitel 7 verkställs av en därtill lämpad person som beställaren utser. Om parterna kommer överens om det kan besiktningen i stället verkställas av en person som de gemensamt utser. Om part underlåter att medverka till
+												att besiktningsman utses för besiktning enligt §1 eller §4 i detta kapitel 7 får motparten utse besiktningsman.”
+											</p>
+											<p>• ”Slutbesiktning skall, om inte parterna avtalat om annat, verkställas vid kontraktstidens utgång eller, om entreprenaden färdigställs senare, utan dröjsmål efter det att entreprenaden anmälts vara färdigställd. Entreprenören skall i god
+												tid underrätta beställaren när entreprenaden beräknas vara färdigställd och tillgänglig för slutbesiktning, om inte parterna genom besiktningsplan har träffat särskild överenskommelse.”</p>
+											<p>• ”En del av entreprenaden kan efter parternas överenskommelse göras till föremål för kompletterande slutbesiktning. Kompletterande slutbesiktning utgör inte hinder för entreprenadens godkännande, om inte annat avtalats.” Handledning enligt
+												BKKs handledning för entreprenadbesiktning</p>
+											<p>• ”Slutbesiktningen är den för båda parter viktigaste besiktningen. Det gäller nämligen här att pröva och avgöra frågan om godkännande av entreprenaden, vilket i sin tur har många betydelsefulla konsekvenser för parterna. Det bör betonas,
+												att – om inte parterna kommer överens om annat – slutbesiktning ska ske först vid kontraktstidens utgång eller om entreprenaden färdigställas senare, utan dröjsmål efter det att entreprenören anmält entreprenaden färdigställd.”</p>
+										</li>
 									</ul>
-								</li>
-							</ul>
+								</div>
+								<h3>Ny slutbesiktning</h3>
+								<div>
+									<ul>
+										<li class="col-5-12">
+											<h3 class="margin-bottom-1">
+												Ny slutbesiktning kan aktualiseras om entreprenaden vid slutbesiktningen uppenbarligen inte är så färdigställd att den kan godkännas.
+												Besiktningsmannen får då avbryta besiktningen och föreskriva ny slutbesiktning.
+											</h3>
+											<p>
+												Besiktningsman.se erbjuder Ny slutbesiktning för nyproduktion och ROT enligt regelverken AB04 och ABT 06 kap 7 § 12 (se nedan).
+												Besiktningen utförs av opartiska besiktningsmän godkända av SBR med särskild fackkompetens för aktuellt besiktningsobjekt.
+												Vi erbjuder även komplett besiktningsgrupp.
+											</p>
+											<p>
+												Besiktningen utförs okulärt och dokumenteras digitalt av besiktningsmannen på plats.
+												Felbilaga finns tillgänglig omgående efter besiktningen och komplett utlåtande levereras inom 3 arbetsdagar.
+												<br>
+												<br>
+												Pris offereras separat.
+											</p>
+											<h3 class="margin-bottom-1">Enligt AB04 och ABT06 kap 7§12</h3>
+											<p>
+												”Om entreprenaden vid slutbesiktningen uppenbarligen inte är så färdigställd att den kan godkännas får besiktningsmannen avbryta besiktningen och föreskriva ny slutbesiktning.”
+											</p>
+											<p><b>Handledning till kap 7§12 enligt BKKs handledning till entreprenadbesiktning</b>
+												<br>”Förutsättningen för besiktningsmannens beslut att avbryta besiktningen är hans bedömning av möjligheten av att entreprenaden kommer att godkännas.</p>
+											<p>Som angivits ovan kan man inte närmare ange någon nivå för när en entreprenad inte kan godkännas. Bedömningen får ske från fall till fall med hänsyn taget bla till objektets art och omfattning.</p>
+											<p>Begreppet ”uppenbarligen” innebär att det enligt besiktningsmannens bedömning ska framstå som fullständigt klart att entreprenaden i det skick den är inte kan komma att godkännas.”</p>
+										</li>
+									</ul>
+								</div>
+								<h3>Fortsatt slutbesiktning</h3>
+								<div>
+									<ul>
+										<li class="col-5-12">
+											<h3 class="margin-bottom-1">
+												Fortsatt slutbesiktning kan föreskrivas av om entreprenaden inte godkänns vid slutbesiktningen,
+												men den fortsatta slutbesiktningen kan i praktiken avgränsas till de delar som föranlett att slutbesiktningen inte godkändes.
+											</h3>
+											<p>
+												Fortsatt slutbesiktning kan sålunda vara av mindre omfattning än s k Ny slutbesiktning och vara ett alternativ till detta.
+											</p>
+											<p>
+												Besiktningsman.se erbjuder Fortsatt slutbesiktning för nyproduktion och ROT enligt regelverken AB04 och ABT 06 kap 7 § 12 (se nedan).
+												Besiktningen utförs av opartiska besiktningsmän godkända av SBR med särskild fackkompetens för aktuellt besiktningsobjekt.
+												Vi erbjuder även komplett besiktningsgrupp.
+											</p>
+											<p>
+												Besiktningen utförs okulärt och dokumenteras digitalt av besiktningsmannen på plats.
+												Felbilaga finns tillgänglig omgående efter besiktningen och komplett utlåtande levereras inom 3 arbetsdagar.
+												<br>
+												<br>
+												Pris offereras separat.
+											</p>
+											<h3 class="margin-bottom-1">Enligt AB04 och ABT06 kap 7 §12</h3>
+											<p>
+												”Om entreprenaden inte godkänns skall besiktningsmannen föreskriva fortsatt slutbesiktning.
+												<br>Om entreprenaden inte godkänns eller avbryts skall besiktningsmannen i sitt utlåtande ange skälen för beslutet.”
+											</p>
+											<p>”Den fortsatta slutbesiktningen ska principiellt omfatta hela entreprenaden, men kan i praktiken begränsas till sådana arbeten och funktioner som föranlett icke-godkännandet.”</p>
+											<p>Handledning enligt BKKs handledning för entreprenadbesiktning
+												<br>”Förutsättningarna för att godkänna entreprenaden är inte uppfyllda om felen medför att användbarheten inskränks eller att säkerheten ifrågasätts om entreprenaden avlämnas.”</p>
+											<p>
+												<b>- Kommentar,</b>
+												<br>Entreprenören avgör vilken tid som behövs för avhjälpande och avropar i god tid när entreprenaden är färdig för fortsatt slutbesiktning.
+											</p>
+										</li>
+									</ul>
+								</div>
+								<h3>Efterbesiktning</h3>
+								<div>
+									<ul>
+										<li class="col-5-12">
+											<h3 class="margin-bottom-1">
+												Efterbesiktning kan ske för att konstatera om fel som noterats vid tidigare besiktning har avhjälpts eller inte. Efterbesiktning kan påkallas av entreprenör eller beställare
+											</h3>
+											<p>
+												Besiktningsman.se erbjuder Efterbesiktning för nyproduktion och ROT enligt regelverken AB04 och ABT 06 kap 7 § 5(se nedan). Besiktningen utförs av opartiska besiktningsmän godkända av SBR med särskild fackkompetens för aktuellt besiktningsobjekt. Vi erbjuder även komplett besiktningsgrupp.
+											</p>
+											<p>
+												Besiktningen utförs okulärt och dokumenteras digitalt av besiktningsmannen på plats. Felbilaga finns tillgänglig omgående efter besiktningen och komplett utlåtande levereras inom 3 arbetsdagar
+												<br>
+												<br>
+												Pris offereras separat.
+											</p>
+											<h3 class="margin-bottom-1">Enligt AB04 och ABT06 Kap 7 §5</h3>
+											<p>
+												”Part har rätt att påkalla efterbesiktning för konstaterande av om ett fel avhjälpts.
+												<br>Efterbesiktning verkställs utan dröjsmål efter avhjälpandet. Beställaren får också påkalla
+												<br>efterbesiktning om entreprenören underlåter att avhjälpa felet i rätt tid.”
+											</p>
+											<p>
+												”Om entreprenören har påkallat efterbesiktning men någon sådan inte kommer till stånd på grund av beställarens underlåtenhet, skall de fel som efterbesiktningen avsågs omfatta anses vara avhjälpta.”
+											</p>
+											<p>
+												<b>Handledning till kap 7 §5 i BKKs handledning till entreprenadbesiktning</b>
+												<br> ”Vid efterbesiktning ska konstateras om fel avhjälpts. I utlåtande över efterbesiktning noteras de kvarvarande fel som inte avhjälpts och eventuella följdfel som uppkommit vid avhjälpandet. Fel som inte noterats tidigare ska inte tas
+												upp vid efterbesiktning.
+												<br>
+												<br> Av beställaren skriftligt påtalat fel enligt kap7§12 ska inte heller tas upp, utan dessa ska behandlas som särskild besiktning om part påkallar sådan. Inget hindrar dock att en förrättning omfattar både efterbesiktning och särskild besiktning,
+												om detta angivits i kallelsen.”</p>
+										</li>
+									</ul>
+								</div>
+								<h3>Särskild besiktning</h3>
+								<div>
+									<ul>
+										<li class="col-5-12">
+											<h3 class="margin-bottom-1">
+												Särskild besiktning kan ske efter slutbesiktning och ända fram till den 10-åriga ansvarstidens utgång, och avse fel som av olika skäl inte noterats eller framträtt tidigare.
+											</h3>
+											<p>
+												Besiktningsman.se erbjuder Särskild besiktning för nyproduktion och ROT enligt regelverken AB04 och ABT 06 kap 7 § 4 (se nedan).
+												Besiktningen utförs av opartiska besiktningsmän godkända av SBR med särskild fackkompetens för aktuellt besiktningsobjekt.
+												Vi erbjuder även komplett besiktningsgrupp.
+											</p>
+											<p>
+												Besiktningen utförs okulärt och dokumenteras digitalt av besiktningsmannen på plats. Felbilaga finns tillgänglig omgående efter besiktningen och komplett utlåtande levereras inom 3 arbetsdagar.
+												<br>
+												<br>
+												Pris offereras separat.
+											</p>
+											<h3 class="margin-bottom-2" style="margin-top:15px;">Särskild besiktning enligt AB04 och ABT06 kap 7 §4</h3>
+											<p>
+												”Part har rätt att efter entreprenadtidens utgång påkalla särskild besiktning avseende
+												<br>1 sådant fel som beställaren har påtalat
+												<br>2 entreprenadens status i visst avseende Särskild besiktning verkställs utan dröjsmål efter påkallandet.”
+											</p>
+											<p>
+												<b>Handledning enligt BKKs handledning för entreprenadbesiktningar</b>
+												<br> ”Särskild besiktning enligt punkt 1 ovan avser sådana av beställaren påtalade fel efter förhållanden som förelegat vid slutbesiktning men som då inte tagits upp på grund av att de inte märkts, eller att besiktningsmannen förbisett felet.
+												<br> Särskild besiktning enligt punkt 2 ovan avser dels fel som framträtt under garantitiden och där garantiansvar eventuellt föreligger, och dels sådana fel som framträtt efter garantitidens utgång men inom den 10-åriga ansvarstiden.”
+											</p>
+										</li>
+									</ul>
+								</div>
+								<h3>Statusbesiktning</h3>
+								<div>
+									<ul>
+										<li class="col-5-12">
+											<h3 class="margin-bottom-1">
+												Statusbesiktning kan ske på entreprenörens eller beställarens initiativ under entreprenadens gång för att få en bedömning av dess aktuella status, även om det saknas indikationer om fel.
+											</h3>
+											<p>
+												Besiktningsman.se erbjuder Statusbesiktning för nyproduktion och ROT enligt regelverken AB04 och ABT 06 kap 7 § 4 (se nedan). Besiktningen utförs av opartiska besiktningsmän godkända av SBR med särskild fackkompetens för aktuellt besiktningsobjekt. Vi erbjuder även komplett besiktningsgrupp.
+											</p>
+											<p>
+												Besiktningen utförs okulärt och dokumenteras digitalt av besiktningsmannen på plats. Felbilaga finns tillgänglig omgående efter besiktningen och komplett utlåtande levereras inom 3 arbetsdagar.
+												<br>
+												<br>
+												Pris offereras separat.
+											</p>
+											<h3 class="margin-bottom-1">Handledning till ABT06 kap 7§4 i BKKs handledning till entreprenadbesiktning</h3>
+											<p>
+												”Statusbesiktning: Sådan särskild besiktning som enligt ABT06 kan påkallas av part avseende entreprenadens status i visst avseende, även om det saknas indikationer om fel.”
+											</p>
+										</li>
+									</ul>
+								</div>
+								<h3>Garantibesiktning - 2-årsbesiktning</h3>
+								<div>
+									<ul>
+										<li class="col-5-12">
+											<h3 class="margin-bottom-1">
+												Garantibesiktning/2-årsbesiktning kan ske på beställarens initiativ före den 2-åriga garantitidens utgång. Besiktningen görs för att se om det framkommit fel som funnits, men inte upptäckts, vid slutbesiktningen.
+											</h3>
+											<p>
+												Besiktningsman.se erbjuder Garantibesiktning/2-årsbesiktning för nyproduktion och ROT enligt regelverken AB04 och ABT 06 kap 7 §3 (se nedan). Besiktningen utförs av opartiska besiktningsmän godkända av SBR med särskild fackkompetens för aktuellt besiktningsobjekt. Vi erbjuder även komplett besiktningsgrupp.
+											</p>
+											<p>Besiktningen utförs okulärt och dokumenteras digitalt av besiktningsmannen på plats. Felbilaga finns tillgänglig omgående efter besiktningen och komplett utlåtande levereras inom 3 arbetsdagar.</p>
+											<p>Denna tjänst kan beställas som en enstaka tjänst eller ingå i en paketlösning med flera besiktningstjänster</p>
+											<p>
+												Besiktningen utförs okulärt och dokumenteras digitalt av besiktningsmannen på plats. Felbilaga finns tillgänglig omgående efter besiktningen och komplett utlåtande levereras inom 3 arbetsdagar.
+												<br>
+												<br>
+												Pris offereras separat.
+											</p>
+											<h3 class="margin-bottom-1">Enligt AB04 och ABT06 kap 7 §3</h3>
+											<p>
+												”Före utgången av den kortaste garantitiden verkställs garantibesiktning, om parterna inte kommer överens om annat. Garantibesiktningen påkallas av beställaren.”
+											</p>
+											<p>
+												Handledning enligt BKKs handledning för besiktning
+												<br> Besiktningsmannen ska vid garantibesiktning inte notera förhållanden som lämnats utan anmärkning vid slutbesiktning.
+												<br> Garantibesiktningen ska normalt inte omfatta ej avhjälpta fel från slutbesiktningen.”
+											</p>
+											<p>
+												<b>- Kommentar,</b>
+												<br>Vid bokning av garantibesiktning kan ni tilläggsbeställa att även efterbesiktning av tidigare besiktning ska utföras.
+											</p>
+										</li>
+									</ul>
+								</div>
+								<h3>Överbesiktning</h3>
+								<div>
+									<ul>
+										<li class="col-5-12">
+											<h3 class="margin-bottom-1">
+												Överbesiktning kan ske om någon part anser att en tidigare gjord besiktning helt eller delvis kan ifrågasättas.
+											</h3>
+											<p>
+												Besiktningsman.se erbjuder Överbesiktning för nyproduktion och ROT enligt regelverken AB04 och ABT 06 kap 7 §6 (se nedan). Besiktningen utförs av opartiska besiktningsmän godkända av SBR med särskild fackkompetens för aktuellt besiktningsobjekt. Vi erbjuder även komplett besiktningsgrupp.
+											</p>
+											<p>
+												Besiktningen utförs okulärt och dokumenteras digitalt av besiktningsmannen på plats. Felbilaga finns tillgänglig omgående efter besiktningen och komplett utlåtande levereras inom 3 arbetsdagar.
+												<br>
+												<br>
+												Pris offereras separat.
+											</p>
+											<h3 class="margin-bottom-1">Enligt AB04 och ABT06 kap 7§6</h3>
+											<p>
+												• ”Part har rätt att påkalla överbesiktning av varje form besiktning. Genom överbesiktning prövas de frågor som har föranlett denna, tex frågan om entreprenadens godkännande, förekomsten av fel eller ansvar för fel.
+												<br>Överbesiktning ersätter den besiktning eller del av besiktning som har föranlett påkallandet av överbesiktning.
+												<br>Överbesiktning skall skriftligen påkallas inom tre veckor efter det att part fått del av besiktningsutlåtandet.”
+											</p>
+											<p>• ”Överbesiktning verkställs av en person som parterna gemensamt utser eller av en överbesiktningsnämnd. En sådan nämnd skall bestå av tre personer, av vilka parterna vardera utser en och dessa två personer den tredje, som ska vara ordförande.
+												Ledamot får inte tidigare ha verkställt besiktning i entreprenaden. ”</p>
+										</li>
+									</ul>
+								</div>
+								<h3>Obligratorisk ventilationskontroll - OVK</h3>
+								<div>
+									<ul>
+										<li class="col-5-12">
+											<h3 class="margin-bottom-1">
+												Obligatorisk ventilationskontroll, OVK, ska enligt lag göras innan ett ventilationssystem tas i bruk för första gången (första besiktning).
+											</h3>
+											<p class="bold">
+												För de flesta byggnader ska OVK sedan göras regelbundet, var 3 eller 6 år. OVK ska utföras av en certifierad sakkunnig funktionskontrollant.
+												Det är byggnadens ägare som ska se till OVK utförs enligt gällande bestämmelser och föreskrifter.
+											</p>
+											<p>
+												Besiktningsman.se erbjuder OVK enligt plan-och bygglagens bestämmelser och Boverkets föreskrifter. Kontrollen utförs av en certifierad sakkunnig kontrollant.
+												<br>
+												<br>
+												Kontrollen utförs i en följd och förutsätter full åtkomst till samtliga lägenheter och utrymmen enligt en upprättad besiktningstidplan.
+												<br>
+												<br>
+												Pris offereras separat.
+											</p>
+											<h3 class="margin-bottom-1">Ur Boverkets information om OVK:</h3>
+											<p>
+												”I plan- och bygglagstiftningen finns bestämmelser om obligatorisk funktionskontroll av ventilationssystem i byggnader, OVK.
+												OVK ska utföras av en certifierad sakkunnig funktionskontrollant. OVK ska genomföras dels innan ett ventilationssystem första gången tas i bruk,
+												så kallad första besiktning, dels regelbundet vid återkommande tillfällen, så kallad återkommande besiktning.
+												<br>
+												<br>
+												Återkommande besiktningar ska göras med olika intervaller beroende på typ av byggnad och ventilationssystem. I Boverkets föreskrifter preciseras vilka byggnader som är berörda och vilka intervaller som gäller för funktionskontrollen.
+												Vissa byggnader och ventilationssystem är undantagna.
+												<br>
+												<br>
+												Läs mer i Boverkets föreskrifter för OVK. Det är byggnadens ägare som ska se till att funktionskontroll av ventilationssystem utförs enligt bestämmelserna i plan- och bygglagen, plan- och byggförordningen och i Boverkets föreskrifter.
+												<br>
+												<br>
+												Byggnadens ägare ansvarar också för att under byggnadens brukstid vidta de åtgärder som behövs för att kraven på ventilationssystemet ska vara uppfyllda och för att det underhålls så att dess väsentliga tekniska egenskaper i huvudsak bevaras.
+												<br>
+												<br>
+												Byggnadens ägare ansvarar också för att fel och brister i ventilationssystem som upptäcks vid OVK eller annars under byggnadens brukstid åtgärdas omgående.”
+											</p>
+										</li>
+									</ul>
+								</div>
+								<h3>Paragraf 59-besiktning</h3>
+								<div>
+									<ul>
+										<li class="col-5-12">
+											<h3 class="margin-bottom-1">
+												En så kallad Paragraf 59-besiktning kan göras inför utgången av den 2-åriga garantitiden för att se om fel som fanns vid överlämnandet men inte märkts då, hunnit visa sig under den gångna tiden
+											</h3>
+											<p>
+												En paragraf 59-besiktning hänsyftar till paragraf 59 i Konsumentköplagen. Besiktningen kan påkallas av endera parten, och denne betalar i så fall besiktningskostnaden.
+											</p>
+											<p>
+												Besiktningsman.se erbjuder paragraf 59-besiktning för nyproduktion och ROT enligt paragraf 59 i konsumentköplagen (se nedan).
+												Besiktningen utförs av opartiska besiktningsmän godkända av SBR med särskild fackkompetens för aktuellt besiktningsobjekt.
+												Vi erbjuder även komplett besiktningsgrupp.
+											</p>
+											<p>
+												Besiktningen utförs okulärt och dokumenteras digitalt av besiktningsmannen på plats.
+												Felbilaga finns tillgänglig omgående efter besiktningen och komplett utlåtande levereras inom 3 arbetsdagar.
+											</p>
+											<p>
+												Denna tjänst kan beställas som en enstaka tjänst eller ingå i en paketlösning med flera besiktningstjänster.
+												<br>
+												<br>
+												Pris offereras separat.
+											</p>
+											<p class="bold">Paragraf 59-besiktning enligt ABS 09 p24, fjärde stycket:</p>
+											<p>
+												Vid nyproduktion, om och tillbyggnad krävs det en Kontrollansvarig (KA) – tidigare benämnd som kvalitetsansvarig – för att genomföra entreprenaden. Kontrollansvarig ser till att nödvändiga inspektioner utförs för att entreprenaden skall leva upp till
+												myndighetskrav och gällande bygg- och branschregler.
+											</p>
+											<p class="bold">Handledning enligt BKKs handledning för entreprenadbesiktning:</p>
+											<p>
+												”§59-besiktning kan påtalas av endera parten och göras inom två år från avlämnandet.
+												 Den ska betalas av den part som påkallat den, oberoende av om fel konstateras eller inte.”
+											</p>
+										</li>
+									</ul>
+								</div>
+								<h3>Kontrollansvarig</h3>
+								<div>
+									<ul>
+										<li class="col-5-12">
+											<h3 class="margin-bottom-1">Vid nyproduktion, om- och tillbyggnad där det behövs bygglov krävs en Kontrollansvarig (KA). En KA kan även behövas vid rivning eller markarbeten</h3>
+											<p>
+												Den Kontrollansvarige ska kontrollera att de myndighetskrav och bygg- och branschregler som ställs på arbetena uppfylls. Dessa krav kan exempelvis avse ventilation, energianvändning, fuktsäkerhet, tillgänglighet samt att de för arbetena gällande säkerhetsreglerna uppfylls.
+											</p>
+											<p>Den kontrollansvarige ska vara certifierad, och ska anlitas och bekostas av byggherren/beställaren.</p>
+											<p>
+												Besiktningsman.se erbjuder certifierade Kontrollansvariga enligt gällande regler.
+												Vi erbjuder även kontrollansvarig i kombination med besiktningsman eller besiktningsgrupp.
+											</p>
+											<p>
+												Tjänsten kan beställas som en enstaka tjänst eller ingå i en paketlösning med flera besiktningstjänster.
+												<br>
+												<br>
+												Pris offereras separat.
+											</p>
+											<h3 class="margin-bottom-1">Ur Boverkets information om Kontrollansvarig:</h3>
+											<p>Du som ska bygga, riva eller utföra markarbeten kan behöva en kontrollansvarig, KA, för ditt projekt. Du behöver oftast inte en kontrollansvarig om du bara ska göra små ändringar av till exempel ett en- och tvåbostadshus. När du utför en åtgärd som varken kräver lov eller anmälan krävs aldrig en kontrollansvarig.</p>
+											<p>Den kontrollansvarige du anlitar måste vara certifierad. Kravet finns i EU:s tjänstedirektiv och innebär att bara personer som är certifierade får göra det en kontrollansvarig ska göra.</p>
+											<p>Den kontrollansvarige ska medverka till att ditt projekt uppfyller kraven i bygglagstiftningen. Den kontrollansvarige ska bland annat hjälpa dig att ta fram ett förslag till kontrollplan. Den kontrollansvarige ska också se till att kontrollplanen följs, vara med vid det tekniska samrådet, besiktningar och andra kontroller samt skriva ett utlåtande som ska vara underlag för byggnadsnämndens slutbesked.</p>
+											<p>Den kontrollansvarige måste ha en självständig ställning. Det betyder till exempel att han eller hon inte får vara nära släkt med den som utför åtgärden eller arbeta på samma företag.</p>
+											<p>För att bli certifierad krävs kunskap, erfarenhet och lämplighet för uppgiften. Certifieringar får endast utfärdas av certifieringsorgan, det vill säga företag som har ackrediterats för denna uppgift av myndigheten Swedac.</p>
+										</li>
+									</ul>
+								</div>
+								<h3>Fuktbesiktning</h3>
+								<div>
+									<ul>
+										<li class="col-5-12">
+											<h3 class="margin-bottom-1">Fuktbesiktning kan utföras vid nyproduktion och ROT, samt för att kontrollera befintliga fastigheter. Fuktbesiktning kan avse alla typer av byggnader.</h3>
+											<p><b>Vid nyproduktion och ROT</b> utför vi löpande fuktbesiktningar under entreprenadens gång och/eller färdigställande. Tjänsten kan beställas som en enstaka tjänst eller ingå i en paketlösning med flera besiktningstjänster.</p>
+											<p><b>För befintliga fastigheter</b> kan fuktbesiktning göras av hela eller delar av byggnaden för att kontrollera om fuktskador eller risk för fuktskador finns, samt för rådgivning och förslag till hur fuktskador kan åtgärdas eller förebyggas. Har du lukt i huset bör en fuktbesiktning utföras snarast.</p>
+											<p>Våra fuktbesiktningar utförs av besiktningsmän med mångårig erfarenhet av hur fuktskador uppkommer och hur de kan upptäckas och åtgärdas. </p>
+											<p>Tjänsten kan beställas som en enstaka tjänst eller ingå i en paketlösning med flera besiktningstjänster. Pris offereras separat.</p>
+											<h3>Mer om fuktbesiktning av befintliga fastigheter</h3>
+											<p>
+												Kan det finnas en fuktskada i din fastighet eller vill du försäkra dig om att allt är som det ska?
+												Idag kan man undersöka eventuella fukt- och mögelskador utan att behöva göra större ingrepp i huset.
+												Med olika mätinstrument och provtagningar kan vi snabbt och exakt kontrollera om det finns fukt eller mögel och vad det i så fall beror på.
+												Du kan även beställa en åtgärds- och kostnadsbedömning samt laboratorietester.
+											</p>
+											<p>En fuktbesiktning är en bra investering även om du inte misstänker ett fel. Det kan ta lång tid innan ett läckage eller andra problem visar sig, och ju tidigare de upptäcks desto mindre omfattande hinner skadorna och åtgärdskostnaderna bli.</p>
+											<p>En fuktbesiktning ger också ökad trygghet för dig som säljare eller köpare av en fastighet.  Det gäller såväl äldre som nyare fastigheter. Efter fuktbesiktningen erhålls ett besiktningsutlåtande, som är ett oberoende och tillförlitligt underlag att visa upp för försäkringsbolag eller om det uppstår en tvist mellan dig och en motpart i samband med exempelvis byggnadsarbeten eller en försäljning.</p>
+											<p>
+												Fuktskador kan ha olika orsaker. Utöver läckande vattenledningar kan fuktskador ofta uppstå i och bero på exempelvis:
+												<br>
+												<br>
+												<b>Vindsutrymmen</b> - Fukt och mögel skador beror vanligen på bristfällig ventilation i boendedelen. Till exempel på grund av att varm fuktig luft transporteras upp till en kall vind där den kondenserar mot yttertaket. Risken för detta är störst vindertid. Har du tittat på insidan av yttertaket?
+												<br>
+												<b>Krypgrund</b> - Särskilt under sommarhalvåret finns risk för att fukt- och mögelskador i krypgrunden.
+												<br>
+												<b>Källarväggar</b>	- Året om kan fukttransport ske via källarväggen från den kalla fuktiga marken vilket kan ge fukt och mögel skador på insidan av källarvägg.
+												<br>
+												<b>Betongplatta på mark</b> - Om den är utförd 1985 eller tidigare är det vanligt att fukt från underliggande mark transportas upp i betongplattan och vidare upp i uppreglat golv.
+											</p>
+										</li>
+									</ul>
+								</div>
+								<h3>Överlåtelsebesiktning enligt SBR-modellen.</h3>
+								<div>
+									<ul>
+										<li class="col-5-12">
+											<h3 class="margin-bottom-1">
+												En överlåtelsebesiktning bör ske för att kontrollera byggnaden i samband med en överlåtelse, och avser vanligtvis småhus, fritidshus, bostadsrättslägenheter eller liknande.
+												En överlåtelsebesiktning kan beställas av såväl köpare som säljare. Överlåtelsebesiktning benämns ibland ”Husbesiktning”.
+											</h3>
+											<p>Besiktningsman.se erbjuder överlåtelsebesiktning enligt SBR-modellen, dvs den metod som framtagits av Svenska Byggingenjörers Riksförbund och som rekommenderas av bland annat Konsumentverket.  Våra överlåtelsebesiktningar utförs av godkända besiktningsmän utbildade av SBR eller motsvarande.</p>
+											<p>Överlåtelsebesiktningen resulterar i ett opartiskt och sakkunnigt utlåtande som kan få avsevärd betydelse om det senare skulle framkomma eller uppstå tvister eller andra problem.</p>
+											<p>Besiktningen utförs okulärt och dokumenteras digitalt av besiktningsmannen på plats. Felbilaga finns tillgänglig omgående efter besiktningen och komplett utlåtande levereras inom 3 arbetsdagar.</p>
+											<p>Pris offereras separat.</p>
+											<h3 class="margin-bottom-1">Mer om Överlåtelsebesiktning</h3>
+											<p>
+												<b>Överlåtelsebesiktning består av tre moment; startsammanträde, besiktning och slutsammanträde.</b>
+												Vi börjar alltid med ett startsammanträde där vi går igenom uppdragsbekräftelsen med information för både köpare och säljare om hur besiktningen går till.
+												Besiktningsmannen förklarar olika typer av så kallade kända riskkonstruktioner och vad det innebär.
+												Säljaren informerar besiktningsmannen och köparen om vad de känner till om huset, både positivt och negativt.
+											</p>
+											<p>
+												<b>Därefter påbörjas besiktningen</b>
+													Det innebär en okulär fastighetsbesiktning av huvudbyggnaden, där vi tillsammans besiktigar alla utrymmen som är tillgängliga via öppningar, luckor och liknande, samt de som i övrigt är krypbara.
+													Vi informerar om eventuella fel och risker med vissa konstruktioner löpande under överlåtelsebesiktningen.
+													Besiktningsmannen informerar även om löpande fastighetsskötsel och vad man som fastighetsägare skall tänka på.
+													Vi anser att det är av stor vikt att både säljare och köpare deltar och följer med i överlåtelsebesiktningen.
+											</p>
+											<p>
+												<b>Slutsammanträde</b>
+												<br>
+												Efter besiktningen sker ett slutsammanträde där vi sammanfattningsvis går igenom vad som noterats och vilken påverkan eventuella fel och risker kan ha på huset.
+												Ni får därefter ett besiktningsutlåtande som bör läsas igenom noggrant, och frågor kring utlåtandet kan då besvaras av besiktningsmannen.
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
 						</div>
-					</li>
 
-					<li id="contact" class="dropdown button">
-						<a href="#0" class="label">Contact</a>
-
-						<div class="content">
-							<ul class="links-list">
-								<li><a href="#0">Link #1</a></li>
-								<li><a href="#0">Link #2</a></li>
-								<li><a href="#0">Link #3</a></li>
-								<li><a href="#0">Link #4</a></li>
-								<li><a href="#0">Link #5</a></li>
-								<li><a href="#0">Link #6</a></li>
-							</ul>
-
-							<a href="#0" class="btn">Get in Touch</a>
+						<br>
+						<br>
+						<div class="fix-10-12 left">
+							<a class="typeform-share blue common-Button" href="https://sebastian209.typeform.com/to/oZw406" data-mode="1" target="_blank">Redo att sätta igång?</a>
+							<script>
+								(function() {
+									var qs, js, q, s, d = document,
+										gi = d.getElementById,
+										ce = d.createElement,
+										gt = d.getElementsByTagName,
+										id = 'typef_orm_share',
+										b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+									if (!gi.call(d, id)) {
+										js = ce.call(d, 'script');
+										js.id = id;
+										js.src = b + 'share.js';
+										q = gt.call(d, 'script')[0];
+										q.parentNode.insertBefore(js, q)
+									}
+									id = id + '_';
+									if (!gi.call(d, id)) {
+										qs = ce.call(d, 'link');
+										qs.rel = 'stylesheet';
+										qs.id = id;
+										qs.href = b + 'share-button.css';
+										s = gt.call(d, 'head')[0];
+										s.appendChild(qs, s)
+									}
+								})()
+							</script>
+							<a href="tel:0101654000" class="bold text-blue margin-left-3">Alternativt ring oss på: 010-165 40 00</a>
 						</div>
-					</li>
-				</ul>
 
-				<div class="bg-layer" aria-hidden="true"></div>
-			</div> <!-- dropdown-list -->
-		</div> <!-- morph-dropdown-wrapper -->
-	</header>
+				</div>
+			</div>
+	</section>
+<!-- Footer -->
+<section class="slide customFooter autoHeight">
+  <div class="content">
+    <div class="container-lg">
+      <div class="wrap">
 
-	<main class="cd-main-content">
+        <div class="fix-10-12 center">
+					<img src="../../assets/svg/bm_logo_top.svg" alt="Besiktningsman.se" style="max-width: 400px;" class="margin-bottom-1">
+          <p class="bold">Sveriges ledande entreprenadbesiktningsföretag</p>
+          <ul class="later center">
+            <li class="col-6-12 ae-3">
+              <h3 class="margin-bottom-1">Kontor</h3>
+              <a target="_blank" href="https://goo.gl/maps/RSkTwoQWpEn"><p class="text-blue bold">Heleneborgsgatan 54, 117 32 Stockholm</p></a>
+							<a href="tel:0101654000"><p class="text-blue bold">Telefon: 010-165 40 00</p></a>
+            </li>
+            <li class="col-6-12 ae-5">
+              <h3 class="margin-bottom-1">Följ oss</h3>
+							<a target="_blank" href="https://medium.com/besiktningsbloggen"><p class="text-blue bold">Besiktningsbloggen</p></a>
+							<a target="_blank" href="https://twitter.com/BjornSelling"><p class="text-blue bold">Twitter</p></a>
+							<a target="_blank" href="https://www.facebook.com/Besiktningsman/"><p class="text-blue bold">Facebook</p></a>
+							<a target="_blank" href="https://www.linkedin.com/company/24778105/"><p class="text-blue bold">Linkedin</p></a>
+            </li>
+          </ul>
+        </div>
 
-	</main>
+      </div>
+    </div>
+  </div>
+</section>
 	<!-- Scripts -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -180,4 +905,5 @@
 	<script src="../../js/slides.js" type="text/javascript" name="main-scripts"></script>
 	<script src="../../js/custom.js" type="text/javascript" name="main-scripts"></script>
 </body>
+
 </html>

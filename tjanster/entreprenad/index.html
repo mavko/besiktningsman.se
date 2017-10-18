@@ -11,7 +11,7 @@
 						lean production, lean startup, startup, construction, industri, besiktning, besiktiga, besikta, entreprenadbesiktning, besiktningsman,
 						ritningsapp, kontroll, arbetsledare, platschef, entreprenadingenjör, bygg app, lean bygg, projekthantering, kommunikation,">
 	<!-- favicons -->
-	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="shortcut icon" href="../../favicon.ico">
 	<!-- Making the website social media friendly-->
 	<meta name="description" content="Vi erbjuder certifierade &amp; oberoende besiktningsmän för  både fastighet &amp; utemiljö. Du hittar oss bland annat i Stockholm, Malmö &amp; Göteborg. Kontakta oss" />
 	<meta name="robots" content="noodp" />
@@ -30,6 +30,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Material+Icons" rel="stylesheet" type="text/css" />
 	<!-- Styles -->
 	<link href="../../css/slides.css" rel="stylesheet" type="text/css">
+	<!-- accordion styling -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 	<!-- Intercom chat and user identification -->
 	<script>
 	  window.intercomSettings = {
@@ -64,15 +66,13 @@
 				</ul>
 			</div>
 			<div class="center">
-				<a href="../"> <img src="../../assets/svg/bm_logo_top.svg" alt="Besiktningsman.se" style="width:200px;"> </a>
+				<a href="../../"> <img src="../../assets/svg/bm_logo_top.svg" alt="Besiktningsman.se" style="width:200px;"> </a>
 			</div>
 			<div class="right">
 				<ul class="menu crop small bold">
-					<!-- <li><a href="#erbjudande">Vårt erbjudande</a></li>
-					<li><a href="karriar/">Karriär</a></li>
-					<li><a href="kontakt/" class="text-blue">Kundkontakt</a></li> -->
 					<li tabindex="1" class="dropdownTrigger" data-dropdown-hover="true" data-dropdown-id="dropdown-menu-services">Vårt erbjudande</li>
-	        <li tabindex="2" class="dropdownTrigger" data-dropdown-id="dropdown-menu2">More on Click</li>
+					<li><a href="karriar/">Karriär</a></li>
+					<li><a href="kontakt/" class="text-blue">Kundkontakt</a></li>
 				</ul>
 			</div>
 		</div>
@@ -124,7 +124,7 @@
 <div class="dropdown top left center customDropdown" data-dropdown-id="dropdown-menu-services">
   <ul>
 	  <li>
-			<a href="../tjanster/entreprenad">
+			<a href="../../#entreprenad">
 				<div class="">
 					<img src="../../assets/svg/entreprenad.svg" alt=""  class="illustration-icon">
 					<p>Entreprenad</p>
@@ -132,7 +132,7 @@
 			</a>
 		</li>
 	  <li>
-			<a href="../tjanster/brf">
+			<a href="../../#brf">
 				<div class="">
 					<img src="../../assets/svg/brf.svg" alt=""  class="illustration-icon">
 					<p>Bostadsrättsförening</p>
@@ -140,7 +140,7 @@
 			</a>
 		</li>
 	  <li>
-			<a href="../tjanster/privat">
+			<a href="../../#privat">
 				<div class="">
 					<img src="../../assets/svg/house.svg" alt=""  class="illustration-icon">
 					<p>Privat</p>
@@ -150,26 +150,6 @@
   </ul>
 </div>
 
-<!-- Menu dropdown -->
-<div class="dropdown top left center customDropdown" data-dropdown-id="dropdown-menu2">
-  <ul>
-    <li class="link"><a href="http://google.com" target="_blank">Exernal Link</a></li>
-    <li class="toSlide-1">Slide 1</li>
-    <li class="toSlide-2">Slide 2</li>
-    <li class="toSlide-3">Slide 3</li>
-    <li class="dropdownTrigger" data-dropdown-id="dropdown-menu3">More items <i class="material-icons" style="float: right">more_vert</i></li>
-  </ul>
-</div>
-
-<!-- Menu dropdown 3 -->
-<div class="dropdown left center noArrow customDropdown" data-dropdown-id="dropdown-menu3">
-  <ul>
-    <li class="toSlide-1">Slide 1</li>
-    <li class="toSlide-2">Slide 2</li>
-    <li class="toSlide-3">Slide 3</li>
-    <li class="link"><a href="http://google.com" target="_blank">Exernal Link</a></li>
-  </ul>
-</div>
 
 	<!-- HEADER -->
 	<section class="slide fade autoHeight" data-name="home" id="">
@@ -178,9 +158,10 @@
 				<div class="wrap">
 
 					<div class="fix-10-12" style="padding-top: 5%;">
-						<img src="../../assets/svg/bm_logo_white_top.svg" alt="Besiktningsman.se" class="border-bottom" style="border-bottom: none;">
-						<p class="hero" style="font-weight: 400;">Sveriges ledande entreprenadbesiktningsföretag</p>
-						<a href="#foretag" class="common-Button white text-blue fromCenter" style="margin-right: 20px;">FÖRETAG</a><a href="#brf" class="common-Button white text-blue fromCenter">BRF / PRIVAT</a>
+						<h1 class="hero" style="font-weight: 400;">Entreprenadbesiktning</h1>
+						<p class="hero small">
+							Besiktningsman.se erbjuder ett komplett och rikstäckande utbud av tjänster<br> för entreprenadbesiktning för nyproduktion och ROT samt KA.
+						</p>
 					</div>
 
 				</div>
@@ -192,16 +173,12 @@
 		<div class="container">
 			<div class="wrap spaces">
 						<div class="fix-10-12 left">
-							<h1>Entreprenadbesiktning</h1>
 							<p>
-								Besiktningsman.se erbjuder ett komplett och rikstäckande utbud av tjänster för entreprenadbesiktning för nyproduktion och ROT samt KA.
-								<br>
-								<br>
 								Vi har en digitaliserad process med besiktningsverktyget iSpect som kan omfatta hela byggprocessen eller enstaka tjänster. Vi erbjuder även kompletta besiktningsgrupper.
 							</p>
 						</div>
 						<div class="fix-10-12 left">
-							<h2 class="small bold">Tjänster</h2>
+							<h2 class="small bold">Besiktningstjänster</h2>
 							<div class="accordion">
 								<h3>Förbesiktning</h3>
 								<div>
@@ -715,7 +692,35 @@
 			</div>
 
 	</section>
+<!-- Footer -->
+<section class="slide customFooter autoHeight">
+  <div class="content">
+    <div class="container-lg">
+      <div class="wrap">
 
+        <div class="fix-10-12 center">
+					<img src="../../assets/svg/bm_logo_top.svg" alt="Besiktningsman.se" style="max-width: 400px;" class="margin-bottom-1">
+          <p class="bold">Sveriges ledande entreprenadbesiktningsföretag</p>
+          <ul class="later center">
+            <li class="col-6-12 ae-3">
+              <h3 class="margin-bottom-1">Kontor</h3>
+              <a target="_blank" href="https://goo.gl/maps/RSkTwoQWpEn"><p class="text-blue bold">Heleneborgsgatan 54, 117 32 Stockholm</p></a>
+							<a href="tel:0101654000"><p class="text-blue bold">Telefon: 010-165 40 00</p></a>
+            </li>
+            <li class="col-6-12 ae-5">
+              <h3 class="margin-bottom-1">Följ oss</h3>
+							<a target="_blank" href="https://medium.com/besiktningsbloggen"><p class="text-blue bold">Besiktningsbloggen</p></a>
+							<a target="_blank" href="https://twitter.com/BjornSelling"><p class="text-blue bold">Twitter</p></a>
+							<a target="_blank" href="https://www.facebook.com/Besiktningsman/"><p class="text-blue bold">Facebook</p></a>
+							<a target="_blank" href="https://www.linkedin.com/company/24778105/"><p class="text-blue bold">Linkedin</p></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
 
 	<!-- Scripts -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
