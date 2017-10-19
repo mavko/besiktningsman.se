@@ -70,21 +70,10 @@
 
 	<!-- Panel Top #10 -->
 	<nav class="panel top forceMobileView white soft-shadow">
-		<!-- Docs Menu dropdown -->
-		<div class="dropdown top left center customDropdown" data-dropdown-id="dropdown-menu">
-			<ul>
-				<li class="toSlide-1 text-blue micro bold"><a href="#"></a>Besiktningsboken</li>
-				<li class="toSlide-2 text-blue micro bold"><a href="#"></a>Lagbok 1</li>
-				<li class="toSlide-3 text-blue micro bold"><a href="#"></a>Lagbok 2</li>
-				<li class="link text-blue micro bold"><a href="http://google.com" target="_blank">Exernal Link</a></li>
-			</ul>
-		</div>
 		<div class="sections desktop">
 			<div class="left">
 				<ul class="menu crop small bold">
-					<li tabindex="1" class="dropdownTrigger" data-dropdown-hover="true" data-dropdown-id="dropdown-menu">
-						Dokument
-					</li>
+					<li><div class="dialogTrigger" data-dialog-id="image">Dokument</div></li>
 					<li><a href="../nyheter/">Publicerat & Press</a></li>
 					<li><a href="../om_oss/">Om oss</a></li>
 				</ul>
@@ -130,14 +119,7 @@
 				<li><a href="../nyheter/"><p>Publicerat & Press</p></a></li>
 				<br>
 				<br>
-				<h2 class="bold small text-blueGrey">Dokument</h2>
-				<li><a href="#"><p class="small bold">Besiktningsboken</p></a></li>
-				<br>
-				<br>
-				<li><a href="#"><p class="small bold">Lagbok 1</p></a></li>
-				<br>
-				<br>
-				<li><a href="#"><p class="small bold">Lagbok 2</p></a></li>
+				<li><div class="dialogTrigger" data-dialog-id="image"><p class="bold small">Dokument</p></div></li>
 			</ul>
 
 		</div>
@@ -229,68 +211,35 @@
     </div>
   </div>
 </section>
-
-	<!-- POLICYS Popup Text -->
-	<div class="popup animated white" data-popup-id="policy">
-		<div class="close button closeButton white left opaque"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#back"></use></svg>Tillbaka</div>
-		<div class="content popupContent">
-			<div class="container">
-				<div class="wrap spaces">
-					<div class="fix-10-12 left">
-						<h1 class="">Våra policys</h1>
-						<div class="text-58">
-							<h2 class="text-58">Miljö</h2>
-							<p>
-								Miljöarbetet skall vara förebyggande och öppet med ständig förbättring i fokus.
-								<br>
-								<br> I vår verksamhet ska miljölagstiftning och myndighetskrav utgöra miniminivå för miljöarbetet.
-								<br>
-								<br> Våra miljömål ska baseras på vår miljöpåverkan, kontinuerligt följas upp och anpassas till verksamheten.
-								<br>
-								<br> Råvaror och energi ska utnyttjas så effektivt som möjligt. Återanvändning och återvinning skall underlättas.
-								<br>
-								<br> Alla anställda är väl informerade om hur vi tillsammans kan påverka och förbättra miljön omkring oss. Genom denna inriktning vill vi bidra till en bättre omvärld samt göra företaget mer attraktivt för anställda, samarbetspartners samt kunder.
-							</p>
-						</div>
-						<h3 class="text-58">Jämställdhet</h3>
-						<div class="margin-bottom-5">
-							<li class="col-12-12">
-								<h3>Besiktningsman.se Sverige AB arbetar strategiskt med att organisera och leda verksamheten utifrån grundsynen om alla människors lika värde.
-											Detta ger till resultat att mångfalds- och jämlikhetsarbetet blir ett naturligt inslag i verksamheten.</h3>
-							</li>
-							<li class="col-12-12">
-								<p>
-									Vi arbetar utifrån inställningen att ett lyckat mångfalds- och jämlikhetsarbete leder till jämställdhet. Detta arbete främjar både medarbetarnas och företagets utveckling.
-									<br>
-									<br> Praktiskt innebär det bland annat att medarbetarna på företaget ska representera en mångfald vad gäller:
-									<ul>
-										<li>
-											<p>• Man – Kvinna</p>
-										</li>
-										<li>
-											<p>• Ung – Gammal</p>
-										</li>
-										<li>
-											<p>• Olika kulturella bakgrunder</p>
-										</li>
-										<li>
-											<p>• Olika kompetenser</p>
-										</li>
-										<li>
-											<p>• Geografisk spridning</p>
-										</li>
-									</ul>
-									<p>Ingen ska diskrimineras på grund av kön eller sexuell läggning.</p>
-								</p>
-							</li>
-						</div>
-						<a class="button round white small" data-popup-action="close">Stäng</a>
-					</div>
-				</div>
-			</div>
+ <!-- DIALOG WITH LINKS TO LAW TEXTS -->
+	<div class="dialog hidden" data-dialog-id="image">
+		<div class="close white" data-dialog-action="close"></div>
+		<div class="text center">
+			<strong>Hej!</strong><br>
+				Nedan kan du ladda ner viktiga dokument
+				<br>där du kan läsa mer om lagar och regler
+				<br>gällande besiktningar.
+		</div>
+		<img src="/assets/img/backgrounds/docs.jpg" class="wide" alt="Foto av dokumenthäften"/>
+		<div class="dialogContent">
+			<ul class="text-center center">
+				<li>
+					<a href="assets/documents/besiktningsmannaboken-2016-konsumentverket.pdf" target="_blank" class="text-blue bold small">Besiktningsmannaboken 2016</a>
+				</li>
+				<br>
+				<li>
+					<a href="assets/documents/konsumenttjanstlagen-rev-2016-juni-konsumentverket.pdf" target="_blank" class="text-blue bold small">Konsumenttjänstlagen</a>
+				</li>
+				<br>
+				<li>
+					<a href="assets/documents/hantverkarformularet-14-protokoll-konsumentverket.pdf" target="_blank" class="text-blue bold small">Hantverkarformuläret 14</a>
+				</li>
+			</ul>
+		</div>
+		<div class="center-m-down">
+			<a data-dialog-action="close" class="bold small">Stäng ner mig</a>
 		</div>
 	</div>
-
 	<!-- Scripts -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script src="../js/plugins.js" type="text/javascript" name="plugins"></script>

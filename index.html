@@ -157,9 +157,7 @@
 		<div class="sections desktop">
 			<div class="left">
 				<ul class="menu crop small bold">
-					<li tabindex="1" class="dropdownTrigger" data-dropdown-hover="true" data-dropdown-id="dropdown-menu">
-						Dokument
-					</li>
+					<li><div class="dialogTrigger" data-dialog-id="image">Dokument</div></li>
 					<li><a href="nyheter/">Publicerat & Press</a></li>
 					<li><a href="om_oss/">Om oss</a></li>
 				</ul>
@@ -205,14 +203,7 @@
 				<li><a href="nyheter/"><p>Publicerat & Press</p></a></li>
 				<br>
 				<br>
-				<h2 class="bold small text-blueGrey">Dokument</h2>
-				<li><a href="#"><p class="small bold">Besiktningsboken</p></a></li>
-				<br>
-				<br>
-				<li><a href="#"><p class="small bold">Lagbok 1</p></a></li>
-				<br>
-				<br>
-				<li><a href="#"><p class="small bold">Lagbok 2</p></a></li>
+				<li><div class="dialogTrigger" data-dialog-id="image"><p class="bold small">Dokument</p></div></li>
 			</ul>
 
 		</div>
@@ -227,7 +218,7 @@
 					<div class="fix-10-12" style="padding-top: 5%;">
 						<img src="assets/svg/bm_logo_white_top.svg" alt="Besiktningsman.se" class="border-bottom" style="border-bottom: none;">
 						<p class="hero" style="font-weight: 400;">Sveriges ledande entreprenadbesiktningsföretag</p>
-						<a href="#foretag" class="common-Button white text-blue fromCenter" style="margin-right: 20px;">FÖRETAG</a><a href="#brf" class="common-Button white text-blue fromCenter">BRF / PRIVAT</a>
+						<a href="#entreprenad" class="common-Button white text-blue fromCenter" style="margin-right: 20px;">ENTREPRENAD</a><a href="#brf" class="common-Button white text-blue fromCenter">BRF / PRIVAT</a>
 					</div>
 
 				</div>
@@ -236,7 +227,7 @@
 		<div class="background" style="background-image:url(assets/img/backgrounds/sodermalm_summer.jpg)" alt="Foto av Skinnerviksberget, Södermalm"></div>
 	</section>
 	<!-- ENTERPRISE START -->
-	<section class="slide whiteSlide fromLeft autoHeight" id="entreprenad-intro">
+	<section class="slide whiteSlide fromLeft autoHeight">
 		<div class="content">
 			<div class="container">
 				<div class="wrap">
@@ -320,18 +311,18 @@
 				<div class="wrap">
 					<div class="fix-10-12" style="padding-top: 5%;">
 						<h1 class="">Vårt erbjudande</h1>
-						<a href="#foretag" class="menu inlineBlock margin-right-2 underline"><h3>Företag</h3></a>
-						<a href="#brf" class="menu inlineBlock underline"><h3>BRF</h3></a>
-						<a href="#privat" class="menu inlineBlock margin-left-2 underline"><h3>Privat</h3></a>
+						<p class="menu inlineBlock margin-right-2 underline">Entreprenad</p>
+						<p class="menu inlineBlock underline">BRF</p>
+						<p class="menu inlineBlock margin-left-2 underline">Privat</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="background" style="background-image:url(assets/img/backgrounds/skeppsbron_1901.jpg)" alt="Bakgrundsbild av Skeppsbron"></div>
+		<div class="background" style="background-image:url(assets/img/backgrounds/skeppsbron_1901.jpg)" alt="Bakgrundsbild av Skeppsbron, år 1901."></div>
 	</section>
 
 	<!-- ENTERPRISE -->
-	<section class="slide whiteSlide fromRight autoHeight" data-name="foretag" data-title="foretag" id="foretag">
+	<section class="slide whiteSlide fromRight autoHeight" data-name="entreprenad" data-title="entreprenad" id="entreprenad">
 		<div class="content">
 			<div class="container">
 				<div class="wrap">
@@ -349,10 +340,10 @@
 								<p>
 									Det ger bland annat möjlighet till noll byggfel vid slutbesiktning.
 								</p>
-								<a href="/tjanster/entreprenad/">
+								<a href="/tjanster/entreprenad/#entreprenad-services">
 									<p class="text-blue bold small margin-bottom-1">Våra tjänster för entreprenadbesiktning<i class="icono-arrow2-left"></i></p>
 								</a>
-								<a class="popupTrigger" data-popup-id="ispect-details">
+								<a href="/tjanster/entreprenad/#entreprenad-offer">
 									<p class="text-blue bold small">Mer om digitaliserad entreprenadbesiktning<i class="icono-arrow2-left"></i></p>
 								</a>
 								<ul class="items-32">
@@ -1516,6 +1507,37 @@
 			</div>
 		</div>
 	</div>
+ <!-- DIALOG WITH LINKS TO LAW TEXTS -->
+	<div class="dialog hidden" data-dialog-id="image">
+		<div class="close white" data-dialog-action="close"></div>
+		<div class="text center">
+			<strong>Hej!</strong><br>
+				Nedan kan du ladda ner viktiga dokument
+				<br>där du kan läsa mer om lagar och regler
+				<br>gällande besiktningar.
+		</div>
+		<img src="/assets/img/backgrounds/docs.jpg" class="wide" alt="Foto av dokumenthäften"/>
+		<div class="dialogContent">
+			<ul class="text-center center">
+				<li>
+					<a href="assets/documents/besiktningsmannaboken-2016-konsumentverket.pdf" target="_blank" class="text-blue bold small">Besiktningsmannaboken 2016</a>
+				</li>
+				<br>
+				<li>
+					<a href="assets/documents/konsumenttjanstlagen-rev-2016-juni-konsumentverket.pdf" target="_blank" class="text-blue bold small">Konsumenttjänstlagen</a>
+				</li>
+				<br>
+				<li>
+					<a href="assets/documents/hantverkarformularet-14-protokoll-konsumentverket.pdf" target="_blank" class="text-blue bold small">Hantverkarformuläret 14</a>
+				</li>
+			</ul>
+		</div>
+		<div class="center-m-down">
+			<a data-dialog-action="close" class="bold small">Stäng ner mig</a>
+		</div>
+	</div>
+
+
 	<!-- Scripts -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
