@@ -58,9 +58,7 @@
 		<div class="sections desktop">
 			<div class="left">
 				<ul class="menu crop small bold">
-					<li tabindex="1" class="dropdownTrigger" data-dropdown-hover="true" data-dropdown-id="dropdown-menu">
-						Dokument
-					</li>
+					<li><div class="dialogTrigger" data-dialog-id="image">Dokument</div></li>
 					<li><a href="nyheter/">Publicerat & Press</a></li>
 					<li><a href="om_oss/">Om oss</a></li>
 				</ul>
@@ -785,6 +783,35 @@
     </div>
   </div>
 </section>
+ <!-- DIALOG WITH LINKS TO LAW TEXTS -->
+	<div class="dialog hidden" data-dialog-id="image">
+		<div class="close white" data-dialog-action="close"></div>
+		<div class="text center">
+			<strong>Hej!</strong><br>
+				Nedan kan du ladda ner viktiga dokument
+				<br>där du kan läsa mer om lagar och regler
+				<br>gällande besiktningar.
+		</div>
+		<img src="../../assets/img/backgrounds/docs.jpg" class="wide" alt="Foto av dokumenthäften"/>
+		<div class="dialogContent">
+			<ul class="text-center center">
+				<li>
+					<a href="../../assets/documents/besiktningsmannaboken-2016-konsumentverket.pdf" target="_blank" class="text-blue bold small">Besiktningsmannaboken 2016</a>
+				</li>
+				<br>
+				<li>
+					<a href="../../assets/documents/konsumenttjanstlagen-rev-2016-juni-konsumentverket.pdf" target="_blank" class="text-blue bold small">Konsumenttjänstlagen</a>
+				</li>
+				<br>
+				<li>
+					<a href="../../assets/documents/hantverkarformularet-14-protokoll-konsumentverket.pdf" target="_blank" class="text-blue bold small">Hantverkarformuläret 14</a>
+				</li>
+			</ul>
+		</div>
+		<div class="center-m-down">
+			<a data-dialog-action="close" class="bold small">Stäng ner mig</a>
+		</div>
+	</div>
 	<!-- Scripts -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
