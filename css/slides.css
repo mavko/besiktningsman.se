@@ -854,7 +854,7 @@ p.small {
 
 .common-Link {
 	color: #1072bb;
-	font-size: 16px;
+  font-size: 18px;
 	font-weight: 600;
 	margin-bottom: 15px;
 	transition: color .1s ease;
