@@ -1,9 +1,8 @@
 @charset "UTF-8";
-
 /*
 
    _____ _       _              _____  _____ _____
-  / ___/| (•)   | |           / ____// ____/ ____/  v 3.0.4
+  / ___/| (•)   | |           / ____// ____/ ____/  v 3.1.2
  | (___ | |_  __| | ___ ____ | |    | (___| (___
   \___ \| | |/ _` |/ _ / __/ | |     \___ \ ___ \
   ____) | | | (_| |  __\__ \ | |____ ____) |___) |
@@ -16,43 +15,48 @@ of your Slides Project.
 https://designmodo.com/slides/
 
 */
-
-
 /* CSS RESET */
-
-html, body, div, span, h1, h2, h3, p, blockquote, a, img, ul, li, article, nav, section {
-	border: 0;
-	vertical-align: baseline;
-	margin: 0;
-	padding: 0;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, hr, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
 }
 
-article, nav, section {
-	display: block;
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 
-ul, li {
-	list-style: none;
+ol, ul, li {
+  list-style: none;
 }
 
-blockquote {
-	quotes: none;
+blockquote, q {
+  quotes: none;
 }
 
-blockquote:before, blockquote:after {
-	content: none;
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+b, strong {
+  font-weight: 600;
 }
 
 html {
-	position: static !important;
-	top: 0 !important;
-	box-sizing: border-box;
+  position: static !important;
+  top: 0 !important;
+  box-sizing: border-box;
 }
 
 *, *:before, *:after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
-
 
 /* Additional Fonts:
 .raleway {
@@ -67,8 +71,6 @@ html {
 .georgia {
   font-family:Georgia, serif !important;
 } */
-
-
 /***
  *      __  __
  *     |  \/  |     ( )
@@ -79,24 +81,30 @@ html {
  *
  *
  */
-
 html {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	backface-visibility: hidden;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 body {
-	position: absolute;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 html, body {
-	max-width: 100%;
-	overflow-x: hidden;
-	-webkit-tap-highlight-color: transparent;
+  max-width: 100%;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html.scrollable,
+html.scrollable body {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 img {
@@ -252,7 +260,18 @@ p.small {
 	transform: translateX(0%);
 	opacity: 1;
 }
-
+.content.scrollBar {
+  overflow-y: auto;
+}
+.windows .defaultScroll .content {
+  overflow: auto;
+  overflow-x: hidden;
+}
+.mobile .content {
+  overflow: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
 
 /* forms */
 
@@ -1248,16 +1267,6 @@ section.network .logos .row>div:nth-child(odd) {
 	#partners ul {
 		float: none !important;
 	}
-	.cd-morph-dropdown .gallery .morph-dropdown-content a::before {
-		width: 36px;
-		height: 36px;
-		margin-top: 6px;
-	}
-	.cd-morph-dropdown #logo {
-		margin-left: -20px;
-		font-family: sans-serif;
-		font-weight: bold;
-	}
 }
 
 
@@ -1286,10 +1295,11 @@ section.network .logos .row>div:nth-child(odd) {
 		margin-top: -228px;
 		margin-bottom: -228px;
 	}
-	img.macbook-61 {
-		margin: 0% -100% -10% -100% !important;
-		max-width: none;
-	}
+img.macbook-61 {
+    margin: -10% -100% -10% -135% !important;
+    width: 225%;
+    max-width: none;
+}
 	img.macbook-62 {
 		margin: 0% -100% -10% 10% !important;
 		max-width: none;
@@ -2328,3 +2338,160 @@ body {
 
 
 /*# sourceMappingURL=slides.css.map */
+/* SCROLL EFFECT */
+.scroll,
+.mobile .simplifiedMobile {
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll .content
+.mobile .simplifiedMobile .content {
+  -webkit-overflow-scrolling: initial;
+  overflow: hidden;
+}
+
+.scroll .wrap {
+  overflow: hidden;
+}
+
+.scroll .slide,
+.scroll .slide .content,
+.scroll .container,
+.mobile .simplifiedMobile .slide,
+.mobile .simplifiedMobile .content,
+.mobile .simplifiedMobile .container {
+  position: relative !important;
+  height: auto;
+  opacity: 1;
+}
+
+.mobile .simplifiedMobile .popup .content,
+.mobile .simplifiedMobile .popup .container {
+  position: absolute !important;
+  height: 100%;
+}
+
+.scroll .container,
+.mobile .simplifiedMobile .container {
+  height: 100vh;
+}
+
+.scroll .slide.autoHeight .container,
+.mobile .slide.autoHeight .simplifiedMobile .container {
+  height: auto;
+}
+
+.scroll .slide .background,
+.mobile .simplifiedMobile .slide .background {
+  position: absolute !important;
+}
+
+.scroll .slide:not(.autoHeight) .background,
+.mobile .simplifiedMobile .slide:not(.autoHeight) .background {
+  min-height: 100vh;
+}
+
+.scroll .slide,
+.scroll .slide.after,
+.scroll .slide.before,
+.mobile .simplifiedMobile .slide,
+.mobile .simplifiedMobile .slide.after,
+.mobile .simplifiedMobile .slide.before {
+  visibility: visible;
+  -webkit-transform: none !important;
+          transform: none !important;
+}
+
+.mobile .simplifiedMobile .slide,
+.mobile .simplifiedMobile .slide.after,
+.mobile .simplifiedMobile .slide.before {
+  opacity: 1 !important;
+}
+
+.page-loaded.sidebarShown .scroll .slide,
+.page-loaded.mobile.sidebarShown .simplifiedMobile .slide {
+  -webkit-transform: translate3d(0, 0, 0) !important;
+          transform: translate3d(0, 0, 0) !important;
+  pointer-events: none;
+  opacity: 0.5 !important;
+}
+
+.page-loaded .scroll .slide {
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s !important;
+  transition: opacity 0.5s, -webkit-transform 0.5s !important;
+  transition: transform 0.5s, opacity 0.5s !important;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s !important;
+}
+
+.scroll .panel,
+.mobile .simplifiedMobile .panel {
+  position: absolute;
+}
+
+.mobile .simplifiedMobile .navigation {
+  display: none;
+}
+
+.mobile .simplifiedMobile [class*="ae-"] {
+  visibility: visible !important;
+  opacity: 1 !important;
+  -webkit-transform: none !important;
+          transform: none !important;
+}
+
+.mobile .simplifiedMobile [class*="ae-"] {
+  visibility: visible !important;
+  opacity: 1 !important;
+  -webkit-transform: none !important;
+          transform: none !important;
+}
+
+.scroll .parallax:not(.video) .background {
+  -webkit-transform: translate3d(0, 0, 0) scale(1.25);
+          transform: translate3d(0, 0, 0) scale(1.25);
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes zoomOut {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.86);
+            transform: scale(0.86);
+  }
+}
+@keyframes zoomOut {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.86);
+            transform: scale(0.86);
+  }
+}
+@-webkit-keyframes riseUp {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.86) translateY(50px);
+            transform: scale(0.86) translateY(50px);
+  }
+}
+@keyframes riseUp {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.86) translateY(50px);
+            transform: scale(0.86) translateY(50px);
+  }
+}
+/* Parallax Motion */
+@media (max-width: 1023px) {
+  .parallaxMotion:not(.responsive) .parallaxElement,
+  .parallaxMotion .parallaxElement:not(.responsive) {
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
+}
