@@ -441,9 +441,7 @@ p.small {
 /*photobanner*/
 
 .photobanner {
-	height: 974px;
 	width: 5300px;
-	margin-top: -70px;
 }
 
 .photobanner img {
@@ -452,15 +450,17 @@ p.small {
 	-o-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
 	transition: all 0.5s ease;
+	height: 600px;
+	/*margin-left: -45px;*/
 }
 
 
 /*keyframe animations*/
 .first {
-	-webkit-animation: bannermove 50s linear infinite;
-	-moz-animation: bannermove 50s linear infinite;
-	-ms-animation: bannermove 50s linear infinite;
-	animation: bannermove 50s linear infinite;
+	-webkit-animation: bannermove 120s linear infinite;
+	-moz-animation: bannermove 120s linear infinite;
+	-ms-animation: bannermove 120s linear infinite;
+	animation: bannermove 120s linear infinite;
 }
 
 @keyframes "bannermove" {
@@ -468,7 +468,7 @@ p.small {
     margin-left: 0px;
  }
  100% {
-    margin-left: -3500px;
+    margin-left: -5300px;
  }
 
 }
@@ -478,7 +478,7 @@ p.small {
    margin-left: 0px;
  }
  100% {
-   margin-left: -3500px;
+   margin-left: -5300px;
  }
 
 }
@@ -488,7 +488,7 @@ p.small {
    margin-left: 0px;
  }
  100% {
-   margin-left: -3500px;
+   margin-left: -5300px;
  }
 
 }
@@ -498,7 +498,7 @@ p.small {
    margin-left: 0px;
  }
  100% {
-   margin-left: -3500px;
+   margin-left: -5300px;
  }
 
 }
@@ -508,7 +508,7 @@ p.small {
    margin-left: 0px;
  }
  100% {
-   margin-left: -3500px;
+   margin-left: -5300px;
  }
 
 }
