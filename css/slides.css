@@ -442,6 +442,8 @@ p.small {
 
 .photobanner {
 	width: 5300px;
+	height: 600px;
+	overflow: hidden;
 }
 
 .photobanner img {
