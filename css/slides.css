@@ -438,12 +438,87 @@ p.small {
 		width: 100% !important;
 	}
 }
+/*photobanner*/
 
+.photobanner {
+	height: 974px;
+	width: 5300px;
+	margin-top: -70px;
+}
+
+.photobanner img {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+
+/*keyframe animations*/
+.first {
+	-webkit-animation: bannermove 50s linear infinite;
+	-moz-animation: bannermove 50s linear infinite;
+	-ms-animation: bannermove 50s linear infinite;
+	animation: bannermove 50s linear infinite;
+}
+
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -3500px;
+ }
+
+}
+
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -3500px;
+ }
+
+}
+
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -3500px;
+ }
+
+}
+
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -3500px;
+ }
+
+}
+
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -3500px;
+ }
+
+}
 
 /*
   custom css not framework related
 */
-
+#ispect-projects h1 {
+	margin-top: 60px;
+}
 #brf-services p, #entreprenad-services p, #privat-services p {
 	margin-bottom: 10px !important;
 }
@@ -1266,6 +1341,16 @@ section.network .logos .row>div:nth-child(odd) {
 	}
 	#partners ul {
 		float: none !important;
+	}
+	#ispect-projects h1 {
+		margin-top: 85px;
+	}
+	#ispect-projects p {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	.photobanner img {
+		margin-top: 50px;
 	}
 }
 
@@ -2424,10 +2509,7 @@ body {
   transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s !important;
 }
 
-.scroll .panel,
-.mobile .simplifiedMobile .panel {
-  position: absolute;
-}
+
 
 .mobile .simplifiedMobile .navigation {
   display: none;
