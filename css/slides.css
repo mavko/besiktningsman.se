@@ -1994,7 +1994,9 @@ img.macbook-61 {
 a.underline {
 	text-decoration: underline;
 }
-
+.underline {
+  border-bottom: 2px solid #fff;
+}
 .margin-right-2 {
 	margin-right: 20px;
 }
