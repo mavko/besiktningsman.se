@@ -157,7 +157,7 @@
 		<div class="sections desktop">
 			<div class="left">
 				<ul class="menu crop small bold">
-					<li><div class="dialogTrigger" data-dialog-id="image">Dokument</div></li>
+					<li><div class="popupTrigger" data-popup-id="docs">Dokument</div></li>
 					<li><a href="nyheter/">Publicerat & Press</a></li>
 					<li><a href="om_oss/">Om oss</a></li>
 				</ul>
@@ -203,7 +203,7 @@
 				<li><a href="nyheter/"><p>Publicerat & Press</p></a></li>
 				<br>
 				<br>
-				<li><div class="dialogTrigger" data-dialog-id="image"><p class="bold small">Dokument</p></div></li>
+				<li><div class="popupTrigger" data-popup-id="docs"><p class="bold small">Dokument</p></div></li>
 			</ul>
 
 		</div>
@@ -399,7 +399,7 @@
 					<div class="fix-12-12">
 						<ul class="flex reverse flex-phone">
 							<li class="col-6-12 left fromLeft">
-								<img class="macbook-61 margin-bottom-3 soft-shadow img-border-radius" width="1000" src="assets/img/backgrounds/apartments.jpg" alt="Foto av BRF i Downtown, Raleigh, North Carolina." />
+								<img class="macbook-61 margin-bottom-3 soft-shadow img-border-radius" width="1000" src="assets/img/backgrounds/summer_apartments.jpg" alt="Foto av BRF i Downtown, Raleigh, North Carolina." />
 							</li>
 							<li class="col-6-12 left cell-32">
 								<h1 class="">Besiktningstjänster för bostadsrättsföreningar</h1>
@@ -503,7 +503,7 @@
 								</ul>
 							</li>
 							<li class="col-6-12 left fromRight">
-								<img class="macbook-62 margin-bottom-3 soft-shadow img-border-radius" width="900" src="assets/img/backgrounds/village_houses.jpg" alt="Fritidshus på svenska västkusten." />
+								<img class="macbook-62 margin-bottom-3 soft-shadow img-border-radius" width="900" src="assets/img/backgrounds/summer_house.jpg" alt="Fritidshus på svenska västkusten." />
 							</li>
 						</ul>
 					</div>
@@ -571,7 +571,7 @@
 	<p class="center small text-blueGrey">Läs vårt nyhetsbrev!</p>
 	<div class="container-lg" id="newsletter">
 		<div class="center-m-down center">
-					<a href="#" target="_blank" style="" class="common-Link globalFooterCard soft-shadow white">
+					<a data-popup-id="letters" class="popupTrigger common-Link globalFooterCard soft-shadow white">
 						<img src="assets/img/nyheter/byggint.png" alt="besiktningsman.se nyhetsbrev - hur vi förnyar byggbranschen" />
 					</a>
 		</div>
@@ -710,33 +710,82 @@
 			</div>
 		</div>
 	</div>
- <!-- DIALOG WITH LINKS TO LAW TEXTS -->
-	<div class="dialog hidden" data-dialog-id="image">
-		<div class="close white" data-dialog-action="close"></div>
-		<div class="text center">
-			<strong>Hej!</strong><br>
-				Nedan kan du ladda ner viktiga dokument
-				<br>där du kan läsa mer om lagar och regler
-				<br>gällande besiktningar.
-		</div>
-		<img src="/assets/img/backgrounds/docs.jpg" class="wide" alt="Foto av dokumenthäften"/>
-		<div class="dialogContent">
-			<ul class="text-center center">
-				<li>
-					<a href="assets/documents/besiktningsmannaboken-2016-konsumentverket.pdf" target="_blank" class="text-blue bold small">Besiktningsmannaboken 2016</a>
-				</li>
-				<br>
-				<li>
-					<a href="assets/documents/konsumenttjanstlagen-rev-2016-juni-konsumentverket.pdf" target="_blank" class="text-blue bold small">Konsumenttjänstlagen</a>
-				</li>
-				<br>
-				<li>
-					<a href="assets/documents/hantverkarformularet-14-protokoll-konsumentverket.pdf" target="_blank" class="text-blue bold small">Hantverkarformuläret 14</a>
-				</li>
-			</ul>
-		</div>
-		<div class="center-m-down">
-			<a data-dialog-action="close" class="bold small">Stäng</a>
+ 
+<!-- POPUP WITH LINKS TO NEWSLETTER TEXTS -->
+ <div class="popup hidden" data-popup-id="docs" id="docs">
+	 <div class="close closeButton left opaque white text-blue">X</div>
+	 <div class="content">
+		 <div class="container">
+			 <div class="wrap spaces">
+				 <div class="fix-4-12 margin-top-6">
+					 <div class="pad shadow selected popupContent">
+							 <div class="absolute">
+								 <h3 class="center">DOKUMENT</h3>
+								 <p class="small center">
+										Nedan kan du ladda ner viktiga dokument
+										<br>där du kan läsa mer om lagar och regler
+										<br>gällande besiktningar.
+								</p>
+							 </div>
+							 <img src="/assets/img/backgrounds/docs.jpg" alt="Foto av dokumenthäften"/>
+
+							 <div class="dialogContent">
+								 <ul class="text-center left">
+										<li>
+											<a href="assets/documents/besiktningsmannaboken-2016-konsumentverket.pdf" target="_blank" class="text-blue bold small">Besiktningsmannaboken 2016</a>
+										</li>
+										<br>
+										<li>
+											<a href="assets/documents/konsumenttjanstlagen-rev-2016-juni-konsumentverket.pdf" target="_blank" class="text-blue bold small">Konsumenttjänstlagen</a>
+										</li>
+										<br>
+										<li>
+											<a href="assets/documents/hantverkarformularet-14-protokoll-konsumentverket.pdf" target="_blank" class="text-blue bold small">Hantverkarformuläret 14</a>
+										</li>
+								 </ul>
+							 </div>
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+	 </div>
+ </div>
+ <!-- POPUP WITH LINKS TO NEWSLETTER TEXTS -->
+ 	<div class="popup hidden" data-popup-id="letters" id="letters">
+		<div class="close closeButton left opaque white text-blue">X</div>
+		<div class="content">
+			<div class="container">
+				<div class="wrap spaces">
+					<div class="fix-4-12 margin-top-6">
+	          <div class="pad shadow selected popupContent">
+								<div class="absolute">
+									<h3 class="center">BYGGINTELLIGENS</h3>
+									<p class="small center">Ett nyhetsbrev från Besiktningsman.se</p>
+								</div>
+								<img src="/assets/img/backgrounds/penandpapper.jpg" alt="">
+
+								<div class="dialogContent">
+									<ul class="text-center left">
+										<li>
+											<p class="micro text-blueGrey margin-0 padding-0">2017-02-20</p>
+											<a href="#" target="_blank" class="text-blue bold small">Hur iSpect genererar avkastning i projekten</a>
+										</li>
+										<br>
+										<li>
+											<p class="micro text-blueGrey margin-0 padding-0">2017-05-20</p>
+											<a href="#" target="_blank" class="text-blue bold small">Besiktningsmannens ansvar</a>
+										</li>
+										<br>
+										<li>
+											<p class="micro text-blueGrey margin-0 padding-0">2018-01-20</p>
+											<a href="#" target="_blank" class="text-blue bold small">Byggsveriges framtid 2018</a>
+										</li>
+									</ul>
+								</div>
+	          </div>
+	        </div>
+				</div>
+			</div>
 		</div>
 	</div>
 
