@@ -773,7 +773,7 @@ p.small {
 	color: #1072bb;
 	border: 0px !important;
 	padding: .8em .8em 0.8em 0.8em !important;
-	box-shadow: 0 7px 14px 0 rgba(50, 50, 93, .1), 0 3px 6px 0 rgba(0, 0, 0, .07);
+  box-shadow: 0 2px 14px 0 rgba(50, 50, 93, .1), 0 3px 6px 0 rgba(0, 0, 0, .07);
 	border: none;
 }
 
@@ -781,7 +781,7 @@ p.small {
 	border: 1px solid #1072bb;
 	background: #ffffff;
 	color: #5C646D;
-	box-shadow: 0 7px 14px 0 rgba(50, 50, 93, .1), 0 3px 6px 0 rgba(0, 0, 0, .07);
+  box-shadow: 0 2px 14px 0 rgba(50, 50, 93, .1), 0 3px 6px 0 rgba(0, 0, 0, .07);
 	margin-bottom: 5px !important;
 }
 
