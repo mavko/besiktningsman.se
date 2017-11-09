@@ -2,9 +2,11 @@
   $( function() {
     $( ".accordion" ).accordion({
       collapsible: true,
-      heightStyle: "content"
+      heightStyle: "content",
+      active : 'none'
     });
   } );
 
 // force hashlinks
 window.setHashLink = 1;
+// accordion
