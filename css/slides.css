@@ -1283,6 +1283,9 @@ section.network .logos .row>div:nth-child(odd) {
 /*iphone4+*/
 
 @media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+	#landingHeader .container {max-height: 480px;}
+	#landingHeader .wrap {padding:0 !important;}
+	.customFooter img {max-width: 250px !important;}
 	h1 {
 		font-size: 33px !important;
 	}
