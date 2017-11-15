@@ -1359,8 +1359,11 @@ section.network .logos .row>div:nth-child(odd) {
 	.photobanner img {
 		margin-top: 50px;
 	}
+	.mobile .simplifiedMobile .popup .content {position: inherit !important; }
 }
-
+#landingButton2 {
+	margin: 20px;
+}
 /* phone portrait and > */
 
 @media (max-width: 435px) {
@@ -2447,7 +2450,6 @@ body {
 }
 
 .mobile .simplifiedMobile .popup .content, .mobile .simplifiedMobile .popup .container {
-	position: absolute !important;
 	height: 100%;
 }
 
