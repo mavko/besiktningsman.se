@@ -1299,7 +1299,7 @@ section.network .logos .row>div:nth-child(odd) {
 		font-size: 14px;
 	}
 	.container .wrap {
-		padding: calc(5.56% + 50px) calc(5% + 0px) !important;
+		padding: calc(0% + 20px) calc(5% + 0px) !important;
 	}
 	.col-6-12 a {
 		margin-bottom: 24px;
@@ -1321,9 +1321,6 @@ section.network .logos .row>div:nth-child(odd) {
 	}
 	#team .col-3-12 {
 		width: 100%;
-	}
-	.cell img {
-		padding-bottom: 25px;
 	}
 	#partners .margin-bottom-8 {
 		margin-bottom: 30px !important;
@@ -1360,7 +1357,9 @@ section.network .logos .row>div:nth-child(odd) {
 		margin-top: 50px;
 	}
 	.mobile .simplifiedMobile .popup .content {position: inherit !important; }
+	.flex-phone {    flex-wrap: wrap !important;}
 }
+
 #landingButton2 {
 	margin: 20px;
 }
