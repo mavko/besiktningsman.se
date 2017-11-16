@@ -1286,6 +1286,9 @@ section.network .logos .row>div:nth-child(odd) {
 	#landingHeader .container {max-height: 480px;}
 	#landingHeader .wrap {padding:0 !important;}
 	.customFooter img {max-width: 250px !important;}
+	#contactModal h3 {font-size: 18px;}
+	#contactModal p {font-size: 14px !important;}
+	#contactModal a {font-size: 18px !important;}
 	h1 {
 		font-size: 33px !important;
 	}
@@ -1320,7 +1323,7 @@ section.network .logos .row>div:nth-child(odd) {
 		width: 80%;
 	}
 	.contact h1 {
-		margin-top: 20px;
+		margin-top: 90px;
 	}
 	#team .col-3-12 {
 		width: 100%;
@@ -1361,6 +1364,7 @@ section.network .logos .row>div:nth-child(odd) {
 	}
 	.mobile .simplifiedMobile .popup .content {position: inherit !important; }
 	.flex-phone {    flex-wrap: wrap !important;}
+	.small {font-size: 16px !important;}
 }
 
 #landingButton2 {
