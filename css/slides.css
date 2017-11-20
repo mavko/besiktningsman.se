@@ -1383,6 +1383,7 @@ section.network .logos .row>div:nth-child(odd) {
 		display: none;
 	}
 	#enterprise .sliderBox-83 .img-fade {max-height: none;}
+	.flex-phone {    flex-wrap: wrap !important;}
 }
 
 /*MAX WIDTH FOR DESKTOP*/
