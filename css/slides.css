@@ -1382,6 +1382,7 @@ section.network .logos .row>div:nth-child(odd) {
 	.leftControl-83, .rightControl-83 {
 		display: none;
 	}
+	#enterprise .sliderBox-83 .img-fade {max-height: none;}
 }
 
 /*MAX WIDTH FOR DESKTOP*/
