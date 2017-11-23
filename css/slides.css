@@ -2326,7 +2326,16 @@ body {
 }
 
 /* Slides Custom Styles */
-
+.citation {
+	background-image: url(../assets/svg/citation.svg);
+	width: 20px;
+	height: 70px;
+	margin: 5px;
+	float: left;
+}
+.citation-text {
+	margin-left: 33px;
+}
 .box-67 {
 	border-radius: 8px;
 	overflow: hidden;
