@@ -1,42 +1,32 @@
-// accordion jquery ui menu
-$( function() {
-  // $( ".accordion" ).accordion({
-  //   collapsible: true,
-  //   heightStyle: "content",
-  //   active : 'none'
-  // });
-
-  var hashId = 0,
-    $accordion = $('.accordion');
-  if (window.location.hash) {
-    $accordion.children('h3').each(function(i){
-      var txt = $(this).text().toLowerCase().replace(/\s+/g,'_');
-      console.log(txt);
-
-      this.id = txt;
-      if (txt === window.location.hash.slice(1)) {
-        hashId = i;
-      }
-    });
-  }
-
-  $accordion.accordion({
-    active: hashId,
-    animate: false,
-    heightStyle: 'content',
-    collapsible: true,
-    create: function( event, ui ) {
-      $accordion.children('h3').each(function(i){
-        $(this).before('<a class="accordion-link link" data-index="' + i + '" href="#' + this.id + '"></a>');
-      });
-      $accordion.find('.accordion-link').click(function(){
-        $accordion.accordion( "option", "active", $(this).data('index') );
-      });
-    }
-  });
-
+$(function() {
+  initAccordion($(".accordion"));
 });
 
-// force hashlinks
+var initAccordion = function(_t) {
+    _t.each(function() {
+        var obj = {
+            heightStyle: 'content',
+            collapsible: true,
+            animate: false,
+            beforeActivate: function( event, ui ) {
+                window.location.hash = ui.newHeader.attr('id') || "/";  
+            }
+        };
+
+        var attr = $(this).attr('data-active-index');
+        if(attr !== null && attr !== undefined) {
+            obj.active = Number(attr);
+        }
+        
+        var hash = decodeURIComponent(window.location.hash);
+        $(this).find('>h3').each(function(i){
+            this.id = $(this).text().toLowerCase().replace(/\s+/g, '_');
+            if(hash && hash == '#'+this.id) {
+                obj.active = i;
+            }
+        });
+        $(this).accordion(obj);
+    });
+};
+
 window.setHashLink = 1;
-// accordion
