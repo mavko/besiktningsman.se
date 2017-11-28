@@ -7,9 +7,10 @@ var initAccordion = function(_t) {
         var obj = {
             heightStyle: 'content',
             collapsible: true,
-            animate: false,
+            active: false,
+            animate: true,
             beforeActivate: function( event, ui ) {
-                window.location.hash = ui.newHeader.attr('id') || "/";  
+                window.location.hash = ui.newHeader.attr('id') || "/";
             }
         };
 
@@ -17,7 +18,7 @@ var initAccordion = function(_t) {
         if(attr !== null && attr !== undefined) {
             obj.active = Number(attr);
         }
-        
+
         var hash = decodeURIComponent(window.location.hash);
         $(this).find('>h3').each(function(i){
             this.id = $(this).text().toLowerCase().replace(/\s+/g, '_');
