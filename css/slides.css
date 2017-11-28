@@ -68,19 +68,6 @@ html {
  *
  */
 
-/*.accordion {
-  position: relative;
-}
-.accordion .accordion-link {
-  position: absolute;
-  right: 1%;
-  margin-top: 16px;
-  z-index: 1;
-  width: 12px;
-  height: 12px;
-  background: url(link.png) center center no-repeat; /* approx 12x12 link icon */
-}*/
-
 html {
 	margin: 0;
 	padding: 0;
