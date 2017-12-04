@@ -1293,82 +1293,33 @@ section.network .logos .row>div:nth-child(odd) {
 	#contactModal p {font-size: 14px !important;}
 	#contactModal a {font-size: 18px !important;}
 	#team li {width: 100% !important;}
-	h1 {
-		font-size: 33px !important;
-	}
-	p {
-		font-size: 20px;
-	}
-	p.hero {
-		font-size: 20px;
-	}
-	.small {
-		font-size: 20px !important;
-	}
-	.common-Button {
-		font-size: 14px;
-	}
-	.container .wrap {
-		padding: calc(0% + 20px) calc(5% + 0px) !important;
-	}
-	.col-6-12 a {
-		margin-bottom: 24px;
-	}
-	.img-fade {
-		background: rgba(16, 114, 187, 0.80);
-	}
-	.img-size {
-		width: 280px !important;
-	}
-	.phones .reverse {
-		flex-wrap: wrap !important;
-	}
-	.border-bottom {
-		width: 80%;
-	}
-	.contact h1 {
-		margin-top: 90px;
-	}
-	#team .col-3-12 {
-		width: 100%;
-	}
-	#partners .margin-bottom-8 {
-		margin-bottom: 30px !important;
-	}
-	.popup #team .wrap {
-		padding: 0;
-	}
-	.popup #team .fix-10-12 {
-		padding-top: 15%;
-	}
-	#ispect-details .margin-top-1 {
-		margin-top: 30% !important;
-	}
-	#ispect-details .col-6-12 {
-		max-width: 100%;
-	}
-	#news-title {
-		margin-top: 25px;
-	}
-	#ispect-projects .wrap {
-		padding: 0 !important;
-	}
-	#partners ul {
-		float: none !important;
-	}
-	#ispect-projects h1 {
-		margin-top: 85px;
-	}
-	#ispect-projects p {
-		margin-bottom: 0;
-		padding-bottom: 0;
-	}
-	.photobanner img {
-		margin-top: 50px;
-	}
+	h1 {font-size: 33px !important;}
+	p {font-size: 20px;}
+	p.hero {font-size: 20px;}
+	.small {font-size: 20px !important;}
+	.common-Button {font-size: 14px;}
+	.container .wrap {padding: calc(0% + 20px) calc(5% + 0px) !important;}
+	.col-6-12 a {margin-bottom: 24px;}
+	.img-fade {background: rgba(16, 114, 187, 0.80);}
+	.img-size {width: 280px !important;}
+	.phones .reverse {flex-wrap: wrap !important;}
+	.border-bottom {width: 80%;}
+	.contact h1 {margin-top: 90px;}
+	#partners .margin-bottom-8 {margin-bottom: 30px !important;}
+	.popup #team .wrap {padding: 0;}
+	.popup #team .fix-10-12 {padding-top: 15%;}
+	#ispect-details .margin-top-1 {margin-top: 30% !important;}
+	#ispect-details .col-6-12 {max-width: 100%;}
+	#news-title {margin-top: 25px;}
+	#ispect-projects .wrap {padding: 0 !important;}
+	#partners ul {float: none !important;}
+	#ispect-projects h1 {margin-top: 85px;}
+	#ispect-projects p {margin-bottom: 0;padding-bottom: 0;}
+	.photobanner img {margin-top: 50px;}
 	.mobile .simplifiedMobile .popup .content {position: inherit !important; }
 	.flex-phone {    flex-wrap: wrap !important;}
 	.small {font-size: 16px !important;}
+	#landingPagePhotos {height: 240px;}
 }
 
 #landingButton2 {
@@ -1381,16 +1332,22 @@ section.network .logos .row>div:nth-child(odd) {
 		width: 100%;
 	}
 }
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+		#aboutUs p {max-width: 80% !important;}
+		.network {padding: 250px 0 0 !important;}
+		.leftControl-83, .rightControl-83 {display: none;}
+		#enterprise .sliderBox-83 .img-fade {max-height: none;}
+		.flex-phone {    flex-wrap: wrap !important;}
 
-@media (max-width: 768px) {
-	.leftControl-83, .rightControl-83 {
-		display: none;
-	}
-	#enterprise .sliderBox-83 .img-fade {max-height: none;}
-	.flex-phone {    flex-wrap: wrap !important;}
+}
+@media only screen (min-width: 435px) and (max-width: 768px) {
+
 }
 
-/*MAX WIDTH FOR DESKTOP*/
+/*WIDTH FOR DESKTOP*/
 
 @media (min-width: 1024px) {
 	.sliderBox-83 {
