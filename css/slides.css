@@ -1300,7 +1300,7 @@ section.network .logos .row>div:nth-child(odd) {
 	.common-Button {font-size: 14px;}
 	.container .wrap {padding: calc(0% + 20px) calc(5% + 0px) !important;}
 	.col-6-12 a {margin-bottom: 24px;}
-	.img-fade {background: rgba(16, 114, 187, 0.80);}
+	.cell-32 {padding-bottom: 0px !important;}
 	.img-size {width: 280px !important;}
 	.phones .reverse {flex-wrap: wrap !important;}
 	.border-bottom {width: 80%;}
