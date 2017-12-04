@@ -1335,13 +1335,12 @@ section.network .logos .row>div:nth-child(odd) {
 }
 @media only screen
   and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 1) {
-		#aboutUs p {max-width: 80% !important;}
+  and (max-device-width: 1024px) {
 		.network {padding: 250px 0 0 !important;}
 		.leftControl-83, .rightControl-83 {display: none;}
 		#enterprise .sliderBox-83 .img-fade {max-height: none;}
 		.flex-phone {    flex-wrap: wrap !important;}
+		#landingPagePhotos {height: 340px !important;}
 
 }
 @media only screen (min-width: 435px) and (max-width: 768px) {
