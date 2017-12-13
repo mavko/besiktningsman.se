@@ -30,11 +30,14 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11858478-1"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
 
-	  gtag('config', 'UA-11858478-1');
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-11858478-1');
 	</script>
 
 
@@ -62,7 +65,9 @@
 		<div class="sections desktop">
 			<div class="left">
 				<ul class="menu crop small bold">
-					<li><div class="popupTrigger" data-popup-id="docs">Dokument</div></li>
+					<li>
+						<div class="popupTrigger" data-popup-id="docs">Dokument</div>
+					</li>
 					<li><a href="../nyheter/">Publicerat & Press</a></li>
 					<li><a href="../om_oss/">Om oss</a></li>
 				</ul>
@@ -93,22 +98,46 @@
 			<a href="../" class="logo"><img src="../assets/svg/bm_logo.svg" alt="Besiktningsman.se"></a>
 			<ul class="mainMenu text-blue">
 				<h2 class="bold small text-blueGrey">Navigation</h2>
-				<li><a href="../#erbjudande"><p>Vårt erbjudande</p></a></li>
+				<li>
+					<a href="../#erbjudande">
+						<p>Vårt erbjudande</p>
+					</a>
+				</li>
 				<br>
 				<br>
-				<li><a href="../kontakt/"><p>Kundkontakt</p></a></li>
+				<li>
+					<a href="../kontakt/">
+						<p>Kundkontakt</p>
+					</a>
+				</li>
 				<br>
 				<br>
-				<li><a href="../karriar/"><p>Karriär</p></a></li>
+				<li>
+					<a href="../karriar/">
+						<p>Karriär</p>
+					</a>
+				</li>
 				<br>
 				<br>
-				<li><a href="../om_oss/"><p>Om oss</p></a></li>
+				<li>
+					<a href="../om_oss/">
+						<p>Om oss</p>
+					</a>
+				</li>
 				<br>
 				<br>
-				<li><a href="../nyheter/"><p>Publicerat & Press</p></a></li>
+				<li>
+					<a href="../nyheter/">
+						<p>Publicerat & Press</p>
+					</a>
+				</li>
 				<br>
 				<br>
-				<li><div class="popupTrigger" data-popup-id="docs"><p class="bold">Dokument</p></div></li>
+				<li>
+					<div class="popupTrigger" data-popup-id="docs">
+						<p class="bold">Dokument</p>
+					</div>
+				</li>
 			</ul>
 
 		</div>
@@ -147,7 +176,23 @@
 								<p>• Kunna belönas bra för ambitiösa arbetsinsatser?</p>
 								<p>• Bli medarbetare oavsett var i landet du bor?</p>
 								<a class="typeform-share common-Button blue" href="https://sebastian209.typeform.com/to/MTdpEL" data-mode="1" target="_blank">Ta kontakt med oss!</a>
-								<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm_share',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+								<script>
+									(function() {
+										var qs, js, q, s, d = document,
+											gi = d.getElementById,
+											ce = d.createElement,
+											gt = d.getElementsByTagName,
+											id = 'typef_orm_share',
+											b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+										if (!gi.call(d, id)) {
+											js = ce.call(d, 'script');
+											js.id = id;
+											js.src = b + 'share.js';
+											q = gt.call(d, 'script')[0];
+											q.parentNode.insertBefore(js, q)
+										}
+									})()
+								</script>
 							</li>
 
 						</ul>
@@ -159,100 +204,111 @@
 
 	</section>
 
-<!-- Footer -->
-<section class="slide customFooter" style="background: #f2f9ff;color: #333;">
-  <div class="content">
-    <div class="container-lg">
-      <div class="wrap">
+	<!-- Footer -->
+	<section class="slide customFooter">
+		<div class="content">
+			<div class="container-lg">
+				<div class="wrap">
 
-        <div class="fix-10-12 center">
-					<img src="../assets/svg/bm_logo_top.svg" alt="Besiktningsman.se" style="max-width: 400px;" class="margin-bottom-1">
-          <p class="bold">Sveriges ledande entreprenadbesiktningsföretag</p>
-          <ul class="later center">
-            <li class="col-6-12 ae-3">
-              <h3 class="margin-bottom-1">Kontor</h3>
-              <a target="_blank" href="https://goo.gl/maps/RSkTwoQWpEn"><p class="text-blue bold">Heleneborgsgatan 54, 117 32 Stockholm</p></a>
-							<a href="tel:0101654000"><p class="text-blue bold">Telefon: 010-165 40 00</p></a>
-            </li>
-            <li class="col-6-12 ae-5">
-              <h3 class="margin-bottom-1">Följ oss</h3>
-							<a target="_blank" href="https://medium.com/besiktningsbloggen"><p class="text-blue bold">Besiktningsbloggen</p></a>
-							<a target="_blank" href="https://twitter.com/BjornSelling"><p class="text-blue bold">Twitter</p></a>
-							<a target="_blank" href="https://www.facebook.com/Besiktningsman/"><p class="text-blue bold">Facebook</p></a>
-							<a target="_blank" href="https://www.linkedin.com/company/24778105/"><p class="text-blue bold">Linkedin</p></a>
-            </li>
-          </ul>
-        </div>
+					<div class="fix-10-12 center">
+						<img src="../assets/svg/bm_logo_top.svg" alt="Besiktningsman.se" style="max-width: 400px;" class="margin-bottom-1">
+						<p class="bold">Sveriges ledande entreprenadbesiktningsföretag</p>
+						<ul class="later center">
+							<li class="col-6-12 ae-3">
+								<h3 class="margin-bottom-1">Kontor</h3>
+								<a target="_blank" href="https://goo.gl/maps/RSkTwoQWpEn">
+									<p class="text-blue bold">Heleneborgsgatan 54, 117 32 Stockholm</p>
+								</a>
+								<a href="tel:0101654000">
+									<p class="text-blue bold">Telefon: 010-165 40 00</p>
+								</a>
+							</li>
+							<li class="col-6-12 ae-5">
+								<h3 class="margin-bottom-1">Följ oss</h3>
+								<a target="_blank" href="https://medium.com/besiktningsbloggen">
+									<p class="text-blue bold">Besiktningsbloggen</p>
+								</a>
+								<a target="_blank" href="https://twitter.com/BjornSelling">
+									<p class="text-blue bold">Twitter</p>
+								</a>
+								<a target="_blank" href="https://www.facebook.com/Besiktningsman/">
+									<p class="text-blue bold">Facebook</p>
+								</a>
+								<a target="_blank" href="https://www.linkedin.com/company/24778105/">
+									<p class="text-blue bold">Linkedin</p>
+								</a>
+							</li>
+						</ul>
+					</div>
 
-      </div>
-    </div>
-  </div>
-	<p class="text-blueGrey center-m-down bold" style="font-size:13px;"><a href="http://sebastianselling.com/" tabindex="_blank">Design av Sebastian Selling</a></p>
-</section>
-<!-- POPUP WITH LINKS TO NEWSLETTER TEXTS -->
- <div class="popup hidden" data-popup-id="docs" id="docs">
-	 <div class="close closeButton left opaque white text-blue">X</div>
-	 <div class="content">
-		 <div class="container">
-			 <div class="wrap spaces">
-				 <div class="fix-4-12 margin-top-6">
-					 <div class="pad shadow selected popupContent">
-							 <div class="absolute">
-								 <h3 class="center">DOKUMENT</h3>
-								 <p class="small center">
+				</div>
+			</div>
+		</div>
+		<p class="text-blueGrey center-m-down bold" style="font-size:13px;"><a href="http://sebastianselling.com/" tabindex="_blank">Design av Sebastian Selling</a></p>
+	</section>
+	<!-- POPUP WITH LINKS TO NEWSLETTER TEXTS -->
+	<div class="popup hidden" data-popup-id="docs" id="docs">
+		<div class="close closeButton left opaque white text-blue">X</div>
+		<div class="content">
+			<div class="container">
+				<div class="wrap spaces">
+					<div class="fix-4-12 margin-top-6">
+						<div class="pad shadow selected popupContent">
+							<div class="absolute">
+								<h3 class="center">DOKUMENT</h3>
+								<p class="small center">
 									Nedan kan du ladda ner viktiga dokument
-									<br>
-									gällande besiktningar.
+									<br> gällande besiktningar.
 								</p>
-							 </div>
-							 <img src="../assets/img/backgrounds/docs.jpg" alt="Foto av dokumenthäften"/>
-							 <div class="dialogContent">
-								 <ul class="text-center left">
-									 <li>
-										 <p class="text-blueGrey small margin-0">Allmänt</p>
-									 </li>
-										<li>
-											<a href="../assets/documents/besiktningsmannaboken-2016-konsumentverket.pdf" target="_blank" class="text-blue bold small">Besiktningsmannaboken 2016</a>
-										</li>
-										<br>
-										<li>
-											<a href="../assets/documents/konsumenttjanstlagen-rev-2016-juni-konsumentverket.pdf" target="_blank" class="text-blue bold small">Konsumenttjänstlagen</a>
-										</li>
-										<br>
-										<li>
-											<a href="../assets/documents/hantverkarformularet-14-protokoll-konsumentverket.pdf" target="_blank" class="text-blue bold small">Hantverkarformuläret 14</a>
-										</li>
-								 </ul>
-								 <br>
-								 <ul class="text-center left">
-									 <li>
-										 <p class="text-blueGrey small margin-0">BRF</p>
-									 </li>
-										<li>
-											<a href="../assets/documents/brf/brf_slutbesiktning.pdf" target="_blank" class="text-blue bold small">Slutbesiktning för BRF</a>
-										</li>
-										<br>
-										<li>
-											<a href="../assets/documents/brf/brf_efterbesiktning.pdf" target="_blank" class="text-blue bold small">Efterbesiktning för BRF</a>
-										</li>
-										<br>
-										<li>
-											<a href="../assets/documents/brf/brf_särskild besiktning.pdf" target="_blank" class="text-blue bold small">Särskild besiktning för BRF</a>
-										</li>
-								 </ul>
-							 </div>
-					 </div>
-				 </div>
-			 </div>
-		 </div>
-	 </div>
- </div>
+							</div>
+							<img src="../assets/img/backgrounds/docs.jpg" alt="Foto av dokumenthäften" />
+							<div class="dialogContent">
+								<ul class="text-center left">
+									<li>
+										<p class="text-blueGrey small margin-0">Allmänt</p>
+									</li>
+									<li>
+										<a href="../assets/documents/besiktningsmannaboken-2016-konsumentverket.pdf" target="_blank" class="text-blue bold small">Besiktningsmannaboken 2016</a>
+									</li>
+									<br>
+									<li>
+										<a href="../assets/documents/konsumenttjanstlagen-rev-2016-juni-konsumentverket.pdf" target="_blank" class="text-blue bold small">Konsumenttjänstlagen</a>
+									</li>
+									<br>
+									<li>
+										<a href="../assets/documents/hantverkarformularet-14-protokoll-konsumentverket.pdf" target="_blank" class="text-blue bold small">Hantverkarformuläret 14</a>
+									</li>
+								</ul>
+								<br>
+								<ul class="text-center left">
+									<li>
+										<p class="text-blueGrey small margin-0">BRF</p>
+									</li>
+									<li>
+										<a href="../assets/documents/brf/brf_slutbesiktning.pdf" target="_blank" class="text-blue bold small">Slutbesiktning för BRF</a>
+									</li>
+									<br>
+									<li>
+										<a href="../assets/documents/brf/brf_efterbesiktning.pdf" target="_blank" class="text-blue bold small">Efterbesiktning för BRF</a>
+									</li>
+									<br>
+									<li>
+										<a href="../assets/documents/brf/brf_särskild besiktning.pdf" target="_blank" class="text-blue bold small">Särskild besiktning för BRF</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- Scripts -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 	<script src="../js/slides.min.js" type="text/javascript" name="main-scripts"></script>
 	<script>
-  	window.setHashLink = 1;
+		window.setHashLink = 1;
 	</script>
 </body>
 
