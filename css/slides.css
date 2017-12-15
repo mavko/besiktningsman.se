@@ -470,7 +470,9 @@ p.hero {
 #brf-services p, #entreprenad-services p, #privat-services p {
 	margin-bottom: 10px!important
 }
-
+#news-title {
+	padding: 0 0 0 20px;
+}
 #news {
 	overflow-y: scroll;
 	max-height: 70vh
