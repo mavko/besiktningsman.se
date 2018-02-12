@@ -13,7 +13,7 @@ body, html, img {
 }
 img {
 	color: #47525D !important;
-	font-style: bold;
+	font-weight: bold;
 }
 .slides, html {
 	font-family: "Source Sans Pro", sans-serif
@@ -39,7 +39,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 	border: 0;
 	vertical-align: baseline;
 	margin: 0;
-	padding: 0
+	padding: 0;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
