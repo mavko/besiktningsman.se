@@ -942,56 +942,8 @@ a.globalFooterCard {
 	margin: 0 auto
 }
 
-section.network {
-	position: relative;
-	padding: 450px 0 0;
-	background-color: #f6f9fc
-}
-
 .dialog, .dialog .close.white:after, .dialog .close.white:before {
 	background: #fff
-}
-
-section.network .container-lg {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-pack: center;
-	justify-content: center;
-	position: relative
-}
-
-@media (min-width:1040px) {
-	section.network {
-		padding: 100px 0
-	}
-	section.network .container-lg {
-		-ms-flex-pack: end;
-		justify-content: flex-end
-	}
-}
-
-section.network .logos {
-	visibility: visible;
-	position: absolute;
-	width: auto;
-	left: 0;
-	right: 0;
-	text-align: center
-}
-
-section.network .logos .row {
-	will-change: transform;
-	animation: logos 10s linear infinite
-}
-
-section.network .logos .row>div {
-	position: relative;
-	text-align: center;
-	height: 90px
-}
-
-section.network .logos .row>div:nth-child(odd) {
-	transform: translateY(-50%)
 }
 
 .dialogContainer:not(.bottom) .dialog+.dialog {
@@ -1175,9 +1127,6 @@ section.network .logos .row>div:nth-child(odd) {
 	.contact h1 {
 		margin-top: 90px
 	}
-	#partners .margin-bottom-8 {
-		margin-bottom: 30px!important
-	}
 	.popup #team .wrap {
 		padding: 0
 	}
@@ -1246,9 +1195,6 @@ section.network .logos .row>div:nth-child(odd) {
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) {
-	.network {
-		padding: 250px 0 0!important
-	}
 	.leftControl-83, .rightControl-83 {
 		display: none
 	}
