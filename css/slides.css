@@ -1060,6 +1060,9 @@ a.globalFooterCard {
 }
 
 @media only screen and (min-width:320px) and (max-width:480px) {
+	#mobilePhoneNumber {
+		display: block;
+	}
 	.padding-5 {
 		padding: 15px!important
 	}
@@ -1220,6 +1223,9 @@ a.globalFooterCard {
 }
 
 @media (min-width:1024px) {
+	#mobilePhoneNumber {
+		display: none;
+	}
 	.sliderBox-83 {
 		margin-top: 15%
 	}
