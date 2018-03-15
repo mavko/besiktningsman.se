@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>ispect_logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="50" cy="50" r="50"></circle>
+        <filter x="-17.5%" y="-12.5%" width="135.0%" height="135.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.105882353   0 0 0 0 0.11372549   0 0 0 0 0.109803922  0 0 0 0.341428895 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="100%" y1="0%" x2="-32.104046%" y2="129.602719%" id="linearGradient-3">
+            <stop stop-color="#9999A4" offset="0%"></stop>
+            <stop stop-color="#60606B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="0%" x2="-25.3520108%" y2="122.32069%" id="linearGradient-4">
+            <stop stop-color="#D1D5DB" offset="0%"></stop>
+            <stop stop-color="#A5ABB5" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="37.4783029%" y1="85.9062621%" x2="80.199157%" y2="8.31272728%" id="linearGradient-5">
+            <stop stop-color="#1072BB" offset="0%"></stop>
+            <stop stop-color="#0E98FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#2F2D2E" offset="0%"></stop>
+            <stop stop-color="#4D4D54" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="presentations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="12-outro" transform="translate(-901.000000, -778.000000)">
+            <g id="Group" transform="translate(688.000000, 783.000000)">
+                <g id="ispect_logo" transform="translate(223.000000, 0.000000)">
+                    <g id="Oval">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="ispect-lens" transform="translate(31.250000, 16.250000)">
+                        <path d="M16.6666667,36.6666667 L20.8333333,36.6666667 L20.8333333,42.9166667 C20.8333333,44.0672599 19.9005932,45 18.75,45 L18.75,45 C17.5994068,45 16.6666667,44.0672599 16.6666667,42.9166667 L16.6666667,36.6666667 Z" id="lensholder" fill="url(#linearGradient-3)" fill-rule="nonzero"></path>
+                        <g id="lens" fill-rule="nonzero">
+                            <path d="M32.0083377,32.0080585 C24.685938,39.3306472 12.8140163,39.3306472 5.49161645,32.0080585 C-1.83059993,24.6856487 -1.83059993,12.8138593 5.49198316,5.49180731 C12.8141996,-1.83060244 24.685938,-1.83060244 32.0083377,5.49180731 C39.3305541,12.8136804 39.3305541,24.6856487 32.0083377,32.0080585 Z" id="lensbg" stroke="#6D92A3" fill="#FFFFFF"></path>
+                            <path d="M30.2405593,30.2403174 C23.8944796,36.5865609 13.6054808,36.5865609 7.25940093,30.2403174 C0.913480057,23.8942289 0.913480057,13.6053448 7.25971874,7.25956634 C13.6056397,0.913477888 23.8944796,0.913477888 30.2405593,7.25956634 C36.5864802,13.6051897 36.5864802,23.8942289 30.2405593,30.2403174 Z" id="lensborder" fill="url(#linearGradient-4)"></path>
+                            <path d="M7.84358807,29.6562847 C1.82991509,23.6423113 1.82991509,13.8574139 7.84358807,7.84391156 C13.8572611,1.82993812 23.6425779,1.82978108 29.6564119,7.84359751 C35.6700849,13.8574139 35.6700849,23.6424684 29.6564119,29.6564418 C23.6425779,35.6701011 13.8572611,35.6701011 7.84358807,29.6562847 Z" fill="url(#linearGradient-5)"></path>
+                            <path d="M30.3887181,25.4117764 C27.9248129,27.9370789 23.9298898,27.9370789 21.4659845,25.4117764 C19.0020793,22.8863156 19.0020793,18.7923342 21.4659845,16.2668735 C23.9298898,13.7412544 27.9248129,13.7412544 30.3887181,16.2668735 C32.8526234,18.7923342 32.8526234,22.8863156 30.3887181,25.4117764 Z" id="big-gloss" fill-opacity="0.4" fill="#51B4FE"></path>
+                            <path d="M22.5738872,12.2056016 C21.8975675,12.8985363 20.8013378,12.8985363 20.1251766,12.205285 C19.4490152,11.5123503 19.4490152,10.3889032 20.1251766,9.69581015 C20.8013378,9.00271718 21.8975675,9.00271718 22.5737289,9.69612672 C23.2497319,10.3890615 23.2500485,11.5125085 22.5738872,12.2056016 Z" id="gloss" fill-opacity="0.4" fill="#51B4FE"></path>
+                        </g>
+                        <path d="M14.5833333,42.9166667 L22.9166667,42.9166667 L22.9166667,63.767335 C22.9166667,66.0589476 21.0589476,67.9166667 18.767335,67.9166667 L18.732665,67.9166667 C16.4410524,67.9166667 14.5833333,66.0589476 14.5833333,63.767335 L14.5833333,42.9166667 Z" id="handle" fill="url(#linearGradient-6)" fill-rule="nonzero"></path>
+                        <polygon id="handleshadow" fill-opacity="0.241876132" fill="#1B1D1C" points="14.5833333 44.5833333 22.9166667 44.5833333 22.9166667 60.8333333 14.5833333 50.7544483"></polygon>
+                        <rect id="handlebar" fill="url(#linearGradient-4)" fill-rule="nonzero" x="12.5" y="40.4166667" width="12.5" height="4.16666667" rx="1.65973267"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
