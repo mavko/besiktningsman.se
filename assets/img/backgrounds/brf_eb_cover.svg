@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="400px" viewBox="0 0 300 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>brf_eb_cover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="brf_eb_cover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-3" fill="#1072BB" x="0" y="0" width="300" height="400" rx="5"></rect>
+        <g id="SIGN" transform="translate(130.000000, 60.000000)" stroke="#FFFFFF" stroke-width="2.85668015">
+            <polygon id="Stroke-1" points="0 48.5211484 39.1983218 48.5211484 39.1983218 7 0 7"></polygon>
+            <path d="M7.68892273,20.1565054 L17.9504859,38.3886388 C17.9504859,38.3886388 36.3519138,-6.04776403 88.7972811,0.787517047" id="Stroke-3"></path>
+        </g>
+        <text id="HUR-GÅR-EN-EFTERBESI" font-family="OpenSans-SemiBold, Open Sans" font-size="24" font-weight="500" letter-spacing="1" fill="#FFFFFF">
+            <tspan x="73.265625" y="177">HUR GÅR EN</tspan>
+            <tspan x="38.2460938" y="210">EFTERBESIKTNING</tspan>
+            <tspan x="119.101562" y="243">TILL?</tspan>
+        </text>
+        <text id="AV-BESIKTNINGSMAN.SE" font-family="OpenSans-SemiBold, Open Sans" font-size="14" font-weight="500" letter-spacing="0.583333313" fill="#FFFFFF">
+            <tspan x="62.4156903" y="359">AV BESIKTNINGSMAN.SE</tspan>
+        </text>
+    </g>
+</svg>
