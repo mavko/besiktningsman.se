@@ -671,15 +671,14 @@ p.hero {
 		-webkit-backface-visibility: hidden;
 		backface-visibility: hidden;
 		will-change: transform, box-shadow;
-		width: 200px;
-		height: 260px;
+		width: 210px;
+		height: 280px;
 }
 .card img {
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: bottom center;
     object-position: bottom center;
-		padding-bottom: 15px;
 }
 .cover {
     position: absolute;
