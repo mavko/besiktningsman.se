@@ -1326,6 +1326,14 @@ a.globalFooterCard {
 }
 
 @media only screen and (min-width:320px) and (max-width:480px) {
+	.secondary-column > :first-child {
+	    padding-left: 20px;
+	    padding-right: 0;
+	}
+	.form-section {padding: 0;}
+	section.ctas .container-lg {
+		display: inline;
+	}
 	.service-text p {
 		font-size: 16px;
 	}
@@ -2136,7 +2144,7 @@ a.underline {
 .pad-header {
 	background-color: #F6F9FC;
 	width: 100%;
-	padding: 15px 0 15px 20px
+	padding: 15px 0 15px 0;
 }
 
 .container-md {
