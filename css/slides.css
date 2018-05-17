@@ -713,6 +713,33 @@ p.hero {
 .img-size {
 	max-width: 900px
 }
+/*typeform fixes*/
+.css-bqbk00 {
+	font-size: 22px !important;
+	font-weight: 300 !important;
+	line-height: 26px !important;
+	color: #424770 !important;
+}
+.__typeform-embed-mobile-modal-open {
+    z-index: 99999 !important;
+}
+.css-141sqqa {top: 100px !important;right: 20px !important;}
+.css-1b4vckp {
+	-webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08) !important;
+	box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08) !important;
+	border-radius: 4px !important;
+	font-size: 20px !important;
+	font-weight: 600 !important;
+	text-transform: uppercase !important;
+	letter-spacing: .025em !important;
+	color: #1072bb !important;
+	text-decoration: none !important;
+	-webkit-transition: all .15s ease !important;
+	transition: all .15s ease !important;
+	color: #fff  !important;
+	border: none  !important;
+}
+/*Service subpage styles*/
 .StripeBackground {
     top: 0;
     height: 608px;
@@ -865,6 +892,12 @@ section .form-column {
 	width: 100%;
 	margin-bottom: 50px;
 }
+.form-section .wrap {
+	padding: 15px;
+	overflow: visible !important;
+}
+
+
 section.ctas {
     opacity: 1;
     max-height: 500px;
@@ -1547,6 +1580,11 @@ a.globalFooterCard {
 	.bread-crumbs {
 		margin-top: 120px;
 	}
+	.slide {
+		-webkit-transform: none !important;
+		transform: none !important;
+		will-change: unset !important;
+	}
 }
 
 @media (max-width:1023px) {
@@ -2153,16 +2191,6 @@ a.underline {
 
 .h3.small, h3.small {
 	font-size: 20px
-}
-
-.headquarters {
-	position: relative;
-	width: 100%;
-	border-radius: 4px;
-	box-shadow: 0 0 0 1px #e1e4e6;
-	padding-top: 17px;
-	padding-bottom: 17px;
-	padding-left: 110px
 }
 
 .slide {
