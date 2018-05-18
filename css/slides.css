@@ -896,11 +896,19 @@ section .form-column {
 	padding: 15px;
 	overflow: visible !important;
 }
-
-
+#services-nav {
+	background: #f6f9fc;
+	border-bottom: 2px solid rgba(207,215,223,.25);
+}
+#services-nav .common-Button {
+	margin: 15px 15px 0px 0px;
+}
 section.ctas {
     opacity: 1;
     max-height: 500px;
+    position: relative;
+    padding-bottom: 55px;
+    padding-right: 10px;
     -webkit-transition: max-height .7s;
     transition: max-height .7s;
         transition-delay: 0s;
@@ -911,11 +919,6 @@ section.ctas {
     padding-bottom: 90px;
     padding-right: 0;
 }
-section.ctas {
-    position: relative;
-    padding-bottom: 55px;
-    padding-right: 10px;
-}
 section.ctas .cta .cta-copy {
 	font-weight: 400;
 	font-size: 16px;
@@ -925,19 +928,12 @@ section.ctas .cta .icon-column {
     min-width: 45px;
     padding-bottom: 15px;
 }
-section.ctas .cta .copy-column {
-    max-width: 385px;
-    padding-left: 20px;
-    -webkit-box-flex: 2;
-    -ms-flex-positive: 2;
-    flex-grow: 2;
-    padding-right: 20px;
-}
 section.ctas .cta {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     max-width: none;
+
 }
 section.ctas .container-lg {
     padding: 0 20px;
@@ -1172,12 +1168,18 @@ a.globalFooterCard {
 }
 
 .customFooter {
-	background: #f2f9ff;
-	color: #3D3F40
+	background: #f6f9fc;
+	color: #424770;
 }
-
+.customFooter h3 {
+	font-size: 14px;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: .025em;
+margin: 0 0 5px;
+}
 .customFooter p {
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 15px
 }
 
@@ -1359,6 +1361,11 @@ a.globalFooterCard {
 }
 
 @media only screen and (min-width:320px) and (max-width:480px) {
+	.slide {
+		-webkit-transform: none !important;
+		transform: none !important;
+		will-change: unset !important;
+	}
 	.secondary-column > :first-child {
 	    padding-left: 20px;
 	    padding-right: 0;
@@ -1579,11 +1586,6 @@ a.globalFooterCard {
 	}
 	.bread-crumbs {
 		margin-top: 120px;
-	}
-	.slide {
-		-webkit-transform: none !important;
-		transform: none !important;
-		will-change: unset !important;
 	}
 }
 
