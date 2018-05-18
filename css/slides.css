@@ -714,6 +714,9 @@ p.hero {
 	max-width: 900px
 }
 /*typeform fixes*/
+.typeform #fixed-footer > .background {
+	border-radius: 4px !important;
+}
 .css-bqbk00 {
 	font-size: 22px !important;
 	font-weight: 300 !important;
@@ -806,7 +809,8 @@ p.hero {
 }
 .form-section {
     max-height: 1200px;
-    opacity: 1;
+		padding: 50px 0 40px 0;
+    position: relative;
     -webkit-transition: max-height .7s;
     transition: max-height .7s;
         transition-delay: 0s;
@@ -814,26 +818,22 @@ p.hero {
     -webkit-transition-delay: .4s;
     transition-delay: .4s;
 }
-.form-section {
-    position: relative;
-    padding-bottom: 50px;
-    margin-top: -10px;
-}
-.form-section {
-	padding: 50px 0 85px 0;
-}
 .form-section .container-lg {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 }
 .form-section .copy-1 {
-	font-size: 24px;
-	font-weight: 400;
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 36px;
+	margin-bottom: 10px;
 }
 
 .form-section .copy-2 {
-	font-size: 19px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
 }
 section .form-column {
 	-webkit-box-flex: 6;
@@ -907,8 +907,7 @@ section.ctas {
     opacity: 1;
     max-height: 500px;
     position: relative;
-    padding-bottom: 55px;
-    padding-right: 10px;
+    padding-bottom: 25px;
     -webkit-transition: max-height .7s;
     transition: max-height .7s;
         transition-delay: 0s;
@@ -916,8 +915,6 @@ section.ctas {
     -webkit-transition-delay: .5s;
     transition-delay: .5s;
     background: transparent;
-    padding-bottom: 90px;
-    padding-right: 0;
 }
 section.ctas .cta .cta-copy {
 	font-weight: 400;
@@ -973,31 +970,6 @@ section.ctas .cta .cta-headline {
 }
 #newsletter .center-m-down {
 	margin-bottom: 50px
-}
-
-.Quote {
-	margin: 15px 0 0;
-	position: relative;
-	z-index: 5;
-	color: #fff
-}
-
-.Quote h3, .Quote p {
-	position: absolute;
-	z-index: 20;
-	color: #fff
-}
-
-.Quote h3 {
-	font-size: 24px;
-	padding: 20px 0 0 20px
-}
-
-.Quote p {
-	font-size: 20px;
-	line-height: 1.6em;
-	margin-bottom: 0;
-	padding: 50px 0 0 20px
 }
 
 .container-wide {
