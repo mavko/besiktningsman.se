@@ -896,11 +896,11 @@ section .form-column {
 	padding: 15px;
 	overflow: visible !important;
 }
-#services-nav {
+#footer-nav {
 	background: #f6f9fc;
 	border-bottom: 2px solid rgba(207,215,223,.25);
 }
-#services-nav .common-Button {
+#footer-nav .common-Button {
 	margin: 15px 15px 0px 0px;
 }
 section.ctas {
@@ -924,15 +924,18 @@ section.ctas .cta .cta-copy {
 	font-size: 16px;
 	line-height: 26px;
 }
-section.ctas .cta .icon-column {
-    min-width: 45px;
-    padding-bottom: 15px;
-}
 section.ctas .cta {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     max-width: none;
+}
+.copy-column {
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+    max-width: 385px;
+		padding: 20px 0 0 0;
 
 }
 section.ctas .container-lg {
@@ -940,8 +943,6 @@ section.ctas .container-lg {
     -webkit-box-pack: normal;
     -ms-flex-pack: normal;
     justify-content: normal;
-}
-section.ctas .container-lg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -951,6 +952,7 @@ section.ctas .container-lg {
     padding-left: 45px;
     padding-right: 45px;
 }
+
 section.ctas .cta .cta-headline {
     font-weight: 500;
     font-size: 19px;
