@@ -136,10 +136,6 @@ h2 {
 	font-weight: 400
 }
 
-.button.small, h3, p.hero {
-	font-weight: 600
-}
-
 h2.small {
 	font-size: 23px
 }
@@ -161,6 +157,12 @@ p {
     font-size: 36px;
     line-height: 46px;
     color: #424770;
+}
+.common-BodyTitle {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 28px;
+    color: #32325d;
 }
 p.hero {
 	font-size: 26px;
@@ -1013,15 +1015,16 @@ section.ctas .cta .cta-headline {
 	flex-shrink: 0;
 	margin: 5px
 }
-
-.common-Link {
-	color: #1072bb;
-	font-size: 18px;
-	font-weight: 600;
-	margin-bottom: 15px;
-	transition: color .1s ease
+.common-Link:focus, .common-Link:hover {
+    color: #32325d;
 }
-
+.common-Link {
+    color: #1072bb;
+    font-weight: 500;
+    -webkit-transition: color .1s ease;
+    transition: color .1s ease;
+    cursor: pointer;
+}
 [class*=icono-arrow2]:before {
 	right: 0;
 	top: -3px;
@@ -1762,7 +1765,7 @@ margin: 0 0 5px;
 }
 
 .sliderBox-83 {
-	margin-bottom: 48px
+	margin-bottom: 15px;
 }
 
 .leftControl-83, .rightControl-83 {
