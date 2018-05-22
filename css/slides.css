@@ -543,14 +543,6 @@ p.hero {
 	transform: rotate(45deg)
 }
 
-#enterprise .sliderBox-83 {
-	margin-top: 20%
-}
-
-#enterprise .sliderBox-83 .img-fade {
-	max-height: 275px
-}
-
 .accordion ul li {
 	padding: 2%
 }
@@ -1140,7 +1132,38 @@ a.globalFooterCard {
 	background: #FFF;
 	border-radius: 0 0 5px
 }
-
+.Quote {
+	color: #fff;
+}
+.Quote h3 {
+	position: absolute;
+	z-index: 10;
+	padding: 20px;
+}
+.Quote p {
+	position: absolute;
+	z-index: 10;
+	padding: 50px 0 0 20px;
+}
+.common-Card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 4px;
+		height: 280px;
+    -webkit-box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+}
+.common-Card .img-fade {
+	height: 280px !important;
+	border-radius: 4px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.common-Card img {
+	border-radius: 4px;
+}
 .customFooter {
 	background: #f6f9fc;
 	color: #47525d;
@@ -1500,9 +1523,6 @@ margin: 0 0 5px;
 	.leftControl-83, .rightControl-83 {
 		display: none
 	}
-	#enterprise .sliderBox-83 .img-fade {
-		max-height: none
-	}
 	.flex-phone {
 		flex-wrap: wrap!important
 	}
@@ -1524,9 +1544,6 @@ margin: 0 0 5px;
 @media (min-width:1024px) {
 	#mobilePhoneNumber {
 		display: none
-	}
-	.sliderBox-83 {
-		margin-top: 15%
 	}
 	.iphone-29 {
 		margin-top: -228px;
@@ -1745,7 +1762,6 @@ margin: 0 0 5px;
 }
 
 .sliderBox-83 {
-	position: relative;
 	margin-bottom: 48px
 }
 
