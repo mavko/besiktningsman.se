@@ -96,7 +96,16 @@ html {
 
 body {
 	width: 100%;
-	height: 100%
+	height: 100%;
+	font-size: 62.5%;
+	font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	-webkit-text-size-adjust: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	font-feature-settings: "pnum";
+	font-variant-numeric: proportional-nums;
 }
 
 body, html {
@@ -163,6 +172,22 @@ p {
     font-size: 19px;
     line-height: 28px;
     color: #32325d;
+}
+.common-BodyText {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    color: #525f7f;
+}
+.section-Links {
+    line-height: 2em;
+    list-style-type: none;
+    padding: 1.5em 0 0;
+    margin: 1.5em 0 0;
+    border-top: 1px solid rgba(7,96,115,.15);
+}
+#enterprise .common-IntroText {
+	font-size: 46px;
 }
 p.hero {
 	font-size: 26px;
