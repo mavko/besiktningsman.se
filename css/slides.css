@@ -1405,6 +1405,10 @@ margin: 0 0 5px;
 	#news p {
 		font-size: 16px;
 	}
+	.news-header h1 {
+		font-size: 52px !important;
+		padding-top: 15%;
+	}
 	#landingHeader .container {
 		height: 280px;
 	}
