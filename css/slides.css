@@ -436,7 +436,7 @@ p.hero {
 	-o-transition: all .5s ease;
 	-ms-transition: all .5s ease;
 	transition: all .5s ease;
-	height: 600px
+	height: 600px;
 }
 
 .first {
