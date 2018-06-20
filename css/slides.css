@@ -1063,21 +1063,21 @@ section.ctas .cta .cta-headline {
 .inactive-Button {
 	background: rgba(255,255,255,0.80);
 	border: 2px solid rgba(255,255,255,0.80);
-    white-space: nowrap;
-    display: inline-block;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 30px;
-    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
-    border-radius: 4px;
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: .025em;
-    outline: 0;
-    border: none;
-    -webkit-transition: all .15s ease;
-    transition: all .15s ease;
+	white-space: nowrap;
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 30px;
+	box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+	border-radius: 4px;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .025em;
+	outline: 0;
+	border: none;
+	-webkit-transition: all .15s ease;
+	transition: all .15s ease;
 }
 .common-Link:focus, .common-Link:hover {
     color: #32325d;
@@ -1216,13 +1216,14 @@ a.globalFooterCard {
     position: relative;
     background-color: #fff;
     border-radius: 4px;
-		height: 280px;
+		height: 310px;
     -webkit-box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
     box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+		object-fit: fill;
 }
 .common-Card .img-fade {
-	height: 280px !important;
 	border-radius: 4px;
+	height: 310px !important;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -1230,6 +1231,9 @@ a.globalFooterCard {
 }
 .common-Card img {
 	border-radius: 4px;
+	height: 100%;
+	max-height: 310px;
+	object-fit: cover;
 }
 [data-tooltip] {
 	position:relative;
@@ -1267,7 +1271,7 @@ a.globalFooterCard {
 		z-index: 10000;
 		position: absolute;
 		top: 270px;
-		left: 18%;
+		left: 19%;
 }
 [data-tooltip]:before {
 		content: attr(data-tooltip);
@@ -1508,6 +1512,8 @@ margin: 0 0 5px;
 	margin: 0 auto;
 }
 @media only screen and (min-width:320px) and (max-width:480px) {
+	.leftControl-83 {margin-left: -10px !important;}
+	.rightControl-83 {margin-right: 10px !important;}
 	.formBackground .announcement {
 		left: 0 !important;
 	}
@@ -1686,9 +1692,6 @@ margin: 0 0 5px;
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) {
-	.leftControl-83, .rightControl-83 {
-		display: none
-	}
 	.flex-phone {
 		flex-wrap: wrap!important
 	}
@@ -1905,7 +1908,8 @@ margin: 0 0 5px;
 }
 
 .dot:after, .leftControl-83:active, .leftControl-83:hover, .rightControl-83:active, .rightControl-83:hover {
-	opacity: .5
+	transform: translateY(-1px);
+	box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08)
 }
 
 .slider.autoHeight {
@@ -1929,27 +1933,50 @@ margin: 0 0 5px;
 
 .sliderBox-83 {
 	margin-bottom: 15px;
+	max-width: 600px;
+	width: 100%;
 }
-
+.leftControl-83 {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    margin-top: -25px;
+    margin-left: -24px;
+    z-index: 10;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #fff;
+		-webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+		box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+.rightControl-83 {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    margin-top: -25px;
+    right: -23px;
+		z-index: 10;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #fff;
+		-webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+		box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
 .leftControl-83, .rightControl-83 {
 	position: absolute;
 	top: 50%;
-	margin-top: -91px;
-	margin-left: -60px;
 	cursor: pointer
 }
 
-.rightControl-83 {
-	right: 0;
-	margin-right: -60px
+.leftControl-83 svg {
+	width: 20px;
+	margin-top: 16px;
+	margin-left: 14px;
 }
-
-.leftControl-83 svg, .rightControl-83 svg {
-	width: 16px
-}
-
-.slide.whiteSlide svg {
-	fill: #3D3F40
+.rightControl-83 svg {
+	width: 20px;
+	margin-top: 16px;
+	margin-left: 16px;
 }
 
 .dots {
