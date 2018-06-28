@@ -1511,9 +1511,9 @@ margin: 0 0 5px;
 	width:100%;
 	margin: 0 auto;
 }
-	#pr-widget .common-Link {
-		margin-top: 15px;
-	}
+#pr-widget .common-Link {
+	margin-top: 15px;
+}
 @media only screen and (min-width:320px) and (max-width:480px) {
 	.leftControl-83 {margin-left: -10px !important;}
 	.rightControl-83 {margin-right: 10px !important;}
