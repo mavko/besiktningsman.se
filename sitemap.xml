@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
-            https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>https://besiktningsman.se/</loc>
+  <loc>http://besiktningsman.se/</loc>
   <lastmod>2018-02-13T17:07:35+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://besiktningsman.se/nyheter/</loc>
+  <loc>http://besiktningsman.se/nyheter/</loc>
   <lastmod>2018-01-31T13:22:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://besiktningsman.se/om_oss/</loc>
+  <loc>http://besiktningsman.se/om_oss/</loc>
   <lastmod>2018-02-13T17:07:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://besiktningsman.se/karriar/</loc>
+  <loc>http://besiktningsman.se/karriar/</loc>
   <lastmod>2018-02-13T17:07:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://besiktningsman.se/kontakt/</loc>
+  <loc>http://besiktningsman.se/kontakt/</loc>
   <lastmod>2018-02-13T17:07:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://besiktningsman.se/tjanster/entreprenad/</loc>
+  <loc>http://besiktningsman.se/tjanster/entreprenad/</loc>
   <lastmod>2018-02-13T17:07:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://besiktningsman.se/tjanster/brf/</loc>
+  <loc>http://besiktningsman.se/tjanster/brf/</loc>
   <lastmod>2018-02-13T17:07:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://besiktningsman.se/tjanster/privat/</loc>
+  <loc>http://besiktningsman.se/tjanster/privat/</loc>
   <lastmod>2018-02-13T17:07:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://besiktningsman.se/assets/documents/besiktningsmannaboken-2016-konsumentverket.pdf</loc>
+  <loc>http://besiktningsman.se/assets/documents/besiktningsmannaboken-2016-konsumentverket.pdf</loc>
   <lastmod>2017-12-21T18:53:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://besiktningsman.se/assets/documents/konsumenttjanstlagen-rev-2016-juni-konsumentverket.pdf</loc>
+  <loc>http://besiktningsman.se/assets/documents/konsumenttjanstlagen-rev-2016-juni-konsumentverket.pdf</loc>
   <lastmod>2017-12-21T18:53:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://besiktningsman.se/assets/documents/hantverkarformularet-14-protokoll-konsumentverket.pdf</loc>
+  <loc>http://besiktningsman.se/assets/documents/hantverkarformularet-14-protokoll-konsumentverket.pdf</loc>
   <lastmod>2017-12-21T18:53:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://besiktningsman.se/assets/documents/brf/brf_slutbesiktning.pdf</loc>
+  <loc>http://besiktningsman.se/assets/documents/brf/brf_slutbesiktning.pdf</loc>
   <lastmod>2017-12-21T18:53:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://besiktningsman.se/assets/documents/brf/brf_efterbesiktning.pdf</loc>
+  <loc>http://besiktningsman.se/assets/documents/brf/brf_efterbesiktning.pdf</loc>
   <lastmod>2017-12-21T18:53:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
