@@ -193,7 +193,7 @@ p {
 	padding: 15px 0 15px 20px;
 }
 #news-section h3 {
-	font-weight: 600;
+	font-weight: 400;
 }
 #news-section .pad {
 	-webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.07),0 7px 17px 0 rgba(0,0,0,.1);
@@ -423,6 +423,25 @@ p.hero {
 		max-width: 100%!important;
 		width: 100%!important
 	}
+}
+marquee {
+  -webkit-animation:  marquee 50s linear infinite;
+  overflow: hidden;
+	padding: 10px;
+}
+marquee img {
+	margin: 5px;
+	height: 220px;
+	border-radius: 5px;
+	transform: perspective(60em) rotateY(10deg) rotateX(10deg);
+	-webkit-box-shadow:0 15px 35px rgba(0,0,0,.1),0 3px 10px rgba(0,0,0,.07);
+	box-shadow:0 15px 35px rgba(0,0,0,.1),0 3px 10px rgba(0,0,0,.07)};
+}
+.iconsContainer {
+	width: 3000px;
+	height: 460px;
+	position: relative;
+	left: 50px;
 }
 .photobanner {
 	width: 5300px;
@@ -1208,14 +1227,14 @@ a.globalFooterCard {
     position: relative;
     background-color: #fff;
     border-radius: 4px;
-		height: 310px;
+		height: 277px;
     -webkit-box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
     box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
 		object-fit: fill;
 }
 .common-Card .img-fade {
 	border-radius: 4px;
-	height: 310px !important;
+	height: 277px !important;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -1224,7 +1243,7 @@ a.globalFooterCard {
 .common-Card img {
 	border-radius: 4px;
 	height: 100%;
-	max-height: 310px;
+	max-height: 277px;
 	object-fit: cover;
 }
 [data-tooltip] {
@@ -1262,17 +1281,57 @@ a.globalFooterCard {
     background: rgba(0,0,140,.08);
 		margin-bottom: 15px;
 }
-
+.grid > .col-2-10 {
+  max-width: 20%;
+}
+.customFooterSeperator {
+	border-top: 1px solid #e1e1e1;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.customFooterSocials {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	display: flex;
+	display: -webkit-box;
+}
+.customFooterSocials h4 {
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+	-webkit-box-flex: 1 !important;
+	-ms-flex: 1 1 0 !important;
+	flex: 1 1 0 !important;
+	-ms-flex-preferred-size: 0 !important;
+	flex-basis: 0 !important;
+}
+.customFooterSocials .socialIcons {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	vertical-align: middle;
+	margin-bottom: .75rem;
+	margin-left: .75rem;
+}
 .customFooter {
 	background: #f6f9fc;
 	color: #47525d;
 }
 .customFooter h3 {
 	font-size: 14px;
-font-weight: 600;
-text-transform: uppercase;
-letter-spacing: .025em;
-margin: 0 0 5px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .025em;
+	margin: 0 0 5px;
 }
 .customFooter p {
 	font-size: 14px;
@@ -1280,8 +1339,7 @@ margin: 0 0 5px;
 }
 
 .customFooter .container-lg {
-	padding-top: 5%;
-	padding-bottom: 3%
+	padding: 2% 0 2% 0;
 }
 
 .col-5-10 {
@@ -1476,7 +1534,12 @@ margin: 0 0 5px;
 #mainLanding ul li a {
 	min-width: 155px;
 }
-
+#landingButton2 {
+	margin: 20px
+}
+#mapDiv .gm-inset-map {
+	display: none !important;
+}
 @media only screen and (min-width:320px) and (max-width:480px) {
 	#mainLanding .main-Logo {margin-top: 70px;}
 	#mainLanding ul {display: block;}
@@ -1485,235 +1548,99 @@ margin: 0 0 5px;
 	.formBackground .announcement {left: 0 !important;}
 	#pr-widget p {font-size: 16px;}
 	#news p {font-size: 16px;}
-	.news-header h1 {
-		font-size: 52px !important;
-		padding-top: 15%;
-	}
-	#landingHeader .container {
-		height: 280px;
-	}
-	.slide {
-		-webkit-transform: none !important;
-		transform: none !important;
-		will-change: unset !important;
-	}
-	.secondary-column > :first-child {
-	    padding-left: 20px;
-	    padding-right: 0;
-	}
+	.news-header h1 {font-size: 52px !important;padding-top: 15%;}
+	#landingHeader .container {height: 280px;}
+	.slide {-webkit-transform: none !important;transform: none !important;will-change: unset !important;}
+	.secondary-column > :first-child {padding-left: 20px;padding-right: 0;}
 	.form-section {padding: 0;}
 	section.ctas .container-lg {display: inline;}
 	.service-text p {font-size: 16px;}
 	.common-IntroText {font-size: 30px;}
-	#documentSlide h2 {
-		font-size: 28px
-	}
-	#contactModal h3, #documentSlide p {
-		font-size: 18px
-	}
-	.thumbnail-74 img {
-		height: 100%;
-		width: 100%
-	}
-	#mobilePhoneNumber {
-		display: block
-	}
-	.padding-5 {
-		padding: 15px!important
-	}
-	#landingHeader .container {
-		max-height: 480px
-	}
-	#landingHeader .wrap {
-		padding: 0!important
-	}
-	.customFooter img {
-		max-width: 250px!important
-	}
-	#contactModal p {
-		font-size: 14px!important
-	}
-	#contactModal a {
-		font-size: 18px!important
-	}
-	#team li {
-		width: 100%!important
-	}
-	#career img {
-		display: none
-	}
-	#career h1 {
-		margin-top: 100px;
-		font-size: 25px!important
-	}
-	#career .text-blueGrey {
-		padding: 30px 15px 20px 30px
-	}
-	#career .pad {
-		margin-bottom: 50px
-	}
-	h1 {
-		font-size: 33px!important
-	}
-	p, p.hero {
-		font-size: 18px
-	}
-	.common-Button {
-		font-size: 14px
-	}
-	.container .wrap {
-		padding: calc(0% + 20px) calc(5% + 0px)!important
-	}
-	.col-6-12 a {
-		margin-bottom: 24px
-	}
-	.cell-32 {
-		padding-bottom: 0!important
-	}
-	.img-size {
-		width: 280px!important
-	}
-	.phones .reverse {
-		flex-wrap: wrap!important
-	}
-	.contact h1 {
-		margin-top: 90px
-	}
-	.popup #team .wrap {
-		padding: 0
-	}
-	.popup #team .fix-10-12 {
-		padding-top: 15%
-	}
-	#ispect-details .margin-top-1 {
-		margin-top: 30%!important
-	}
-	#ispect-details .col-6-12 {
-		max-width: 100%
-	}
-	#news-title {
-		margin-top: 25px
-	}
-	#ispect-projects .wrap {
-		padding: 0!important
-	}
-	#partners ul {
-		float: none!important
-	}
-	#ispect-projects h1 {
-		margin-top: 85px
-	}
-	#ispect-projects p {
-		margin-bottom: 0;
-		padding-bottom: 0
-	}
-	.photobanner img {
-		margin-top: 50px
-	}
-	.mobile .simplifiedMobile .popup .content {
-		position: inherit!important
-	}
-	.flex-phone {
-		flex-wrap: wrap!important
-	}
-	.small {
-		font-size: 16px!important
-	}
-	#landingPagePhotos {
-		height: 240px
-	}
-}
-
-#landingButton2 {
-	margin: 20px
+	#documentSlide h2 {font-size: 28px}
+	#contactModal h3, #documentSlide p {font-size: 18px}
+	.thumbnail-74 img {height: 100%;width: 100%}
+	#mobilePhoneNumber {display: block}
+	.padding-5 {padding: 15px!important}
+	#landingHeader .container {max-height: 480px}
+	#landingHeader .wrap {padding: 0!important}
+	.customFooter img {max-width: 250px!important}
+	#contactModal p {font-size: 14px!important}
+	#contactModal a {font-size: 18px!important}
+	#team li {width: 100%!important}
+	#career img {display: none}
+	#career h1 {margin-top: 100px;font-size: 25px!important}
+	#career .text-blueGrey {padding: 30px 15px 20px 30px}
+	#career .pad {margin-bottom: 50px}
+	h1 {font-size: 33px!important}
+	p, p.hero {font-size: 18px}
+	.common-Button {font-size: 14px}
+	.container .wrap {padding: calc(0% + 20px) calc(5% + 0px)!important}
+	.col-6-12 a {margin-bottom: 24px}
+	.cell-32 {padding-bottom: 0!important}
+	.img-size {width: 280px!important}
+	.phones .reverse {flex-wrap: wrap!important}
+	.contact h1 {margin-top: 90px}
+	.popup #team .wrap {padding: 0}
+	.popup #team .fix-10-12 {padding-top: 15%}
+	#ispect-details .margin-top-1 {margin-top: 30%!important}
+	#ispect-details .col-6-12 {max-width: 100%}
+	#news-title {margin-top: 25px}
+	#ispect-projects .wrap {padding: 0!important}
+	#partners ul {float: none!important}
+	#ispect-projects h1 {margin-top: 85px}
+	#ispect-projects p {margin-bottom: 0;padding-bottom: 0}
+	.photobanner img {margin-top: 50px}
+	.mobile .simplifiedMobile .popup .content {position: inherit!important}
+	.flex-phone {flex-wrap: wrap!important}
+	.small {font-size: 16px!important}
+	#landingPagePhotos {height: 240px}
+	.customFooterSocials h4, .socialIcons {padding: 5px;}
+	a.globalFooterCard {float: left;}
+	.googleMap {width: 290px;}
 }
 
 @media (max-width:435px) {
-	.flex>[class*=col-] {
-		width: 100%
-	}
+	.flex>[class*=col-] {width: 100%}
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait) {
-	#career .fix-5-12 {
-		max-width: 360px!important
-	}
+	#career .fix-5-12 {max-width: 360px!important}
+	a.globalFooterCard {float: left;}
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape) {
-	#career .fix-5-12 {
-		max-width: 450px!important
-	}
+	#career .fix-5-12 {max-width: 450px!important}
+	a.globalFooterCard {float: left;}
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) {
-	.flex-phone {
-		flex-wrap: wrap!important
-	}
-	#landingPagePhotos {
-		height: 340px!important
-	}
-	#career .text-blueGrey {
-		padding: 30px 30px 40px 50px
-	}
-	#career img {
-		height: 490px;
-		margin: -5px
-	}
-	#career .pad {
-		margin-bottom: 50px
-	}
+	.flex-phone {flex-wrap: wrap!important}
+	#landingPagePhotos {height: 340px!important}
+	#career .text-blueGrey {padding: 30px 30px 40px 50px}
+	#career img {height: 490px;margin: -5px}
+	#career .pad {margin-bottom: 50px}
+	.customFooterSocials h4, .socialIcons {padding: 10px;}
 }
 
 @media (min-width:1024px) {
-	#mobilePhoneNumber {
-		display: none
-	}
-	.iphone-29 {
-		margin-top: -228px;
-		margin-bottom: -228px
-	}
-	img.macbook-61 {
-		margin: -10% -100% -10% -135%!important;
-		width: 225%;
-		max-width: none
-	}
-	img.macbook-62 {
-		margin: 0 -100% -10% 10%!important;
-		max-width: none;
-		width: 225%
-	}
+	#mobilePhoneNumber {display: none}
+	.iphone-29 {margin-top: -228px;margin-bottom: -228px}
+	img.macbook-61 {margin: -10% -100% -10% -135%!important;width: 225%;max-width: none}
+	img.macbook-62 {margin: 0 -100% -10% 10%!important;max-width: none;width: 225%}
 }
 
 @media (max-width:600px) {
-	#career img {
-		display: none
-	}
-	#career .text-blueGrey {
-		padding: 35px 30px 30px 50px
-	}
-	#career h1 {
-		font-size: 45px;
-		margin-top: 110px
-	}
-	.form-section .container-lg {
-		display: inline !important;
-	}
-	.bread-crumbs {
-		margin-top: 120px;
-	}
+	#career img {display: none}
+	#career .text-blueGrey {padding: 35px 30px 30px 50px}
+	#career h1 {font-size: 45px;margin-top: 110px}
+	.form-section .container-lg {display: inline !important;	}
+	.bread-crumbs {margin-top: 120px;}
 }
 
 @media (max-width:1023px) {
-	.cell-32 {
-		padding-bottom: 40px
-	}
-	.cell-29 {
-		padding-bottom: 35px
-	}
-	.flex:not(.later)>[class*=col-]:not([class*=col-phablet-]):not([class*=col-phone-]) {
-		width: 100%
-	}
+	.cell-32 {padding-bottom: 40px}
+	.cell-29 {padding-bottom: 35px}
+	.flex:not(.later)>[class*=col-]:not([class*=col-phablet-]):not([class*=col-phone-]) {width: 100%}
 }
 
 .items-container li.hidden {
