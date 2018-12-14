@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="146px" height="146px" viewBox="0 0 146 146" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Internal 51 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 3</title>
+    <desc>Created with Sketch Internal.</desc>
+    <defs>
+        <linearGradient x1="4.68158144%" y1="-2.84064798%" x2="86.3103693%" y2="126.809513%" id="linearGradient-1">
+            <stop stop-color="#2367A4" stop-opacity="0.1" offset="0%"/>
+            <stop stop-color="#2367A4" stop-opacity="0.199331975" offset="100%"/>
+        </linearGradient>
+        <circle id="path-2" cx="141" cy="526" r="26"/>
+    </defs>
+    <g id="Pricing-2.1-Iterations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pricing-Block-2.1---E-—-Buy--Copy-6" transform="translate(-68.000000, -463.000000)">
+            <g id="Oval-3">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"/>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"/>
+            </g>
+        </g>
+    </g>
+</svg>
