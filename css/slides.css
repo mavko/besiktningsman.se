@@ -1745,7 +1745,7 @@ a.globalFooterCard {
 }
 
 @media (min-width:1024px) {
-	#mobilePhoneNumber {display: none}
+	#enterprise .wrap {padding-top: 60px !important;}
 	.iphone-29 {margin-top: -228px;margin-bottom: -228px}
 	img.macbook-61 {margin: -10% -100% -10% -135%!important;width: 225%;max-width: none}
 	img.macbook-62 {margin: 0 -100% -10% 10%!important;max-width: none;width: 225%}
