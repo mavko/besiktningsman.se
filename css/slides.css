@@ -1662,7 +1662,13 @@ a.globalFooterCard {
 #mapDiv .gm-inset-map {
 	display: none !important;
 }
+.formMessageAccepted img {
+	margin-left: 8%;
+}
 @media only screen and (min-width:320px) and (max-width:480px) {
+	.general-queries {margin: 0 0 0 30px;}
+	.support {margin: 0 5px 0 30px;}
+	.formMessageAccepted img {margin-left: 25%;margin-top: 60px;}
 	#mainLanding .main-Logo {margin-top: 70px;}
 	#mainLanding ul {display: block;}
 	.leftControl-83 {margin-left: -10px !important;}
