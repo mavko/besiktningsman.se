@@ -173,6 +173,12 @@ p {
     line-height: 28px;
     color: #32325d;
 }
+.common-BodyTitle2 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #32325d;
+}
 .common-BodyText {
     font-weight: 400;
     font-size: 17px;
@@ -570,14 +576,50 @@ marquee img {
 }
 
 #career img {
-	height: 460px;
-	margin: -5px
+    height: 460px;
+    margin: -5px;
+    max-width: 600px;
+    float: left;
+    margin-left: -60px;
 }
 
 #career .text-blueGrey {
 	padding: 35px 30px 0 50px
 }
-
+.Absolute-Center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* typeform styling */
+.css-llvukp {
+	height: 40px !important;
+	line-height: 40px !important;
+	padding: 10px !important;
+	background: #cd0a0a !important;
+	border-radius: 4px;
+	right: -60px !important;
+}
+.css-c3b2z2 {
+    position: absolute;
+    cursor: pointer;
+    width: initial;
+    max-width: initial;
+    white-space: nowrap;
+    display: inline-block;
+    top: 0px !important;
+    right: -60px !important;
+    height: 40px !important;
+    line-height: 40px !important;
+    padding: 10px !important;
+    background: #cd0a0a !important;
+    border-radius: 4px;
+    outline: 0;
+    border: none;
+    -webkit-transition: all .15s ease;
+    transition: all .15s ease;
+}
 #bm-location .fix-12-12 {
 	margin: 50px
 }
