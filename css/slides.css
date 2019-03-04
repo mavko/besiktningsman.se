@@ -2105,28 +2105,22 @@ a.globalFooterCard {
 	margin-bottom: 35px;
 	width: 80%
 }
-
+.sidebar .logo img {width: 80px;}
 .sidebar .close {
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 35px;
+	right: 20px;
 	cursor: pointer;
 	padding: 14px;
 	font-size: 0;
-	opacity: .5;
 	z-index: 101;
 	-webkit-transition: .25s;
 	transition: .25s
 }
-
-.sidebar .close:hover {
-	opacity: 1
-}
-
 .sidebar .close svg {
 	width: 30px;
 	height: 30px;
-	fill: #FB5845
+	fill: #FF344D !important;
 }
 
 .sidebar .close:active svg {
