@@ -542,10 +542,6 @@ marquee img {
 	padding: 20px
 }
 
-#ispect-projects h1 {
-	margin-top: 60px
-}
-
 #brf-services p, #entreprenad-services p, #privat-services p {
 	margin-bottom: 10px!important
 }
@@ -1396,10 +1392,6 @@ a.globalFooterCard {
 	padding-bottom: 20px
 }
 
-#ispect-details .col-6-12 {
-	max-width: 50%
-}
-
 #team .col-3-12 {
 	width: 33%;
 	margin-bottom: 20px
@@ -1708,6 +1700,8 @@ a.globalFooterCard {
 	margin-left: 8%;
 }
 @media only screen and (min-width:320px) and (max-width:480px) {
+	.projects h1 {margin-top: 90px;}
+	.projects p {margin-bottom: 0px;}
 	.general-queries {margin: 0 0 0 30px;}
 	.support {margin: 0 5px 0 30px;}
 	.formMessageAccepted img {margin-left: 25%;margin-top: 60px;}
@@ -1753,14 +1747,9 @@ a.globalFooterCard {
 	.contact h1 {margin-top: 90px}
 	.popup #team .wrap {padding: 0}
 	.popup #team .fix-10-12 {padding-top: 15%}
-	#ispect-details .margin-top-1 {margin-top: 30%!important}
-	#ispect-details .col-6-12 {max-width: 100%}
 	#news-title {margin-top: 25px}
-	#ispect-projects .wrap {padding: 0!important}
 	#partners ul {float: none!important}
-	#ispect-projects h1 {margin-top: 85px}
-	#ispect-projects p {margin-bottom: 0;padding-bottom: 0}
-	.photobanner img {margin-top: 50px}
+	.photobanner {margin-top: 0px;height: 400px;}
 	.mobile .simplifiedMobile .popup .content {position: inherit!important}
 	.flex-phone {flex-wrap: wrap!important}
 	.small {font-size: 16px!important}
