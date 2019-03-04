@@ -1725,7 +1725,8 @@ a.globalFooterCard {
 	.form-section {padding: 0;}
 	section.ctas .container-lg {display: inline;}
 	.service-text p {font-size: 16px;}
-	.common-IntroText {font-size: 30px;}
+	.common-IntroText {font-size: 26px !important;line-height: 26px !important;}
+	.common-BodyTitle {font-size: 16px;}
 	#documentSlide h2 {font-size: 28px}
 	#contactModal h3, #documentSlide p {font-size: 18px}
 	.thumbnail-74 img {height: 100%;width: 100%}
@@ -1742,7 +1743,7 @@ a.globalFooterCard {
 	#career .text-blueGrey {padding: 30px 15px 20px 30px}
 	#career .pad {margin-bottom: 50px}
 	h1 {font-size: 33px!important}
-	p, p.hero {font-size: 18px}
+	p, p.hero {font-size: 16px}
 	.common-Button {font-size: 14px}
 	.container .wrap {padding: calc(0% + 20px) calc(5% + 0px)!important}
 	.col-6-12 a {margin-bottom: 24px}
