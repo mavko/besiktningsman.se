@@ -185,6 +185,123 @@ p {
     line-height: 28px;
     color: #525f7f;
 }
+.common-Link:focus, .common-Link:hover {
+    color: #32325d;
+}
+.common-Link {
+    color: #1072bb;
+    font-weight: 500;
+    -webkit-transition: color .1s ease;
+    transition: color .1s ease;
+    cursor: pointer;
+}
+.container-lg {
+	margin: 0 auto;
+	padding: 0 22px;
+	width: 100%;
+	max-width: 1040px
+}
+
+.common-ButtonGroup {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -10px
+}
+.common-ButtonGroup .common-Button {
+	flex-shrink: 0;
+	margin: 5px
+}
+a.globalFooterCard {
+	flex: 1 1 100%;
+	margin: 15px;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 4px
+}
+
+.common-Button {
+	white-space: nowrap;
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 30px;
+	box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+	background: #fff;
+	border-radius: 4px;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .025em;
+	outline: 0;
+	border: none;
+	-webkit-transition: all .15s ease;
+	transition: all .15s ease
+}
+
+.common-Button:hover {
+	color: #7795f8;
+	transform: translateY(-1px);
+	box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08)
+}
+.common-Card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 4px;
+		height: 277px;
+    -webkit-box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+		object-fit: fill;
+}
+.common-Card .img-fade {
+	border-radius: 4px;
+	height: 277px !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.common-Card img {
+	border-radius: 4px;
+	height: 100%;
+	max-height: 277px;
+	object-fit: cover;
+}
+[data-tooltip] {
+	position:relative;
+	cursor:pointer;
+	border-bottom: 1px dotted;
+}
+.new-pill {
+    padding: 0 6px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    background: #FF5B5C;
+		color: #fff;
+    text-transform: uppercase;
+    border-radius: 10px;
+		margin-right: 5px;
+}
+.message {
+	color: #424770;
+}
+.announcement {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 10px;
+		border-radius: 6px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    background: rgba(0,0,140,.08);
+		margin-bottom: 15px;
+}
 .section-Links {
     line-height: 2em;
     list-style-type: none;
@@ -1085,22 +1202,7 @@ section.ctas .cta .cta-headline {
 	}
 }
 
-.container-lg {
-	margin: 0 auto;
-	padding: 0 22px;
-	width: 100%;
-	max-width: 1040px
-}
 
-.common-ButtonGroup {
-	display: flex;
-	flex-wrap: wrap;
-	margin: -10px
-}
-.common-ButtonGroup .common-Button {
-	flex-shrink: 0;
-	margin: 5px
-}
 .inactive-Overlay {
 	opacity: .7;
 	-webkit-transform: scale(.95);
@@ -1128,16 +1230,7 @@ section.ctas .cta .cta-headline {
 	-webkit-transition: all .15s ease;
 	transition: all .15s ease;
 }
-.common-Link:focus, .common-Link:hover {
-    color: #32325d;
-}
-.common-Link {
-    color: #1072bb;
-    font-weight: 500;
-    -webkit-transition: color .1s ease;
-    transition: color .1s ease;
-    cursor: pointer;
-}
+
 [class*=icono-arrow2]:before {
 	right: 0;
 	top: -3px;
@@ -1180,39 +1273,7 @@ section.ctas .cta .cta-headline {
 	box-sizing: border-box
 }
 
-a.globalFooterCard {
-	flex: 1 1 100%;
-	margin: 15px;
-	position: relative;
-	flex-direction: column;
-	justify-content: center;
-	border-radius: 4px
-}
 
-.common-Button {
-	white-space: nowrap;
-	display: inline-block;
-	height: 50px;
-	line-height: 50px;
-	padding: 0 30px;
-	box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
-	background: #fff;
-	border-radius: 4px;
-	font-size: 15px;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: .025em;
-	outline: 0;
-	border: none;
-	-webkit-transition: all .15s ease;
-	transition: all .15s ease
-}
-
-.common-Button:hover {
-	color: #7795f8;
-	transform: translateY(-1px);
-	box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08)
-}
 
 .box-74 {
 	border-radius: 5px;
@@ -1260,64 +1321,6 @@ a.globalFooterCard {
 	position: absolute;
 	z-index: 10;
 	padding: 50px 0 0 20px;
-}
-.common-Card {
-    position: relative;
-    background-color: #fff;
-    border-radius: 4px;
-		height: 277px;
-    -webkit-box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
-    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
-		object-fit: fill;
-}
-.common-Card .img-fade {
-	border-radius: 4px;
-	height: 277px !important;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-}
-.common-Card img {
-	border-radius: 4px;
-	height: 100%;
-	max-height: 277px;
-	object-fit: cover;
-}
-[data-tooltip] {
-	position:relative;
-	cursor:pointer;
-	border-bottom: 1px dotted;
-}
-.new-pill {
-    padding: 0 6px;
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 600;
-    background: #FF5B5C;
-		color: #fff;
-    text-transform: uppercase;
-    border-radius: 10px;
-		margin-right: 5px;
-}
-.message {
-	color: #424770;
-}
-.announcement {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 10px 10px;
-		border-radius: 6px;
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 500;
-    text-decoration: none;
-    background: rgba(0,0,140,.08);
-		margin-bottom: 15px;
 }
 .grid > .col-2-10 {
   max-width: 20%;
