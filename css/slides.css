@@ -213,7 +213,6 @@ p {
 }
 a.globalFooterCard {
 	flex: 1 1 100%;
-	margin: 15px;
 	position: relative;
 	flex-direction: column;
 	justify-content: center;
@@ -1704,6 +1703,7 @@ section.ctas .cta .cta-headline {
 	margin-left: 8%;
 }
 @media only screen and (min-width:320px) and (max-width:480px) {
+	a.globalFooterCard {margin-bottom: 20px;}
 	.projects h1 {margin-top: 90px;}
 	.projects p {margin-bottom: 0px;}
 	.general-queries {margin: 0 0 0 30px;}
@@ -1770,14 +1770,19 @@ section.ctas .cta .cta-headline {
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait) {
 	#career .fix-5-12 {max-width: 360px!important}
 	a.globalFooterCard {float: left;}
+	a.globalFooterCard {margin-bottom: 20px;}
+	#footer-nav .padding-5 {padding: 30px;margin-left: 60px;}
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape) {
 	#career .fix-5-12 {max-width: 450px!important}
 	a.globalFooterCard {float: left;}
+	a.globalFooterCard {margin-bottom: 20px;}
+	#footer-nav .padding-5 {padding: 30px;margin-left: 200px;}
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+	a.globalFooterCard {margin-bottom: 20px;}
 	.flex-phone {flex-wrap: wrap!important}
 	#landingPagePhotos {height: 340px!important}
 	#career .text-blueGrey {padding: 30px 30px 40px 50px}
