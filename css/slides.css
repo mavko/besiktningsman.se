@@ -309,6 +309,7 @@ a.globalFooterCard {
     margin: 1.5em 0 0;
     border-top: 1px solid rgba(7,96,115,.15);
 }
+.ui-widget {font-family: 'Open Sans', sans-serif !important;}
 #enterprise .common-IntroText {
 	font-size: 46px;
 }
