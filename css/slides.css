@@ -167,6 +167,12 @@ p {
     line-height: 46px;
     color: #424770;
 }
+.common-IntroText2 {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 46px;
+    color: #424770;
+}
 .common-BodyTitle {
     font-weight: 600;
     font-size: 19px;
@@ -985,14 +991,8 @@ marquee img {
 }
 .bread-crumbs {
     left: 0;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    -ms-flex-align: center;
-    width: calc(100% - 110px);
-    -webkit-box-align: center;
-    align-items: center;
-    white-space: nowrap;
+		right: 0;
+		text-align: center;
     font-size: 13px;
     font-weight: 400;
     text-transform: uppercase;
@@ -1001,9 +1001,12 @@ marquee img {
 		margin: 0 0 20px 0;
 }
 .bread-crumbs a {
-	margin-right: 7px;
-	color: #1072BB;
+	margin-right: 2px;
+	color: #fff;
 	font-weight: 600;
+}
+.bread-crumbs span {
+		border-bottom: 1px solid #fff;
 }
 .form-section {
     max-height: 1200px;
@@ -1255,7 +1258,7 @@ section.ctas .cta .cta-headline {
 
 [class*=icono] {
 	display: inline-block;
-	color: #1072bb
+	color: #FFF
 }
 
 [class*=icono-arrow2] {
@@ -2526,6 +2529,9 @@ body {
 .flex.reverse {
 	-ms-flex-wrap: wrap-reverse;
 	flex-wrap: wrap-reverse
+}
+.flex>.col-4-12 {
+	width: 32.66667%;
 }
 
 .flex>.col-5-12 {
