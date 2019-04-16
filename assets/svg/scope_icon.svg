@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="168px" height="168px" viewBox="0 0 168 168" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>scope_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="150" height="150" rx="5"></rect>
+        <filter x="-9.7%" y="-8.3%" width="119.3%" height="119.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.196078431   0 0 0 0 0.196078431   0 0 0 0 0.364705882  0 0 0 0.200549139 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="general-styling-and-website-material" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-9" transform="translate(-352.000000, -201.000000)">
+            <g id="scope_icon" transform="translate(361.000000, 208.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Rectangle-4">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#4D6085" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M96.2610589,62.9034499 C96.2679233,69.6616189 94.7961342,75.3216751 91.5352336,80.3874145 C90.3676621,82.2009548 90.7395876,83.1380027 92.1311881,84.5095511 C100.533522,92.7915933 108.846307,101.165093 117.184365,109.512373 C119.532613,111.863108 119.595952,113.021776 117.41557,115.568536 C116.641454,116.472809 115.776227,117.325579 114.842357,118.060984 C113.165885,119.381029 111.685671,119.359491 110.029167,117.676113 C101.561309,109.068508 92.9617801,100.590129 84.4845619,91.9912633 C83.1940552,90.6824553 82.342558,90.3256779 80.5862084,91.3807151 C58.755554,104.496888 31.7560086,89.5665505 31.0121575,64.0324646 C30.5460026,48.0271129 43.5477945,33.2054005 59.2198368,31.2616973 C76.63606,29.1019924 92.2588035,40.5407185 95.6588641,57.0398776 C96.1078581,59.2173746 96.332511,61.4076693 96.2610589,62.9034499 Z M41.930917,63.6429124 C41.9234285,75.5957351 51.8087842,85.52401 63.7054082,85.5118365 C75.5156032,85.499663 85.5535357,75.4558958 85.5604001,63.6444731 C85.5672645,51.7390959 75.6457147,41.8557694 63.6963597,41.8651336 C51.6611997,41.8744978 41.9384054,51.6030024 41.930917,63.6429124 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                <path d="M58.1213203,61.8786797 C56.9497475,60.7071068 55.0502526,60.7071068 53.8786797,61.8786797 C52.7071068,63.0502526 52.7071068,64.9497474 53.8786797,66.1213203 L59.8786797,72.1213203 C61.0502526,73.2928932 62.9497474,73.2928932 64.1213203,72.1213203 L76.1213203,60.1213203 C77.2928932,58.9497474 77.2928932,57.0502526 76.1213203,55.8786797 C74.9497474,54.7071068 73.0502525,54.7071068 71.8786797,55.8786797 L62,65.7573593 L58.1213203,61.8786797 Z" id="Combined-Shape-path" fill="#FFFFFF" mask="url(#mask-2)" transform="translate(65.000000, 64.000000) rotate(-38.000000) translate(-65.000000, -64.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
