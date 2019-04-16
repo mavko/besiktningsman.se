@@ -1233,7 +1233,7 @@ section.ctas .cta .cta-headline {
 }
 
 .img-border-radius {
-	border-radius: 8px
+	border-radius: 5px
 }
 
 @media (min-width:670px) {
@@ -1441,7 +1441,9 @@ section.ctas .cta .cta-headline {
 .grid>.col-6-12 {
 	max-width: 40%
 }
-
+.grid>.col-8-12 {
+	max-width: 50%
+}
 .wide-col {
 	padding-bottom: 20px
 }
