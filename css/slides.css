@@ -1756,6 +1756,12 @@ section.ctas .cta .cta-headline {
 	margin-left: 8%;
 }
 @media only screen and (min-width:320px) and (max-width:480px) {
+	.box-CTA {margin-top: 80px;}
+	.box-CTA img {width: 110px;}
+	.box-CTA h2 {font-size: 18px !important;}
+	.customers {padding-top: 0px;}
+	#omOss h2 {font-size: 24px;line-height: 34px;word-wrap: break-word;}
+	#omOss p {text-align: left !important;}
 	a.globalFooterCard {margin-bottom: 20px;}
 	.projects h1 {margin-top: 90px;}
 	.projects p {margin-bottom: 0px;}
@@ -1776,7 +1782,7 @@ section.ctas .cta .cta-headline {
 	.form-section {padding: 0;}
 	section.ctas .container-lg {display: inline;}
 	.service-text p {font-size: 16px;}
-	.common-IntroText {font-size: 26px !important;line-height: 26px !important;}
+	.common-IntroText {font-size: 26px !important;line-height: 30px !important;}
 	.common-BodyTitle {font-size: 16px;}
 	#documentSlide h2 {font-size: 28px}
 	#contactModal h3, #documentSlide p {font-size: 18px}
