@@ -869,7 +869,7 @@ marquee img {
 	transform: rotate(45deg)
 }
 #servicesList a span {margin-right: -4px;}
-#servicesList a {width: 100%;font-size: 16px;font-weight: normal;text-transform: none;height:45px;line-height: 45px;padding: 0px 12px;}
+#servicesList a {width: 100%;font-size: 16px;font-weight: normal;text-transform: none;height:45px;line-height: 45px;padding: 0px 12px;margin: 2px 0 0 0;}
 #servicesList a:hover {
 	background: #2367A4;
 	color: #fff !important;
@@ -3046,7 +3046,9 @@ body {
 	-ms-flex-wrap: wrap-reverse;
 	flex-wrap: wrap-reverse
 }
-
+.flex>.col-3-12 {
+	width: 24.66667%;
+}
 .flex>.col-4-12 {
 	width: 32.66667%;
 }
