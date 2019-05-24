@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 168 168" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>iSpectSquare_icon</title>
+<desc>Created with Sketch.</desc>
+<defs>
+<rect id="a" width="150" height="150" rx="5"/>
+<filter id="g" x="-9.7%" y="-8.3%" width="119.3%" height="119.3%">
+<feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.134208322   0 0 0 0 0.15709579   0 0 0 0 0.191944182  0 0 0 0.504415761 0"/>
+</filter>
+<linearGradient id="f" x1="100%" x2="-32.104%" y2="129.6%">
+<stop stop-color="#9999A4" offset="0"/>
+<stop stop-color="#60606B" offset="1"/>
+</linearGradient>
+<linearGradient id="b" x1="100%" x2="-25.352%" y2="122.32%">
+<stop stop-color="#D1D5DB" offset="0"/>
+<stop stop-color="#A5ABB5" offset="1"/>
+</linearGradient>
+<linearGradient id="e" x1="37.478%" x2="80.199%" y1="85.906%" y2="8.3127%">
+<stop stop-color="#1072BB" offset="0"/>
+<stop stop-color="#0E98FF" offset="1"/>
+</linearGradient>
+<linearGradient id="d" x1="100%" x2="50%" y2="100%">
+<stop stop-color="#2F2D2E" offset="0"/>
+<stop stop-color="#4D4D54" offset="1"/>
+</linearGradient>
+</defs>
+<g fill="none" fill-rule="evenodd">
+<g transform="translate(-245 -200)">
+<g transform="translate(254 207)">
+<mask id="c" fill="white">
+<use xlink:href="#a"/>
+</mask>
+<use fill="black" filter="url(#g)" xlink:href="#a"/>
+<use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#a"/>
+<g mask="url(#c)">
+<g transform="translate(45 21)">
+<path d="m27.111 58.847h6.7778v9.9853c0 1.8716-1.5173 3.3889-3.3889 3.3889s-3.3889-1.5173-3.3889-3.3889v-9.9853z" fill="url(#f)" fill-rule="nonzero"/>
+<g fill-rule="nonzero">
+<path d="m52.067 51.37c-11.911 11.752-31.223 11.752-43.134 0-11.911-11.752-11.911-30.805 5.9651e-4 -42.556 11.911-11.752 31.222-11.752 43.133 0 11.911 11.751 11.911 30.804 0 42.556z" fill="#fff" stroke="#6D92A3"/>
+<path d="m49.191 48.533c-10.323 10.185-27.06 10.185-37.383 0-10.323-10.185-10.323-26.698 5.17e-4 -36.882 10.323-10.185 27.059-10.185 37.382 0 10.323 10.184 10.323 26.697 0 36.882z" fill="url(#b)"/>
+<path d="m12.759 47.596c-9.7822-9.6519-9.7822-25.356 0-35.007 9.7822-9.6519 25.7-9.6521 35.482-5.04e-4 9.7822 9.6516 9.7822 25.356 0 35.008-9.7825 9.6514-25.7 9.6514-35.482-2.521e-4z" fill="url(#e)"/>
+<path d="m49.432 40.784c-4.008 4.0529-10.506 4.0529-14.514 0-4.008-4.0531-4.008-10.624 0-14.677 4.008-4.0534 10.506-4.0534 14.514 0 4.008 4.0531 4.008 10.624 0 14.677z" fill="#51B4FE" fill-opacity=".4"/>
+<path d="m36.72 19.589c-1.1001 1.1121-2.8833 1.1121-3.9832-5.08e-4 -1.0999-1.1121-1.0999-2.9151 0-4.0275 1.0999-1.1124 2.8831-1.1124 3.983 5.081e-4 1.0996 1.1121 1.1001 2.9151 2.574e-4 4.0275z" fill="#51B4FE" fill-opacity=".4"/>
+</g>
+<path d="m23.722 68.877h13.556v33.484c0 3.6666-2.9724 6.6389-6.6389 6.6389h-0.27769c-3.6666 0-6.6389-2.9724-6.6389-6.6389v-33.484z" fill="url(#d)" fill-rule="nonzero"/>
+<polygon points="23.722 71.552 37.278 71.552 37.278 97.632 23.722 81.456" fill="#1B1D1C" fill-opacity=".24188" fill-rule="evenodd"/>
+<rect x="20.333" y="64.865" width="20.333" height="6.6871" rx="2.6556" fill="url(#b)" fill-rule="nonzero"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
