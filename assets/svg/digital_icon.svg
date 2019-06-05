@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="168px" height="168px" viewBox="0 0 168 168" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>digital_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="150" height="150" rx="5"></rect>
+        <filter x="-9.7%" y="-8.3%" width="119.3%" height="119.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.196078431   0 0 0 0 0.196078431   0 0 0 0 0.364705882  0 0 0 0.200549139 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="general-styling-and-website-material" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-9-Copy" transform="translate(-615.000000, -200.000000)">
+            <g id="digital_icon" transform="translate(624.000000, 207.000000)">
+                <g id="Rectangle-4-Copy-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FBC433" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Group" transform="translate(36.000000, 36.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M11.0900879,57.1489726 C17.101237,57.1489726 21.9551595,62.0291096 21.9551595,68.0008562 C21.9551595,74.0047089 17.101237,78.8527397 11.0900879,78.8527397 C5.0789388,78.8527397 0.225016276,74.0047089 0.225016276,68.0008562 C0.225016276,62.0291096 5.11108398,57.1489726 11.0900879,57.1489726 Z" id="Shape"></path>
+                    <path d="M0.257161458,42.0269692 C20.5086263,42.0269692 36.9991048,58.4332192 36.9991048,78.9490582 L52.1394857,78.9490582 C52.1394857,50.2461473 28.8663737,26.9049658 0.257161458,26.9049658 L0.257161458,42.0269692 Z" id="Shape"></path>
+                    <path d="M0.257161458,15.2504281 C35.2311198,15.2504281 63.7117513,43.8570205 63.7117513,78.9811644 L78.819987,78.9811644 C78.819987,35.5094178 43.556722,0.160530822 0.257161458,0.160530822 L0.257161458,15.2504281 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
