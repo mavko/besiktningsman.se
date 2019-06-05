@@ -394,26 +394,18 @@ a.globalFooterCard {
 	margin: 1.5em 0 0;
 	border-top: 1px solid rgba(7, 96, 115, .15);
 }
-
+#besiktningsbloggen p {
+	margin-bottom: 0px;
+}
+#byggintelligens p {
+	margin-bottom: 0px;
+}
 .ui-widget {
 	font-family: 'Open Sans', sans-serif !important;
 }
 
 #enterprise .common-IntroText {
 	font-size: 46px;
-}
-
-#news-section .pad-header {
-	padding: 15px 0 15px 20px;
-}
-
-#news-section h3 {
-	font-weight: 400;
-}
-
-#news-section .pad {
-	-webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .07), 0 7px 17px 0 rgba(0, 0, 0, .1);
-	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .07), 0 7px 17px 0 rgba(0, 0, 0, .1);
 }
 
 #landingHeader .container {
@@ -771,21 +763,8 @@ marquee img {
 	margin-bottom: 10px !important
 }
 
-#news-title {
-	padding: 0 0 0 20px
-}
-
-#news {
-	overflow-y: scroll;
-	max-height: 70vh
-}
-
 .box-67, .box-67 .thumbnail-67, .box-74, .dialog, .pad, a.globalFooterCard {
 	overflow: hidden
-}
-
-#news img {
-	max-height: 274px
 }
 
 .fromRight {
@@ -1329,10 +1308,6 @@ section.ctas .cta .cta-headline {
 	float: left;
 }
 
-#newsletter .center-m-down {
-	margin-bottom: 50px
-}
-
 .container-wide {
 	margin: 0 auto;
 	padding: 0 20px;
@@ -1642,9 +1617,8 @@ section.ctas .cta .cta-headline {
     grid-template-columns: 1fr;
     grid-column-gap: 42px;
     margin-bottom: 40px;
-    padding: 0;
 }
-.news-list .list a {
+.news-list .list span {
     grid-column: 2;
     transition: color .1s;
 }
@@ -1664,7 +1638,7 @@ section.ctas .cta .cta-headline {
 }
 .news-list .list hr {
     border: 0;
-    border-top: 1px solid #f6f9fc;
+    border-top: 1px solid #e6ebf1;
     grid-column: 1/-1;
     width: 100%;
     margin: 0px 0px 20px 0px;
@@ -1730,7 +1704,7 @@ section.ctas .cta .cta-headline {
 		height: 200px;
 }
 .article p {
-	padding: 20px 15px 24px;
+	padding: 5px 15px 24px;
 }
 .article .col-4-12 {
 	padding-left: 0% !important;
@@ -2146,6 +2120,11 @@ section.ctas .cta .cta-headline {
 	display: none;
 }
 @media only screen and (min-width:320px) and (max-width:480px) {
+	.customFooter img {margin-top: 20px;}
+	.contact a p {font-size: 15px;}
+	.contact .logos a {
+		margin-left: 22px;
+	}
 	.box-CTA {
 		margin-top: 80px;
 	}
@@ -3280,8 +3259,8 @@ body {
 }
 
 .flex [class*=col-] {
-	padding-left: 2%;
-	padding-right: 2%
+	padding-left: 1%;
+	padding-right: 1%
 }
 
 .flex.verticalCenter {
