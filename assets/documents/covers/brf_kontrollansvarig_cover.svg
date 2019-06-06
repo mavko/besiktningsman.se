@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="595px" height="842px" viewBox="0 0 595 842" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
-    <title>brf_ssb_cover</title>
+    <title>brf_kontrollansvarig_cover</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <rect id="path-1" x="0" y="0" width="595" height="842"></rect>
@@ -36,7 +36,7 @@
             <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.35 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
         </filter>
     </defs>
-    <g id="brf_ssb_cover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="brf_kontrollansvarig_cover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="The-Tommyknockers">
             <mask id="mask-2" fill="white">
                 <use xlink:href="#path-1"></use>
@@ -54,18 +54,19 @@
                 <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-5"></use>
             </g>
         </g>
-        <text id="Hur-går-en-Särskildb" font-family="HoeflerText-Regular, Hoefler Text" font-size="64" font-weight="normal" line-spacing="82" letter-spacing="-2.5" fill="#FFFFFF">
-            <tspan x="95" y="328">Hur går en</tspan>
-            <tspan x="95" y="411">Särskildbesiktning</tspan>
-            <tspan x="95" y="494">till</tspan>
-            <tspan x="160.328" y="494">?</tspan>
-        </text>
         <g id="SIGN" transform="translate(103.133333, 120.983333)" stroke="#FFFFFF" stroke-width="5.66574896">
             <polygon id="Stroke-1" points="0 96.233611 77.7433382 96.233611 77.7433382 13.8833333 0 13.8833333"></polygon>
             <path d="M15.2496968,39.977069 L35.6017971,76.137467 C35.6017971,76.137467 72.0979623,-11.994732 176.114608,1.56190881" id="Stroke-3"></path>
         </g>
         <text id="AV-BESIKTNINGSMAN.SE" font-family="OpenSans-Bold, Open Sans" font-size="27.7666667" font-weight="bold" letter-spacing="1.14537497" fill="#064879">
             <tspan x="95.2" y="783.15">AV BESIKTNINGSMAN.SE</tspan>
+        </text>
+        <text id="Kontrollansvarig-enl" font-family="HoeflerText-Regular, Hoefler Text" font-size="64" font-weight="normal" line-spacing="82" letter-spacing="-2.5" fill="#FFFFFF">
+            <tspan x="95" y="321">Kontrollansvarig </tspan>
+            <tspan x="95" y="403">enligt Plan- </tspan>
+            <tspan x="95" y="486">och bygglagen, </tspan>
+            <tspan x="95" y="568">kvalificerad </tspan>
+            <tspan x="95" y="651">och normal.</tspan>
         </text>
     </g>
 </svg>

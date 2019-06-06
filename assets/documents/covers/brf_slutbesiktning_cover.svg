@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="595px" height="842px" viewBox="0 0 595 842" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
-    <title>brf_ssb_cover</title>
+    <title>brf_slutbesiktning_cover</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <rect id="path-1" x="0" y="0" width="595" height="842"></rect>
+        <rect id="path-1" x="0" y="0" width="595" height="840.855978"></rect>
         <filter x="-0.2%" y="-0.1%" width="100.3%" height="100.2%" filterUnits="objectBoundingBox" id="filter-3">
             <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
             <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
@@ -25,7 +25,7 @@
             <stop stop-color="#FFFFFF" offset="100%"></stop>
             <stop stop-color="#FFFFFF" offset="100%"></stop>
         </linearGradient>
-        <rect id="path-5" x="0" y="0" width="595" height="843"></rect>
+        <rect id="path-5" x="0" y="0" width="595" height="842"></rect>
         <pattern id="pattern-7" width="258" height="258" x="-258" y="-258" patternUnits="userSpaceOnUse">
             <use xlink:href="#image-8"></use>
         </pattern>
@@ -36,7 +36,8 @@
             <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.35 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
         </filter>
     </defs>
-    <g id="brf_ssb_cover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="brf_slutbesiktning_cover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="595" height="842"></rect>
         <g id="The-Tommyknockers">
             <mask id="mask-2" fill="white">
                 <use xlink:href="#path-1"></use>
@@ -54,18 +55,18 @@
                 <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-5"></use>
             </g>
         </g>
-        <text id="Hur-går-en-Särskildb" font-family="HoeflerText-Regular, Hoefler Text" font-size="64" font-weight="normal" line-spacing="82" letter-spacing="-2.5" fill="#FFFFFF">
-            <tspan x="95" y="328">Hur går en</tspan>
-            <tspan x="95" y="411">Särskildbesiktning</tspan>
-            <tspan x="95" y="494">till</tspan>
-            <tspan x="160.328" y="494">?</tspan>
-        </text>
-        <g id="SIGN" transform="translate(103.133333, 120.983333)" stroke="#FFFFFF" stroke-width="5.66574896">
-            <polygon id="Stroke-1" points="0 96.233611 77.7433382 96.233611 77.7433382 13.8833333 0 13.8833333"></polygon>
-            <path d="M15.2496968,39.977069 L35.6017971,76.137467 C35.6017971,76.137467 72.0979623,-11.994732 176.114608,1.56190881" id="Stroke-3"></path>
+        <g id="SIGN" transform="translate(103.000000, 120.000000)" stroke="#FFFFFF" stroke-width="5.71336029">
+            <polygon id="Stroke-1" points="0 97.0422968 78.3966436 97.0422968 78.3966436 14 0 14"></polygon>
+            <path d="M15.3778455,40.3130108 L35.9009719,76.7772776 C35.9009719,76.7772776 72.7038275,-12.0955281 177.594562,1.57503409" id="Stroke-3"></path>
         </g>
-        <text id="AV-BESIKTNINGSMAN.SE" font-family="OpenSans-Bold, Open Sans" font-size="27.7666667" font-weight="bold" letter-spacing="1.14537497" fill="#064879">
-            <tspan x="95.2" y="783.15">AV BESIKTNINGSMAN.SE</tspan>
+        <text id="Hur-går-en-Slutbesik" font-family="HoeflerText-Regular, Hoefler Text" font-size="64" font-weight="normal" line-spacing="82" letter-spacing="-2.5" fill="#FFFFFF">
+            <tspan x="99" y="327">Hur går en</tspan>
+            <tspan x="99" y="410">Slutbesiktning</tspan>
+            <tspan x="99" y="493">till</tspan>
+            <tspan x="164.328" y="493">?</tspan>
+        </text>
+        <text id="AV-BESIKTNINGSMAN.SE" font-family="OpenSans-Bold, Open Sans" font-size="20" font-weight="bold" letter-spacing="0.825" fill="#064879">
+            <tspan x="94" y="786">AV BESIKTNINGSMAN.SE</tspan>
         </text>
     </g>
 </svg>
