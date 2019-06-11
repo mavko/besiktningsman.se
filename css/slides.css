@@ -1435,6 +1435,7 @@ section.ctas .cta .cta-headline {
 
 .box-74 .thumbnail-74 img {
 	border-radius: 5px 5px 0 0;
+	width: 100%;
 	-webkit-transition: .5s;
 	transition: .5s
 }
