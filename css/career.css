@@ -4062,6 +4062,11 @@ body {
 	transform: skewY(-12deg);
 	transform-origin: 0 100%
 }
+@media (min-width: 1040px) {
+	.OxOwl {
+	    padding: 0 0 115px;
+	}
+}
 
 .StripeImage__hitArea .StripeImage__overlay, .StripeImage__stripes .StripeImage__overlay {
 	transform-origin: 0 100%;
