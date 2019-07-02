@@ -2128,11 +2128,9 @@ section.ctas .cta .cta-headline {
 	.box-CTA {
 		margin-top: 80px;
 	}
-
 	.box-CTA img {
 		width: 110px;
 	}
-
 	.box-CTA h2 {
 		font-size: 18px !important;
 	}
@@ -2307,7 +2305,7 @@ section.ctas .cta .cta-headline {
 	}
 
 	.common-IntroText {
-		font-size: 26px !important;
+		font-size: 24px !important;
 		line-height: 30px !important;
 	}
 
