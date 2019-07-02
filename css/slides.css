@@ -2384,7 +2384,17 @@ section.ctas .cta .cta-headline {
 	p, p.hero {
 		font-size: 16px
 	}
-
+	.position-top {
+	  top: 0;
+	}
+	.sidebar.top {
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
 	.common-Button {
 		font-size: 14px
 	}
@@ -2900,8 +2910,8 @@ section.ctas .cta .cta-headline {
 
 .sidebar .close {
 	position: absolute;
-	top: 35px;
-	right: 20px;
+	top: 10px;
+	right: 10px;
 	cursor: pointer;
 	padding: 14px;
 	font-size: 0;
@@ -2936,8 +2946,9 @@ section.ctas .cta .cta-headline {
 }
 
 .sidebar .mainMenu li a {
-	font-size: 24px;
-	font-weight: 600
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 2.5;
 }
 
 .sidebar .subMenu li {
