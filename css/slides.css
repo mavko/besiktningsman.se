@@ -2120,6 +2120,9 @@ section.ctas .cta .cta-headline {
 	display: none;
 }
 @media only screen and (min-width:320px) and (max-width:480px) {
+	.projects-main .single-column {animation: var(--animation, none) 5s infinite linear !important;}
+	.projects-main {height: 60vw !important;}
+	#hideProjectMobile {display: none;}
 	.customFooter img {margin-top: 20px;}
 	.contact a p {font-size: 15px;}
 	.contact .logos a {
@@ -2478,6 +2481,9 @@ section.ctas .cta .cta-headline {
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait) {
+	.projects-main .single-column {animation: var(--animation, none) 8s infinite linear !important;}
+	.projects-main {height: 60vw !important;}
+	#hideProjectMobile {display: none;}
 	#career .fix-5-12 {
 		max-width: 360px !important
 	}
@@ -2492,27 +2498,14 @@ section.ctas .cta .cta-headline {
 
 	#footer-nav .padding-5 {
 		padding: 30px;
-		margin-left: 60px;
 	}
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape) {
-	#career .fix-5-12 {
-		max-width: 450px !important
-	}
-
-	a.globalFooterCard {
-		float: left;
-	}
-
-	a.globalFooterCard {
-		margin-bottom: 20px;
-	}
-
-	#footer-nav .padding-5 {
-		padding: 30px;
-		margin-left: 200px;
-	}
+	#career .fix-5-12 {max-width: 450px !important}
+	a.globalFooterCard {float: left;}
+	a.globalFooterCard {margin-bottom: 20px;}
+	#footer-nav .padding-5 {padding: 30px;margin-left: 200px;}
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) {
@@ -3946,4 +3939,35 @@ body {
 	font-size: 14px;
 	width: 180px;
 	margin: 5px 0 0 5px;
+}
+.projects-main {
+  display: flex;
+  overflow: hidden;
+  height: 35vw;
+  background: #151D2C;
+}
+
+.projects-main img {
+  max-width: 100%;
+  vertical-align: middle;
+	margin: 10px 0px 10px 0px;
+  box-sizing: border-box;
+  transition: opacity .2s;
+}
+
+.projects-main .single-column {
+	animation: var(--animation, none) 16s infinite linear;
+	margin: 10px;
+}
+
+.projects-main .single-column:nth-of-type(odd) {
+  align-self: flex-end;
+  --direction: 50%;
+}
+
+@keyframes slide {
+  to {
+    -webkit-transform: translateY(var(--direction, -50%));
+            transform: translateY(var(--direction, -50%));
+  }
 }
