@@ -516,7 +516,6 @@ p.hero {
 .slide {
 	background: #303030;
 	color: #fff;
-	z-index: 10
 }
 
 .slide.whiteSlide {
@@ -2122,6 +2121,9 @@ section.ctas .cta .cta-headline {
 	display: none;
 }
 @media only screen and (min-width:320px) and (max-width:480px) {
+	.projects-main .single-column {animation: var(--animation, none) 5s infinite linear !important;}
+	.projects-main {height: 60vw !important;}
+	#hideProjectMobile {display: none;}
 	.customFooter img {margin-top: 20px;}
 	.contact a p {font-size: 15px;}
 	.contact .logos a {
@@ -2130,11 +2132,9 @@ section.ctas .cta .cta-headline {
 	.box-CTA {
 		margin-top: 80px;
 	}
-
 	.box-CTA img {
 		width: 110px;
 	}
-
 	.box-CTA h2 {
 		font-size: 18px !important;
 	}
@@ -2167,7 +2167,56 @@ section.ctas .cta .cta-headline {
 		padding: 20px;
 		color: #32325d;
 	}
-	.formBackground {display: none !important;}
+	/* typeform overlay class */
+	.typeform-modal {
+    z-index: 99999 !important;
+	}
+	.FooterWrapper-sc-1bn1rrm-0 .jfsakS {
+		position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+	}
+	.css-141sqqa {
+    height: 40px !important;
+		width: 40px !important;
+    line-height: 40px !important;
+    padding: 10px !important;
+    background: #cd0a0a !important;
+    border-radius: 4px;
+	}
+	.css-13wt6a4 {
+		background-color: #fff !important;
+		right: 8px !important;
+	}
+	.css-fn00my {
+		background-color: #fff !important;
+		right: 8px !important;
+	}
+	.css-sdnp11 {
+		visibility: visible !important;
+    opacity: 1 !important;
+    background-color: #FFFFFF;
+    position: fixed !important;
+    z-index: 1000 !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    overflow: hidden !important;
+    height: 100% !important;
+    -webkit-transition: all 400ms ease 0s;
+    transition: all 400ms ease 0s;
+	}
+	.css-sdnp11 iframe {
+		border: 0px;
+    min-height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    width: 0px;
+    height: 1px;
+	}
 	#omOss h2 {
 		font-size: 24px;
 		line-height: 34px;
@@ -2260,7 +2309,7 @@ section.ctas .cta .cta-headline {
 	}
 
 	.common-IntroText {
-		font-size: 26px !important;
+		font-size: 24px !important;
 		line-height: 30px !important;
 	}
 
@@ -2337,7 +2386,17 @@ section.ctas .cta .cta-headline {
 	p, p.hero {
 		font-size: 16px
 	}
-
+	.position-top {
+	  top: 0;
+	}
+	.sidebar.top {
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
 	.common-Button {
 		font-size: 14px
 	}
@@ -2423,6 +2482,9 @@ section.ctas .cta .cta-headline {
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait) {
+	.projects-main .single-column {animation: var(--animation, none) 8s infinite linear !important;}
+	.projects-main {height: 60vw !important;}
+	#hideProjectMobile {display: none;}
 	#career .fix-5-12 {
 		max-width: 360px !important
 	}
@@ -2437,27 +2499,14 @@ section.ctas .cta .cta-headline {
 
 	#footer-nav .padding-5 {
 		padding: 30px;
-		margin-left: 60px;
 	}
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape) {
-	#career .fix-5-12 {
-		max-width: 450px !important
-	}
-
-	a.globalFooterCard {
-		float: left;
-	}
-
-	a.globalFooterCard {
-		margin-bottom: 20px;
-	}
-
-	#footer-nav .padding-5 {
-		padding: 30px;
-		margin-left: 200px;
-	}
+	#career .fix-5-12 {max-width: 450px !important}
+	a.globalFooterCard {float: left;}
+	a.globalFooterCard {margin-bottom: 20px;}
+	#footer-nav .padding-5 {padding: 30px;margin-left: 200px;}
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) {
@@ -2853,8 +2902,8 @@ section.ctas .cta .cta-headline {
 
 .sidebar .close {
 	position: absolute;
-	top: 35px;
-	right: 20px;
+	top: 10px;
+	right: 10px;
 	cursor: pointer;
 	padding: 14px;
 	font-size: 0;
@@ -2889,8 +2938,9 @@ section.ctas .cta .cta-headline {
 }
 
 .sidebar .mainMenu li a {
-	font-size: 24px;
-	font-weight: 600
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 2.5;
 }
 
 .sidebar .subMenu li {
@@ -3890,4 +3940,35 @@ body {
 	font-size: 14px;
 	width: 180px;
 	margin: 5px 0 0 5px;
+}
+.projects-main {
+  display: flex;
+  overflow: hidden;
+  height: 35vw;
+  background: #151D2C;
+}
+
+.projects-main img {
+  max-width: 100%;
+  vertical-align: middle;
+	margin: 10px 0px 10px 0px;
+  box-sizing: border-box;
+  transition: opacity .2s;
+}
+
+.projects-main .single-column {
+	animation: var(--animation, none) 16s infinite linear;
+	margin: 10px;
+}
+
+.projects-main .single-column:nth-of-type(odd) {
+  align-self: flex-end;
+  --direction: 50%;
+}
+
+@keyframes slide {
+  to {
+    -webkit-transform: translateY(var(--direction, -50%));
+            transform: translateY(var(--direction, -50%));
+  }
 }
