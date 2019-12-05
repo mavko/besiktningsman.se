@@ -306,8 +306,11 @@ a.globalFooterCard {
 	margin-right: 5px;
 }
 
-.message {
-	color: #424770;
+.announcement .message {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	margin: 0 12px;
 }
 
 .announcement {
@@ -321,10 +324,11 @@ a.globalFooterCard {
 	border-radius: 6px;
 	font-size: 14px;
 	line-height: 17px;
-	font-weight: 500;
+	font-weight: 600;
 	text-decoration: none;
-	background: rgba(0, 0, 140, .08);
+	background: rgba(188, 188, 255, 0.08);
 	margin-bottom: 15px;
+	border-radius: 15px;
 }
 
 .fun-fact {
@@ -3299,7 +3303,9 @@ body {
 .text-blueGrey {
 	color: #607D8B !important
 }
-
+.background-grey {
+	background: #f6f9fc;
+}
 .flex {
 	display: -webkit-box;
 	display: -ms-flexbox;
