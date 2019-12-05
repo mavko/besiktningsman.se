@@ -2735,11 +2735,8 @@
   --height: calc((var(--aspect-ratio) + var(--tan12)) / var(--aspect-ratio));
   position: absolute;
   left: 0;
-  bottom: 0%;
   width: auto;
-  height: calc(100% * var(--height));
   transition: all .4s cubic-bezier(.25, .46, .45, .94);
-  transform: skewY(10deg);
   transform-origin: 0 100%;
 }
 
