@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="168px" height="168px" viewBox="0 0 168 168" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>docsigned_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6.409713,-2.58960077e-16 L143.590287,2.58960077e-16 C145.819084,-1.50463262e-16 146.627299,0.232064028 147.442114,0.667831759 C148.256929,1.10359949 148.896401,1.74307093 149.332168,2.55788574 C149.767936,3.37270056 150,4.18091615 150,6.409713 L150,143.590287 C150,145.819084 149.767936,146.627299 149.332168,147.442114 C148.896401,148.256929 148.256929,148.896401 147.442114,149.332168 C146.627299,149.767936 145.819084,150 143.590287,150 L6.409713,150 C4.18091615,150 3.37270056,149.767936 2.55788574,149.332168 C1.74307093,148.896401 1.10359949,148.256929 0.667831759,147.442114 C0.232064028,146.627299 1.00308841e-16,145.819084 -1.72640051e-16,143.590287 L1.72640051e-16,6.409713 C-1.00308841e-16,4.18091615 0.232064028,3.37270056 0.667831759,2.55788574 C1.10359949,1.74307093 1.74307093,1.10359949 2.55788574,0.667831759 C3.37270056,0.232064028 4.18091615,1.50463262e-16 6.409713,-2.58960077e-16 Z" id="path-1"></path>
+        <filter x="-9.7%" y="-8.3%" width="119.3%" height="119.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.196078431   0 0 0 0 0.196078431   0 0 0 0 0.364705882  0 0 0 0.200549139 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="general-styling-and-website-material" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-9-Copy" transform="translate(-1565.000000, -365.000000)">
+            <g id="docsigned_icon" transform="translate(1574.000000, 372.000000)">
+                <g id="calBG">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#81659A" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="doc+pen" transform="translate(24.000000, 18.000000)">
+                    <polygon id="Rectangle" fill="#FFFFFF" points="3.78515625 3.0825953 72.9032 3.0825953 88 20.4360941 88 113.87069 3.78515625 113.87069"></polygon>
+                    <rect id="Rectangle" fill="#81659A" fill-rule="nonzero" x="20.1032" y="32.0068966" width="52.8" height="4.92413793"></rect>
+                    <rect id="Rectangle" fill="#81659A" fill-rule="nonzero" x="20.1032" y="46.7793103" width="52.8" height="4.92413793"></rect>
+                    <rect id="Rectangle" fill="#81659A" fill-rule="nonzero" x="20.1032" y="61.5517241" width="40.8" height="4.92413793"></rect>
+                    <rect id="Rectangle" fill="#81659A" fill-rule="nonzero" x="20.1032" y="76.3241379" width="28.8" height="4.92413793"></rect>
+                    <rect id="Rectangle" fill="#81659A" fill-rule="nonzero" x="20.1032" y="91.0965517" width="28.8" height="4.92413793"></rect>
+                    <path d="M92.1032,43.2979448 L92.1032,18.6772552 L73.8968,0 L4.9032,0 C2.694061,4.05812251e-16 0.9032,1.790861 0.9032,4 L0.9032,114.17931 C0.9032,116.388449 2.694061,118.17931 4.9032,118.17931 L88.1032,118.17931 C90.312339,118.17931 92.1032,116.388449 92.1032,114.17931 L92.1032,74.8813655 L92.1032,74.8813655 L114.375097,52.0334714 C115.889362,50.4800444 115.889362,48.0027142 114.375097,46.4492873 L104.567501,36.388047 C103.025471,34.8061371 100.493018,34.7738079 98.911108,36.3158378 C98.8867319,36.3395993 98.8626602,36.363671 98.8388987,36.388047 L92.1032,43.2979448 L92.1032,43.2979448 Z M75.3032,8.40550345 L83.9096,17.2344828 L75.3032,17.2344828 L75.3032,8.40550345 Z M87.3032,113.255172 L5.7032,113.255172 L5.7032,4.92413793 L70.5032,4.92413793 L70.5032,22.1586207 L87.3032,22.1586207 L87.3032,48.2220828 L56.1032,80.2289793 L56.1032,96.0206897 L71.4968,96.0206897 L87.3032,79.8055034 L87.3032,113.255172 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <polygon id="Path" fill="#81659A" fill-rule="nonzero" points="89.7032 52.7227448 98.3096 61.5517241 69.5096 91.0965517 60.9032 91.0965517 60.9032 82.2675724"></polygon>
+                    <polygon id="Path" fill="#81659A" fill-rule="nonzero" points="101.7032 58.0703586 93.0968 49.2413793 101.7032 40.4124 110.3096 49.2413793"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
