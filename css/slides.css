@@ -1771,11 +1771,15 @@ section.ctas .cta .cta-headline {
 .grid>.col-6-12 {
 	max-width: 40%
 }
-
+.grid>.col-7-12 {
+	max-width: 47%
+}
 .grid>.col-8-12 {
 	max-width: 50%
 }
-
+.grid>.col-10-12 {
+	max-width: 60%
+}
 .wide-col {
 	padding-bottom: 20px
 }
