@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="120px" height="162px" viewBox="0 0 120 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="94px" height="117px" viewBox="0 0 94 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
-    <title>iconfinder_icon-72-documents_315196</title>
+    <title>Group 4</title>
     <desc>Created with Sketch.</desc>
     <g id="general-styling-and-website-material" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-9-Copy" transform="translate(-1630.000000, -15.000000)" fill="#4A90E2" fill-rule="nonzero">
-            <g id="iconfinder_icon-72-documents_315196" transform="translate(1630.000000, 15.000000)">
-                <path d="M83.4782609,0 L83.4782609,31.3142538 C83.4782609,37.1128364 88.1638988,41.7391304 93.9439257,41.7391304 L120,41.7391304 L120,130.448234 C120,136.221259 115.334211,140.869565 109.578668,140.869565 C109.544644,146.638004 104.886742,151.304348 99.1438857,151.304348 C99.1098616,157.072786 94.4519598,161.73913 88.7091031,161.73913 L10.4213317,161.73913 C4.64830638,161.73913 -9.09494702e-13,157.050197 -9.09494702e-13,151.266105 L-9.09494702e-13,31.342591 C-9.09494702e-13,25.5565478 4.66578913,20.8695652 10.4213317,20.8695652 C10.4347826,15.1217651 15.1005717,10.4347826 20.8561143,10.4347826 C20.8902527,4.66634405 25.5740587,0 31.3488532,0 L83.4782609,0 Z M11.434575,24.0869565 C8.55320398,24.0869565 6.2173913,26.4622411 6.2173913,29.2806454 L6.2173913,29.2806454 L6.2173913,149.32805 C6.2173913,152.196445 8.58978572,154.521739 11.434575,154.521739 L11.434575,154.521739 L89.6958598,154.521739 C92.577231,154.521739 94.9130435,152.146454 94.9130435,149.32805 L94.9130435,149.32805 L21.8561143,149.304348 C16.083089,149.304348 11.4347826,144.615415 11.4347826,138.831322 L11.4347826,138.831322 Z M16.6521739,18.8458628 L16.6521739,138.893268 C16.6521739,141.761663 19.0245683,144.086957 21.8693576,144.086957 L100.130642,144.086957 C103.012014,144.086957 105.347826,141.711672 105.347826,138.893268 L32.2908969,138.869565 C26.5178716,138.869565 21.8695652,134.180632 21.8695652,128.39654 L21.8695652,13.6521739 C18.9879866,13.6521739 16.6521739,16.0274585 16.6521739,18.8458628 L16.6521739,18.8458628 Z M88.6956522,0 L88.6956522,31.2890644 C88.6956522,34.1789908 91.0485663,36.5217391 93.8649287,36.5217391 L120,36.5217391 L88.6956522,0 L88.6956522,0 Z" id="documents"></path>
+        <g id="Artboard-9-Copy" transform="translate(-1277.000000, -38.000000)">
+            <g id="Group-4" transform="translate(1277.000000, 38.000000)">
+                <g id="doc+pen-copy-3" opacity="0.80343192" transform="translate(0.000000, 6.000000)">
+                    <polygon id="Rectangle" fill="#1072BB" points="0.78515625 0.082595299 69.9032 0.082595299 85 17.4360941 85 110.87069 0.78515625 110.87069"></polygon>
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="17.1032" y="29.0068966" width="52.8" height="4.92413793"></rect>
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="17.1032" y="43.7793103" width="52.8" height="4.92413793"></rect>
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="17.1032" y="58.5517241" width="40.8" height="4.92413793"></rect>
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="17.1032" y="73.3241379" width="28.8" height="4.92413793"></rect>
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="17.1032" y="88.0965517" width="28.8" height="4.92413793"></rect>
+                </g>
+                <g id="doc+pen-copy-2" transform="translate(9.000000, 0.000000)">
+                    <polygon id="Rectangle" fill="#1072BB" points="0.78515625 0.082595299 69.9032 0.082595299 85 17.4360941 85 110.87069 0.78515625 110.87069"></polygon>
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="17.1032" y="29.0068966" width="52.8" height="4.92413793"></rect>
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="17.1032" y="43.7793103" width="52.8" height="4.92413793"></rect>
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="17.1032" y="58.5517241" width="40.8" height="4.92413793"></rect>
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="17.1032" y="73.3241379" width="28.8" height="4.92413793"></rect>
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="17.1032" y="88.0965517" width="28.8" height="4.92413793"></rect>
+                </g>
             </g>
         </g>
     </g>
