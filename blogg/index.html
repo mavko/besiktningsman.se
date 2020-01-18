@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="se">
+<title></title>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -184,11 +185,26 @@
 
         </div>
     </nav>
-    <section class="slide container-lg">
-        <div id="dib-posts"></div>
-        <div id="dib-categories"></div>
-        <div id="dib-authors"></div>
-        <div id="dib-recent-post-list"></div>
+    <!-- HEADER BG -->
+    <div class="StripeBackground">
+        <div class="stripe s0"></div>
+        <div class="stripe s2"></div>
+        <div class="stripe s3"></div>
+        <div class="stripe s4"></div>
+    </div>
+    <nav class="productNav" style="margin-top: 25px;margin-bottom: 25px;">
+        <div class="container-sm">
+            <span class="common-BodyTitle">
+                <div id="dib-categories"></div>
+            </span>
+        </div>
+    </nav>
+    <!-- HEADER -->
+    <section class="" id="" style="background: transparent;margin-top: 140px;margin-bottom: 140px;">
+        <div class="container-sm">
+            <div id="dib-categories"></div>
+            <div id="dib-posts" class="common-BodyTitle"></div>
+        </div>
     </section>
     <!-- Footer -->
     <section class="slide customFooter autoHeight">
@@ -329,6 +345,153 @@
                 </div>
             </div>
     </section>
+    <!-- inline style -->
+    <style>
+        // dropinblog custom css
+        #dib-posts .dib-posts {
+            margin-bottom: 80px !important;
+
+            background: #fff;
+
+            box-shadow: 0 30px 60px -12px rgba(50, 50, 93, .25),
+                0 18px 36px -18px rgba(0, 0, 0, .3),
+                0 -12px 36px -8px rgba(0, 0, 0, .025) !important;
+
+            padding-bottom: 30px;
+
+            border-radius: 4px;
+        }
+
+        .dib-list {}
+
+        #dib-posts h1 {
+            font-family: Georgia,
+                Cambria,
+                "Times New Roman",
+                Times,
+                serif;
+            font-size: 40px;
+            margin-bottom: 20px;
+            text-rendering: optimizeLegibility;
+        }
+
+        .dib-post-author {
+            padding-top: 8px !important;
+            font-weight: bold;
+            text-rendering: optimizeLegibility;
+        }
+
+        .dib-post-author-photo {
+            width: 70px;
+            border-radius: 50%;
+            overflow: hidden;
+            align-items: center;
+            display: flex;
+            margin: 0px 10px 0px 26px;
+            float: left;
+        }
+
+        .dib-post-readtime {
+            font-size: 12px;
+            font-weight: bold;
+            float: right;
+            right: -410px;
+            left: 0;
+            position: absolute;
+            margin-top: -28px !important;
+            text-rendering: optimizeLegibility;
+        }
+
+        .dib-post-date {
+            font-size: 12px;
+            font-weight: bold;
+            text-rendering: optimizeLegibility;
+        }
+
+        .dib-post-categories {
+            margin-left: 20px;
+            font-size: 12px;
+            text-rendering: optimizeLegibility;
+            font-weight: bold;
+            border: 1px solid #1072bb;
+            white-space: nowrap;
+            display: inline-block;
+            height: 32px;
+            line-height: 29px;
+            padding: 0 20px;
+            color: #1072bb;
+            border-radius: 20px;
+        }
+
+        .dib-post-content section {
+            margin-top: 30px !important;
+            border-top: 1px dotted #72728f;
+            padding-top: 20px;
+        }
+
+        .dib-post-content,
+        .dib-post-author,
+        .dib-post-date,
+        .dib-post-readtime,
+        .dib-post-title {
+            margin: 0 auto;
+            padding: 0 22px;
+            width: 100%;
+            max-width: 680px text-rendering: optimizeLegibility;
+        }
+
+        #dib-categories {
+            margin: -15px 0 0 0;
+        }
+
+        #dib-categories ul {
+            display: inline-flex;
+        }
+
+        #dib-categories ul li {
+            margin: 0px 10px 10px 0px;
+        }
+
+        .dib-post-back-link {
+            margin-left: 20px;
+            white-space: nowrap;
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 30px;
+            box-shadow: 0 4px 6px rgba(50, 50, 93, .11),
+                0 1px 3px rgba(0, 0, 0, .08);
+            background: #fff;
+            color: #1072bb;
+            border-radius: 4px;
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .025em;
+            outline: 0;
+            border: none;
+            -webkit-transition: all .15s ease;
+            transition: all .15s ease
+        }
+
+        .dib-more {
+            white-space: nowrap;
+            display: inline-block;
+            height: 32px;
+            line-height: 29px;
+            padding: 0 20px;
+            color: #1072bb;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .025em;
+            outline: 0;
+            border: 1px solid #1072bb;
+            -webkit-transition: all .15s ease;
+            transition: all .15s ease;
+        }
+    </style>
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
