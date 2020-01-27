@@ -49,12 +49,6 @@ a {
 	fill: #fff
 }
 
-.mobile .simplifiedMobile .slide:not(.autoHeight) .background,
-.scroll .slide .background,
-.scroll .slide:not(.autoHeight) .background {
-	min-height: 100vh
-}
-
 a,
 abbr,
 acronym,
@@ -1299,7 +1293,6 @@ a.globalFooterCard {
 }
 
 .form-section {
-	max-height: 1200px;
 	padding: 50px 0 40px 0;
 	position: relative;
 	-webkit-transition: max-height .7s;
@@ -1393,7 +1386,6 @@ section .form-column {
 	border-radius: 4px;
 	-webkit-box-shadow: 0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1);
 	box-shadow: 0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1);
-	max-width: 600px;
 	background: #fff;
 	margin: 0 auto;
 	width: 100%;
@@ -1431,8 +1423,56 @@ section .form-column {
 	margin: 24px 5px 3px 0px;
 }
 
-.formBackground .hs-input {
-	background: #FFFFFF;
+// hubspot forms
+#bokaskanska .hs-custom-style fieldset input:not([type="image"]):not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]):not([type="file"]),
+.hs-custom-style>div input:not([type="image"]):not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]):not([type="file"]) {
+
+	box-sizing: border-box;
+	padding: 0 15px;
+	min-height: 27px;
+	background: #fff !important;
+
+}
+
+.hs-form-437e0154-8e41-42b5-8c96-baf05f08570a_bc4ce819-4150-46c5-aea0-ade62d0a5e1a fieldset {
+	max-width: 100% !important;
+}
+
+.hs-form-437e0154-8e41-42b5-8c96-baf05f08570a_bc4ce819-4150-46c5-aea0-ade62d0a5e1a fieldset.form-columns-1 .hs-input {
+
+	width: auto;
+
+}
+
+.form-columns-1 {
+	margin: 0px 0 16px 0px !important;
+}
+
+.hs-error-msgs {
+	color: orangered;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 5px;
+}
+
+.hs-field-desc {
+	color: #32325d;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.hs-form-booleancheckbox-display {
+	margin-top: 17px;
+	line-height: 40px;
+	margin-left: 5px;
+}
+
+.formBackground span {
+	float: none;
+}
+
+.hs-input {
+	background: #FFFFFF !important;
 	box-shadow: 0 2px 5px 0 rgba(60, 66, 87, 0.12),
 		0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	border-radius: 4px;
@@ -1444,6 +1484,23 @@ section .form-column {
 	width: 100%;
 	min-height: 36px;
 	color: #424770;
+}
+
+.hs-input[type="checkbox"],
+.hs-input[type="radio"] {
+	cursor: pointer;
+	background-color: rgb(255, 255, 255);
+	height: 14px;
+	box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+		rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+		rgba(0, 0, 0, 0.12) 0px 1px 1px 0px,
+		rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+		rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+		rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+		rgba(60, 66, 87, 0.12) 0px 2px 5px 0px;
+	min-width: 19px;
+	width: 30px;
+	transform: translateY(2.07px);
 }
 
 .formBackground .actions {
