@@ -1471,9 +1471,9 @@ section .form-column {
 	margin-left: 5px;
 }
 
-.form-columns-1 input[type="radio"] {
-	margin-top: 15px;
-	margin-left: -7px;
+#bokaskanska input[type="radio"] {
+	margin-top: 15px !important;
+	margin-left: -7px !important;
 
 }
 
