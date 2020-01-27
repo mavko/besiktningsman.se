@@ -1434,16 +1434,23 @@ section .form-column {
 
 }
 
-.hs-form-437e0154-8e41-42b5-8c96-baf05f08570a_bc4ce819-4150-46c5-aea0-ade62d0a5e1a fieldset {}
+#bokaskanska label {
+	font-weight: bold;
+	margin-bottom: 8px !important;
 
-.form-columns-1 {
-	max-width: 100% !important;
-	margin: 0px 0 16px 0px !important;
 }
 
-.form-columns-2 {
+.hs-form-private fieldset {
 	max-width: 100% !important;
-	margin: 0px 0 16px 0px !important;
+	margin: 0px 0px 8px 0px !important;
+}
+
+.inputs-list {
+	display: block ruby;
+}
+
+.form-columns-1 .hs-input {
+	width: 100% !important;
 }
 
 .hs-error-msgs {
@@ -1459,13 +1466,15 @@ section .form-column {
 	margin-bottom: 5px;
 }
 
-.hs-form-booleancheckbox-display {
-	line-height: 80px;
-}
-
 .hs-form-booleancheckbox-display span {
 	margin-top: 17px;
 	margin-left: 5px;
+}
+
+.form-columns-1 input[type="radio"] {
+	margin-top: 15px;
+	margin-left: -7px;
+
 }
 
 .formBackground span {
@@ -1501,7 +1510,6 @@ section .form-column {
 		rgba(60, 66, 87, 0.12) 0px 2px 5px 0px;
 	min-width: 19px;
 	width: 30px;
-	transform: translateY(10.07px);
 }
 
 .formBackground .actions {
@@ -1531,6 +1539,15 @@ section .form-column {
 	border: 0;
 	outline: 0;
 	transition: color 240ms;
+	min-width: 200px;
+}
+
+.formBackground .hs-button:hover {
+	color: #7795f8;
+	transform: translateY(-1px);
+	box-shadow: 0 7px 14px rgba(50, 50, 93, .1),
+		0 3px 6px rgba(0, 0, 0, .08);
+	cursor: pointer;
 }
 
 .formBackground .hs-richtext {
@@ -2648,6 +2665,18 @@ section.ctas .cta .cta-headline {
 }
 
 @media only screen and (min-width:320px) and (max-width:480px) {
+	.inputs-list {
+		display: block;
+
+		text-align: center;
+
+		margin: 0px auto;
+
+		right: 0;
+
+		left: 0;
+	}
+
 	.projects-main .single-column {
 		animation: var(--animation, none) 5s infinite linear !important;
 	}
