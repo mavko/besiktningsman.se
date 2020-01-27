@@ -1434,17 +1434,15 @@ section .form-column {
 
 }
 
-.hs-form-437e0154-8e41-42b5-8c96-baf05f08570a_bc4ce819-4150-46c5-aea0-ade62d0a5e1a fieldset {
-	max-width: 100% !important;
-}
-
-.hs-form-437e0154-8e41-42b5-8c96-baf05f08570a_bc4ce819-4150-46c5-aea0-ade62d0a5e1a fieldset.form-columns-1 .hs-input {
-
-	width: auto;
-
-}
+.hs-form-437e0154-8e41-42b5-8c96-baf05f08570a_bc4ce819-4150-46c5-aea0-ade62d0a5e1a fieldset {}
 
 .form-columns-1 {
+	max-width: 100% !important;
+	margin: 0px 0 16px 0px !important;
+}
+
+.form-columns-2 {
+	max-width: 100% !important;
 	margin: 0px 0 16px 0px !important;
 }
 
@@ -1462,8 +1460,11 @@ section .form-column {
 }
 
 .hs-form-booleancheckbox-display {
+	line-height: 80px;
+}
+
+.hs-form-booleancheckbox-display span {
 	margin-top: 17px;
-	line-height: 40px;
 	margin-left: 5px;
 }
 
@@ -1500,7 +1501,7 @@ section .form-column {
 		rgba(60, 66, 87, 0.12) 0px 2px 5px 0px;
 	min-width: 19px;
 	width: 30px;
-	transform: translateY(2.07px);
+	transform: translateY(10.07px);
 }
 
 .formBackground .actions {
