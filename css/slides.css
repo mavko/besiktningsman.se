@@ -923,14 +923,6 @@ a.globalFooterCard {
 	float: left !important
 }
 
-#career img {
-	height: 460px;
-	margin: -5px;
-	max-width: 600px;
-	float: left;
-	margin-left: -60px;
-}
-
 #career .text-blueGrey {
 	padding: 35px 30px 0 50px
 }
@@ -2950,10 +2942,6 @@ section.ctas .cta .cta-headline {
 		width: 100% !important
 	}
 
-	#career img {
-		display: none
-	}
-
 	#career h1 {
 		margin-top: 100px;
 		font-size: 25px !important
@@ -3140,11 +3128,6 @@ section.ctas .cta .cta-headline {
 		padding: 30px 30px 40px 50px
 	}
 
-	#career img {
-		height: 490px;
-		margin: -5px
-	}
-
 	#career .pad {
 		margin-bottom: 50px
 	}
@@ -3179,9 +3162,6 @@ section.ctas .cta .cta-headline {
 }
 
 @media (max-width:600px) {
-	#career img {
-		display: none
-	}
 
 	#career .text-blueGrey {
 		padding: 35px 30px 30px 50px
