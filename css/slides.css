@@ -1376,11 +1376,6 @@ section .form-column {
 	margin: 0 30px 20px 0;
 }
 
-.popup .close {
-	top: 10% !important;
-	left: 0 !important;
-	right: 0 !important;
-}
 
 .formBackground {
 	border-radius: 4px;
