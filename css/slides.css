@@ -1459,6 +1459,15 @@ section .form-column {
 .form-columns-1 .hs-input {
 	width: 100% !important;
 }
+.hbspt-form ul li {
+	line-height: 20px;
+}
+.form-columns-1 input[type="radio"] {
+	width: 16px !important;
+	margin-left: 3px;
+	background: transparent !important;
+		box-shadow: none !important;
+}
 
 .hs-error-msgs {
 	color: orangered;
