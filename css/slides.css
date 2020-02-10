@@ -1453,20 +1453,50 @@ section .form-column {
 }
 
 .inputs-list {
-	display: block ruby;
+	display: flex;
 }
 
-.form-columns-1 .hs-input {
+
+.input textarea {
 	width: 100% !important;
+	min-height: 80px;
 }
+
+/* Chrome 29+ */
+.selector:not(*:root),
 .hbspt-form ul li {
-	line-height: 20px;
+	line-height: 2.5rem
 }
-.form-columns-1 input[type="radio"] {
+
+.selector:not(*:root),
+.form-columns-1 .input {
+	margin-top: 8px;
+}
+
+.selector:not(*:root),
+.form-columns-1 input[type="radio"],
+input[type="checkbox"] {
+	margin-right: -1px;
+	margin-top: 5px;
+
+}
+
+/* firefox */
+@supports (-moz-appearance:none) {
+	.hbspt-form ul li {
+		line-height: 5rem;
+	}
+}
+
+
+.form-columns-1 input[type="radio"],
+input[type="checkbox"] {
 	width: 16px !important;
-	margin-left: 3px;
+	margin-left: 3px !important;
 	background: transparent !important;
-		box-shadow: none !important;
+	box-shadow: none !important;
+	float: left;
+	-webkit-margin-top: 14px;
 }
 
 .hs-error-msgs {
@@ -1513,22 +1543,6 @@ section .form-column {
 	color: #424770;
 }
 
-.hs-input[type="checkbox"],
-.hs-input[type="radio"] {
-	cursor: pointer;
-	background-color: rgb(255, 255, 255);
-	height: 14px;
-	box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-		rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-		rgba(0, 0, 0, 0.12) 0px 1px 1px 0px,
-		rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
-		rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-		rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-		rgba(60, 66, 87, 0.12) 0px 2px 5px 0px;
-	min-width: 19px;
-	width: 30px;
-	margin-left: -8px;
-}
 
 .formBackground .actions {
 	float: right;
