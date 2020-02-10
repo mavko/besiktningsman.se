@@ -2697,21 +2697,17 @@ section.ctas .cta .cta-headline {
 }
 
 @media only screen and (min-width:320px) and (max-width:480px) {
+	.inputs-list {
+		display: grid;
+	}
+
+	#boka {
+		padding-top: 47px;
+	}
+
 	#career .secondary-column> :first-child {
 		padding-left: 8px;
 		padding-right: 8px;
-	}
-
-	.inputs-list {
-		display: block;
-
-		text-align: center;
-
-		margin: 0px auto;
-
-		right: 0;
-
-		left: 0;
 	}
 
 	.projects-main .single-column {
