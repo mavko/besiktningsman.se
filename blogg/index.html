@@ -193,17 +193,17 @@
         <div class="stripe s4"></div>
     </div>
     <nav class="productNav" style="margin-top: 25px;margin-bottom: 25px;">
-        <div class="container-sm">
-            <span class="common-BodyTitle">
+        <div class="container-lg">
+            <span>
                 <div id="dib-categories"></div>
             </span>
         </div>
     </nav>
     <!-- HEADER -->
-    <section class="" id="" style="background: transparent;margin-top: 140px;margin-bottom: 140px;">
-        <div class="container-sm">
+    <section class="" id="" style="background: transparent;">
+        <div class="container-lg margin-top-1">
             <div id="dib-categories"></div>
-            <div id="dib-posts" class="common-BodyTitle"></div>
+            <div id="dib-posts"></div>
         </div>
     </section>
     <!-- Footer -->
@@ -347,32 +347,142 @@
     </section>
     <!-- inline style -->
     <style>
-        // dropinblog custom css
-        #dib-posts .dib-posts {
-            margin-bottom: 80px !important;
-
-            background: #fff;
-
-            box-shadow: 0 30px 60px -12px rgba(50, 50, 93, .25),
-                0 18px 36px -18px rgba(0, 0, 0, .3),
-                0 -12px 36px -8px rgba(0, 0, 0, .025) !important;
-
-            padding-bottom: 30px;
-
-            border-radius: 4px;
+        .dib-list {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-radius: 5px;
+            z-index: 1;
+            -webkit-transition: -webkit-transform 0.33s var(--ease-out-quart);
+            -webkit-transition: transform 0.33s var(--ease-out-quart);
+            transition: transform 0.33s var(--ease-out-quart);
+            -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
         }
 
-        .dib-list {}
+        .dib {
+            margin: 100px 0;
+        }
 
-        #dib-posts h1 {
-            font-family: Georgia,
-                Cambria,
-                "Times New Roman",
-                Times,
-                serif;
+        .dib-homepage-title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 52px;
+            line-height: 1.15;
+            color: #000;
+            margin: 100px 0 !important;
+        }
+
+        .dib-post p,
+        h1,
+        h2,
+        h3 {
+            margin-bottom: 0 !important;
+        }
+
+        .dib-post {
+            margin-bottom: 15rem;
+        }
+
+        .dib-post-featured-image a img {
+            position: relative;
+            height: 270px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 30px 60px -10px, rgba(0, 0, 0, 0.33) 0px 18px 36px -18px;
+            float: left;
+            margin-right: 50px;
+            margin-bottom: 0px;
+
+        }
+
+        .dib-post-featured-image img {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 1100px !important;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 0 auto;
+            box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.2), 0 18px 36px -18px rgba(0, 0, 0, 0.22);
+        }
+
+        .dib-post-content .dib-highlight {
+            text-overflow: ellipsis;
+            overflow-wrap: normal;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            white-space: normal;
+            overflow: hidden;
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #73737D;
+            display: box;
+            max-width: 400px;
+        }
+
+        .dib-post-title {
+            word-break: keep-all;
+            color: #000;
             font-size: 40px;
-            margin-bottom: 20px;
-            text-rendering: optimizeLegibility;
+            font-family: 'Merriweather', Georgia, Serif;
+            margin-bottom: 25px;
+            font-weight: bold;
+            line-height: 1.32;
+            max-width: 680px;
+            margin: 0 auto;
+            padding-top: 24px;
+        }
+
+        .dib-post-content p {
+            line-height: 1.756;
+            font-size: 18px;
+            color: #08080B;
+            -webkit-transition: background 0.25s var(--ease-in-out-quad), color 0.25s var(--ease-in-out-quad);
+            transition: background 0.25s var(--ease-in-out-quad), color 0.25s var(--ease-in-out-quad);
+            margin: 0 auto 35px;
+            width: 100%;
+            max-width: 680px;
+            padding-bottom: 8px;
+        }
+
+        .dib-post-content h3,
+        span {
+            word-break: keep-all;
+            font-size: 28px !important;
+            line-height: 1.333 !important;
+            font-weight: bold;
+            color: #000 !important;
+            font-family: 'Merriweather', Georgia, Serif !important;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .dib-post-content a {
+            color: #6166DC;
+        }
+
+        .dib-post h2 {
+            word-break: keep-all;
+            font-size: 32px;
+            line-height: 1.333;
+            font-weight: bold;
+            color: #000;
+            font-family: 'Merriweather', Georgia, Serif;
+            font-size: 21px;
+            -webkit-transition: color 0.3s ease-in-out;
+            transition: color 0.3s ease-in-out;
+            text-overflow: ellipsis;
+            overflow-wrap: normal;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            white-space: normal;
+            overflow: hidden;
+            padding-top: 24px;
         }
 
         .dib-post-author {
@@ -394,50 +504,25 @@
         .dib-post-readtime {
             font-size: 12px;
             font-weight: bold;
-            float: right;
-            right: -410px;
-            left: 0;
-            position: absolute;
-            margin-top: -28px !important;
             text-rendering: optimizeLegibility;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .dib-post div {
+            max-width: 680px;
+            margin: 0 auto;
+            margin-top: 24px;
         }
 
         .dib-post-date {
-            font-size: 12px;
-            font-weight: bold;
-            text-rendering: optimizeLegibility;
-        }
-
-        .dib-post-categories {
-            margin-left: 20px;
-            font-size: 12px;
-            text-rendering: optimizeLegibility;
-            font-weight: bold;
-            border: 1px solid #1072bb;
-            white-space: nowrap;
-            display: inline-block;
-            height: 32px;
-            line-height: 29px;
-            padding: 0 20px;
-            color: #1072bb;
-            border-radius: 20px;
+            display: none;
         }
 
         .dib-post-content section {
             margin-top: 30px !important;
             border-top: 1px dotted #72728f;
             padding-top: 20px;
-        }
-
-        .dib-post-content,
-        .dib-post-author,
-        .dib-post-date,
-        .dib-post-readtime,
-        .dib-post-title {
-            margin: 0 auto;
-            padding: 0 22px;
-            width: 100%;
-            max-width: 680px text-rendering: optimizeLegibility;
         }
 
         #dib-categories {
@@ -452,8 +537,13 @@
             margin: 0px 10px 10px 0px;
         }
 
+        .dib-sharing {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
         .dib-post-back-link {
-            margin-left: 20px;
+            margin-top: 24px;
             white-space: nowrap;
             display: inline-block;
             height: 50px;
@@ -470,26 +560,20 @@
             letter-spacing: .025em;
             outline: 0;
             border: none;
-            -webkit-transition: all .15s ease;
-            transition: all .15s ease
+            margin-left: 19.8rem;
+        }
+
+        .dib-post-categories {
+            display: none;
+        }
+
+        #dib-categories {
+            max-width: 680px;
+            margin: 0 auto;
         }
 
         .dib-more {
-            white-space: nowrap;
-            display: inline-block;
-            height: 32px;
-            line-height: 29px;
-            padding: 0 20px;
-            color: #1072bb;
-            border-radius: 4px;
-            font-size: 14px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: .025em;
-            outline: 0;
-            border: 1px solid #1072bb;
-            -webkit-transition: all .15s ease;
-            transition: all .15s ease;
+            display: none;
         }
     </style>
     <!-- Scripts -->
