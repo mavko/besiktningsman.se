@@ -193,7 +193,7 @@
         <div class="stripe s3"></div>
         <div class="stripe s4"></div>
     </div>
-    <nav class="productNav" style="margin-top: 25px;margin-bottom: 25px;">
+    <nav class="productNav">
         <div class="container-lg">
             <span>
                 <div id="dib-categories"></div>
@@ -571,6 +571,25 @@
 
         .dib-more {
             display: none;
+        }
+
+        @media only screen and (max-width: 480px) and (min-width: 320px) {
+            .dib-homepage-title {
+                margin-bottom: 40px !important;
+                padding-top: 40px;
+            }
+
+            .dib-post h2 {
+                float: left;
+            }
+
+            .dib-post-featured-image img {
+                box-shadow: none !important;
+            }
+
+            .dib-post-back-link {
+                margin-left: 0.7rem;
+            }
         }
     </style>
     <!-- Scripts -->
