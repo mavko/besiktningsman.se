@@ -23,10 +23,7 @@
 	<meta name="twitter:title" content="Översikt av våra projekt" />
 	<meta name="twitter:description" content="En översikt av projekt som är besiktade av Besiktningsman.se" />
 	<!-- Fonts and Material Icons -->
-
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-
-
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
 	<!-- Styles -->
 	<link href="../css/slides.css" rel="stylesheet" type="text/css">
 	<!-- Google Tag Manager -->
@@ -94,21 +91,23 @@
 	  <symbol id="drop-down" viewBox="0 0 16 16"><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="1,5 8,12 15,5" fill="none"></polyline></symbol>
 	  <symbol id="play" viewBox="0 0 30 30"><path d="M7 30v-30l22 15z"/></symbol>
 	</svg>
-
 	<!-- Panel Top #10 -->
 	<nav class="panel top forceMobileView white soft-shadow">
-
+		<!-- left menu nav -->
 		<div class="sections desktop">
 			<div class="left">
 				<ul class="menu crop small bold">
-					<li><div class="popupTrigger" data-popup-id="docs">Dokument</div></li>
+					<li><a href="../dokument/">Dokument</a></li>
 					<li><a href="../nyheter/">Nyheter</a></li>
 					<li><a href="../om_oss/">Om oss</a></li>
 				</ul>
 			</div>
+
 			<div class="center">
 				<a href="../"> <img src="../assets/svg/bm_logo_top.svg" alt="Besiktningsman.se" style="width:200px;"> </a>
 			</div>
+
+			<!-- right menu nav -->
 			<div class="right">
 				<ul class="menu crop small bold">
 					<li><a href="../#tjanster">Tjänster</a></li>
@@ -121,39 +120,36 @@
 			<div class="left">
 				<a href="../"><img src="../assets/svg/bm_logo.svg" alt="Besiktningsman.se" style="width:200px;"></a>
 			</div>
-			<div class="right"><span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
+			<div class="right"><span class="button actionButton sidebarTrigger"  data-sidebar-id="position-top"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
 		</div>
 	</nav>
+
 	<!-- Sidebar -->
-	<nav class="sidebar white" data-sidebar-id="1">
+	<nav class="sidebar top white text-blueGrey"  data-sidebar-id="position-top">
 		<div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
 		<div class="content">
-			<a href="../" class="logo"><img src="../assets/svg/bm_se_checkmark_color.svg" alt="Besiktningsman.se"></a>
-			<ul class="mainMenu text-blue">
 
-				<li><a href="../#tjanster"><p>Tjänster</p></a></li>
+			<ul class="mainMenu center margin-top-1">
+
+				<li><a href="../#tjanster">Tjänster</a></li>
 				<br>
 				<br>
-				<li><a href="../kontakt/"><p>Kontakta oss</p></a></li>
+				<li><a href="../kontakt/">Kontakta oss</a></li>
 				<br>
 				<br>
-				<li><a href="../karriar/"><p>Karriär</p></a></li>
+				<li><a href="../karriar/">Karriär</a></li>
 				<br>
 				<br>
-				<li><a href="../om_oss/"><p>Om oss</p></a></li>
+				<li><a href="../om_oss/">Om oss</a></li>
 				<br>
 				<br>
-				<li><a href="../nyheter/"><p>Nyheter</p></a></li>
+				<li><a href="../nyheter/">Nyheter</a></li>
 				<br>
 				<br>
-				<li><div class="popupTrigger" data-popup-id="docs"><p>Dokument</p></div></li>
+				<li><a href="../dokument/">Dokument</a></li>
 				<br>
 				<br>
-				<li>
-					<a href="tel:0101654000">
-						<p class="bold">Telefon: 010-165 40 00</p>
-					</a>
-				</li>
+				<li><a href="tel:0101654000">Telefon: 010-165 40 00</a></li>
 			</ul>
 
 		</div>
@@ -165,73 +161,71 @@
 	    <div class="stripe s3"></div>
 	    <div class="stripe s4"></div>
 	</div>
-	<!-- content -->
-	<section class="slide projects" style="background: transparent;">
-		<div class="content">
-			<div class="container margin-top-1" style="height:560px;">
-					<h1 class="common-IntroText center">Våra projekt</h1>
-					<p class="common-BodyText center">Här byggs framtiden med noll fel</p>
-					<div class="photobanner">
-						<img class="first" src="../assets/img/projects/panorama_projects.png" alt="Panorama bild med utvalda projekt" />
-						<!-- duplicates to fake the panorama fx -->
-						<img src="../assets/img/projects/panorama_projects.png" alt="Panorama bild med utvalda projekt" />
-						<img src="../assets/img/projects/panorama_projects.png" alt="Panorama bild med utvalda projekt" />
-						<img src="../assets/img/projects/panorama_projects.png" alt="Panorama bild med utvalda projekt" />
-						<img src="../assets/img/projects/panorama_projects.png" alt="Panorama bild med utvalda projekt" />
-					</div>
-			</div>
-		</div>
-	</section>
-	<!-- HEADER new -->
-	<!-- <section class="slide" style="background: transparent;">
-		<div class="content">
-			<div class="container margin-top-1" style="height:560px;">
-					<h1 class="common-IntroText center">Våra projekt</h1>
-					<p class="common-BodyText center">Här byggs framtiden med noll fel</p>
-					<div>
-						  <marquee direction="left" speed="normal" behavior="loop" start="fromRight" >
-						     <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-								 <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-								 <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-						     <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-								 <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-								 <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-						     <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-								 <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-								 <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-						     <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-								 <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-								 <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-						  </marquee>
-						  <marquee direction="left" speed="normal" behavior="loop" start="fromLeft" >
-						     <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-								 <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-								 <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-						     <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-								 <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-								 <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-						     <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-								 <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-								 <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-						     <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-								 <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-								 <img src="../assets/img/projects/kv_ektorp.jpg" alt="" >
-						  </marquee>
-					</div>
+	<!-- intro titles -->
+	<div class="container-lg margin-bottom-5" style="margin-top: 150px;">
+		<h1 class="common-IntroText center">Våra projekt</h1>
+		<p class="common-BodyText center">Här byggs framtiden med noll fel</p>
+	</div>
 
-			</div>
+	<!-- projects new -->
+	 <div class="projects-main">
+		<div class="single-column">
+			<img src="../assets/img/projects/skanska_bjork.png" alt="image">
+			<img src="../assets/img/projects/skanska_brfpyrolan.png" alt="image">
+			<img src="../assets/img/projects/skanska_lamellen.png" alt="image">
+			<img src="../assets/img/projects/skanska_leendet.png" alt="image">
+			<img src="../assets/img/projects/skanska_brftheview.png" alt="image">
+
 		</div>
-	</section> -->
+		<div class="single-column">
+			<img src="../assets/img/projects/skanska_kvartpasen.png" alt="image">
+			<img src="../assets/img/projects/skanska_soldathemmet.png" alt="image">
+			<img src="../assets/img/projects/skanska_linabergshojden.png" alt="image">
+			<img src="../assets/img/projects/skanska_kvartersonfjallet.png" alt="image">
+			<img src="../assets/img/projects/byggvesta_colonia.png" alt="image">
+		</div>
+		<div class="single-column" id="hideProjectMobile">
+			<img src="../assets/img/projects/byggvesta_bryggvagen.png" alt="image">
+			<img src="../assets/img/projects/byggvesta_brfgarvaren.png" alt="image">
+			<img src="../assets/img/projects/byggvesta_brfsorgenfri.png" alt="image">
+			<img src="../assets/img/projects/einarmattsson_klockarbacken.png" alt="image">
+			<img src="../assets/img/projects/myresjohus_mestapark.png" alt="image">
+			<img src="../assets/img/projects/magnolia_m6.png" alt="image">
+		</div>
+		<div class="single-column" id="hideProjectMobile">
+
+			<img src="../assets/img/projects/byggvesta_brfektorp.png" alt="image">
+			<img src="../assets/img/projects/einarmattsson_haganova.png" alt="image">
+			<img src="../assets/img/projects/einarmattsson_taklampa.png" alt="image">
+			<img src="../assets/img/projects/skanska_brfLinabergsAlle.png" alt="image">
+			<img src="../assets/img/projects/skanska_bjork.png" alt="image">
+		</div>
+
+		<div class="single-column" id="hideProjectMobile">
+			<img src="../assets/img/projects/almequity_kanotbryggan.png" alt="image">
+			<img src="../assets/img/projects/ebab_etaget.png" alt="image">
+			<img src="../assets/img/projects/aros_brfsjohusen3.png" alt="image">
+			<img src="../assets/img/projects/fbproduktion_rimsjohojden.png" alt="image">
+			<img src="../assets/img/projects/skanska_brfostrafrestaby.png" alt="image">
+		</div>
+		<div class="single-column" id="hideProjectMobile">
+			<img src="../assets/img/projects/ncc_sodersjukhuset.png" alt="image">
+			<img src="../assets/img/projects/shhbostad_brfbrygghuset.png" alt="image">
+			<img src="../assets/img/projects/strandparken_folkhem.png" alt="image">
+			<img src="../assets/img/projects/fbprod_brfFronasGarde.png" alt="image">
+			<img src="../assets/img/projects/storstaden_brfstadsporten.png" alt="image">
+		</div>
+	</div>
 
 	<section class="slide whiteSlide" id="footer-nav">
 		<div class="container-lg padding-5 center">
-			<h3 class="center common-IntroText">Gå vidare här:</h3>
+			<h3 class="center common-IntroText2">Läs mer här:</h3>
 			<div class="center-m-down">
 					<a href="../../om_oss/" class="common-Button text-blue">
 						Om oss
 					</a>
-					<a href="../../helhetskoncept/" class="common-Button text-blue">
-						Vårt helhetskoncept
+					<a href="../ispect/" class="common-Button text-blue">
+						iSpect - Ett helhetskoncept
 					</a>
 					<a href="../../tjanster/entreprenad/" class="common-Button text-blue">
 						Entreprenadbesiktning
@@ -247,7 +241,7 @@
 
 				<div class="fix-12-12 center toCenter fromCenter">
 					<img src="../assets/svg/bm_logo_top.svg" alt="Besiktningsman.se" style="max-width: 400px;" class="margin-bottom-1">
-					<p class="bold" style="margin-bottom: 50px;">Sveriges ledande entreprenadbesiktningsföretag</p>
+					<p class="bold margin-bottom-5" style="margin-bottom: 50px;">Sveriges ledande entreprenadbesiktningsföretag</p>
 					<div class="container-lg">
 						<ul class="grid fixedSpaces  center toCenter fromCenter">
 							<li class="col-2-10 col-tablet-1-2 col-phone-1-1 left" style="margin-right: 200px;">
@@ -338,68 +332,10 @@
 		</div>
 	</div>
 </section>
-
-<!-- POPUP WITH LINKS TO NEWSLETTER TEXTS -->
- <div class="popup hidden" data-popup-id="docs" id="docs">
-	 <div class="close closeButton left opaque white text-blue">X</div>
-	 <div class="content">
-		 <div class="container">
-			 <div class="wrap spaces">
-				 <div class="fix-4-12 margin-top-6">
-					 <div class="pad shadow selected popupContent">
-							 <div class="absolute">
-								 <h3 class="center">DOKUMENT</h3>
-								 <p class="small center">
-									Nedan kan du läsa viktiga dokument
-									<br>
-									gällande besiktningar.
-								</p>
-							 </div>
-							 <img src="../assets/img/backgrounds/docs.jpg" alt="Foto av dokumenthäften"/>
-							 <div class="dialogContent">
-								 <ul class="text-center left">
-									 <li>
-										 <p class="text-blueGrey small margin-0">Allmänt</p>
-									 </li>
-										<li>
-											<a href="../assets/documents/besiktningsmannaboken-2016-konsumentverket.pdf" target="_blank" class="text-blue bold small">Besiktningsmannaboken 2016</a>
-										</li>
-										<br>
-										<li>
-											<a href="../assets/documents/konsumenttjanstlagen-rev-2016-juni-konsumentverket.pdf" target="_blank" class="text-blue bold small">Konsumenttjänstlagen</a>
-										</li>
-										<br>
-										<li>
-											<a href="../assets/documents/hantverkarformularet-14-protokoll-konsumentverket.pdf" target="_blank" class="text-blue bold small">Hantverkarformuläret 14</a>
-										</li>
-								 </ul>
-								 <br>
-								 <ul class="text-center left">
-									 <li>
-										 <p class="text-blueGrey small margin-0">BRF</p>
-									 </li>
-										<li>
-											<a href="../assets/documents/brf/brf_slutbesiktning.pdf" target="_blank" class="text-blue bold small">Slutbesiktning för BRF</a>
-										</li>
-										<br>
-										<li>
-											<a href="../assets/documents/brf/brf_efterbesiktning.pdf" target="_blank" class="text-blue bold small">Efterbesiktning för BRF</a>
-										</li>
-										<br>
-										<li>
-											<a href="../assets/documents/brf/brf_sarskildbesiktning.pdf" target="_blank" class="text-blue bold small">Särskild besiktning för BRF</a>
-										</li>
-								 </ul>
-							 </div>
-					 </div>
-				 </div>
-			 </div>
-		 </div>
-	 </div>
- </div>
 	<!-- Scripts -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script src="../js/slides.min.js" type="text/javascript" name="main-scripts"></script>
+	<script src="../js/custom.js" type="text/javascript" name="main-scripts"></script>
 </body>
 
 </html>

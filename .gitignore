@@ -1,7 +1,6 @@
 prepros-6.config
 config.codekit
-config.codekit
-
+prepros.config
 
 # OS generated files #
 ######################
@@ -10,5 +9,3 @@ config.codekit
 ._*
 .Spotlight-V100
 .Trashes
-ehthumbs.db
-Thumbs.db

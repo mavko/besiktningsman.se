@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 168 168" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>handshake_icon</title>
+<desc>Created with Sketch.</desc>
+<defs>
+<rect id="a" width="150" height="150" rx="5"/>
+<filter id="b" x="-9.7%" y="-8.3%" width="119.3%" height="119.3%">
+<feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.196078431   0 0 0 0 0.196078431   0 0 0 0 0.364705882  0 0 0 0.200549139 0"/>
+</filter>
+</defs>
+<g fill="none" fill-rule="evenodd">
+<g transform="translate(-433 -200)">
+<g transform="translate(442 207)">
+<use fill="black" filter="url(#b)" xlink:href="#a"/>
+<use fill="#06BCD6" fill-rule="evenodd" xlink:href="#a"/>
+<g transform="translate(18 31)">
+<path d="m15.6 13.26l19.2-2.411c9.2324 5.5557 16.432 9.9758 21.6 13.26 17.196 10.93 33.034 22.501 34.8 28.932 0.50006 1.821 2.0566 7.1412 0 8.4384-1.7152 1.0818-6.8911-1.9235-8.4 0-1.2693 1.6181 1.834 7.1158 0 8.4384-1.6627 1.1991-5.4091-1.3773-7.2 0-2.0353 1.5652 0.17243 7.0604-2.4 8.4384-2.2922 1.2278-5.746-2.5379-8.4-1.2055-1.6067 0.8066-3.6067 2.8157-6 6.0274l-43.2-40.986v-28.932z" fill="#fff"/>
+<path d="m81.571 12.184s-29.273-12.361-44.17 3.682c-1.6962 1.8252-7.5194 21.548 0.52273 20.514 12.284-1.578 7.4044-12.061 14.636-12.887 10.455 1.052 38.42 30.508 38.42 30.508l8.8863-12.098-11.761-18.936-6.5341-10.783z" fill="#fff" fill-rule="nonzero"/>
+<path d="m81.441 12.052s-47.811-16.89-48.483 17.589c0 0-0.12284 7.3956 4.992 6.838 6.3198-0.67328 10.894-3.8819 10.894-9.5916s9.5319-1.599 9.5319-1.599l32.44 28.559 8.659-14.181" stroke="#06BCD6" stroke-width="3.9163"/>
+<path d="m15.248 42.429s37.443 40.876 44.024 39.734c6.5811-1.1414 5.2273-6.1647 5.2273-6.1647l-13.17-10.951" stroke="#06BCD6" stroke-width="3.9163"/>
+<path d="m76.381 41.153s17.611 12.466 16.704 17.035c-0.90693 4.5683-6.8085 5.7071-10.206 3.1955s-21.105-15.517-21.105-15.517" stroke="#06BCD6" stroke-width="3.9163"/>
+<path d="m56.776 56.368s19.968 15.985 23.826 14.615c4.3648-1.5491 4.9162-6.7433 1.5159-9.2629-3.4003-2.5195-20.35-15.872-20.35-15.872" stroke="#06BCD6" stroke-width="3.9163"/>
+<path d="m56.776 56.368s19.215 12.984 19.171 17.095c-0.049659 4.6577-4.7568 6.8591-8.2225 4.4342s-16.395-12.85-16.395-12.85" stroke="#06BCD6" stroke-width="3.9163"/>
+<rect transform="translate(96.378 23.481) rotate(-31.81) translate(-96.378 -23.481)" x="89.683" y=".87451" width="13.39" height="45.212" fill="#fff" stroke="#06BCD6" stroke-width="3.9163"/>
+<rect transform="translate(17.628 23.476) rotate(211.81) translate(-17.628 -23.476)" x="10.933" y=".86934" width="13.39" height="45.212" fill="#fff" fill-rule="nonzero" stroke="#06BCD6" stroke-width="3.9163"/>
+<rect transform="translate(21.123 58.205) rotate(38.9) translate(-21.123 -58.205)" x="14.677" y="48.543" width="12.893" height="19.325" rx="6.4384" fill="#fff" fill-rule="nonzero" stroke="#06BCD6" stroke-width="3.9163"/>
+<rect transform="translate(30.3 65.898) rotate(38.9) translate(-30.3 -65.898)" x="24.755" y="57.244" width="11.09" height="17.308" rx="5.5403" fill="#fff" fill-rule="nonzero" stroke="#06BCD6" stroke-width="3.9163"/>
+<rect transform="translate(39.153 74.116) rotate(38.9) translate(-39.153 -74.116)" x="33.609" y="65.462" width="11.09" height="17.308" rx="5.5403" fill="#fff" fill-rule="nonzero" stroke="#06BCD6" stroke-width="3.9163"/>
+<rect transform="translate(48.237 79.263) rotate(38.9) translate(-48.237 -79.263)" x="43.549" y="71.945" width="9.3777" height="14.636" rx="4.6839" fill="#fff" fill-rule="nonzero" stroke="#06BCD6" stroke-width="3.9163"/>
+<path d="m34.265 11.658l4.8849 2.033" stroke="#06BCD6" stroke-width="3.9163"/>
+</g>
+</g>
+</g>
+</g>
+</svg>
