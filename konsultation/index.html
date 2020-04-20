@@ -114,6 +114,25 @@
 	<noscript><img height="1" width="1" style="display:none"
 			src="https://www.facebook.com/tr?id=1747503458639948&ev=PageView&noscript=1" /></noscript>
 	<!-- End Facebook Pixel Code -->
+		<!-- add the following script to the <head> or in the custom.js file -->
+		<script>
+			window.setHashLink = 0;
+
+			$(function () {
+				if (window.location.hash === "#kalender") { //your hash tag url
+					setTimeout(function () {
+						window.showPopup('hash-popup');
+					}, 500);
+
+					//remove the hash tag on open (optional)
+					if (history.pushState) {
+						window.history.pushState("", "", location.href.split('#')[0]);
+					} else {
+						window.location.hash = "";
+					}
+				}
+			});
+		</script>
 </head>
 
 <body class="slides scroll simplifiedMobile defaultScroll">
@@ -285,16 +304,17 @@
 								</h2>
 								<p class="common-BodyText">
 								Oavsett om du behöver ta ett byggtekniskt beslut inom din Brf, eller om du personligen behöver tips inför en renovering
+								<br>
 								- så har du kommit rätt.
 								</p>
 								<p class="common-BodyText">
-								Med några enkla knapptryck får du en besiktningsman direkt i mobilen som kan besvara alla dina byggrelaterade frågor,
-								stora som små.
+									Med några enkla knapptryck får du en besiktningsman direkt i mobilen som kan besvara alla dina byggrelaterade frågor,
+									stora som små.
 								</p>
 								<p class="common-BodyText">
-								Samtliga våra besiktningsmän är Byggingenjör SBR. 
-								De har en gedigen erfarenhet från nyproduktion , ROT, projektledning etc. 
-								Samt naturligtvis tusentals utförda besiktningar.
+									Samtliga våra besiktningsmän är Byggingenjör SBR. 
+									De har en gedigen erfarenhet från nyproduktion , ROT, projektledning etc. 
+									Samt naturligtvis tusentals utförda besiktningar.
 								</p>
 								<p class="common-BodyText">
 									De är väl insatta i de olika avtalsformer som används i byggbranschen, såsom AB/ABT , ABS och konsumenttjänstlagen samt
@@ -302,7 +322,6 @@
 									<br>
 									<br>
 									<a href="#boka" class="common-Link">Nu finns de här för att svara på alla dina frågor!</a>
-									
 								</p>
 							</li>
 							<li class="col-6-12 bottom">
@@ -362,7 +381,7 @@
 				<h3 class="pad-header margin-0 center common-BodyTitle">
 					Redo att boka?
 					<p class="common-BodyText margin-0">
-						Lämna ett meddelande så hör vi av oss.
+						Lämna ett meddelande så hör vi av oss.<button class="button round small popupTrigger white sourceSans" data-popup-id="hash-popup">Välj datum</button>
 					</p>
 				</h3>
 				<div class="">
@@ -374,7 +393,7 @@
 						<script>
 							hbspt.forms.create({
 								portalId: "4367163",
-								formId: "e5bf6ac7-6f20-404a-9324-b25bc93022a7"
+								formId: "b81e934c-768e-42d0-b0cf-cd7e85b871d2"
 							});
 						</script>
 					</div>
@@ -540,6 +559,21 @@
 				</div>
 			</div>
 	</section>
+	<!-- Popup -->
+	<div class="popup animated" data-popup-id="hash-popup">
+		<div class="close"><svg>
+				<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
+			</svg></div>
+		<div class="content">
+			<div class="container">
+				<div class="wrap">
+					<div class="ae-1">Don't forget to subscribe on our news and updates!</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
 	<!-- Scripts -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
 		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
