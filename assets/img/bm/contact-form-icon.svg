@@ -54,7 +54,7 @@
                 <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
             </feMerge>
         </filter>
-        <circle id="path-12" cx="23" cy="24" r="23"></circle>
+        <circle id="path-12" cx="23" cy="26" r="23"></circle>
         <filter x="-42.4%" y="-29.3%" width="184.8%" height="184.8%" filterUnits="objectBoundingBox" id="filter-13">
             <feMorphology radius="0.5" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
             <feOffset dx="0" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
@@ -113,13 +113,13 @@
                     </g>
                 </g>
             </g>
-            <g id="Group-10" transform="translate(11.000000, 4.000000)">
+            <g id="Group-10-Copy">
                 <g id="Oval">
                     <use fill="black" fill-opacity="1" filter="url(#filter-13)" xlink:href="#path-12"></use>
                     <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-12"></use>
                 </g>
-                <text id="1" font-family="OpenSans-Bold, Open Sans" font-size="36" font-weight="bold" letter-spacing="0.5" fill="#1072BB">
-                    <tspan x="11.4755859" y="38">1</tspan>
+                <text id="2" font-family="OpenSans-Bold, Open Sans" font-size="36" font-weight="bold" letter-spacing="0.5" fill="#0082C6">
+                    <tspan x="12.4755859" y="38">2</tspan>
                 </text>
             </g>
         </g>
