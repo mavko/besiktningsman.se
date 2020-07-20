@@ -2011,18 +2011,15 @@ section.ctas .cta .cta-headline {
 	flex-direction: column;
 	margin-bottom: 40px;
 }
-
-.news {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-column-gap: 42px;
-	margin-bottom: 40px;
+.news-list .list {
+	max-height: 500px;
+    height: 100%;
+    overflow-y: scroll;
 }
-
-.news-list-scrollable {
-	width: 100%;
-	height: 600px; 
-	overflow-y: auto;
+.news-list .list span iframe {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	min-height: 300px;
 }
 
 .news-list .list span {
@@ -2074,7 +2071,7 @@ section.ctas .cta .cta-headline {
 	overflow: hidden;
 	padding: 124px 44px;
 	margin-top: 40px;
-	max-width: 320px;
+	margin-bottom: 40px;
 	max-height: 350px;
 }
 
