@@ -3226,45 +3226,6 @@ section.ctas .cta .cta-headline {
     margin-left: 16px;
 }
 
-.dots {
-    font-size: 0
-}
-
-.dot {
-    padding: 8px
-}
-
-.dot:after {
-    content: "";
-    width: 6px;
-    height: 6px;
-    background: #fff;
-    border-radius: 50%;
-    transition: .25s
-}
-
-.dots.big .dot:after {
-    width: 14px;
-    height: 14px
-}
-
-.slide.whiteSlide .dot:after {
-    background: #2367A4
-}
-
-.dot:hover:after {
-    -webkit-transform: scale(1.33333);
-    transform: scale(1.33333);
-    opacity: 1
-}
-
-.dot.selected:after,
-.dot:active:after {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1)
-}
-
 .disableSelect,
 .disableSelect *,
 .noSelect,
