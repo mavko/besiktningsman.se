@@ -313,7 +313,12 @@ p {
 	line-height: 28px;
 	color: #525f7f;
 }
-
+.common-BodyTextSm {
+	font-weight: 525;
+	font-size: 14px;
+	line-height: 28px;
+	color: #525f7f;
+}
 .common-Link:focus,
 .common-Link:hover {
 	color: #32325d;
