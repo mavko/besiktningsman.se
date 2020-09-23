@@ -3,3 +3,4 @@ config.codekit
 config.codekit
 prepros.config
 .vscode/settings.json
+*.icloud
