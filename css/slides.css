@@ -1488,14 +1488,13 @@ section .form-column {
 }
 
 .inputs-list {
-	display: flex;
+	display: grid;
 }
 
 .input textarea {
 	width: 100% !important;
 	min-height: 80px;
 }
-
 /* Chrome 29+ */
 
 .selector:not(*:root),
@@ -1612,10 +1611,9 @@ input[type='checkbox'] {
 }
 
 .formBackground .hs-richtext {
-	color: #1072bb;
+	color: #333;
 	-webkit-transition: color 0.1s ease;
 	transition: color 0.1s ease;
-	cursor: pointer;
 	text-align: left;
 }
 
