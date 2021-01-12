@@ -1512,6 +1512,7 @@ section .form-column {
 input[type='checkbox'] {
 	margin-right: -1px;
 	margin-top: 5px;
+	vertical-align: middle;
 }
 
 /* firefox */
@@ -1528,8 +1529,6 @@ input[type='checkbox'] {
 	margin-left: 3px !important;
 	background: transparent !important;
 	box-shadow: none !important;
-	float: left;
-	-webkit-margin-top: 14px;
 }
 
 .hs-error-msgs {
