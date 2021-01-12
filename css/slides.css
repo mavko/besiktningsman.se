@@ -1514,18 +1514,10 @@ section .form-column {
 }
 
 .selector:not(*:root),
-<<<<<<< HEAD
 .form-columns-1 input[type="radio"],
 input[type="checkbox"] {
   margin-right: -1px;
   margin-top: 5px;
-=======
-.form-columns-1 input[type='radio'],
-input[type='checkbox'] {
-	margin-right: -1px;
-	margin-top: 5px;
-	vertical-align: middle;
->>>>>>> 4011ec320854571584798b94e5ef9e45b4d2dfb2
 }
 
 /* firefox */
@@ -1536,7 +1528,6 @@ input[type='checkbox'] {
   }
 }
 
-<<<<<<< HEAD
 .form-columns-1 input[type="radio"],
 input[type="checkbox"] {
   width: 16px !important;
@@ -1545,14 +1536,6 @@ input[type="checkbox"] {
   box-shadow: none !important;
   float: left;
   -webkit-margin-top: 14px;
-=======
-.form-columns-1 input[type='radio'],
-input[type='checkbox'] {
-	width: 16px !important;
-	margin-left: 3px !important;
-	background: transparent !important;
-	box-shadow: none !important;
->>>>>>> 4011ec320854571584798b94e5ef9e45b4d2dfb2
 }
 
 .hs-error-msgs {
