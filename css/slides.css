@@ -1504,7 +1504,7 @@ section .form-column {
 
 .selector:not(*:root),
 .hbspt-form ul li {
-  line-height: 2.5rem;
+  line-height: 5rem;
 }
 
 .selector:not(*:root),
@@ -1515,8 +1515,7 @@ section .form-column {
 .selector:not(*:root),
 .form-columns-1 input[type="radio"],
 input[type="checkbox"] {
-  margin-right: -1px;
-  margin-top: 5px;
+  margin-right: 2px;
 }
 
 /* firefox */
