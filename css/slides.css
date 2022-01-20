@@ -441,6 +441,13 @@ a.globalFooterCard {
 	padding-right: 5rem;
 	padding: 16px 26px 16px 16px;
 }
+.banner-popup-body {
+	max-height: 700px;
+	height: 100%;
+	overflow-y: scroll;
+	text-align: left;
+	line-height: normal;
+}
 .new-pill {
 	padding: 0 6px;
 	font-size: 12px;
